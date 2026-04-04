@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
 
 @layer base {
   :root {
@@ -43,6 +43,10 @@
 
     --radius: 0.5rem;
 
+    --gradient-primary: linear-gradient(135deg, hsl(210, 74%, 22%) 0%, hsl(225, 60%, 30%) 100%);
+    --shadow-elevated: 0 20px 60px -15px hsla(210, 74%, 22%, 0.2);
+    --shadow-soft: 0 4px 20px -2px hsla(210, 74%, 22%, 0.08);
+
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
@@ -59,17 +63,24 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
     @apply text-primary;
   }
 }
 
 @layer components {
-  /* Animated underline for links */
   .story-link {
     @apply relative inline-block;
   }
@@ -81,22 +92,35 @@
     @apply scale-x-100 origin-bottom-left;
   }
 
-  /* Hover scale */
   .hover-scale {
     @apply transition-transform duration-200 hover:scale-105;
   }
 
-  /* Glass card */
   .glass-card {
     @apply bg-white/70 backdrop-blur-md border border-white/40 shadow-lg;
   }
 
-  /* Gradient text */
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary/80 to-cta;
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(210, 74%, 22%), hsl(30, 89%, 53%));
   }
 
-  /* Section pattern overlay */
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, hsl(210, 74%, 22%) 0%, hsl(225, 60%, 30%) 100%);
+  }
+
+  .bg-gradient-elegant {
+    background: linear-gradient(135deg, hsl(210, 74%, 22%) 0%, hsl(225, 60%, 30%) 50%, hsl(210, 74%, 22%) 100%);
+  }
+
+  .shadow-elevated {
+    box-shadow: 0 20px 60px -15px hsla(210, 74%, 22%, 0.2);
+  }
+
+  .shadow-soft {
+    box-shadow: 0 4px 20px -2px hsla(210, 74%, 22%, 0.08);
+  }
+
   .pattern-dots {
     background-image: radial-gradient(circle, hsl(var(--primary) / 0.06) 1px, transparent 1px);
     background-size: 24px 24px;
@@ -119,7 +143,7 @@
     );
   }
 
-  /* Scroll reveal animation classes */
+  /* Scroll reveal */
   .reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -157,7 +181,6 @@
     transform: scale(1);
   }
 
-  /* Stagger children */
   .stagger-children > * {
     opacity: 0;
     transform: translateY(20px);
