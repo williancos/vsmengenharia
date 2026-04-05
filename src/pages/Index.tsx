@@ -15,6 +15,10 @@ import factoryImg from "@/assets/factory-interior.jpg";
 import riggingImg from "@/assets/rigging-crane.jpg";
 import teamImg from "@/assets/team-engineers.jpg";
 import vehicleImg from "@/assets/vehicle-inspection.jpg";
+import pmocImg from "@/assets/pmoc-hvac.jpg";
+import technicalImg from "@/assets/technical-inspection.jpg";
+import climatizacaoImg from "@/assets/climatizacao-project.jpg";
+import consultoriaImg from "@/assets/consultoria-meeting.jpg";
 
 const pillarServices = [
   {
@@ -55,28 +59,27 @@ const pillarServices = [
   {
     title: "PMOC",
     desc: "Plano de Manutenção, Operação e Controle de climatização conforme Lei 13.589 e ABNT.",
-    image: factoryImg,
-    href: "/servicos/pmoc",
+    image: pmocImg,
     tags: ["Lei 13.589", "ABNT", "HVAC"],
   },
   {
     title: "Inspeções Técnicas",
     desc: "Inspeção de máquinas, estruturas metálicas e sistemas de climatização com relatório detalhado.",
-    image: inspectionDocsImg,
+    image: technicalImg,
     href: "/servicos/inspecoes-tecnicas",
     tags: ["Máquinas", "Estruturas", "Laudo"],
   },
   {
     title: "Projetos de Climatização",
     desc: "Projetos HVAC industriais e comerciais com dimensionamento térmico e memorial de cálculo.",
-    image: riggingImg,
+    image: climatizacaoImg,
     href: "/servicos/projetos-climatizacao",
     tags: ["HVAC", "Projeto", "Industrial"],
   },
   {
     title: "Consultoria Gratuita",
     desc: "Diagnóstico inicial de conformidade normativa sem custo. Identifique riscos antes da autuação.",
-    image: teamImg,
+    image: consultoriaImg,
     href: "/servicos/consultoria-gratuita",
     tags: ["Grátis", "Diagnóstico", "NR"],
   },
