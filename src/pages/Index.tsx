@@ -15,6 +15,10 @@ import factoryImg from "@/assets/factory-interior.jpg";
 import riggingImg from "@/assets/rigging-crane.jpg";
 import teamImg from "@/assets/team-engineers.jpg";
 import vehicleImg from "@/assets/vehicle-inspection.jpg";
+import pmocImg from "@/assets/pmoc-hvac.jpg";
+import technicalImg from "@/assets/technical-inspection.jpg";
+import climatizacaoImg from "@/assets/climatizacao-project.jpg";
+import consultoriaImg from "@/assets/consultoria-meeting.jpg";
 
 const pillarServices = [
   {
