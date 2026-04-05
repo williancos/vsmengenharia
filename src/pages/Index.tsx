@@ -1027,6 +1027,37 @@ export default function Index() {
         </div>
       </section>
 
+      {/* ═══ NEWSLETTER ═══ */}
+      <section className="relative py-0 overflow-hidden bg-card">
+        <div className="container mx-auto px-4">
+          <div className="relative bg-primary rounded-2xl px-6 py-8 md:px-12 md:py-10 overflow-hidden">
+            <svg className="absolute -top-8 -left-8 w-32 h-32 opacity-[0.06]" viewBox="0 0 200 200"><circle cx="100" cy="100" r="90" fill="none" stroke="white" strokeWidth="2" /></svg>
+            <svg className="absolute -bottom-10 -right-10 w-44 h-44 opacity-[0.06]" viewBox="0 0 200 200"><circle cx="100" cy="100" r="90" fill="none" stroke="white" strokeWidth="2" /><circle cx="100" cy="100" r="55" fill="none" stroke="white" strokeWidth="1.5" /></svg>
+
+            <div className="relative z-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+              <div>
+                <h3 className="text-xl md:text-2xl font-extrabold text-primary-foreground mb-1">
+                  Receba conteúdos <span className="text-cta">exclusivos</span>
+                </h3>
+                <p className="text-sm text-primary-foreground/50 max-w-md">
+                  Inscreva-se e receba artigos, dicas e novidades sobre normas regulamentadoras e segurança industrial.
+                </p>
+              </div>
+              <div className="flex gap-3 w-full md:w-auto">
+                <input
+                  type="email"
+                  placeholder="Seu melhor e-mail"
+                  className="flex-1 md:w-72 h-12 px-4 rounded-xl border border-white/15 bg-white/[0.08] text-primary-foreground placeholder:text-primary-foreground/30 text-sm focus:outline-none focus:ring-2 focus:ring-cta/50"
+                />
+                <Button className="bg-cta text-cta-foreground hover:bg-cta-hover font-bold rounded-xl h-12 px-6 shrink-0">
+                  Inscrever
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ═══ CTA FINAL ═══ */}
       <section className="relative bg-gradient-primary py-24 md:py-32 overflow-hidden">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
