@@ -284,14 +284,11 @@ export default function Index() {
           {/* Bento Grid */}
           <RevealSection stagger>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 auto-rows-[320px]">
-              {pillarServices.map((s, i) => (
+              {pillarServices.map((s) => (
                 <Link
                   key={s.href}
                   to={s.href}
-                  className={`group relative rounded-3xl overflow-hidden cursor-pointer ${
-                    i === 0 ? "md:row-span-2 auto-rows-auto" : ""
-                  }`}
-                  style={i === 0 ? { gridRow: "span 2" } : undefined}
+                  className="group relative rounded-3xl overflow-hidden cursor-pointer"
                 >
                   <img
                     src={s.image}
