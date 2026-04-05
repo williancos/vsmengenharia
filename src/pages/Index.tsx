@@ -507,6 +507,76 @@ export default function Index() {
         </div>
       </section>
 
+      {/* ═══ POR QUE A VSM? ═══ */}
+      <section className="relative py-20 md:py-28 overflow-hidden bg-card">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            {/* Left: copy + stats + certifications */}
+            <RevealSection variant="left">
+              <span className="inline-block px-4 py-1.5 rounded-full border border-primary/20 text-primary text-xs font-bold tracking-wider mb-6">
+                Por que a VSM?
+              </span>
+              <h2 className="text-3xl md:text-4xl font-extrabold mb-5 leading-tight">
+                Segurança construída com{" "}
+                <span className="text-cta">excelência técnica</span>
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-8 max-w-lg">
+                A VSM Engenharia atua com foco em conformidade normativa e segurança industrial. Combinamos experiência de campo, rigor técnico e agilidade para entregar laudos e projetos que protegem sua operação e evitam prejuízos.
+              </p>
+
+              <div className="flex gap-6 mb-8">
+                <div className="bg-background rounded-xl border border-border/60 px-6 py-4">
+                  <div className="text-3xl font-extrabold text-primary">
+                    <CountUp end={500} duration={2} prefix="+" />
+                  </div>
+                  <div className="text-sm text-muted-foreground mt-1">Laudos emitidos</div>
+                </div>
+                <div className="bg-background rounded-xl border border-border/60 px-6 py-4">
+                  <div className="text-3xl font-extrabold text-primary">
+                    <CountUp end={8} duration={1.5} />
+                  </div>
+                  <div className="text-sm text-muted-foreground mt-1">Estados atendidos</div>
+                </div>
+              </div>
+
+              <div className="bg-primary rounded-xl p-5">
+                <h3 className="text-sm font-bold text-primary-foreground mb-3">Certificações e Conformidades</h3>
+                <div className="flex flex-wrap gap-2">
+                  {["NR-13", "NR-12", "NR-11", "CREA"].map((cert) => (
+                    <span key={cert} className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 text-primary-foreground text-xs font-semibold">
+                      <CheckCircle2 className="h-3.5 w-3.5 text-cta" />
+                      {cert}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </RevealSection>
+
+            {/* Right: feature cards grid */}
+            <RevealSection variant="right">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {[
+                  { icon: Clock, title: "Agilidade na Entrega", desc: "Laudos e relatórios dentro do prazo, sem atrasos que comprometam sua operação." },
+                  { icon: FileCheck, title: "Conformidade Total", desc: "Documentação 100% aderente às normas regulamentadoras vigentes." },
+                  { icon: Award, title: "Equipe Qualificada", desc: "Engenheiros especializados com vivência prática em campo industrial." },
+                  { icon: Users, title: "Atendimento Dedicado", desc: "Suporte técnico direto e acompanhamento personalizado em cada projeto." },
+                  { icon: Wrench, title: "Soluções Sob Medida", desc: "Projetos adaptados às necessidades específicas de cada cliente e operação." },
+                  { icon: Shield, title: "Redução de Riscos", desc: "Inspeções que identificam falhas antes que se tornem acidentes ou multas." },
+                ].map((item) => (
+                  <div key={item.title} className="bg-background rounded-xl border border-border/60 p-5 hover:shadow-soft hover:border-cta/20 transition-all duration-300 group">
+                    <div className="h-10 w-10 rounded-lg bg-secondary flex items-center justify-center mb-3 group-hover:bg-cta/10 transition-colors">
+                      <item.icon className="h-5 w-5 text-primary group-hover:text-cta transition-colors" />
+                    </div>
+                    <h3 className="font-bold text-sm mb-1.5">{item.title}</h3>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </RevealSection>
+          </div>
+        </div>
+      </section>
+
       {/* ═══ PROCESS ═══ */}
       <section className="relative py-24 md:py-32 overflow-hidden bg-background">
         <div className="container mx-auto px-4 relative z-10">
