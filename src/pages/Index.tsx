@@ -21,6 +21,9 @@ import technicalImg from "@/assets/technical-inspection.jpg";
 import climatizacaoImg from "@/assets/climatizacao-project.jpg";
 import consultoriaImg from "@/assets/consultoria-meeting.jpg";
 import caseIndustrialImg from "@/assets/case-industrial.jpg";
+import caseFoodImg from "@/assets/case-food-factory.jpg";
+import caseTransportImg from "@/assets/case-transport.jpg";
+import useEmblaCarousel from "embla-carousel-react";
 
 const pillarServices = [
   {
