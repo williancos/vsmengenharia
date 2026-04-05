@@ -579,33 +579,37 @@ export default function Index() {
       </section>
 
       {/* ═══ PROCESS ═══ */}
-      <section className="relative py-24 md:py-32 overflow-hidden bg-background">
+      <section className="relative py-14 md:py-20 overflow-hidden bg-background">
+        {/* Background decorations */}
+        <div className="absolute inset-0 pattern-dots opacity-40 pointer-events-none" />
+        <svg className="absolute -top-10 -right-20 w-80 h-80 opacity-[0.03] text-primary" viewBox="0 0 200 200"><circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" strokeWidth="1" /><circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" strokeWidth="0.8" /><circle cx="100" cy="100" r="30" fill="none" stroke="currentColor" strokeWidth="0.5" /></svg>
+        <svg className="absolute -bottom-16 -left-16 w-64 h-64 opacity-[0.03] text-primary" viewBox="0 0 200 200"><polygon points="100,10 190,60 190,140 100,190 10,140 10,60" fill="none" stroke="currentColor" strokeWidth="1.2" /></svg>
+
         <div className="container mx-auto px-4 relative z-10">
-          <RevealSection className="text-center mb-16">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-primary text-primary-foreground text-xs font-bold tracking-wider uppercase mb-4">
+          <RevealSection className="text-center mb-10">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-primary text-primary-foreground text-xs font-bold tracking-wider uppercase mb-3">
               Processo
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-2">
               Do contato ao laudo,{" "}
               <span className="text-cta">sem burocracia</span>
             </h2>
-            <p className="text-muted-foreground max-w-xl mx-auto text-lg">
+            <p className="text-muted-foreground max-w-md mx-auto text-sm">
               Um processo claro e ágil para você ter tranquilidade.
             </p>
           </RevealSection>
 
           <RevealSection stagger>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 max-w-4xl mx-auto">
               {processSteps.map((step, i) => (
                 <div key={i} className="relative group">
-                  {/* Connector */}
                   {i < processSteps.length - 1 && (
-                    <div className="hidden md:block absolute top-6 left-[70%] w-[60%] border-t-2 border-dashed border-primary/15" />
+                    <div className="hidden md:block absolute top-5 left-[75%] w-[50%] border-t-2 border-dashed border-primary/10 z-10" />
                   )}
-                  <div className="bg-card rounded-2xl border border-border/60 p-6 hover:shadow-elevated hover:border-cta/20 transition-all duration-300 hover:-translate-y-1">
-                    <span className="text-4xl font-extrabold text-primary/10 block mb-3">{step.num}</span>
-                    <h3 className="font-bold text-lg mb-2 group-hover:text-cta transition-colors">{step.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{step.desc}</p>
+                  <div className="bg-card rounded-xl border border-border/60 p-4 md:p-5 hover:shadow-soft hover:border-cta/20 transition-all duration-300 hover:-translate-y-0.5 h-full">
+                    <span className="text-3xl font-extrabold text-primary/8 block mb-2">{step.num}</span>
+                    <h3 className="font-bold text-sm mb-1 group-hover:text-cta transition-colors">{step.title}</h3>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{step.desc}</p>
                   </div>
                 </div>
               ))}
