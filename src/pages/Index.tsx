@@ -100,14 +100,7 @@ export default function Index() {
         </div>
         {/* LEFT — Content panel */}
         <div className="relative z-10 w-full lg:w-[55%] xl:w-[50%] flex items-center min-h-[100vh]">
-          {/* Subtle pattern overlay */}
-          <div className="absolute inset-0 pattern-dots opacity-30" />
-          {/* Diagonal accent line */}
-          <svg className="absolute top-0 right-0 h-full w-24 hidden lg:block" viewBox="0 0 100 800" preserveAspectRatio="none">
-            <polygon points="60,0 100,0 100,800 0,800" fill="hsl(var(--primary))" />
-          </svg>
-
-          <div className="relative z-10 px-6 sm:px-10 lg:px-16 xl:px-20 py-20 lg:py-0 w-full max-w-2xl mx-auto lg:mx-0 lg:ml-auto">
+          <div className="relative z-10 px-6 sm:px-10 lg:px-16 xl:px-20 py-24 lg:py-0 w-full max-w-2xl mx-auto lg:mx-0 lg:ml-auto">
             {/* Rating badge */}
             <div className="animate-fade-in mb-8" style={{ animationDelay: "0ms" }}>
               <div className="flex items-center gap-2 text-sm text-primary-foreground/60">
