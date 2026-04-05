@@ -117,6 +117,248 @@ const blogPosts = [
   { title: "Reclassificação de Monta x Baixa Definitiva: qual escolher?", category: "Veículos", href: "/blog" },
 ];
 
+const testimonials = [
+  {
+    quote: "A VSM foi essencial para regularizar todas as nossas caldeiras. O laudo ficou pronto antes do prazo e nos livrou de uma autuação iminente.",
+    name: "Carlos Mendes",
+    role: "Gerente Industrial",
+    company: "Indústria Metalúrgica SP",
+  },
+  {
+    quote: "Precisávamos da reclassificação de monta urgente e a VSM entregou com agilidade e profissionalismo. Recomendo sem hesitar.",
+    name: "Ana Paula Ferreira",
+    role: "Diretora Administrativa",
+    company: "Transportadora Fênix",
+  },
+  {
+    quote: "A equipe técnica é extremamente qualificada. Fizeram a adequação NR12 de toda a nossa linha de produção sem parar a operação.",
+    name: "Roberto Lima",
+    role: "Coordenador de Segurança",
+    company: "Fábrica de Alimentos RJ",
+  },
+  {
+    quote: "Contratamos a VSM para inspeção NR11 de toda a frota de empilhadeiras. Profissionalismo do início ao fim.",
+    name: "Marcos Tavares",
+    role: "Supervisor de Logística",
+    company: "Centro de Distribuição MG",
+  },
+];
+
+const cases = [
+  {
+    image: caseIndustrialImg,
+    tag: "Industrial",
+    title: "Planta Industrial — Grande SP",
+    desc: "Inspeção completa NR13 de 12 vasos de pressão e 3 caldeiras, com emissão de laudos e prontuários em tempo recorde.",
+    stats: [
+      { icon: Gauge, value: "15", label: "Equipamentos" },
+      { icon: Clock, value: "30 dias", label: "Prazo" },
+      { icon: Shield, value: "100%", label: "Conformidade" },
+    ],
+  },
+  {
+    image: caseFoodImg,
+    tag: "Alimentício",
+    title: "Fábrica de Alimentos — RJ",
+    desc: "Adequação NR12 completa de linha de produção com 22 máquinas, sem interrupção da operação.",
+    stats: [
+      { icon: Gauge, value: "22", label: "Máquinas" },
+      { icon: Clock, value: "45 dias", label: "Prazo" },
+      { icon: Shield, value: "100%", label: "Conformidade" },
+    ],
+  },
+  {
+    image: caseTransportImg,
+    tag: "Transporte",
+    title: "Transportadora Fênix — MG",
+    desc: "Reclassificação de monta de 8 veículos sinistrados com laudo técnico e aprovação no DETRAN.",
+    stats: [
+      { icon: Truck, value: "8", label: "Veículos" },
+      { icon: Clock, value: "20 dias", label: "Prazo" },
+      { icon: FileCheck, value: "100%", label: "Aprovação" },
+    ],
+  },
+];
+
+function useCarousel(count: number, autoplayMs = 5000) {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" });
+  const [selected, setSelected] = useState(0);
+
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    setSelected(emblaApi.selectedScrollSnap());
+  }, [emblaApi]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    emblaApi.on("select", onSelect);
+    onSelect();
+
+    const interval = setInterval(() => emblaApi.scrollNext(), autoplayMs);
+    return () => { clearInterval(interval); emblaApi.off("select", onSelect); };
+  }, [emblaApi, onSelect, autoplayMs]);
+
+  const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
+  const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
+  const scrollTo = useCallback((i: number) => emblaApi?.scrollTo(i), [emblaApi]);
+
+  return { emblaRef, selected, scrollPrev, scrollNext, scrollTo };
+}
+
+function CarouselDots({ count, selected, onDot }: { count: number; selected: number; onDot: (i: number) => void }) {
+  return (
+    <div className="flex gap-2 items-center">
+      {Array.from({ length: count }).map((_, i) => (
+        <button
+          key={i}
+          onClick={() => onDot(i)}
+          className={`h-2 rounded-full transition-all duration-300 ${i === selected ? "w-6 bg-cta" : "w-2 bg-white/20 hover:bg-white/40"}`}
+        />
+      ))}
+    </div>
+  );
+}
+
+function CarouselNav({ onPrev, onNext }: { onPrev: () => void; onNext: () => void }) {
+  return (
+    <div className="flex gap-2">
+      <button onClick={onPrev} className="h-9 w-9 rounded-lg border border-white/15 flex items-center justify-center text-primary-foreground/60 hover:bg-white/10 hover:text-primary-foreground transition-colors">
+        <ChevronRight className="h-4 w-4 rotate-180" />
+      </button>
+      <button onClick={onNext} className="h-9 w-9 rounded-lg border border-white/15 flex items-center justify-center text-primary-foreground/60 hover:bg-white/10 hover:text-primary-foreground transition-colors">
+        <ChevronRight className="h-4 w-4" />
+      </button>
+    </div>
+  );
+}
+
+function TestimonialsCarousel() {
+  const { emblaRef, selected, scrollPrev, scrollNext, scrollTo } = useCarousel(testimonials.length);
+
+  return (
+    <section className="relative py-16 md:py-24 overflow-hidden bg-gradient-primary">
+      <div className="absolute inset-0 opacity-[0.03]">
+        <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <defs><pattern id="dep-grid" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M 8 0 L 0 0 0 8" fill="none" stroke="white" strokeWidth="0.3" /></pattern></defs>
+          <rect width="100" height="100" fill="url(#dep-grid)" />
+        </svg>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
+        <RevealSection className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
+          <div>
+            <span className="inline-block px-4 py-1.5 rounded-full border border-white/15 text-primary-foreground/70 text-xs font-bold tracking-wider uppercase mb-3">
+              Depoimentos
+            </span>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-primary-foreground">
+              O que nossos <span className="text-cta">clientes</span> dizem
+            </h2>
+            <p className="text-primary-foreground/50 mt-1 text-sm">Empresas que confiam na VSM Engenharia.</p>
+          </div>
+          <div className="flex items-center gap-4">
+            <CarouselDots count={testimonials.length} selected={selected} onDot={scrollTo} />
+            <CarouselNav onPrev={scrollPrev} onNext={scrollNext} />
+          </div>
+        </RevealSection>
+
+        <RevealSection>
+          <div className="overflow-hidden" ref={emblaRef}>
+            <div className="flex gap-5">
+              {testimonials.map((t) => (
+                <div key={t.name} className="flex-[0_0_100%] sm:flex-[0_0_48%] md:flex-[0_0_31.5%] min-w-0">
+                  <div className="bg-white/[0.06] backdrop-blur-sm rounded-xl border border-white/[0.08] p-6 h-full hover:bg-white/[0.1] transition-all duration-300">
+                    <Quote className="h-5 w-5 text-cta/50 mb-3" />
+                    <p className="text-sm text-primary-foreground/70 leading-relaxed mb-5 italic">"{t.quote}"</p>
+                    <div className="flex items-center gap-3">
+                      <div className="h-10 w-10 rounded-full bg-cta/20 flex items-center justify-center text-cta font-bold text-sm shrink-0">
+                        {t.name.split(" ").map(n => n[0]).join("")}
+                      </div>
+                      <div>
+                        <div className="flex items-center gap-1.5">
+                          <span className="font-bold text-sm text-primary-foreground">{t.name}</span>
+                          <div className="flex gap-0.5">
+                            {[...Array(5)].map((_, i) => (
+                              <Star key={i} className="h-3 w-3 fill-cta text-cta" />
+                            ))}
+                          </div>
+                        </div>
+                        <span className="text-xs text-primary-foreground/40">{t.role} · {t.company}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </RevealSection>
+      </div>
+    </section>
+  );
+}
+
+function CasesCarousel() {
+  const { emblaRef, selected, scrollPrev, scrollNext, scrollTo } = useCarousel(cases.length, 7000);
+
+  return (
+    <section className="relative py-16 md:py-24 overflow-hidden bg-primary">
+      <div className="container mx-auto px-4 relative z-10">
+        <RevealSection className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
+          <div>
+            <span className="inline-block px-4 py-1.5 rounded-full border border-white/15 text-primary-foreground/70 text-xs font-bold tracking-wider uppercase mb-3">
+              Portfólio
+            </span>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-primary-foreground">
+              Cases de <span className="text-cta">sucesso</span>
+            </h2>
+            <p className="text-primary-foreground/50 mt-1 text-sm max-w-lg">Projetos que realizamos e os resultados alcançados.</p>
+          </div>
+          <div className="flex items-center gap-4">
+            <CarouselDots count={cases.length} selected={selected} onDot={scrollTo} />
+            <CarouselNav onPrev={scrollPrev} onNext={scrollNext} />
+          </div>
+        </RevealSection>
+
+        <RevealSection>
+          <div className="overflow-hidden" ref={emblaRef}>
+            <div className="flex gap-5">
+              {cases.map((c) => (
+                <div key={c.title} className="flex-[0_0_100%] min-w-0">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 bg-white/[0.04] rounded-2xl border border-white/[0.08] overflow-hidden">
+                    <div className="relative h-56 lg:h-auto min-h-[260px]">
+                      <img src={c.image} alt={c.title} loading="lazy" width={1280} height={720} className="absolute inset-0 w-full h-full object-cover" />
+                      <div className="absolute top-4 left-4">
+                        <span className="px-3 py-1 rounded-full bg-cta text-cta-foreground text-xs font-bold">{c.tag}</span>
+                      </div>
+                    </div>
+                    <div className="p-6 md:p-8 flex flex-col justify-center">
+                      <h3 className="text-lg md:text-xl font-extrabold text-primary-foreground mb-2">{c.title}</h3>
+                      <p className="text-sm text-primary-foreground/60 leading-relaxed mb-5">{c.desc}</p>
+                      <div className="grid grid-cols-3 gap-3 mb-5">
+                        {c.stats.map((s) => (
+                          <div key={s.label} className="bg-white/[0.06] rounded-lg p-3 text-center border border-white/[0.06]">
+                            <s.icon className="h-4 w-4 text-cta mx-auto mb-1" />
+                            <div className="text-base font-extrabold text-primary-foreground">{s.value}</div>
+                            <div className="text-[10px] text-primary-foreground/40 font-medium">{s.label}</div>
+                          </div>
+                        ))}
+                      </div>
+                      <Button asChild className="bg-cta text-cta-foreground hover:bg-cta-hover font-bold rounded-xl w-fit px-6 text-sm">
+                        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+                          Quero um projeto assim <ArrowRight className="ml-2 h-4 w-4" />
+                        </a>
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </RevealSection>
+      </div>
+    </section>
+  );
+}
+
 export default function Index() {
   return (
     <>
