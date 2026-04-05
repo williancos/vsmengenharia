@@ -323,25 +323,6 @@ export default function Index() {
               ))}
             </div>
           </RevealSection>
-
-          {/* Secondary services row */}
-          <RevealSection className="mt-8" stagger>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-              {secondaryServices.map((s) => (
-                <Link
-                  key={s.href}
-                  to={s.href}
-                  className="group bg-card rounded-2xl border border-border/60 p-5 hover:shadow-elevated hover:border-cta/20 transition-all duration-300 hover:-translate-y-1"
-                >
-                  <div className="h-10 w-10 rounded-xl bg-secondary flex items-center justify-center mb-3 group-hover:bg-primary/10 transition-colors">
-                    <s.icon className="h-5 w-5 text-primary" />
-                  </div>
-                  <h3 className="font-bold text-sm mb-1 group-hover:text-cta transition-colors">{s.title}</h3>
-                  <p className="text-xs text-muted-foreground leading-relaxed">{s.desc}</p>
-                </Link>
-              ))}
-            </div>
-          </RevealSection>
         </div>
       </section>
 
