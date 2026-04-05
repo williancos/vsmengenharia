@@ -614,6 +614,128 @@ export default function Index() {
         </div>
       </section>
 
+      {/* ═══ DEPOIMENTOS ═══ */}
+      <section className="relative py-20 md:py-28 overflow-hidden bg-gradient-primary">
+        <div className="absolute inset-0 opacity-[0.03]">
+          <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <defs>
+              <pattern id="dep-grid" width="8" height="8" patternUnits="userSpaceOnUse">
+                <path d="M 8 0 L 0 0 0 8" fill="none" stroke="white" strokeWidth="0.3" />
+              </pattern>
+            </defs>
+            <rect width="100" height="100" fill="url(#dep-grid)" />
+          </svg>
+        </div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <RevealSection className="mb-12">
+            <span className="inline-block px-4 py-1.5 rounded-full border border-white/15 text-primary-foreground/70 text-xs font-bold tracking-wider uppercase mb-4">
+              Depoimentos
+            </span>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-primary-foreground">
+              O que nossos <span className="text-cta">clientes</span> dizem
+            </h2>
+            <p className="text-primary-foreground/50 mt-2">Empresas que confiam na VSM Engenharia.</p>
+          </RevealSection>
+
+          <RevealSection stagger>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+              {[
+                {
+                  quote: "A VSM foi essencial para regularizar todas as nossas caldeiras. O laudo ficou pronto antes do prazo e nos livrou de uma autuação iminente.",
+                  name: "Carlos Mendes",
+                  role: "Gerente Industrial",
+                  company: "Indústria Metalúrgica SP",
+                },
+                {
+                  quote: "Precisávamos da reclassificação de monta urgente e a VSM entregou com agilidade e profissionalismo. Recomendo sem hesitar.",
+                  name: "Ana Paula Ferreira",
+                  role: "Diretora Administrativa",
+                  company: "Transportadora Fênix",
+                },
+                {
+                  quote: "A equipe técnica é extremamente qualificada. Fizeram a adequação NR12 de toda a nossa linha de produção sem parar a operação.",
+                  name: "Roberto Lima",
+                  role: "Coordenador de Segurança",
+                  company: "Fábrica de Alimentos RJ",
+                },
+              ].map((t) => (
+                <div key={t.name} className="bg-white/[0.06] backdrop-blur-sm rounded-xl border border-white/[0.08] p-6 hover:bg-white/[0.1] transition-all duration-300">
+                  <Quote className="h-5 w-5 text-cta/50 mb-3" />
+                  <p className="text-sm text-primary-foreground/70 leading-relaxed mb-5 italic">"{t.quote}"</p>
+                  <div className="flex items-center gap-3">
+                    <div className="h-10 w-10 rounded-full bg-cta/20 flex items-center justify-center text-cta font-bold text-sm">
+                      {t.name.split(" ").map(n => n[0]).join("")}
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-1.5">
+                        <span className="font-bold text-sm text-primary-foreground">{t.name}</span>
+                        <div className="flex gap-0.5">
+                          {[...Array(5)].map((_, i) => (
+                            <Star key={i} className="h-3 w-3 fill-cta text-cta" />
+                          ))}
+                        </div>
+                      </div>
+                      <span className="text-xs text-primary-foreground/40">{t.role} · {t.company}</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </RevealSection>
+        </div>
+      </section>
+
+      {/* ═══ CASES DE SUCESSO ═══ */}
+      <section className="relative py-20 md:py-28 overflow-hidden bg-primary">
+        <div className="container mx-auto px-4 relative z-10">
+          <RevealSection className="mb-12">
+            <span className="inline-block px-4 py-1.5 rounded-full border border-white/15 text-primary-foreground/70 text-xs font-bold tracking-wider uppercase mb-4">
+              Portfólio
+            </span>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-primary-foreground">
+              Cases de <span className="text-cta">sucesso</span>
+            </h2>
+            <p className="text-primary-foreground/50 mt-2 max-w-lg">Conheça alguns dos projetos que realizamos e os resultados alcançados para nossos clientes.</p>
+          </RevealSection>
+
+          <RevealSection>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 bg-white/[0.04] rounded-2xl border border-white/[0.08] overflow-hidden">
+              <div className="relative h-64 lg:h-auto min-h-[300px]">
+                <img src={caseIndustrialImg} alt="Inspeção NR13 em planta industrial" loading="lazy" width={1280} height={720} className="absolute inset-0 w-full h-full object-cover" />
+                <div className="absolute top-4 left-4">
+                  <span className="px-3 py-1 rounded-full bg-cta text-cta-foreground text-xs font-bold">Industrial</span>
+                </div>
+              </div>
+              <div className="p-8 md:p-10 flex flex-col justify-center">
+                <h3 className="text-xl md:text-2xl font-extrabold text-primary-foreground mb-3">Planta Industrial — Grande SP</h3>
+                <p className="text-sm text-primary-foreground/60 leading-relaxed mb-6">
+                  Inspeção completa NR13 de 12 vasos de pressão e 3 caldeiras, com emissão de laudos, prontuários e adequação documental em tempo recorde.
+                </p>
+                <div className="grid grid-cols-3 gap-4 mb-6">
+                  {[
+                    { icon: Gauge, value: "15", label: "Equipamentos" },
+                    { icon: Clock, value: "30 dias", label: "Prazo" },
+                    { icon: Shield, value: "100%", label: "Conformidade" },
+                  ].map((s) => (
+                    <div key={s.label} className="bg-white/[0.06] rounded-lg p-3 text-center border border-white/[0.06]">
+                      <s.icon className="h-4 w-4 text-cta mx-auto mb-1.5" />
+                      <div className="text-lg font-extrabold text-primary-foreground">{s.value}</div>
+                      <div className="text-[10px] text-primary-foreground/40 font-medium">{s.label}</div>
+                    </div>
+                  ))}
+                </div>
+                <Button asChild className="bg-cta text-cta-foreground hover:bg-cta-hover font-bold rounded-xl w-fit px-6">
+                  <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+                    Quero um projeto assim <ArrowRight className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </RevealSection>
+        </div>
+      </section>
+
       {/* ═══ BLOG PREVIEW ═══ */}
       <section className="relative py-24 md:py-32 overflow-hidden bg-card">
         <div className="container mx-auto px-4 relative z-10">
