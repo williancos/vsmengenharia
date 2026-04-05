@@ -45,6 +45,20 @@ const pillarServices = [
     href: "/servicos/reclassificacao-de-monta",
     tags: ["DETRAN", "Laudo", "Veículos"],
   },
+  {
+    title: "Projetos Mecânicos",
+    desc: "Projetos de proteções, estruturas metálicas e equipamentos industriais sob medida com memorial de cálculo.",
+    image: teamImg,
+    href: "/servicos/projetos-mecanicos",
+    tags: ["Estrutural", "Memorial", "ART"],
+  },
+  {
+    title: "PMOC",
+    desc: "Plano de Manutenção, Operação e Controle de climatização conforme Lei 13.589 e ABNT.",
+    image: factoryImg,
+    href: "/servicos/pmoc",
+    tags: ["Lei 13.589", "ABNT", "HVAC"],
+  },
 ];
 
 const secondaryServices = [
