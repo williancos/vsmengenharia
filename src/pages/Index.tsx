@@ -5,7 +5,8 @@ import {
   Shield, FileCheck, AlertTriangle, CheckCircle2, Users, Award,
   Wrench, ClipboardCheck, Truck, Wind, HardHat, Search, ArrowRight,
   TrendingUp, BadgeCheck, Clock, DollarSign, Scale, Phone, ChevronRight,
-  Zap, Target, BarChart3, ArrowUpRight, CircleCheck, Star, Quote, Droplets, Gauge, Ruler
+  Zap, Target, BarChart3, ArrowUpRight, CircleCheck, Star, Quote, Droplets, Gauge, Ruler,
+  Mail, MapPin, Send, Building2
 } from "lucide-react";
 import RevealSection from "@/components/RevealSection";
 import CountUp from "@/components/CountUp";
@@ -1058,44 +1059,94 @@ export default function Index() {
         </div>
       </section>
 
-      {/* ═══ CTA FINAL ═══ */}
-      <section className="relative bg-gradient-primary py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <svg className="absolute top-10 left-[5%] w-64 h-64 opacity-[0.04]" viewBox="0 0 200 200">
-            <polygon points="100,10 190,60 190,140 100,190 10,140 10,60" fill="none" stroke="white" strokeWidth="1.5" />
-          </svg>
-          <svg className="absolute bottom-10 right-[8%] w-48 h-48 opacity-[0.04]" viewBox="0 0 200 200">
-            <circle cx="100" cy="100" r="80" fill="none" stroke="white" strokeWidth="1.5" />
-            <circle cx="100" cy="100" r="50" fill="none" stroke="white" strokeWidth="1" />
-          </svg>
-          <div className="absolute top-0 right-[30%] w-[600px] h-[600px] rounded-full bg-white/[0.02] blur-3xl" />
-        </div>
-
+      {/* ═══ CONTATO ═══ */}
+      <section className="relative py-16 md:py-24 overflow-hidden bg-background">
+        <div className="absolute inset-0 pattern-dots opacity-30 pointer-events-none" />
         <div className="container mx-auto px-4 relative z-10">
-          <RevealSection className="text-center max-w-3xl mx-auto">
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/15 text-sm text-primary-foreground/80 mb-8">
-              <Zap className="h-4 w-4 text-cta" />
-              Resposta em até 2h
-            </span>
+          <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
+            {/* Left: info */}
+            <RevealSection variant="left">
+              <span className="inline-block px-4 py-1.5 rounded-full border border-primary/20 text-primary text-xs font-bold tracking-wider uppercase mb-4">
+                Contato
+              </span>
+              <h2 className="text-3xl md:text-4xl font-extrabold mb-4 leading-tight">
+                Vamos conversar sobre{" "}
+                <span className="text-cta">seu projeto</span>
+              </h2>
+              <p className="text-muted-foreground text-sm leading-relaxed mb-8 max-w-md">
+                Entre em contato com nossa equipe de engenheiros. Estamos prontos para ajudar a encontrar a solução ideal para sua necessidade.
+              </p>
 
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary-foreground mb-6 leading-tight">
-              Pronto para garantir a conformidade da sua empresa?
-            </h2>
-            <p className="text-lg text-primary-foreground/60 mb-10 max-w-xl mx-auto leading-relaxed">
-              Fale diretamente com um engenheiro especialista. Avaliação inicial gratuita e sem compromisso.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-cta text-cta-foreground hover:bg-cta-hover font-bold text-base px-8 h-14 rounded-xl shadow-lg shadow-cta/30 transition-all hover:-translate-y-0.5">
-                <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
-                  Falar com Engenheiro
-                  <ArrowRight className="ml-2 h-5 w-5" />
+              <div className="space-y-4 mb-8">
+                {[
+                  { icon: Phone, title: "(11) 99999-9999", sub: "Seg a Sex, 8h às 18h" },
+                  { icon: Mail, title: "vsengenhariamecanica@gmail.com", sub: "Resposta em até 24h" },
+                  { icon: MapPin, title: "Sudeste do Brasil", sub: "Atendimento em todo o território nacional" },
+                ].map((item) => (
+                  <div key={item.title} className="flex items-center gap-4 bg-card rounded-xl border border-border/60 p-4">
+                    <div className="h-11 w-11 rounded-xl bg-secondary flex items-center justify-center shrink-0">
+                      <item.icon className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <div className="font-bold text-sm">{item.title}</div>
+                      <div className="text-xs text-muted-foreground">{item.sub}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex gap-3">
+                <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="h-11 w-11 rounded-xl bg-success flex items-center justify-center text-success-foreground hover:opacity-90 transition-opacity">
+                  <Phone className="h-5 w-5" />
                 </a>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="border-2 border-white/20 text-primary-foreground hover:bg-white/10 font-semibold text-base h-14 rounded-xl transition-all hover:-translate-y-0.5">
-                <Link to="/contato">Enviar mensagem</Link>
-              </Button>
-            </div>
-          </RevealSection>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="h-11 w-11 rounded-xl bg-card border border-border/60 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors">
+                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" /></svg>
+                </a>
+              </div>
+            </RevealSection>
+
+            {/* Right: form */}
+            <RevealSection variant="right">
+              <div className="bg-card rounded-2xl border border-border/60 p-6 md:p-8 shadow-soft">
+                <h3 className="text-xl font-extrabold mb-1">Solicitar Orçamento</h3>
+                <p className="text-xs text-muted-foreground mb-6">Preencha o formulário abaixo e nossa equipe entrará em contato.</p>
+
+                <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); }}>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div className="relative">
+                      <Users className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                      <input type="text" placeholder="Seu nome" className="w-full h-11 pl-10 pr-4 rounded-xl border border-border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-cta/50 focus:border-cta/50" />
+                    </div>
+                    <div className="relative">
+                      <Building2 className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                      <input type="text" placeholder="Empresa" className="w-full h-11 pl-10 pr-4 rounded-xl border border-border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-cta/50 focus:border-cta/50" />
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div className="relative">
+                      <Phone className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                      <input type="tel" placeholder="Telefone" className="w-full h-11 pl-10 pr-4 rounded-xl border border-border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-cta/50 focus:border-cta/50" />
+                    </div>
+                    <div className="relative">
+                      <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                      <input type="email" placeholder="E-mail" className="w-full h-11 pl-10 pr-4 rounded-xl border border-border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-cta/50 focus:border-cta/50" />
+                    </div>
+                  </div>
+                  <div className="relative">
+                    <ClipboardCheck className="absolute left-3 top-3.5 h-4 w-4 text-muted-foreground" />
+                    <textarea placeholder="Conte-nos sobre seu projeto..." rows={4} className="w-full pl-10 pr-4 py-3 rounded-xl border border-border bg-background text-sm resize-none focus:outline-none focus:ring-2 focus:ring-cta/50 focus:border-cta/50" />
+                  </div>
+                  <Button type="submit" className="w-full bg-cta text-cta-foreground hover:bg-cta-hover font-bold rounded-xl h-12 text-base shadow-lg shadow-cta/30">
+                    <Send className="mr-2 h-4 w-4" />
+                    Enviar Mensagem
+                  </Button>
+                  <p className="text-[10px] text-muted-foreground text-center">
+                    Ao enviar, você concorda com nossa Política de Privacidade.
+                  </p>
+                </form>
+              </div>
+            </RevealSection>
+          </div>
         </div>
       </section>
     </>
