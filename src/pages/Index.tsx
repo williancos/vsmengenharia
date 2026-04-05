@@ -185,53 +185,40 @@ export default function Index() {
           </div>
         </div>
 
-        {/* RIGHT — Image panel */}
-        <div className="relative w-full lg:w-[45%] xl:w-[50%] min-h-[40vh] lg:min-h-[100vh]">
-          <img
-            src={heroImg}
-            alt="Engenheiro realizando inspeção em vaso de pressão industrial"
-            className="absolute inset-0 w-full h-full object-cover"
-            width={1920}
-            height={1080}
-          />
-          {/* Gradient overlay on image for depth */}
-          <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent lg:bg-gradient-to-l lg:from-primary/20 lg:via-transparent lg:to-transparent" />
-
-          {/* Floating credential cards */}
-          <div className="absolute bottom-6 right-6 left-6 lg:bottom-12 lg:right-8 lg:left-auto flex flex-col gap-3 max-w-xs ml-auto animate-fade-in" style={{ animationDelay: "550ms" }}>
-            <div className="flex items-center gap-4 px-5 py-4 rounded-xl bg-card/90 backdrop-blur-md border border-border/40 shadow-elevated">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-cta/10 flex items-center justify-center">
-                <CheckCircle2 className="h-5 w-5 text-cta" />
-              </div>
-              <div>
-                <div className="text-xs font-bold tracking-wider uppercase text-foreground">500+ Inspeções Realizadas</div>
-                <div className="text-xs text-muted-foreground mt-0.5">NR13, NR12, NR11 e Reclassificação</div>
-              </div>
+        {/* Floating credential cards — positioned on the right side */}
+        <div className="absolute bottom-8 right-6 lg:bottom-16 lg:right-12 z-10 flex flex-col gap-3 max-w-xs animate-fade-in" style={{ animationDelay: "550ms" }}>
+          <div className="flex items-center gap-4 px-5 py-4 rounded-xl bg-card/90 backdrop-blur-md border border-border/40 shadow-elevated">
+            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-cta/10 flex items-center justify-center">
+              <CheckCircle2 className="h-5 w-5 text-cta" />
             </div>
-            <div className="flex items-center gap-4 px-5 py-4 rounded-xl bg-card/90 backdrop-blur-md border border-border/40 shadow-elevated">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-success/10 flex items-center justify-center">
-                <BadgeCheck className="h-5 w-5 text-success" />
-              </div>
-              <div>
-                <div className="text-xs font-bold tracking-wider uppercase text-foreground">+10 Anos de Experiência</div>
-                <div className="text-xs text-muted-foreground mt-0.5">Referência no Sudeste do Brasil</div>
-              </div>
+            <div>
+              <div className="text-xs font-bold tracking-wider uppercase text-foreground">500+ Inspeções Realizadas</div>
+              <div className="text-xs text-muted-foreground mt-0.5">NR13, NR12, NR11 e Reclassificação</div>
             </div>
           </div>
-
-          {/* Vertical text accent */}
-          <div className="absolute top-1/2 right-4 -translate-y-1/2 hidden xl:flex items-center">
-            <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-primary-foreground/30 [writing-mode:vertical-rl] rotate-180">
-              VSM Engenharia
-            </span>
-          </div>
-
-          {/* Scroll indicator */}
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden lg:flex flex-col items-center gap-2 animate-fade-in" style={{ animationDelay: "700ms" }}>
-            <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-primary-foreground/40 mb-1">Explore</span>
-            <div className="w-5 h-9 rounded-full border-2 border-primary-foreground/25 flex justify-center pt-2">
-              <div className="w-1 h-1 rounded-full bg-primary-foreground/40 animate-bounce" />
+          <div className="flex items-center gap-4 px-5 py-4 rounded-xl bg-card/90 backdrop-blur-md border border-border/40 shadow-elevated">
+            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-success/10 flex items-center justify-center">
+              <BadgeCheck className="h-5 w-5 text-success" />
             </div>
+            <div>
+              <div className="text-xs font-bold tracking-wider uppercase text-foreground">+10 Anos de Experiência</div>
+              <div className="text-xs text-muted-foreground mt-0.5">Referência no Sudeste do Brasil</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Vertical text accent */}
+        <div className="absolute top-1/2 right-4 -translate-y-1/2 hidden xl:flex items-center z-10">
+          <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-primary-foreground/30 [writing-mode:vertical-rl] rotate-180">
+            VSM Engenharia
+          </span>
+        </div>
+
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden lg:flex flex-col items-center gap-2 animate-fade-in" style={{ animationDelay: "700ms" }}>
+          <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-primary-foreground/40 mb-1">Explore</span>
+          <div className="w-5 h-9 rounded-full border-2 border-primary-foreground/25 flex justify-center pt-2">
+            <div className="w-1 h-1 rounded-full bg-primary-foreground/40 animate-bounce" />
           </div>
         </div>
       </section>
