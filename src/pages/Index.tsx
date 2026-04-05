@@ -23,6 +23,9 @@ import consultoriaImg from "@/assets/consultoria-meeting.jpg";
 import caseIndustrialImg from "@/assets/case-industrial.jpg";
 import caseFoodImg from "@/assets/case-food-factory.jpg";
 import caseTransportImg from "@/assets/case-transport.jpg";
+import blogNr13Img from "@/assets/blog-nr13.jpg";
+import blogRiggingImg from "@/assets/blog-rigging.jpg";
+import blogVehicleImg from "@/assets/blog-vehicle.jpg";
 import useEmblaCarousel from "embla-carousel-react";
 
 const pillarServices = [
@@ -112,9 +115,9 @@ const processSteps = [
 ];
 
 const blogPosts = [
-  { title: "Checklist prático para contratar inspeção NR-13 com segurança", category: "NR13", href: "/blog" },
-  { title: "Os 7 erros mais comuns na elaboração de Planos de Rigging", category: "NR11", href: "/blog" },
-  { title: "Reclassificação de Monta x Baixa Definitiva: qual escolher?", category: "Veículos", href: "/blog" },
+  { title: "Checklist prático para contratar inspeção NR-13 com segurança", category: "NR13", href: "/blog", image: blogNr13Img },
+  { title: "Os 7 erros mais comuns na elaboração de Planos de Rigging", category: "NR11", href: "/blog", image: blogRiggingImg },
+  { title: "Reclassificação de Monta x Baixa Definitiva: qual escolher?", category: "Veículos", href: "/blog", image: blogVehicleImg },
 ];
 
 const testimonials = [
@@ -1000,9 +1003,9 @@ export default function Index() {
                   to={post.href}
                   className="group bg-background rounded-2xl border border-border/60 overflow-hidden hover:shadow-elevated hover:border-cta/20 transition-all duration-300 hover:-translate-y-1"
                 >
-                  {/* Image placeholder with gradient */}
-                  <div className="h-48 bg-gradient-to-br from-primary/8 to-secondary relative overflow-hidden">
-                    <div className="absolute inset-0 pattern-grid opacity-50" />
+                  <div className="h-48 relative overflow-hidden">
+                    <img src={post.image} alt={post.title} loading="lazy" width={960} height={640} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                     <div className="absolute top-4 left-4">
                       <span className="px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-bold">
                         {post.category}
@@ -1021,6 +1024,37 @@ export default function Index() {
               ))}
             </div>
           </RevealSection>
+        </div>
+      </section>
+
+      {/* ═══ NEWSLETTER ═══ */}
+      <section className="relative py-0 overflow-hidden bg-card">
+        <div className="container mx-auto px-4">
+          <div className="relative bg-primary rounded-2xl px-6 py-8 md:px-12 md:py-10 overflow-hidden">
+            <svg className="absolute -top-8 -left-8 w-32 h-32 opacity-[0.06]" viewBox="0 0 200 200"><circle cx="100" cy="100" r="90" fill="none" stroke="white" strokeWidth="2" /></svg>
+            <svg className="absolute -bottom-10 -right-10 w-44 h-44 opacity-[0.06]" viewBox="0 0 200 200"><circle cx="100" cy="100" r="90" fill="none" stroke="white" strokeWidth="2" /><circle cx="100" cy="100" r="55" fill="none" stroke="white" strokeWidth="1.5" /></svg>
+
+            <div className="relative z-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+              <div>
+                <h3 className="text-xl md:text-2xl font-extrabold text-primary-foreground mb-1">
+                  Receba conteúdos <span className="text-cta">exclusivos</span>
+                </h3>
+                <p className="text-sm text-primary-foreground/50 max-w-md">
+                  Inscreva-se e receba artigos, dicas e novidades sobre normas regulamentadoras e segurança industrial.
+                </p>
+              </div>
+              <div className="flex gap-3 w-full md:w-auto">
+                <input
+                  type="email"
+                  placeholder="Seu melhor e-mail"
+                  className="flex-1 md:w-72 h-12 px-4 rounded-xl border border-white/15 bg-white/[0.08] text-primary-foreground placeholder:text-primary-foreground/30 text-sm focus:outline-none focus:ring-2 focus:ring-cta/50"
+                />
+                <Button className="bg-cta text-cta-foreground hover:bg-cta-hover font-bold rounded-xl h-12 px-6 shrink-0">
+                  Inscrever
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
