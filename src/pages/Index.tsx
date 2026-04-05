@@ -86,69 +86,87 @@ export default function Index() {
   return (
     <>
       {/* ═══ HERO ═══ */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-        {/* Full-bleed image */}
-        <div className="absolute inset-0">
-          <img
-            src={heroImg}
-            alt="Engenheiro realizando inspeção em vaso de pressão industrial"
-            className="w-full h-full object-cover"
-            width={1920}
-            height={1080}
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-primary/20" />
-        </div>
+      <section className="relative min-h-[100vh] flex flex-col lg:flex-row overflow-hidden">
+        {/* LEFT — Dark content panel */}
+        <div className="relative z-10 w-full lg:w-[55%] xl:w-[50%] bg-primary flex items-center min-h-[60vh] lg:min-h-[100vh]">
+          {/* Subtle pattern overlay */}
+          <div className="absolute inset-0 pattern-dots opacity-30" />
+          {/* Diagonal accent line */}
+          <svg className="absolute top-0 right-0 h-full w-24 hidden lg:block" viewBox="0 0 100 800" preserveAspectRatio="none">
+            <polygon points="60,0 100,0 100,800 0,800" fill="hsl(var(--primary))" />
+          </svg>
 
-        <div className="container mx-auto px-4 relative z-10 py-24 lg:py-32">
-          <div className="max-w-3xl">
-            {/* Badge */}
-            <div className="animate-fade-in" style={{ animationDelay: "0ms" }}>
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-sm font-medium text-primary-foreground/90 mb-8">
-                <span className="h-2 w-2 rounded-full bg-success animate-pulse" />
-                Avaliação gratuita disponível
-              </span>
+          <div className="relative z-10 px-6 sm:px-10 lg:px-16 xl:px-20 py-20 lg:py-0 w-full max-w-2xl mx-auto lg:mx-0 lg:ml-auto">
+            {/* Rating badge */}
+            <div className="animate-fade-in mb-8" style={{ animationDelay: "0ms" }}>
+              <div className="flex items-center gap-2 text-sm text-primary-foreground/60">
+                <div className="flex gap-0.5">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-3.5 h-3.5 text-cta fill-cta" viewBox="0 0 20 20">
+                      <path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.92 5.32L10 13.28l-4.78 2.43.92-5.32L2.27 6.62l5.34-.78z" />
+                    </svg>
+                  ))}
+                </div>
+                <span className="text-primary-foreground/50">5.0 — Avaliações Google</span>
+              </div>
             </div>
 
-            {/* Headline */}
-            <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] xl:text-6xl font-extrabold leading-[1.08] text-primary-foreground mb-6 animate-fade-in" style={{ animationDelay: "100ms" }}>
-              Sua indústria em{" "}
-              <span className="relative inline-block">
-                <span className="text-cta">conformidade</span>
-                <svg className="absolute -bottom-1 left-0 w-full h-2" viewBox="0 0 300 8" preserveAspectRatio="none">
-                  <path d="M0,6 Q75,0 150,6 Q225,8 300,4" stroke="hsl(30,89%,53%)" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-                </svg>
+            {/* Category tag */}
+            <div className="animate-fade-in mb-6" style={{ animationDelay: "80ms" }}>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-px bg-cta" />
+                <span className="text-xs font-bold tracking-[0.2em] uppercase text-cta">
+                  Engenharia Mecânica & Inspeções
+                </span>
+              </div>
+            </div>
+
+            {/* Headline — editorial style */}
+            <h1 className="animate-fade-in" style={{ animationDelay: "160ms" }}>
+              <span className="block text-4xl sm:text-5xl lg:text-[3.2rem] xl:text-[3.8rem] font-extrabold leading-[1.05] text-primary-foreground tracking-tight">
+                Sua indústria
               </span>
-              <br />com laudos que protegem.
+              <span className="block text-4xl sm:text-5xl lg:text-[3.2rem] xl:text-[3.8rem] font-extrabold leading-[1.05] text-primary-foreground tracking-tight">
+                em{" "}
+                <em className="not-italic text-cta font-extrabold" style={{ fontFamily: "'Outfit', sans-serif", fontStyle: "italic" }}>
+                  conformidade.
+                </em>
+              </span>
             </h1>
 
-            {/* Sub */}
-            <p className="text-lg md:text-xl text-primary-foreground/70 max-w-xl mb-10 leading-relaxed animate-fade-in" style={{ animationDelay: "200ms" }}>
-              Inspeções <strong className="text-primary-foreground">NR13, NR12 e NR11</strong> + Reclassificação de Monta com laudos robustos, memoriais de cálculo e ART. Atuação no Sudeste.
+            {/* Decorative separator */}
+            <div className="flex items-center gap-3 my-8 animate-fade-in" style={{ animationDelay: "240ms" }}>
+              <div className="w-10 h-px bg-primary-foreground/20" />
+              <div className="w-2 h-2 rotate-45 border border-primary-foreground/20" />
+              <div className="w-20 h-px bg-primary-foreground/20" />
+            </div>
+
+            {/* Subtext */}
+            <p className="text-base sm:text-lg text-primary-foreground/55 max-w-lg leading-relaxed animate-fade-in" style={{ animationDelay: "300ms" }}>
+              Inspeções <strong className="text-primary-foreground/80">NR13, NR12 e NR11</strong> com laudos robustos, memoriais de cálculo e ART. Reclassificação de Monta com laudo técnico completo. Referência no Sudeste.
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "300ms" }}>
-              <Button asChild size="lg" className="bg-cta text-cta-foreground hover:bg-cta-hover font-bold text-base px-8 h-14 rounded-xl shadow-lg shadow-cta/30 transition-all hover:-translate-y-0.5">
+            <div className="flex flex-col sm:flex-row gap-4 mt-10 animate-fade-in" style={{ animationDelay: "380ms" }}>
+              <Button asChild size="lg" className="bg-cta text-cta-foreground hover:bg-cta-hover font-bold text-sm uppercase tracking-wider px-8 h-14 rounded-lg shadow-lg shadow-cta/25 transition-all hover:-translate-y-0.5">
                 <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
-                  Solicitar Avaliação Gratuita
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  Agende Sua Avaliação Gratuita
                 </a>
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-2 border-white/25 text-primary-foreground hover:bg-white/10 font-semibold text-base h-14 rounded-xl transition-all hover:-translate-y-0.5">
+              <Button asChild variant="outline" size="lg" className="border-2 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/5 font-semibold text-sm uppercase tracking-wider h-14 rounded-lg transition-all hover:-translate-y-0.5">
                 <a href="#servicos">Ver Serviços</a>
               </Button>
             </div>
 
-            {/* Trust */}
-            <div className="flex flex-wrap gap-6 mt-12 animate-fade-in" style={{ animationDelay: "400ms" }}>
+            {/* Trust bar */}
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-3 mt-12 pt-8 border-t border-primary-foreground/10 animate-fade-in" style={{ animationDelay: "460ms" }}>
               {[
                 { icon: Shield, text: "Laudos com ART" },
-                { icon: Clock, text: "Resposta em 2h" },
                 { icon: Award, text: "Eng. CREA" },
+                { icon: Users, text: "150+ Empresas" },
               ].map((item) => (
-                <div key={item.text} className="flex items-center gap-2 text-sm text-primary-foreground/60">
-                  <item.icon className="h-4 w-4 text-cta/80" />
+                <div key={item.text} className="flex items-center gap-2 text-sm text-primary-foreground/40">
+                  <item.icon className="h-4 w-4 text-cta/60" />
                   <span>{item.text}</span>
                 </div>
               ))}
@@ -156,10 +174,53 @@ export default function Index() {
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden md:flex flex-col items-center gap-2 animate-fade-in" style={{ animationDelay: "600ms" }}>
-          <div className="w-6 h-10 rounded-full border-2 border-primary-foreground/30 flex justify-center pt-2">
-            <div className="w-1.5 h-1.5 rounded-full bg-primary-foreground/50 animate-bounce" />
+        {/* RIGHT — Image panel */}
+        <div className="relative w-full lg:w-[45%] xl:w-[50%] min-h-[40vh] lg:min-h-[100vh]">
+          <img
+            src={heroImg}
+            alt="Engenheiro realizando inspeção em vaso de pressão industrial"
+            className="absolute inset-0 w-full h-full object-cover"
+            width={1920}
+            height={1080}
+          />
+          {/* Gradient overlay on image for depth */}
+          <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent lg:bg-gradient-to-l lg:from-primary/20 lg:via-transparent lg:to-transparent" />
+
+          {/* Floating credential cards */}
+          <div className="absolute bottom-6 right-6 left-6 lg:bottom-12 lg:right-8 lg:left-auto flex flex-col gap-3 max-w-xs ml-auto animate-fade-in" style={{ animationDelay: "550ms" }}>
+            <div className="flex items-center gap-4 px-5 py-4 rounded-xl bg-card/90 backdrop-blur-md border border-border/40 shadow-elevated">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-cta/10 flex items-center justify-center">
+                <CheckCircle2 className="h-5 w-5 text-cta" />
+              </div>
+              <div>
+                <div className="text-xs font-bold tracking-wider uppercase text-foreground">500+ Inspeções Realizadas</div>
+                <div className="text-xs text-muted-foreground mt-0.5">NR13, NR12, NR11 e Reclassificação</div>
+              </div>
+            </div>
+            <div className="flex items-center gap-4 px-5 py-4 rounded-xl bg-card/90 backdrop-blur-md border border-border/40 shadow-elevated">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-success/10 flex items-center justify-center">
+                <BadgeCheck className="h-5 w-5 text-success" />
+              </div>
+              <div>
+                <div className="text-xs font-bold tracking-wider uppercase text-foreground">+10 Anos de Experiência</div>
+                <div className="text-xs text-muted-foreground mt-0.5">Referência no Sudeste do Brasil</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Vertical text accent */}
+          <div className="absolute top-1/2 right-4 -translate-y-1/2 hidden xl:flex items-center">
+            <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-primary-foreground/30 [writing-mode:vertical-rl] rotate-180">
+              VSM Engenharia
+            </span>
+          </div>
+
+          {/* Scroll indicator */}
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden lg:flex flex-col items-center gap-2 animate-fade-in" style={{ animationDelay: "700ms" }}>
+            <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-primary-foreground/40 mb-1">Explore</span>
+            <div className="w-5 h-9 rounded-full border-2 border-primary-foreground/25 flex justify-center pt-2">
+              <div className="w-1 h-1 rounded-full bg-primary-foreground/40 animate-bounce" />
+            </div>
           </div>
         </div>
       </section>
