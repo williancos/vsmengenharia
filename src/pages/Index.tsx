@@ -81,7 +81,6 @@ const pillarServices = [
     tags: ["Grátis", "Diagnóstico", "NR"],
   },
 ];
-];
 
 const stats = [
   { value: 500, suffix: "+", label: "Inspeções realizadas" },
