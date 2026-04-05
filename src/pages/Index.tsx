@@ -354,9 +354,9 @@ function CasesCarousel() {
                           </div>
                         ))}
                       </div>
-                      <Button asChild className="bg-cta text-cta-foreground hover:bg-cta-hover font-bold rounded-xl w-fit px-6 text-sm">
+                      <Button asChild className="bg-cta text-cta-foreground hover:bg-cta-hover font-bold rounded-xl w-fit px-6 text-sm shadow-[0_8px_24px_-4px_hsl(var(--cta)/0.5)] hover:-translate-y-0.5 hover:shadow-[0_12px_32px_-4px_hsl(var(--cta)/0.6)] transition-all duration-300">
                         <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
-                          Quero um projeto assim <ArrowRight className="ml-2 h-4 w-4" />
+                          Quero um projeto assim <ArrowRight className="ml-2 h-5 w-5" />
                         </a>
                       </Button>
                     </div>
@@ -754,10 +754,10 @@ export default function Index() {
                     <div className="text-[10px] text-primary-foreground/40 font-medium">Prazo p/ interdição</div>
                   </div>
                 </div>
-                <Button asChild size="lg" className="bg-cta text-cta-foreground hover:bg-cta-hover font-bold text-sm px-8 h-12 rounded-xl shadow-[0_8px_30px_-4px_hsl(var(--cta)/0.5)] hover:-translate-y-0.5 transition-all duration-300 w-full sm:w-auto">
+                <Button asChild size="lg" className="bg-cta text-cta-foreground hover:bg-cta-hover font-bold text-sm px-8 h-12 rounded-xl shadow-[0_8px_24px_-4px_hsl(var(--cta)/0.5)] hover:-translate-y-0.5 hover:shadow-[0_12px_32px_-4px_hsl(var(--cta)/0.6)] transition-all duration-300 w-full sm:w-auto">
                   <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
                     Proteger minha empresa
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                    <ArrowRight className="ml-2 h-5 w-5" />
                   </a>
                 </Button>
               </div>
@@ -893,16 +893,16 @@ export default function Index() {
                 Nossa equipe de engenheiros está pronta para ajudar. Solicite um orçamento ou agende uma visita técnica sem compromisso.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <Button asChild size="lg" variant="outline" className="border-2 border-white/20 text-primary-foreground hover:bg-white/10 font-semibold rounded-xl h-12">
+                <Button asChild size="lg" variant="outline" className="border-2 border-white/25 bg-white/[0.08] text-primary-foreground hover:bg-white/15 font-bold rounded-xl h-13 px-8 transition-all duration-300 hover:-translate-y-0.5">
                   <a href="tel:+5511999999999">
-                    <Phone className="mr-2 h-4 w-4" />
+                    <Phone className="mr-2 h-5 w-5" />
                     Ligar Agora
                   </a>
                 </Button>
-                <Button asChild size="lg" className="bg-cta text-cta-foreground hover:bg-cta-hover font-bold rounded-xl h-12 shadow-lg shadow-cta/30">
+                <Button asChild size="lg" className="bg-cta text-cta-foreground hover:bg-cta-hover font-bold rounded-xl h-13 px-8 shadow-[0_8px_24px_-4px_hsl(var(--cta)/0.5)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_32px_-4px_hsl(var(--cta)/0.6)]">
                   <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
                     Solicitar Orçamento
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                    <ArrowRight className="ml-2 h-5 w-5" />
                   </a>
                 </Button>
               </div>
