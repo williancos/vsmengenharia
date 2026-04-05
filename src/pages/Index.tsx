@@ -813,7 +813,7 @@ export default function Index() {
 
             {/* Right: feature cards grid */}
             <RevealSection variant="right">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-3 sm:gap-4">
                 {[
                   { icon: Clock, title: "Agilidade na Entrega", desc: "Laudos e relatórios dentro do prazo, sem atrasos que comprometam sua operação." },
                   { icon: FileCheck, title: "Conformidade Total", desc: "Documentação 100% aderente às normas regulamentadoras vigentes." },
@@ -822,12 +822,12 @@ export default function Index() {
                   { icon: Wrench, title: "Soluções Sob Medida", desc: "Projetos adaptados às necessidades específicas de cada cliente e operação." },
                   { icon: Shield, title: "Redução de Riscos", desc: "Inspeções que identificam falhas antes que se tornem acidentes ou multas." },
                 ].map((item) => (
-                  <div key={item.title} className="bg-background rounded-xl border border-border/60 p-5 hover:shadow-soft hover:border-cta/20 transition-all duration-300 group">
-                    <div className="h-10 w-10 rounded-lg bg-secondary flex items-center justify-center mb-3 group-hover:bg-cta/10 transition-colors">
-                      <item.icon className="h-5 w-5 text-primary group-hover:text-cta transition-colors" />
+                  <div key={item.title} className="bg-background rounded-xl border border-border/60 p-4 sm:p-5 hover:shadow-soft hover:border-cta/20 transition-all duration-300 group">
+                    <div className="h-9 w-9 sm:h-10 sm:w-10 rounded-lg bg-secondary flex items-center justify-center mb-2 sm:mb-3 group-hover:bg-cta/10 transition-colors">
+                      <item.icon className="h-4 w-4 sm:h-5 sm:w-5 text-primary group-hover:text-cta transition-colors" />
                     </div>
-                    <h3 className="font-bold text-sm mb-1.5">{item.title}</h3>
-                    <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
+                    <h3 className="font-bold text-xs sm:text-sm mb-1">{item.title}</h3>
+                    <p className="text-[11px] sm:text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
                   </div>
                 ))}
               </div>
@@ -934,7 +934,7 @@ export default function Index() {
           </RevealSection>
 
           <RevealSection className="mb-10">
-            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+            <div className="grid grid-cols-3 gap-3 md:flex md:flex-wrap md:justify-center md:gap-6">
               {[
                 { icon: Target, value: "8+", label: "Estados" },
                 { icon: Users, value: "500+", label: "Laudos emitidos" },
