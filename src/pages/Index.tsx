@@ -956,12 +956,14 @@ export default function Index() {
                   { state: "BA", full: "Bahia", projects: 20 },
                   { state: "GO", full: "Goiás", projects: 15 },
                 ].map((s) => (
-                  <div key={s.state} className="bg-card rounded-xl border border-border/60 p-4 hover:border-cta/30 hover:shadow-soft transition-all duration-300 group text-center">
-                    <span className="inline-block text-[10px] font-bold tracking-widest uppercase text-cta bg-cta/10 rounded-md px-2 py-0.5 mb-2">{s.state}</span>
-                    <div className="text-2xl font-extrabold text-primary group-hover:text-cta transition-colors">
-                      <CountUp end={s.projects} suffix="+" />
+                  <div key={s.state} className="bg-card rounded-xl border border-border/60 p-4 hover:border-cta/30 hover:shadow-soft transition-all duration-300 group flex items-center gap-3">
+                    <span className="inline-block text-[10px] font-bold tracking-widest uppercase text-cta bg-cta/10 rounded-md px-2 py-1 shrink-0">{s.state}</span>
+                    <div className="flex items-baseline gap-1.5">
+                      <span className="text-2xl font-extrabold text-primary group-hover:text-cta transition-colors">
+                        <CountUp end={s.projects} suffix="+" />
+                      </span>
+                      <span className="text-[11px] text-muted-foreground">laudos</span>
                     </div>
-                    <span className="text-[11px] text-muted-foreground leading-tight">{s.full}</span>
                   </div>
                 ))}
               </div>
