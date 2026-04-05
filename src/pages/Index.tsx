@@ -1037,7 +1037,7 @@ export default function Index() {
       </section>
 
       {/* ═══ NEWSLETTER ═══ */}
-      <section className="relative py-0 overflow-hidden bg-card">
+      <section className="relative py-0 pb-16 overflow-hidden bg-card">
         <div className="container mx-auto px-4">
           <div className="relative bg-primary rounded-2xl px-6 py-8 md:px-12 md:py-10 overflow-hidden">
             <svg className="absolute -top-8 -left-8 w-32 h-32 opacity-[0.06]" viewBox="0 0 200 200"><circle cx="100" cy="100" r="90" fill="none" stroke="white" strokeWidth="2" /></svg>
