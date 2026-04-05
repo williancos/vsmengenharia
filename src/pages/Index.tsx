@@ -944,34 +944,24 @@ export default function Index() {
                 <span className="text-xs text-muted-foreground">Total: <strong className="text-primary">500+</strong> laudos</span>
               </div>
 
-              {/* State cards with progress feel */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+              {/* State cards */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 {[
-                  { state: "São Paulo", projects: 180, icon: "🏭" },
-                  { state: "Rio de Janeiro", projects: 95, icon: "🏗️" },
-                  { state: "Minas Gerais", projects: 85, icon: "⚙️" },
-                  { state: "Espírito Santo", projects: 40, icon: "🔧" },
-                  { state: "Paraná", projects: 30, icon: "🏭" },
-                  { state: "Santa Catarina", projects: 25, icon: "⚙️" },
-                  { state: "Bahia", projects: 20, icon: "🔧" },
-                  { state: "Goiás", projects: 15, icon: "🏗️" },
+                  { state: "SP", full: "São Paulo", projects: 180 },
+                  { state: "RJ", full: "Rio de Janeiro", projects: 95 },
+                  { state: "MG", full: "Minas Gerais", projects: 85 },
+                  { state: "ES", full: "Espírito Santo", projects: 40 },
+                  { state: "PR", full: "Paraná", projects: 30 },
+                  { state: "SC", full: "Santa Catarina", projects: 25 },
+                  { state: "BA", full: "Bahia", projects: 20 },
+                  { state: "GO", full: "Goiás", projects: 15 },
                 ].map((s) => (
-                  <div key={s.state} className="bg-card rounded-xl border border-border/60 p-4 hover:border-cta/30 hover:shadow-soft transition-all duration-300 group">
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm font-semibold group-hover:text-cta transition-colors">{s.state}</span>
-                      <span className="text-xs text-muted-foreground">{s.icon}</span>
+                  <div key={s.state} className="bg-card rounded-xl border border-border/60 p-4 hover:border-cta/30 hover:shadow-soft transition-all duration-300 group text-center">
+                    <span className="inline-block text-[10px] font-bold tracking-widest uppercase text-cta bg-cta/10 rounded-md px-2 py-0.5 mb-2">{s.state}</span>
+                    <div className="text-2xl font-extrabold text-primary group-hover:text-cta transition-colors">
+                      <CountUp end={s.projects} suffix="+" />
                     </div>
-                    <div className="flex items-end gap-2">
-                      <span className="text-2xl font-extrabold text-primary group-hover:text-cta transition-colors">{s.projects}+</span>
-                      <span className="text-[10px] text-muted-foreground mb-1">laudos</span>
-                    </div>
-                    {/* Mini progress bar */}
-                    <div className="mt-2 h-1 rounded-full bg-secondary overflow-hidden">
-                      <div
-                        className="h-full rounded-full bg-cta/60 group-hover:bg-cta transition-colors duration-500"
-                        style={{ width: `${Math.min((s.projects / 180) * 100, 100)}%` }}
-                      />
-                    </div>
+                    <span className="text-[11px] text-muted-foreground leading-tight">{s.full}</span>
                   </div>
                 ))}
               </div>
