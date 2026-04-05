@@ -23,6 +23,9 @@ import consultoriaImg from "@/assets/consultoria-meeting.jpg";
 import caseIndustrialImg from "@/assets/case-industrial.jpg";
 import caseFoodImg from "@/assets/case-food-factory.jpg";
 import caseTransportImg from "@/assets/case-transport.jpg";
+import blogNr13Img from "@/assets/blog-nr13.jpg";
+import blogRiggingImg from "@/assets/blog-rigging.jpg";
+import blogVehicleImg from "@/assets/blog-vehicle.jpg";
 import useEmblaCarousel from "embla-carousel-react";
 
 const pillarServices = [
