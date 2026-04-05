@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
@@ -861,6 +861,41 @@ export default function Index() {
               ))}
             </div>
           </RevealSection>
+        </div>
+      </section>
+
+      {/* ═══ CTA BANNER ═══ */}
+      <section className="relative py-0 overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="relative bg-primary rounded-2xl px-8 py-10 md:py-12 md:px-14 my-16 overflow-hidden">
+            {/* Decorative circles */}
+            <svg className="absolute -top-10 -left-10 w-40 h-40 opacity-[0.06]" viewBox="0 0 200 200"><circle cx="100" cy="100" r="90" fill="none" stroke="white" strokeWidth="2" /></svg>
+            <svg className="absolute -bottom-12 -right-12 w-56 h-56 opacity-[0.06]" viewBox="0 0 200 200"><circle cx="100" cy="100" r="90" fill="none" stroke="white" strokeWidth="2" /><circle cx="100" cy="100" r="60" fill="none" stroke="white" strokeWidth="1.5" /></svg>
+            <div className="absolute top-0 left-1/3 w-[400px] h-[400px] rounded-full bg-white/[0.02] blur-3xl pointer-events-none" />
+
+            <div className="relative z-10 text-center max-w-2xl mx-auto">
+              <h2 className="text-2xl md:text-3xl font-extrabold text-primary-foreground mb-3">
+                Precisa de uma <span className="text-cta">inspeção técnica</span>?
+              </h2>
+              <p className="text-sm md:text-base text-primary-foreground/60 mb-6 max-w-lg mx-auto">
+                Nossa equipe de engenheiros está pronta para ajudar. Solicite um orçamento ou agende uma visita técnica sem compromisso.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <Button asChild size="lg" variant="outline" className="border-2 border-white/20 text-primary-foreground hover:bg-white/10 font-semibold rounded-xl h-12">
+                  <a href="tel:+5511999999999">
+                    <Phone className="mr-2 h-4 w-4" />
+                    Ligar Agora
+                  </a>
+                </Button>
+                <Button asChild size="lg" className="bg-cta text-cta-foreground hover:bg-cta-hover font-bold rounded-xl h-12 shadow-lg shadow-cta/30">
+                  <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+                    Solicitar Orçamento
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
