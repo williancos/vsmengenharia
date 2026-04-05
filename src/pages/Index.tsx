@@ -86,9 +86,20 @@ export default function Index() {
   return (
     <>
       {/* ═══ HERO ═══ */}
-      <section className="relative min-h-[100vh] flex flex-col lg:flex-row overflow-hidden">
-        {/* LEFT — Dark content panel */}
-        <div className="relative z-10 w-full lg:w-[55%] xl:w-[50%] bg-primary flex items-center min-h-[60vh] lg:min-h-[100vh]">
+      <section className="relative min-h-[100vh] flex items-center overflow-hidden">
+        {/* Full-screen background image */}
+        <div className="absolute inset-0">
+          <img
+            src={heroImg}
+            alt="Engenheiro realizando inspeção em vaso de pressão industrial"
+            className="w-full h-full object-cover"
+            width={1920}
+            height={1080}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/30" />
+        </div>
+        {/* LEFT — Content panel */}
+        <div className="relative z-10 w-full lg:w-[55%] xl:w-[50%] flex items-center min-h-[100vh]">
           {/* Subtle pattern overlay */}
           <div className="absolute inset-0 pattern-dots opacity-30" />
           {/* Diagonal accent line */}
