@@ -933,43 +933,65 @@ export default function Index() {
             </p>
           </RevealSection>
 
-          <RevealSection className="mb-10">
-            <div className="grid grid-cols-3 gap-3 md:flex md:flex-wrap md:justify-center md:gap-6">
-              {[
-                { icon: Target, value: "8+", label: "Estados" },
-                { icon: Users, value: "500+", label: "Laudos emitidos" },
-                { icon: HardHat, value: "100+", label: "Empresas atendidas" },
-              ].map((s) => (
-                <div key={s.label} className="flex flex-col items-center gap-1 bg-card rounded-xl border border-border/60 px-3 py-3 md:flex-row md:gap-3 md:px-5">
-                  <div className="h-9 w-9 md:h-10 md:w-10 rounded-lg bg-secondary flex items-center justify-center">
-                    <s.icon className="h-4 w-4 md:h-5 md:w-5 text-primary" />
-                  </div>
-                  <div className="text-center md:text-left">
-                    <div className="text-lg md:text-xl font-extrabold text-primary">{s.value}</div>
-                    <div className="text-[10px] md:text-xs text-muted-foreground">{s.label}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </RevealSection>
-
           <RevealSection stagger>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 max-w-4xl mx-auto">
-              {[
-                { state: "São Paulo", projects: "180+" },
-                { state: "Rio de Janeiro", projects: "95+" },
-                { state: "Minas Gerais", projects: "85+" },
-                { state: "Espírito Santo", projects: "40+" },
-                { state: "Paraná", projects: "30+" },
-                { state: "Santa Catarina", projects: "25+" },
-                { state: "Bahia", projects: "20+" },
-                { state: "Goiás", projects: "15+" },
-              ].map((s) => (
-                <div key={s.state} className="bg-card rounded-xl border border-border/60 p-4 hover:border-cta/30 hover:shadow-soft transition-all duration-300 group text-center">
-                  <div className="text-lg font-extrabold text-primary group-hover:text-cta transition-colors">{s.projects}</div>
-                  <div className="text-xs text-muted-foreground font-medium mt-0.5">{s.state}</div>
-                </div>
-              ))}
+            <div className="max-w-5xl mx-auto">
+              {/* Header row */}
+              <div className="flex items-center justify-between mb-4 px-1">
+                <h3 className="text-sm font-bold text-primary flex items-center gap-2">
+                  <MapPin className="h-4 w-4 text-cta" />
+                  Projetos por estado
+                </h3>
+                <span className="text-xs text-muted-foreground">Total: <strong className="text-primary">500+</strong> laudos</span>
+              </div>
+
+              {/* State cards with progress feel */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+                {[
+                  { state: "São Paulo", projects: 180, icon: "🏭" },
+                  { state: "Rio de Janeiro", projects: 95, icon: "🏗️" },
+                  { state: "Minas Gerais", projects: 85, icon: "⚙️" },
+                  { state: "Espírito Santo", projects: 40, icon: "🔧" },
+                  { state: "Paraná", projects: 30, icon: "🏭" },
+                  { state: "Santa Catarina", projects: 25, icon: "⚙️" },
+                  { state: "Bahia", projects: 20, icon: "🔧" },
+                  { state: "Goiás", projects: 15, icon: "🏗️" },
+                ].map((s) => (
+                  <div key={s.state} className="bg-card rounded-xl border border-border/60 p-4 hover:border-cta/30 hover:shadow-soft transition-all duration-300 group">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-sm font-semibold group-hover:text-cta transition-colors">{s.state}</span>
+                      <span className="text-xs text-muted-foreground">{s.icon}</span>
+                    </div>
+                    <div className="flex items-end gap-2">
+                      <span className="text-2xl font-extrabold text-primary group-hover:text-cta transition-colors">{s.projects}+</span>
+                      <span className="text-[10px] text-muted-foreground mb-1">laudos</span>
+                    </div>
+                    {/* Mini progress bar */}
+                    <div className="mt-2 h-1 rounded-full bg-secondary overflow-hidden">
+                      <div
+                        className="h-full rounded-full bg-cta/60 group-hover:bg-cta transition-colors duration-500"
+                        style={{ width: `${Math.min((s.projects / 180) * 100, 100)}%` }}
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Bottom stats summary */}
+              <div className="grid grid-cols-3 gap-3 mt-6 max-w-lg mx-auto">
+                {[
+                  { value: "8+", label: "Estados", icon: Target },
+                  { value: "500+", label: "Laudos", icon: FileCheck },
+                  { value: "100+", label: "Empresas", icon: HardHat },
+                ].map((s) => (
+                  <div key={s.label} className="flex items-center gap-2 justify-center bg-primary/[0.04] rounded-lg py-2.5 px-3">
+                    <s.icon className="h-4 w-4 text-cta" />
+                    <div>
+                      <span className="text-sm font-extrabold text-primary">{s.value}</span>
+                      <span className="text-[10px] text-muted-foreground ml-1">{s.label}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </RevealSection>
 
