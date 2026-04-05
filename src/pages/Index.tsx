@@ -240,7 +240,7 @@ function TestimonialsCarousel() {
   const { emblaRef, selected, scrollPrev, scrollNext, scrollTo } = useCarousel(testimonials.length);
 
   return (
-    <section className="relative py-16 md:py-24 overflow-hidden bg-primary">
+    <section className="relative pt-16 md:pt-24 pb-8 md:pb-12 overflow-hidden bg-primary">
       <div className="absolute inset-0 opacity-[0.03]">
         <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
           <defs><pattern id="dep-grid" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M 8 0 L 0 0 0 8" fill="none" stroke="white" strokeWidth="0.3" /></pattern></defs>
@@ -304,7 +304,7 @@ function CasesCarousel() {
   const { emblaRef, selected, scrollPrev, scrollNext, scrollTo } = useCarousel(cases.length, 7000);
 
   return (
-    <section className="relative py-16 md:py-24 overflow-hidden bg-primary">
+    <section className="relative pt-8 md:pt-12 pb-16 md:pb-24 overflow-hidden bg-primary">
       <div className="absolute inset-0 opacity-[0.03]">
         <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
           <defs><pattern id="cases-grid" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M 8 0 L 0 0 0 8" fill="none" stroke="white" strokeWidth="0.3" /></pattern></defs>
