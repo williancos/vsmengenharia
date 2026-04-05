@@ -115,9 +115,9 @@ const processSteps = [
 ];
 
 const blogPosts = [
-  { title: "Checklist prático para contratar inspeção NR-13 com segurança", category: "NR13", href: "/blog" },
-  { title: "Os 7 erros mais comuns na elaboração de Planos de Rigging", category: "NR11", href: "/blog" },
-  { title: "Reclassificação de Monta x Baixa Definitiva: qual escolher?", category: "Veículos", href: "/blog" },
+  { title: "Checklist prático para contratar inspeção NR-13 com segurança", category: "NR13", href: "/blog", image: blogNr13Img },
+  { title: "Os 7 erros mais comuns na elaboração de Planos de Rigging", category: "NR11", href: "/blog", image: blogRiggingImg },
+  { title: "Reclassificação de Monta x Baixa Definitiva: qual escolher?", category: "Veículos", href: "/blog", image: blogVehicleImg },
 ];
 
 const testimonials = [
