@@ -918,14 +918,14 @@ export default function Index() {
       <CasesCarousel />
 
       {/* ═══ ATUAÇÃO NACIONAL ═══ */}
-      <section className="relative py-16 md:py-24 overflow-hidden bg-background">
+      <section className="relative py-10 md:py-16 overflow-hidden bg-background">
         <div className="absolute inset-0 pattern-dots opacity-30 pointer-events-none" />
         <div className="container mx-auto px-4 relative z-10">
-          <RevealSection className="text-center mb-10">
-            <span className="inline-block px-4 py-1.5 rounded-full border border-primary/20 text-primary text-xs font-bold tracking-wider uppercase mb-3">
+          <RevealSection className="text-center mb-6">
+            <span className="inline-block px-4 py-1.5 rounded-full border border-primary/20 text-primary text-xs font-bold tracking-wider uppercase mb-2">
               Atuação
             </span>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-3">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-2">
               Atendimento em todo o <span className="text-cta">Sudeste</span> e além
             </h2>
             <p className="text-muted-foreground text-sm max-w-lg mx-auto">
@@ -935,8 +935,7 @@ export default function Index() {
 
           <RevealSection stagger>
             <div className="max-w-5xl mx-auto">
-              {/* Header row */}
-              <div className="flex items-center justify-between mb-4 px-1">
+              <div className="flex items-center justify-between mb-3 px-1">
                 <h3 className="text-sm font-bold text-primary flex items-center gap-2">
                   <MapPin className="h-4 w-4 text-cta" />
                   Projetos por estado
@@ -944,8 +943,7 @@ export default function Index() {
                 <span className="text-xs text-muted-foreground">Total: <strong className="text-primary">500+</strong> laudos</span>
               </div>
 
-              {/* State cards */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
                 {[
                   { state: "SP", full: "São Paulo", projects: 180 },
                   { state: "RJ", full: "Rio de Janeiro", projects: 95 },
@@ -956,10 +954,10 @@ export default function Index() {
                   { state: "BA", full: "Bahia", projects: 20 },
                   { state: "GO", full: "Goiás", projects: 15 },
                 ].map((s) => (
-                  <div key={s.state} className="bg-card rounded-xl border border-border/60 p-4 hover:border-cta/30 hover:shadow-soft transition-all duration-300 group flex items-center gap-3">
-                    <span className="inline-block text-[10px] font-bold tracking-widest uppercase text-cta bg-cta/10 rounded-md px-2 py-1 shrink-0">{s.state}</span>
-                    <div className="flex items-baseline gap-1.5">
-                      <span className="text-2xl font-extrabold text-primary group-hover:text-cta transition-colors">
+                  <div key={s.state} className="bg-card rounded-lg border border-border/60 px-3 py-2.5 hover:border-cta/30 hover:shadow-soft transition-all duration-300 group flex items-center gap-2.5">
+                    <span className="inline-block text-[10px] font-bold tracking-widest uppercase text-cta bg-cta/10 rounded-md px-2 py-0.5 shrink-0">{s.state}</span>
+                    <div className="flex items-baseline gap-1">
+                      <span className="text-xl font-extrabold text-primary group-hover:text-cta transition-colors">
                         <CountUp end={s.projects} suffix="+" />
                       </span>
                       <span className="text-[11px] text-muted-foreground">laudos</span>
@@ -968,15 +966,14 @@ export default function Index() {
                 ))}
               </div>
 
-              {/* Bottom stats summary */}
-              <div className="grid grid-cols-3 gap-3 mt-6 max-w-lg mx-auto">
+              <div className="grid grid-cols-3 gap-2 mt-4 max-w-md mx-auto">
                 {[
                   { value: "8+", label: "Estados", icon: Target },
                   { value: "500+", label: "Laudos", icon: FileCheck },
                   { value: "100+", label: "Empresas", icon: HardHat },
                 ].map((s) => (
-                  <div key={s.label} className="flex items-center gap-2 justify-center bg-primary/[0.04] rounded-lg py-2.5 px-3">
-                    <s.icon className="h-4 w-4 text-cta" />
+                  <div key={s.label} className="flex items-center gap-1.5 justify-center bg-primary/[0.04] rounded-lg py-2 px-2">
+                    <s.icon className="h-3.5 w-3.5 text-cta" />
                     <div>
                       <span className="text-sm font-extrabold text-primary">{s.value}</span>
                       <span className="text-[10px] text-muted-foreground ml-1">{s.label}</span>
@@ -987,8 +984,8 @@ export default function Index() {
             </div>
           </RevealSection>
 
-          <RevealSection className="mt-8 text-center">
-            <p className="text-xs text-muted-foreground mb-4">Não encontrou sua região? Atendemos projetos em todo o Brasil.</p>
+          <RevealSection className="mt-5 text-center">
+            <p className="text-xs text-muted-foreground mb-3">Não encontrou sua região? Atendemos projetos em todo o Brasil.</p>
             <Button asChild variant="outline" className="border-2 border-primary/20 text-primary hover:bg-primary hover:text-primary-foreground font-semibold rounded-xl">
               <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
                 Consultar disponibilidade na sua região
