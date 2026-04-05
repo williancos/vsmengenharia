@@ -59,14 +59,28 @@ const pillarServices = [
     href: "/servicos/pmoc",
     tags: ["Lei 13.589", "ABNT", "HVAC"],
   },
+  {
+    title: "Inspeções Técnicas",
+    desc: "Inspeção de máquinas, estruturas metálicas e sistemas de climatização com relatório detalhado.",
+    image: inspectionDocsImg,
+    href: "/servicos/inspecoes-tecnicas",
+    tags: ["Máquinas", "Estruturas", "Laudo"],
+  },
+  {
+    title: "Projetos de Climatização",
+    desc: "Projetos HVAC industriais e comerciais com dimensionamento térmico e memorial de cálculo.",
+    image: riggingImg,
+    href: "/servicos/projetos-climatizacao",
+    tags: ["HVAC", "Projeto", "Industrial"],
+  },
+  {
+    title: "Consultoria Gratuita",
+    desc: "Diagnóstico inicial de conformidade normativa sem custo. Identifique riscos antes da autuação.",
+    image: teamImg,
+    href: "/servicos/consultoria-gratuita",
+    tags: ["Grátis", "Diagnóstico", "NR"],
+  },
 ];
-
-const secondaryServices = [
-  { icon: Wind, title: "PMOC", desc: "Plano de manutenção conforme Lei 13.589", href: "/servicos/pmoc" },
-  { icon: Search, title: "Inspeções Técnicas", desc: "Máquinas, estruturas e climatização", href: "/servicos/inspecoes-tecnicas" },
-  { icon: Wrench, title: "Projetos Mecânicos", desc: "Proteções e equipamentos sob medida", href: "/servicos/projetos-mecanicos" },
-  { icon: Wind, title: "Climatização", desc: "Projetos HVAC industriais e comerciais", href: "/servicos/projetos-climatizacao" },
-  { icon: FileCheck, title: "Consultoria Gratuita", desc: "Diagnóstico de conformidade sem custo", href: "/servicos/consultoria-gratuita" },
 ];
 
 const stats = [
