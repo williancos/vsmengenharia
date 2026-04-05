@@ -59,14 +59,27 @@ const pillarServices = [
     href: "/servicos/pmoc",
     tags: ["Lei 13.589", "ABNT", "HVAC"],
   },
-];
-
-const secondaryServices = [
-  { icon: Wind, title: "PMOC", desc: "Plano de manutenção conforme Lei 13.589", href: "/servicos/pmoc" },
-  { icon: Search, title: "Inspeções Técnicas", desc: "Máquinas, estruturas e climatização", href: "/servicos/inspecoes-tecnicas" },
-  { icon: Wrench, title: "Projetos Mecânicos", desc: "Proteções e equipamentos sob medida", href: "/servicos/projetos-mecanicos" },
-  { icon: Wind, title: "Climatização", desc: "Projetos HVAC industriais e comerciais", href: "/servicos/projetos-climatizacao" },
-  { icon: FileCheck, title: "Consultoria Gratuita", desc: "Diagnóstico de conformidade sem custo", href: "/servicos/consultoria-gratuita" },
+  {
+    title: "Inspeções Técnicas",
+    desc: "Inspeção de máquinas, estruturas metálicas e sistemas de climatização com relatório detalhado.",
+    image: inspectionDocsImg,
+    href: "/servicos/inspecoes-tecnicas",
+    tags: ["Máquinas", "Estruturas", "Laudo"],
+  },
+  {
+    title: "Projetos de Climatização",
+    desc: "Projetos HVAC industriais e comerciais com dimensionamento térmico e memorial de cálculo.",
+    image: riggingImg,
+    href: "/servicos/projetos-climatizacao",
+    tags: ["HVAC", "Projeto", "Industrial"],
+  },
+  {
+    title: "Consultoria Gratuita",
+    desc: "Diagnóstico inicial de conformidade normativa sem custo. Identifique riscos antes da autuação.",
+    image: teamImg,
+    href: "/servicos/consultoria-gratuita",
+    tags: ["Grátis", "Diagnóstico", "NR"],
+  },
 ];
 
 const stats = [
@@ -271,14 +284,11 @@ export default function Index() {
           {/* Bento Grid */}
           <RevealSection stagger>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 auto-rows-[320px]">
-              {pillarServices.map((s, i) => (
+              {pillarServices.map((s) => (
                 <Link
                   key={s.href}
                   to={s.href}
-                  className={`group relative rounded-3xl overflow-hidden cursor-pointer ${
-                    i === 0 ? "md:row-span-2 auto-rows-auto" : ""
-                  }`}
-                  style={i === 0 ? { gridRow: "span 2" } : undefined}
+                  className="group relative rounded-3xl overflow-hidden cursor-pointer"
                 >
                   <img
                     src={s.image}
@@ -309,25 +319,6 @@ export default function Index() {
                       Saiba mais <ArrowRight className="w-4 h-4" />
                     </span>
                   </div>
-                </Link>
-              ))}
-            </div>
-          </RevealSection>
-
-          {/* Secondary services row */}
-          <RevealSection className="mt-8" stagger>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-              {secondaryServices.map((s) => (
-                <Link
-                  key={s.href}
-                  to={s.href}
-                  className="group bg-card rounded-2xl border border-border/60 p-5 hover:shadow-elevated hover:border-cta/20 transition-all duration-300 hover:-translate-y-1"
-                >
-                  <div className="h-10 w-10 rounded-xl bg-secondary flex items-center justify-center mb-3 group-hover:bg-primary/10 transition-colors">
-                    <s.icon className="h-5 w-5 text-primary" />
-                  </div>
-                  <h3 className="font-bold text-sm mb-1 group-hover:text-cta transition-colors">{s.title}</h3>
-                  <p className="text-xs text-muted-foreground leading-relaxed">{s.desc}</p>
                 </Link>
               ))}
             </div>
