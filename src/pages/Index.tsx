@@ -305,6 +305,14 @@ function CasesCarousel() {
 
   return (
     <section className="relative py-16 md:py-24 overflow-hidden bg-primary">
+      <div className="absolute inset-0 opacity-[0.03]">
+        <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <defs><pattern id="cases-grid" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M 8 0 L 0 0 0 8" fill="none" stroke="white" strokeWidth="0.3" /></pattern></defs>
+          <rect width="100" height="100" fill="url(#cases-grid)" />
+        </svg>
+      </div>
+      <svg className="absolute -top-10 -right-10 w-48 h-48 opacity-[0.04]" viewBox="0 0 200 200"><polygon points="100,10 190,60 190,140 100,190 10,140 10,60" fill="none" stroke="white" strokeWidth="1.5" /></svg>
+      <svg className="absolute -bottom-12 -left-12 w-56 h-56 opacity-[0.04]" viewBox="0 0 200 200"><circle cx="100" cy="100" r="80" fill="none" stroke="white" strokeWidth="1.5" /><circle cx="100" cy="100" r="50" fill="none" stroke="white" strokeWidth="1" /></svg>
       <div className="container mx-auto px-4 relative z-10">
         <RevealSection className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
           <div>
