@@ -152,13 +152,13 @@ export default function Index() {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 mt-10 animate-fade-in" style={{ animationDelay: "380ms" }}>
-              <Button asChild size="lg" className="bg-cta text-cta-foreground hover:bg-cta-hover font-bold text-sm uppercase tracking-wider px-8 h-14 rounded-lg shadow-lg shadow-cta/25 transition-all hover:-translate-y-0.5">
+              <Button asChild size="lg" className="bg-cta text-cta-foreground hover:bg-cta-hover font-extrabold italic text-base px-10 h-16 rounded-xl shadow-[0_8px_30px_-4px_hsl(var(--cta)/0.5)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_40px_-4px_hsl(var(--cta)/0.6)]">
                 <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
-                  Agende Sua Avaliação Gratuita
+                  AGENDE SUA AVALIAÇÃO GRATUITA
                 </a>
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-2 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/5 font-semibold text-sm uppercase tracking-wider h-14 rounded-lg transition-all hover:-translate-y-0.5">
-                <a href="#servicos">Ver Serviços</a>
+              <Button asChild variant="outline" size="lg" className="border-2 border-primary-foreground/30 bg-primary-foreground/10 backdrop-blur-sm text-primary-foreground hover:bg-primary-foreground hover:text-primary font-semibold text-base h-16 px-10 rounded-xl transition-all duration-300 hover:-translate-y-1">
+                <a href="#servicos">VER SERVIÇOS</a>
               </Button>
             </div>
 
