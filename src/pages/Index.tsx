@@ -440,8 +440,7 @@ export default function Index() {
       </section>
 
       {/* ═══ RISKS / EVITE PREJUÍZOS ═══ */}
-      <section className="relative bg-gradient-primary py-24 md:py-32 overflow-hidden">
-        {/* Grid pattern */}
+      <section className="relative bg-gradient-primary py-14 md:py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-[0.04]">
           <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
             <defs>
@@ -453,72 +452,53 @@ export default function Index() {
           </svg>
         </div>
 
-        {/* Decorative glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-destructive/[0.06] blur-[120px] pointer-events-none" />
-
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-5xl mx-auto">
-            <RevealSection className="text-center mb-16">
-              <span className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-destructive/20 border border-destructive/30 text-destructive-foreground text-xs font-bold uppercase tracking-[0.15em] mb-8">
-                <AlertTriangle className="h-3.5 w-3.5" />
-                Atenção
-              </span>
-              <h2 className="text-3xl md:text-4xl lg:text-[3.2rem] font-extrabold text-primary-foreground mb-5 leading-[1.1]">
+            <RevealSection className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-primary-foreground mb-3 leading-tight">
                 Sua empresa está <span className="text-cta">protegida</span>?
               </h2>
-              <p className="text-base md:text-lg text-primary-foreground/50 max-w-2xl mx-auto leading-relaxed">
-                Empresas sem inspeções em dia estão expostas a riscos sérios que podem custar caro.
-                <br className="hidden md:block" />
-                <strong className="text-primary-foreground/70">Mais de 40% das autuações</strong> são por falta de documentação técnica atualizada.
+              <p className="text-sm md:text-base text-primary-foreground/50 max-w-xl mx-auto">
+                <strong className="text-primary-foreground/70">40% das autuações</strong> são por falta de documentação técnica. Evite multas e interdições.
               </p>
             </RevealSection>
 
-            {/* Risk cards */}
-            <RevealSection stagger>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
-                {risks.map((r, i) => (
+            <RevealSection stagger className="mb-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {risks.map((r) => (
                   <div
                     key={r.text}
-                    className="group relative flex items-center gap-5 bg-white/[0.06] backdrop-blur-sm rounded-2xl border border-white/[0.08] p-6 md:p-7 hover:bg-white/[0.1] hover:border-white/[0.15] transition-all duration-300"
+                    className="group flex items-center gap-4 bg-white/[0.06] backdrop-blur-sm rounded-xl border border-white/[0.08] px-5 py-4 hover:bg-white/[0.1] transition-all duration-300"
                   >
-                    {/* Left accent bar */}
-                    <div className="absolute left-0 top-4 bottom-4 w-[3px] rounded-full bg-gradient-to-b from-destructive via-cta to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-                    <div className="h-12 w-12 rounded-xl bg-white/[0.08] flex items-center justify-center shrink-0 group-hover:bg-destructive/20 transition-colors duration-300">
-                      <r.icon className="h-5 w-5 text-primary-foreground/70 group-hover:text-destructive-foreground transition-colors duration-300" />
+                    <div className="h-10 w-10 rounded-lg bg-white/[0.08] flex items-center justify-center shrink-0 group-hover:bg-destructive/20 transition-colors duration-300">
+                      <r.icon className="h-4 w-4 text-primary-foreground/70 group-hover:text-destructive-foreground transition-colors" />
                     </div>
-                    <div className="flex-1">
-                      <h3 className="font-bold text-primary-foreground text-[15px] md:text-base mb-1 leading-snug">{r.text}</h3>
-                      <span className="text-sm text-cta/70 font-medium">{r.detail}</span>
+                    <div>
+                      <h3 className="font-bold text-primary-foreground text-sm leading-snug">{r.text}</h3>
+                      <span className="text-xs text-cta/60 font-medium">{r.detail}</span>
                     </div>
                   </div>
                 ))}
               </div>
             </RevealSection>
 
-            {/* Bottom stats + CTA row */}
-            <RevealSection className="mt-14">
-              <div className="flex flex-col md:flex-row items-center justify-between gap-8 bg-white/[0.04] rounded-2xl border border-white/[0.08] p-8 md:px-10">
-                <div className="flex items-center gap-8 md:gap-12">
+            <RevealSection>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10">
+                <div className="flex items-center gap-8">
                   <div className="text-center">
-                    <div className="text-3xl md:text-4xl font-extrabold text-cta">R$ 402k</div>
-                    <div className="text-xs text-primary-foreground/40 font-medium mt-1">Multa máxima</div>
+                    <div className="text-2xl font-extrabold text-cta">R$ 402k</div>
+                    <div className="text-[10px] text-primary-foreground/40 font-medium">Multa máxima</div>
                   </div>
-                  <div className="w-px h-12 bg-white/10 hidden md:block" />
+                  <div className="w-px h-8 bg-white/10" />
                   <div className="text-center">
-                    <div className="text-3xl md:text-4xl font-extrabold text-destructive-foreground">72h</div>
-                    <div className="text-xs text-primary-foreground/40 font-medium mt-1">Prazo p/ interdição</div>
-                  </div>
-                  <div className="w-px h-12 bg-white/10 hidden md:block" />
-                  <div className="text-center hidden sm:block">
-                    <div className="text-3xl md:text-4xl font-extrabold text-primary-foreground">0</div>
-                    <div className="text-xs text-primary-foreground/40 font-medium mt-1">Acidentes toleráveis</div>
+                    <div className="text-2xl font-extrabold text-destructive-foreground">72h</div>
+                    <div className="text-[10px] text-primary-foreground/40 font-medium">Prazo p/ interdição</div>
                   </div>
                 </div>
-                <Button asChild size="lg" className="bg-cta text-cta-foreground hover:bg-cta-hover font-extrabold text-base px-10 h-14 rounded-xl shadow-[0_8px_30px_-4px_hsl(var(--cta)/0.5)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_40px_-4px_hsl(var(--cta)/0.6)] w-full md:w-auto whitespace-nowrap">
+                <Button asChild size="lg" className="bg-cta text-cta-foreground hover:bg-cta-hover font-bold text-sm px-8 h-12 rounded-xl shadow-[0_8px_30px_-4px_hsl(var(--cta)/0.5)] hover:-translate-y-0.5 transition-all duration-300 w-full sm:w-auto">
                   <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
                     Proteger minha empresa
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                    <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
               </div>
