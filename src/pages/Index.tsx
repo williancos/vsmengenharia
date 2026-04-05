@@ -1003,9 +1003,9 @@ export default function Index() {
                   to={post.href}
                   className="group bg-background rounded-2xl border border-border/60 overflow-hidden hover:shadow-elevated hover:border-cta/20 transition-all duration-300 hover:-translate-y-1"
                 >
-                  {/* Image placeholder with gradient */}
-                  <div className="h-48 bg-gradient-to-br from-primary/8 to-secondary relative overflow-hidden">
-                    <div className="absolute inset-0 pattern-grid opacity-50" />
+                  <div className="h-48 relative overflow-hidden">
+                    <img src={post.image} alt={post.title} loading="lazy" width={960} height={640} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                     <div className="absolute top-4 left-4">
                       <span className="px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-bold">
                         {post.category}
