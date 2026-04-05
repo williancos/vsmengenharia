@@ -4,7 +4,7 @@ import {
   Shield, FileCheck, AlertTriangle, CheckCircle2, Users, Award,
   Wrench, ClipboardCheck, Truck, Wind, HardHat, Search, ArrowRight,
   TrendingUp, BadgeCheck, Clock, DollarSign, Scale, Phone, ChevronRight,
-  Zap, Target, BarChart3, ArrowUpRight, CircleCheck
+  Zap, Target, BarChart3, ArrowUpRight, CircleCheck, Star, Quote, Droplets, Gauge, Ruler
 } from "lucide-react";
 import RevealSection from "@/components/RevealSection";
 import CountUp from "@/components/CountUp";
@@ -19,6 +19,7 @@ import pmocImg from "@/assets/pmoc-hvac.jpg";
 import technicalImg from "@/assets/technical-inspection.jpg";
 import climatizacaoImg from "@/assets/climatizacao-project.jpg";
 import consultoriaImg from "@/assets/consultoria-meeting.jpg";
+import caseIndustrialImg from "@/assets/case-industrial.jpg";
 
 const pillarServices = [
   {
