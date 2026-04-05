@@ -905,6 +905,74 @@ export default function Index() {
       {/* ═══ CASES DE SUCESSO ═══ */}
       <CasesCarousel />
 
+      {/* ═══ ATUAÇÃO NACIONAL ═══ */}
+      <section className="relative py-16 md:py-24 overflow-hidden bg-background">
+        <div className="absolute inset-0 pattern-dots opacity-30 pointer-events-none" />
+        <div className="container mx-auto px-4 relative z-10">
+          <RevealSection className="text-center mb-10">
+            <span className="inline-block px-4 py-1.5 rounded-full border border-primary/20 text-primary text-xs font-bold tracking-wider uppercase mb-3">
+              Atuação
+            </span>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-3">
+              Atendimento em todo o <span className="text-cta">Sudeste</span> e além
+            </h2>
+            <p className="text-muted-foreground text-sm max-w-lg mx-auto">
+              Engenheiros em campo nos principais polos industriais do Brasil. Atendimento ágil onde sua empresa precisa.
+            </p>
+          </RevealSection>
+
+          <RevealSection className="mb-10">
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+              {[
+                { icon: Target, value: "8+", label: "Estados" },
+                { icon: Users, value: "500+", label: "Laudos emitidos" },
+                { icon: HardHat, value: "100+", label: "Empresas atendidas" },
+              ].map((s) => (
+                <div key={s.label} className="flex items-center gap-3 bg-card rounded-xl border border-border/60 px-5 py-3">
+                  <div className="h-10 w-10 rounded-lg bg-secondary flex items-center justify-center">
+                    <s.icon className="h-5 w-5 text-primary" />
+                  </div>
+                  <div>
+                    <div className="text-xl font-extrabold text-primary">{s.value}</div>
+                    <div className="text-xs text-muted-foreground">{s.label}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </RevealSection>
+
+          <RevealSection stagger>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 max-w-4xl mx-auto">
+              {[
+                { state: "São Paulo", projects: "180+" },
+                { state: "Rio de Janeiro", projects: "95+" },
+                { state: "Minas Gerais", projects: "85+" },
+                { state: "Espírito Santo", projects: "40+" },
+                { state: "Paraná", projects: "30+" },
+                { state: "Santa Catarina", projects: "25+" },
+                { state: "Bahia", projects: "20+" },
+                { state: "Goiás", projects: "15+" },
+              ].map((s) => (
+                <div key={s.state} className="bg-card rounded-xl border border-border/60 p-4 hover:border-cta/30 hover:shadow-soft transition-all duration-300 group text-center">
+                  <div className="text-lg font-extrabold text-primary group-hover:text-cta transition-colors">{s.projects}</div>
+                  <div className="text-xs text-muted-foreground font-medium mt-0.5">{s.state}</div>
+                </div>
+              ))}
+            </div>
+          </RevealSection>
+
+          <RevealSection className="mt-8 text-center">
+            <p className="text-xs text-muted-foreground mb-4">Não encontrou sua região? Atendemos projetos em todo o Brasil.</p>
+            <Button asChild variant="outline" className="border-2 border-primary/20 text-primary hover:bg-primary hover:text-primary-foreground font-semibold rounded-xl">
+              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+                Consultar disponibilidade na sua região
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
+            </Button>
+          </RevealSection>
+        </div>
+      </section>
+
       {/* ═══ BLOG PREVIEW ═══ */}
       <section className="relative py-24 md:py-32 overflow-hidden bg-card">
         <div className="container mx-auto px-4 relative z-10">
