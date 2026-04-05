@@ -940,13 +940,13 @@ export default function Index() {
                 { icon: Users, value: "500+", label: "Laudos emitidos" },
                 { icon: HardHat, value: "100+", label: "Empresas atendidas" },
               ].map((s) => (
-                <div key={s.label} className="flex items-center gap-3 bg-card rounded-xl border border-border/60 px-5 py-3">
-                  <div className="h-10 w-10 rounded-lg bg-secondary flex items-center justify-center">
-                    <s.icon className="h-5 w-5 text-primary" />
+                <div key={s.label} className="flex flex-col items-center gap-1 bg-card rounded-xl border border-border/60 px-3 py-3 md:flex-row md:gap-3 md:px-5">
+                  <div className="h-9 w-9 md:h-10 md:w-10 rounded-lg bg-secondary flex items-center justify-center">
+                    <s.icon className="h-4 w-4 md:h-5 md:w-5 text-primary" />
                   </div>
-                  <div>
-                    <div className="text-xl font-extrabold text-primary">{s.value}</div>
-                    <div className="text-xs text-muted-foreground">{s.label}</div>
+                  <div className="text-center md:text-left">
+                    <div className="text-lg md:text-xl font-extrabold text-primary">{s.value}</div>
+                    <div className="text-[10px] md:text-xs text-muted-foreground">{s.label}</div>
                   </div>
                 </div>
               ))}
