@@ -30,9 +30,9 @@
     --destructive: 6 63% 46%;
     --destructive-foreground: 0 0% 100%;
 
-    --cta: 30 89% 53%;
+    --cta: 2 70% 55%;
     --cta-foreground: 0 0% 100%;
-    --cta-hover: 30 80% 46%;
+    --cta-hover: 2 65% 48%;
 
     --success: 145 63% 49%;
     --success-foreground: 0 0% 100%;
@@ -102,7 +102,7 @@
 
   .gradient-text {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(210, 74%, 22%), hsl(30, 89%, 53%));
+    background-image: linear-gradient(135deg, hsl(210, 74%, 22%), hsl(2, 70%, 55%));
   }
 
   .bg-gradient-primary {
@@ -195,4 +195,45 @@
   .stagger-children.visible > *:nth-child(7) { transition-delay: 480ms; opacity: 1; transform: translateY(0); }
   .stagger-children.visible > *:nth-child(8) { transition-delay: 560ms; opacity: 1; transform: translateY(0); }
   .stagger-children.visible > *:nth-child(9) { transition-delay: 640ms; opacity: 1; transform: translateY(0); }
+}
+
+/* Blog content styles */
+.blog-content h2 {
+  @apply text-2xl font-bold mt-10 mb-4 scroll-mt-24;
+  color: hsl(var(--primary));
+}
+.blog-content h3 {
+  @apply text-lg font-bold mt-8 mb-3;
+  color: hsl(var(--primary));
+}
+.blog-content p {
+  @apply text-base leading-relaxed mb-4;
+  color: hsl(var(--muted-foreground));
+}
+.blog-content ul, .blog-content ol {
+  @apply space-y-1 my-4;
+}
+.blog-content strong {
+  @apply font-semibold;
+  color: hsl(var(--foreground));
+}
+.blog-content blockquote {
+  @apply border-l-4 pl-5 py-3 my-6 rounded-r-lg text-sm italic;
+  border-color: hsl(var(--cta));
+  background: hsl(var(--cta) / 0.05);
+  color: hsl(var(--muted-foreground));
+}
+.blog-content table {
+  @apply w-full rounded-lg overflow-hidden border my-6;
+  border-color: hsl(var(--border) / 0.5);
+}
+.blog-content th {
+  @apply text-xs font-bold p-3 text-left;
+  color: hsl(var(--primary));
+  background: hsl(var(--secondary) / 0.5);
+}
+.blog-content td {
+  @apply text-sm p-3 border-t;
+  color: hsl(var(--muted-foreground));
+  border-color: hsl(var(--border) / 0.5);
 }

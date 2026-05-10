@@ -35,7 +35,7 @@ export default function ServicePage({
             <p className="text-lg text-muted-foreground">{subtitle}</p>
             <div className="mt-8">
               <Button asChild size="lg" className="bg-cta text-cta-foreground hover:bg-cta-hover font-semibold">
-                <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
+                <a href="https://wa.me/5511954534057" target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
               </Button>
             </div>
           </div>
@@ -138,7 +138,7 @@ export default function ServicePage({
           <h2 className="text-2xl font-bold text-primary-foreground mb-4">Pronto para garantir a conformidade?</h2>
           <p className="text-primary-foreground/70 mb-6">Solicite agora uma avaliação gratuita com nosso engenheiro.</p>
           <Button asChild size="lg" className="bg-cta text-cta-foreground hover:bg-cta-hover font-semibold">
-            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">Falar com Engenheiro</a>
+            <a href="https://wa.me/5511954534057" target="_blank" rel="noopener noreferrer">Falar com Engenheiro</a>
           </Button>
         </div>
       </section>

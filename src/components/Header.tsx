@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoImg from "@/assets/logo.png";
 
 const services = [
   { label: "NR13", href: "/servicos/nr13" },
@@ -19,6 +20,7 @@ const navLinks = [
   { label: "Início", href: "/" },
   { label: "Sobre", href: "/sobre" },
   { label: "Blog", href: "/blog" },
+  { label: "Clientes", href: "/clientes" },
   { label: "Contato", href: "/contato" },
 ];
 
@@ -31,9 +33,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-primary shadow-lg">
       <div className="container mx-auto flex items-center justify-between py-3 px-4">
         <Link to="/" className="flex items-center gap-2">
-          <span className="text-xl font-bold text-primary-foreground tracking-tight">
-            VSM <span className="font-light">Engenharia</span>
-          </span>
+          <img src={logoImg} alt="VSM Engenharia" className="h-14 w-auto" />
         </Link>
 
         {/* Desktop nav */}
@@ -88,7 +88,7 @@ export default function Header() {
             asChild
             className="bg-cta text-cta-foreground hover:bg-cta-hover font-semibold"
           >
-            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5511954534057" target="_blank" rel="noopener noreferrer">
               Falar com Engenheiro
             </a>
           </Button>
@@ -153,7 +153,7 @@ export default function Header() {
 
             <div className="px-3 pt-2">
               <Button asChild className="w-full bg-cta text-cta-foreground hover:bg-cta-hover font-semibold">
-                <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5511954534057" target="_blank" rel="noopener noreferrer">
                   Falar com Engenheiro
                 </a>
               </Button>
