@@ -1,5 +1,7 @@
+import type { RouteRecord } from "vite-react-ssg";
+import { Outlet } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { createHead, UnheadProvider } from "@unhead/react/client";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -21,39 +23,76 @@ import ProjetosClimatizacao from "./pages/servicos/ProjetosClimatizacao";
 import ConsultoriaGratuita from "./pages/servicos/ConsultoriaGratuita";
 import Clientes from "./pages/Clientes";
 import NotFound from "./pages/NotFound";
+import { allPosts } from "./data/blogData";
 
 const queryClient = new QueryClient();
+const head = createHead();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
+/* App shell — providers + Layout (com Outlet das rotas filhas) */
+const AppShell = () => (
+  <UnheadProvider head={head}>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
         <ScrollToTop />
-        <Routes>
-          <Route element={<Layout />}>
-            <Route path="/" element={<Index />} />
-            <Route path="/sobre" element={<Sobre />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:slug" element={<BlogPost />} />
-            <Route path="/contato" element={<Contato />} />
-            <Route path="/clientes" element={<Clientes />} />
-            <Route path="/servicos/nr13" element={<NR13 />} />
-            <Route path="/servicos/nr12" element={<NR12 />} />
-            <Route path="/servicos/nr11" element={<NR11 />} />
-            <Route path="/servicos/pmoc" element={<PMOC />} />
-            <Route path="/servicos/reclassificacao-de-monta" element={<ReclassificacaoMonta />} />
-            <Route path="/servicos/inspecoes-tecnicas" element={<InspecoesTecnicas />} />
-            <Route path="/servicos/projetos-mecanicos" element={<ProjetosMecanicos />} />
-            <Route path="/servicos/projetos-climatizacao" element={<ProjetosClimatizacao />} />
-            <Route path="/servicos/consultoria-gratuita" element={<ConsultoriaGratuita />} />
-          </Route>
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+        <Outlet />
+      </TooltipProvider>
+    </QueryClientProvider>
+  </UnheadProvider>
 );
 
-export default App;
+export const routes: RouteRecord[] = [
+  {
+    path: "/",
+    Component: AppShell,
+    children: [
+      {
+        Component: Layout,
+        children: [
+          { index: true, Component: Index, entry: "src/pages/Index.tsx" },
+          { path: "sobre", Component: Sobre, entry: "src/pages/Sobre.tsx" },
+          { path: "blog", Component: Blog, entry: "src/pages/Blog.tsx" },
+          {
+            path: "blog/:slug",
+            Component: BlogPost,
+            entry: "src/pages/BlogPost.tsx",
+            getStaticPaths: () => allPosts.map((p) => `/blog/${p.slug}`),
+          },
+          { path: "contato", Component: Contato, entry: "src/pages/Contato.tsx" },
+          { path: "clientes", Component: Clientes, entry: "src/pages/Clientes.tsx" },
+          { path: "servicos/nr13", Component: NR13, entry: "src/pages/servicos/NR13.tsx" },
+          { path: "servicos/nr12", Component: NR12, entry: "src/pages/servicos/NR12.tsx" },
+          { path: "servicos/nr11", Component: NR11, entry: "src/pages/servicos/NR11.tsx" },
+          { path: "servicos/pmoc", Component: PMOC, entry: "src/pages/servicos/PMOC.tsx" },
+          {
+            path: "servicos/reclassificacao-de-monta",
+            Component: ReclassificacaoMonta,
+            entry: "src/pages/servicos/ReclassificacaoMonta.tsx",
+          },
+          {
+            path: "servicos/inspecoes-tecnicas",
+            Component: InspecoesTecnicas,
+            entry: "src/pages/servicos/InspecoesTecnicas.tsx",
+          },
+          {
+            path: "servicos/projetos-mecanicos",
+            Component: ProjetosMecanicos,
+            entry: "src/pages/servicos/ProjetosMecanicos.tsx",
+          },
+          {
+            path: "servicos/projetos-climatizacao",
+            Component: ProjetosClimatizacao,
+            entry: "src/pages/servicos/ProjetosClimatizacao.tsx",
+          },
+          {
+            path: "servicos/consultoria-gratuita",
+            Component: ConsultoriaGratuita,
+            entry: "src/pages/servicos/ConsultoriaGratuita.tsx",
+          },
+        ],
+      },
+      { path: "*", Component: NotFound, entry: "src/pages/NotFound.tsx" },
+    ],
+  },
+];

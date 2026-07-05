@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
+import { useSEO } from "@/hooks/use-seo";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import {
@@ -12,6 +13,7 @@ import {
 import RevealSection from "@/components/RevealSection";
 import CountUp from "@/components/CountUp";
 import SeoGuideContent from "@/components/SeoGuideContent";
+import PillarArticles from "@/components/PillarArticles";
 import heroNR11 from "@/assets/nr11/hero-nr11.jpg";
 import imgPonteRolanteMetro from "@/assets/nr11/ponte-rolante-metro.jpg";
 import imgCasePonteRolante from "@/assets/nr11/case-ponte-rolante-metro.jpg";
@@ -237,16 +239,9 @@ Em guindastes telescópicos, a reação por sapata pode chegar a 60% do peso tot
 
 ### Capacitação de operadores — o item mais ignorado da NR11
 
-Operadores de empilhadeira, ponte rolante, guindaste e munck **precisam de treinamento específico** com carga horária mínima e reciclagem periódica. O empregador é responsável por:
+Operadores de empilhadeira, ponte rolante, guindaste e munck **precisam de treinamento específico** com carga horária mínima e reciclagem periódica (empilhadeira e ponte rolante a cada 3 anos; guindaste/munck e rigger anualmente). Operador sem certificado é, na prática, o mesmo que máquina sem laudo: a empresa responde objetivamente por qualquer acidente.
 
-| Equipamento | Carga horária inicial | Reciclagem | Pré-requisito |
-| --- | --- | --- | --- |
-| Empilhadeira | 16 h teóricas + 4 h práticas (NR-11.4) | A cada 3 anos ou após acidente | CNH |
-| Ponte rolante | 16 a 24 h, conforme complexidade | A cada 3 anos | Habilitação técnica |
-| Guindaste / munck | 40 h iniciais (recomendado) | Anual | CNH categoria compatível |
-| Sinaleiro / rigger | 16 h específicas | Anual | Treinamento NR-11 e NR-35 quando altura |
-
-Operador sem certificado é, na prática, o mesmo que máquina sem laudo: a empresa fica responsável objetivamente por qualquer acidente.
+O conteúdo programático e as cargas horárias por equipamento estão detalhados em [Treinamento NR11: conteúdo e carga horária](/blog/treinamento-nr11-conteudo-carga-horaria) e em [Validade da NR11: quando renovar o treinamento](/blog/validade-nr11-quando-renovar-treinamento).
 
 ### Erros mais comuns em laudos NR11 e planos de rigging
 
@@ -368,6 +363,22 @@ Inspeção NR11, plano de rigging, laudo de ponte rolante, inspeção de empilha
 `;
 
 export default function NR11() {
+  const jsonLd = useMemo(() => ({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Inspeção NR11 — Rigging, Munck, Ponte Rolante e Empilhadeiras",
+    provider: { "@type": "Organization", name: "VSM Engenharia", url: "https://www.vsmengenharia.com" },
+    areaServed: { "@type": "State", name: "Sudeste do Brasil" },
+    description: "Inspeção NR11 e planos de rigging para caminhão munck, ponte rolante, empilhadeira e plataformas com laudos e ART.",
+    url: "https://www.vsmengenharia.com/servicos/nr11",
+  }), []);
+
+  useSEO({
+    title: "Inspeção NR11 e Plano de Rigging: Munck e Guindauto | VSM",
+    description: "Inspeção NR11 e plano de rigging para munck, ponte rolante e empilhadeira. Teste de carga e laudo com ART. Engenheiros CREA no Sudeste.",
+    jsonLd,
+  });
+
   const [showSeoContent, setShowSeoContent] = useState(false);
   const [tickerIndex, setTickerIndex] = useState(0);
 
@@ -858,6 +869,9 @@ export default function NR11() {
           </div>
         </div>
       </section>
+
+      {/* Guia técnico — links pilar → cluster de blog NR11 */}
+      <PillarArticles category="NR11" title="Guia técnico NR11 e Plano de Rigging" subtitle="Aprofunde nos temas de NR11: laudo de munck, plano de rigging, ponte rolante, empilhadeira, teste de carga e treinamento — artigos escritos pelos engenheiros da VSM." />
 
       <section className="bg-gradient-elegant py-20 md:py-28 text-center relative overflow-hidden">
         <div className="absolute inset-0 pattern-dots opacity-10" />

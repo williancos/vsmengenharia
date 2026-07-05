@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+.vercel
+
+# Local (não versionar)
+.claude/
+.workspace/
+estudo/
+*.tsbuildinfo

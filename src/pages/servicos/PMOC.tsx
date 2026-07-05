@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
+import { useSEO } from "@/hooks/use-seo";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import {
@@ -315,6 +316,22 @@ PMOC, plano de manutenção de ar condicionado, qualidade do ar interior, QAI, L
 `;
 
 export default function PMOC() {
+  const jsonLd = useMemo(() => ({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "PMOC — Plano de Manutenção de Ar Condicionado",
+    provider: { "@type": "Organization", name: "VSM Engenharia", url: "https://www.vsmengenharia.com" },
+    areaServed: { "@type": "State", name: "Sudeste do Brasil" },
+    description: "PMOC conforme Lei 13.589/2018. Manutenção preventiva de climatização, qualidade do ar interior e documentação completa com ART.",
+    url: "https://www.vsmengenharia.com/servicos/pmoc",
+  }), []);
+
+  useSEO({
+    title: "PMOC — Plano de Manutenção de Ar Condicionado | VSM Engenharia",
+    description: "PMOC conforme Lei 13.589/2018. Qualidade do ar interior, manutenção preventiva de climatização e compliance com engenheiro CREA habilitado.",
+    jsonLd,
+  });
+
   const [showSeoContent, setShowSeoContent] = useState(false);
   const [tickerIndex, setTickerIndex] = useState(0);
 
@@ -334,7 +351,12 @@ export default function PMOC() {
       </div>
 
       <section className="relative overflow-hidden min-h-[85vh] flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-primary/80" />
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroPmoc})` }}
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-primary/70" />
         <div className="absolute inset-0 pattern-dots opacity-10" />
         <div className="relative container mx-auto px-4 py-20 md:py-28">
           <div className="grid lg:grid-cols-5 gap-12 items-center">

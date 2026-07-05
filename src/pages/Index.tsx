@@ -1,5 +1,6 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useCallback, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
+import { useSEO } from "@/hooks/use-seo";
 import { Button } from "@/components/ui/button";
 import {
   Shield, FileCheck, AlertTriangle, CheckCircle2, Users, Award,
@@ -410,6 +411,36 @@ function CasesCarousel() {
 }
 
 export default function Index() {
+  const jsonLd = useMemo(() => ([
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "VSM Engenharia",
+      url: "https://www.vsmengenharia.com",
+      logo: "https://www.vsmengenharia.com/favicon.ico",
+      contactPoint: { "@type": "ContactPoint", telephone: "+55-11-99999-9999", contactType: "customer service", areaServed: "BR", availableLanguage: "Portuguese" },
+      sameAs: ["https://www.instagram.com/vsmengenharia", "https://www.linkedin.com/company/vsmengenharia"],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "VSM Engenharia",
+      url: "https://www.vsmengenharia.com",
+      telephone: "+55-11-99999-9999",
+      address: { "@type": "PostalAddress", addressRegion: "SP", addressCountry: "BR" },
+      geo: { "@type": "GeoCoordinates", latitude: -23.55, longitude: -46.63 },
+      priceRange: "$$",
+      openingHours: "Mo-Fr 08:00-18:00",
+    },
+  ]), []);
+
+  useSEO({
+    title: "VSM Engenharia | Inspeções NR13, NR12, NR11 e Reclassificação de Monta",
+    description: "Inspeções técnicas NR13, NR12 e NR11 com laudos completos, reclassificação de monta e projetos mecânicos para indústrias no Sudeste. Segurança, conformidade e agilidade.",
+    canonical: "https://www.vsmengenharia.com",
+    jsonLd,
+  });
+
   return (
     <>
       {/* ═══ HERO ═══ */}

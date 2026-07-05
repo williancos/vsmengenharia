@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
+import { useSEO } from "@/hooks/use-seo";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import {
@@ -449,6 +450,22 @@ Adequação NR12, análise de risco, APR, HRN, projeto de proteções, dispositi
 `;
 
 export default function NR12() {
+  const jsonLd = useMemo(() => ({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Adequação NR12 — Segurança de Máquinas e Equipamentos",
+    provider: { "@type": "Organization", name: "VSM Engenharia", url: "https://www.vsmengenharia.com" },
+    areaServed: { "@type": "State", name: "Sudeste do Brasil" },
+    description: "Adequação NR12 para máquinas industriais. Análise de risco (APR), relatório técnico e projeto de adequação com ART.",
+    url: "https://www.vsmengenharia.com/servicos/nr12",
+  }), []);
+
+  useSEO({
+    title: "Adequação NR12 — Segurança de Máquinas | VSM Engenharia",
+    description: "Adequação NR12 para máquinas industriais. Análise de risco, projetos de proteção e conformidade normativa com engenheiros CREA habilitados no Sudeste.",
+    jsonLd,
+  });
+
   const [showSeoContent, setShowSeoContent] = useState(false);
   const [tickerIndex, setTickerIndex] = useState(0);
 

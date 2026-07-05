@@ -1,8 +1,128 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/post/teste-de-carga-em-caminh%C3%A3o-munck-o-que-%C3%A9-quando-fazer-e-por-que-%C3%A9-essencial", "destination": "/blog/teste-de-carga-caminhao-munck", "statusCode": 301 },
+    { "source": "/post/laudo-nr11-para-caminh%C3%A3o-munck-como-garantir-conformidade-e-seguran%C3%A7a-com-a-vsm-engenharia", "destination": "/blog/laudo-nr11-caminhao-munck-vsm", "statusCode": 301 },
+    { "source": "/post/laudo-de-recuperabilidade-como-recorrer-a-reclassifica%C3%A7%C3%A3o-de-monta-e-desbloquear-seu-ve%C3%ADculo", "destination": "/servicos/reclassificacao-de-monta", "statusCode": 301 },
+    { "source": "/post/como-funciona-o-laudo-t%C3%A9cnico-de-caminh%C3%A3o-munck-ou-guindauto", "destination": "/blog/como-funciona-laudo-tecnico-munck-guindauto", "statusCode": 301 },
+    { "source": "/post/impacto-da-classifica%C3%A7%C3%A3o-de-monta-na-revenda-do-ve%C3%ADculo-por-que-uma-boa-reclassifica%C3%A7%C3%A3o-importa", "destination": "/blog/impacto-reclassificacao-revenda", "statusCode": 301 },
+    { "source": "/post/quem-pode-elaborar-um-pmoc-entenda-as-responsabilidades-t%C3%A9cnicas-do-plano-de-manuten%C3%A7%C3%A3o", "destination": "/blog/pmoc-lei-13589-quem-e-obrigado", "statusCode": 301 },
+    { "source": "/post/treinamento-de-plano-de-rigging-domine-a-elabora%C3%A7%C3%A3o-e-an%C3%A1lise-com-a-vsm-engenharia", "destination": "/blog/treinamento-plano-de-rigging-vsm", "statusCode": 301 },
+    { "source": "/post/principais-erros-na-reclassifica%C3%A7%C3%A3o-de-monta-de-ve%C3%ADculos-sinistrados-e-como-evit%C3%A1-los", "destination": "/blog/principais-erros-reclassificacao-monta", "statusCode": 301 },
+    { "source": "/post/os-7-erros-mais-comuns-na-elabora%C3%A7%C3%A3o-de-planos-de-rigging-e-como-evit%C3%A1-los", "destination": "/blog/7-erros-plano-de-rigging", "statusCode": 301 },
+    { "source": "/post/checklist-completo-para-inspe%C3%A7%C3%A3o-nr-13-e-como-evitar-multas", "destination": "/blog/checklist-inspecao-nr13", "statusCode": 301 },
+    { "source": "/post/equipamentos-cargas-e-fatores-cr%C3%ADticos-no-plano-de-rigging-guia-t%C3%A9cnico-para-engenheiros-t%C3%A9cnicos", "destination": "/blog/plano-de-rigging-guia-tecnico", "statusCode": 301 },
+    { "source": "/post/documenta%C3%A7%C3%A3o-nr-13-obrigat%C3%B3ria-o-que-sua-empresa-precisa-ter-para-evitar-multas", "destination": "/servicos/nr13", "statusCode": 301 },
+    { "source": "/post/sempre-precisa-ser-feito-o-teste-hidrost%C3%A1tico-em-inspe%C3%A7%C3%B5es-nr13", "destination": "/blog/teste-hidrostatico-vaso-pressao-quando-fazer", "statusCode": 301 },
+    { "source": "/post/por-que-realizar-a-inspe%C3%A7%C3%A3o-nr-13-urgente-e-por-que-a-vsm-%C3%A9-a-escolha-mais-segura", "destination": "/servicos/nr13", "statusCode": 301 },
+
+    { "source": "/services/nr13", "destination": "/servicos/nr13", "statusCode": 301 },
+    { "source": "/services/reclassifica%C3%A7%C3%A3o-de-monta", "destination": "/servicos/reclassificacao-de-monta", "statusCode": 301 },
+    { "source": "/services/consultoria-gratuita-de-engenharia", "destination": "/servicos/consultoria-gratuita", "statusCode": 301 },
+
+    { "source": "/servicos/reclassifica%C3%A7%C3%A3o-de-monta", "destination": "/servicos/reclassificacao-de-monta", "statusCode": 301 },
+    { "source": "/servicos/inspe%C3%A7%C3%B5es-t%C3%A9cnicas", "destination": "/servicos/inspecoes-tecnicas", "statusCode": 301 },
+    { "source": "/servicos/projetos-mec%C3%A2nicos", "destination": "/servicos/projetos-mecanicos", "statusCode": 301 },
+    { "source": "/servicos/pmoc-e-art", "destination": "/servicos/pmoc", "statusCode": 301 },
+    { "source": "/servicos/projetos-de-climatiza%C3%A7%C3%A3o", "destination": "/servicos/projetos-climatizacao", "statusCode": 301 },
+    { "source": "/servicos/consultoria-gratuita-de-engenharia", "destination": "/servicos/consultoria-gratuita", "statusCode": 301 },
+
+    { "source": "/post/reclassifica%C3%A7%C3%A3o-de-monta-detran-sp", "destination": "/blog/reclassificacao-monta-detran-sp", "statusCode": 301 },
+    { "source": "/post/%C3%A9-poss%C3%ADvel-reclassificar-a-monta-de-todos-ve%C3%ADculos", "destination": "/blog/e-possivel-reclassificar-todos-veiculos", "statusCode": 301 },
+    { "source": "/post/reclassifica%C3%A7%C3%A3o-de-monta-guia-completo-para-regularizar-seu-ve%C3%ADculo", "destination": "/blog/reclassificacao-monta-guia-completo", "statusCode": 301 },
+    { "source": "/post/laudo-t%C3%A9cnico-nr-13-guia-passo-a-passo-completo", "destination": "/blog/laudo-tecnico-nr13-passo-a-passo-completo", "statusCode": 301 },
+    { "source": "/post/checklist-pr%C3%A1tico-para-contratar-inspe%C3%A7%C3%A3o-nr-13-com-seguran%C3%A7a", "destination": "/blog/checklist-inspecao-nr13", "statusCode": 301 },
+    { "source": "/post/reclassifica%C3%A7%C3%A3o-de-monta-x-baixa-definitiva-entenda-os-riscos", "destination": "/blog/reclassificacao-vs-baixa-definitiva", "statusCode": 301 },
+    { "source": "/post/checklist-completo-para-inspe%C3%A7%C3%A3o-nr-13", "destination": "/blog/checklist-inspecao-nr13", "statusCode": 301 },
+    { "source": "/post/o-que-%C3%A9-o-servi%C3%A7o-de-reclassifica%C3%A7%C3%A3o-de-monta", "destination": "/blog/o-que-e-reclassificacao-monta-veicular", "statusCode": 301 },
+    { "source": "/post/o-que-%C3%A9-o-servi%C3%A7o-de-reclassifica%C3%A7%C3%A3o-de-monta-veicular", "destination": "/blog/o-que-e-reclassificacao-monta-veicular", "statusCode": 301 },
+    { "source": "/post/como-funciona-laudo-t%C3%A9cnico-caminh%C3%A3o-munck", "destination": "/blog/como-funciona-laudo-tecnico-munck-guindauto", "statusCode": 301 },
+    { "source": "/post/como-detectar-fadiga-estrutural-em-caminh%C3%B5es-munck", "destination": "/blog/fadiga-estrutural-caminhoes-munck", "statusCode": 301 },
+    { "source": "/post/principais-erros-na-reclassifica%C3%A7%C3%A3o-de-monta-de-ve%C3%ADculos", "destination": "/blog/principais-erros-reclassificacao-monta", "statusCode": 301 },
+    { "source": "/post/quem-pode-elaborar-pmoc", "destination": "/blog/pmoc-lei-13589-quem-e-obrigado", "statusCode": 301 },
+    { "source": "/post/equipamentos-cargas-plano-de-rigging", "destination": "/blog/plano-de-rigging-guia-tecnico", "statusCode": 301 },
+    { "source": "/post/treinamento-de-plano-de-rigging", "destination": "/blog/treinamento-plano-de-rigging-vsm", "statusCode": 301 },
+    { "source": "/post/laudo-nr11-para-caminh%C3%A3o-munck", "destination": "/blog/laudo-nr11-caminhao-munck-vsm", "statusCode": 301 },
+    { "source": "/post/os-7-erros-mais-comuns-plano-de-rigging", "destination": "/blog/7-erros-plano-de-rigging", "statusCode": 301 },
+    { "source": "/post/impacto-da-classifica%C3%A7%C3%A3o-de-monta-na-revenda-do-ve%C3%ADculo", "destination": "/blog/impacto-reclassificacao-revenda", "statusCode": 301 },
+
+    { "source": "/post/tudo-o-que-voc%C3%AA-precisa-saber-sobre-a-nr-13", "destination": "/servicos/nr13", "statusCode": 301 },
+    { "source": "/post/documenta%C3%A7%C3%A3o-nr-13", "destination": "/servicos/nr13", "statusCode": 301 },
+    { "source": "/post/laudo-de-recuperabilidade-reclassifica%C3%A7%C3%A3o-de-monta", "destination": "/servicos/reclassificacao-de-monta", "statusCode": 301 },
+    { "source": "/post/reclassifica%C3%A7%C3%A3o-de-monta-engenheiros-mec%C3%A2nicos", "destination": "/servicos/reclassificacao-de-monta", "statusCode": 301 },
+
+    { "source": "/post/:path*", "destination": "/blog", "statusCode": 301 },
+    { "source": "/services/:path*", "destination": "/", "statusCode": 301 }
+  ],
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/((?!api/|assets/|.*\\..*).*)",
       "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" },
+        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/(.*).(jpg|jpeg|png|webp|avif|gif|svg|ico|woff|woff2|ttf|otf|eot)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/(.*).(js|mjs|css)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=86400" },
+        { "key": "Content-Type", "value": "application/xml; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=86400" },
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/llms.txt",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=86400" },
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/blog/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=600, stale-while-revalidate=86400" }
+      ]
+    },
+    {
+      "source": "/servicos/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=600, stale-while-revalidate=86400" }
+      ]
     }
   ]
 }

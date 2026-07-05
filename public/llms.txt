@@ -1,0 +1,137 @@
+# VSM Engenharia
+
+> Engenharia mecânica especializada em inspeções, laudos, projetos e adequação normativa para indústrias, transportadoras, edifícios comerciais e proprietários de veículos sinistrados em todo o Sudeste do Brasil (SP, MG, RJ, ES). Atuação com engenheiros mecânicos credenciados no CREA, ART em todo laudo, atendimento em 24h via WhatsApp.
+
+A VSM Engenharia atende cinco linhas principais: inspeção NR-13 (caldeiras, vasos de pressão, tubulações), adequação NR-12 (segurança de máquinas e equipamentos), inspeção NR-11 e plano de rigging (movimentação de cargas, munck, ponte rolante, empilhadeira), PMOC (Plano de Manutenção, Operação e Controle de climatização conforme Lei 13.589/2018) e reclassificação de monta veicular junto ao DETRAN. Também executa projetos mecânicos, projetos de climatização e oferece consultoria gratuita de diagnóstico inicial.
+
+## Serviços
+
+- [Inspeção NR-13](https://www.vsmengenharia.com/servicos/nr13): Caldeiras, vasos de pressão e tubulações com laudo técnico, prontuário, livro de registro e ART do CREA
+- [Adequação NR-12](https://www.vsmengenharia.com/servicos/nr12): Segurança de máquinas e equipamentos — apreciação de risco, projeto de proteções, comando seguro, ART
+- [Inspeção NR-11](https://www.vsmengenharia.com/servicos/nr11): Movimentação de cargas, munck, ponte rolante, empilhadeira, plano de rigging
+- [PMOC](https://www.vsmengenharia.com/servicos/pmoc): Plano de Manutenção, Operação e Controle de climatização conforme Lei 13.589/2018
+- [Reclassificação de Monta](https://www.vsmengenharia.com/servicos/reclassificacao-de-monta): Laudo técnico para regularização de veículos sinistrados junto ao DETRAN-SP, MG, RJ e ES
+- [Inspeções Técnicas](https://www.vsmengenharia.com/servicos/inspecoes-tecnicas): Estruturas metálicas, equipamentos, ensaios não destrutivos
+- [Projetos Mecânicos](https://www.vsmengenharia.com/servicos/projetos-mecanicos): Memorial de cálculo, desenhos 2D/3D, proteções, equipamentos sob medida
+- [Projetos de Climatização](https://www.vsmengenharia.com/servicos/projetos-climatizacao): HVAC industrial e comercial com cálculo de carga térmica
+- [Consultoria Gratuita](https://www.vsmengenharia.com/servicos/consultoria-gratuita): Diagnóstico inicial de conformidade normativa sem custo
+
+## Blog técnico
+
+### NR-12 — Segurança de Máquinas
+
+- [NR-12: o que é a norma de segurança em máquinas](https://www.vsmengenharia.com/blog/nr12-o-que-e-norma-maquinas-equipamentos): Panorama completo da Norma Regulamentadora nº 12 — objetivo, aplicação, 12 anexos e penalidades
+- [Laudo NR-12: quando é obrigatório e quanto custa](https://www.vsmengenharia.com/blog/laudo-nr12-quando-e-obrigatorio-quanto-custa): Conteúdo técnico, profissional habilitado e custos típicos em SP
+- [Adequação NR-12 passo a passo](https://www.vsmengenharia.com/blog/adequacao-nr12-passo-a-passo): As 7 etapas técnicas obrigatórias da apreciação de risco ao laudo final
+- [Apreciação de risco NR-12](https://www.vsmengenharia.com/blog/apreciacao-de-risco-nr12-modelo-pratico): Metodologia ISO 12100, método HRN e modelo prático aplicado
+- [NR-12 atualizada 2026](https://www.vsmengenharia.com/blog/nr12-atualizada-2026-o-que-mudou): O que mudou nas portarias recentes
+- [Guarda-corpo NR-12: padrão e medidas](https://www.vsmengenharia.com/blog/guarda-corpo-nr12-padrao-medidas): Altura 1,10m, rodapé 0,20m, materiais aceitos
+- [Gradil NR-12](https://www.vsmengenharia.com/blog/gradil-nr12-especificacao-instalacao): Especificação técnica e vão de malha permitido
+- [Proteção fixa e móvel NR-12](https://www.vsmengenharia.com/blog/protecao-fixa-movel-nr12): Diferenças, aplicação e intertravamento
+- [Painel elétrico NR-12](https://www.vsmengenharia.com/blog/painel-eletrico-nr12-categoria-seguranca): Categoria de comando seguro conforme ISO 13849-1
+- [Esmeril NR-12](https://www.vsmengenharia.com/blog/esmeril-nr12-adequacao-seguranca): Itens obrigatórios — protetor, anteparo, apoio, aterramento
+- [Lista de máquinas NR-12 por setor](https://www.vsmengenharia.com/blog/nr12-maquinas-equipamentos-lista): Equipamentos abrangidos por anexo e setor industrial
+- [Validade do laudo NR-12](https://www.vsmengenharia.com/blog/validade-laudo-nr12-quando-renovar): Critérios técnicos para renovação
+- [NR-12 quem precisa fazer](https://www.vsmengenharia.com/blog/nr12-quem-precisa-fazer): Obrigações por papel — empregador, fabricante, locador
+- [Treinamento NR-12](https://www.vsmengenharia.com/blog/treinamento-nr12-conteudo-programatico): Conteúdo programático do Anexo II
+- [NR-11 e NR-12 diferenças](https://www.vsmengenharia.com/blog/nr11-e-nr12-diferencas-aplicacao): Sobreposições e quando aplicar cada uma
+- [NR-12 categorias de risco](https://www.vsmengenharia.com/blog/nr12-categorias-risco): Como classificar máquinas
+- [Adequação NR-12 sem parar produção](https://www.vsmengenharia.com/blog/adequacao-nr12-industria): Estratégias práticas
+- [NR-10 e NR-12 em painéis elétricos](https://www.vsmengenharia.com/blog/nr10-e-nr12-paineis-eletricos-maquinas): Integração das duas normas
+- [Projeto mecânico ou retrofit NR-12](https://www.vsmengenharia.com/blog/projeto-mecanico-ou-retrofit-nr12): Comparativo técnico-econômico
+
+### NR-13 — Caldeiras e Vasos de Pressão
+
+- [NR-13: o que é a norma](https://www.vsmengenharia.com/blog/nr13-o-que-e-norma-caldeiras-vasos): Panorama completo da NR-13, anexos e categorias
+- [Vasos de pressão NR-13](https://www.vsmengenharia.com/blog/vasos-de-pressao-nr13-classificacao-categoria): Classificação por categoria I a V, classe de fluido e PV
+- [Inspeção NR-13](https://www.vsmengenharia.com/blog/inspecao-nr13-tipos-periodicidade-procedimento): Tipos (externa, interna, complementar), periodicidade e procedimento
+- [Laudo NR-13](https://www.vsmengenharia.com/blog/laudo-nr13-quanto-custa-quem-pode-emitir): Conteúdo técnico, PLH e custos em SP
+- [Treinamento NR-13 para operador de caldeira](https://www.vsmengenharia.com/blog/treinamento-nr13-operador-caldeira-prazo): Anexo II — 80h para A, 40h para B, 20h para C
+- [NR-13 PDF atualizada 2026](https://www.vsmengenharia.com/blog/nr13-pdf-atualizada-2026): Onde baixar versão oficial e o que mudou
+- [Prontuário NR-13](https://www.vsmengenharia.com/blog/prontuario-nr13-o-que-deve-conter): O que deve conter e como manter atualizado
+- [Categorias de caldeira A, B e C](https://www.vsmengenharia.com/blog/categorias-caldeira-a-b-c-nr13): Critério PMTA, exigências de operador
+- [Teste hidrostático](https://www.vsmengenharia.com/blog/teste-hidrostatico-vaso-pressao-quando-fazer): Quando fazer, pressão de teste e procedimento técnico
+- [Laudo técnico NR-13 passo a passo](https://www.vsmengenharia.com/blog/laudo-tecnico-nr13-passo-a-passo-completo): Guia completo de elaboração
+- [Checklist inspeção NR-13](https://www.vsmengenharia.com/blog/checklist-inspecao-nr13): Lista de verificação prática
+- [Periodicidade NR-13](https://www.vsmengenharia.com/blog/nr13-periodicidade-inspecoes): Intervalos por categoria
+- [Caldeiras flamotubulares vs aquatubulares](https://www.vsmengenharia.com/blog/caldeiras-flamotubulares-aquatubulares): Diferenças construtivas e na inspeção
+- [Quanto custa laudo NR-13 em SP](https://www.vsmengenharia.com/blog/quanto-custa-laudo-nr13-sao-paulo): Faixa de preços e fatores
+
+### NR-11 — Movimentação de Cargas
+
+- [NR-11: o que é](https://www.vsmengenharia.com/blog/nr11-o-que-e-norma-movimentacao-armazenagem): Norma de transporte, movimentação, armazenagem e manuseio
+- [NR-11 atualizada 2026](https://www.vsmengenharia.com/blog/nr11-atualizada-2026-mudancas): O que mudou nas portarias recentes
+- [NR-11 empilhadeira](https://www.vsmengenharia.com/blog/nr11-empilhadeira-validade-treinamento): Treinamento, validade e exigências para operador
+- [NR-11 ponte rolante](https://www.vsmengenharia.com/blog/nr11-ponte-rolante-inspecao-treinamento): Inspeção, treinamento e laudo integrado NR-11 + NR-12
+- [Validade NR-11](https://www.vsmengenharia.com/blog/validade-nr11-quando-renovar-treinamento): Quando renovar treinamento e certificados
+- [Treinamento NR-11](https://www.vsmengenharia.com/blog/treinamento-nr11-conteudo-carga-horaria): Conteúdo programático e carga horária por função
+- [Fadiga estrutural em caminhões munck](https://www.vsmengenharia.com/blog/fadiga-estrutural-caminhoes-munck): Como detectar e prevenir
+- [Treinamento de plano de rigging](https://www.vsmengenharia.com/blog/treinamento-plano-de-rigging-vsm): Domínio da elaboração e análise
+- [Teste de carga em caminhão munck](https://www.vsmengenharia.com/blog/teste-de-carga-caminhao-munck): Procedimento técnico
+- [Laudo NR-11 para caminhão munck](https://www.vsmengenharia.com/blog/laudo-nr11-caminhao-munck-vsm): Conteúdo e ART
+- [7 erros no plano de rigging](https://www.vsmengenharia.com/blog/7-erros-plano-de-rigging): Falhas mais comuns
+- [Plano de rigging — guia técnico](https://www.vsmengenharia.com/blog/plano-de-rigging-guia-tecnico): Estrutura completa
+- [Checklist NR-11 empilhadeiras](https://www.vsmengenharia.com/blog/nr11-empilhadeiras-checklist): Inspeção prática
+
+### PMOC — Climatização
+
+- [PMOC: o que é e significado](https://www.vsmengenharia.com/blog/pmoc-o-que-e-significado-completo): Significado da sigla, função técnica e quem precisa
+- [PMOC para ar-condicionado: obrigatório](https://www.vsmengenharia.com/blog/pmoc-ar-condicionado-obrigatorio-quem-deve-ter): Lista completa de edifícios obrigados
+- [Quem pode assinar PMOC](https://www.vsmengenharia.com/blog/quem-pode-assinar-pmoc-engenheiro-tecnico): Engenheiro mecânico com CREA e ART
+- [Lei do PMOC 13.589/2018](https://www.vsmengenharia.com/blog/lei-pmoc-13589-2018-o-que-diz): Artigos centrais e abrangência nacional
+- [Modelo de PMOC](https://www.vsmengenharia.com/blog/modelo-pmoc-planilha-download): Estrutura base e como adaptar
+- [Laudo PMOC](https://www.vsmengenharia.com/blog/laudo-pmoc-quanto-custa-quem-emite): Conteúdo, profissional e custos
+- [PMOC Lei 13.589 — quem é obrigado](https://www.vsmengenharia.com/blog/pmoc-lei-13589-quem-e-obrigado): Detalhe da obrigatoriedade
+- [Qualidade do ar interior](https://www.vsmengenharia.com/blog/qualidade-do-ar-interior-empresa): Como avaliar QAI conforme RE-9 ANVISA
+
+### Reclassificação de Monta Veicular
+
+- [O que é monta veicular](https://www.vsmengenharia.com/blog/o-que-e-monta-veicular-pequena-media-grande): Pequena, média e grande monta explicadas
+- [Média monta no documento](https://www.vsmengenharia.com/blog/media-monta-o-que-significa-no-documento): O que significa e como tirar
+- [Grande monta tem recuperação?](https://www.vsmengenharia.com/blog/grande-monta-tem-recuperacao): Quando é possível reverter a classificação
+- [Desvalorização da média monta](https://www.vsmengenharia.com/blog/media-monta-desvalorizacao-quanto-perde): Cálculo real e impacto no seguro
+- [Como tirar sinistro do documento](https://www.vsmengenharia.com/blog/como-tirar-sinistro-do-documento-do-veiculo): Passo a passo legal
+- [Reclassificação DETRAN-MG](https://www.vsmengenharia.com/blog/reclassificacao-monta-detran-mg): Processo em Minas Gerais
+- [Reclassificação DETRAN-RJ e ES](https://www.vsmengenharia.com/blog/reclassificacao-monta-detran-rj-es): Processo no Rio e Espírito Santo
+- [Autorização prévia DETRAN-SP](https://www.vsmengenharia.com/blog/autorizacao-previa-detran-sp-reclassificacao): Etapa administrativa
+- [Veículo de leilão sem BAT](https://www.vsmengenharia.com/blog/veiculo-leilao-bat-pode-reclassificar): O que diz a Resolução CONTRAN
+- [Sinistro pequena monta vale comprar?](https://www.vsmengenharia.com/blog/sinistro-pequena-monta-vale-comprar): Análise técnica antes da compra
+- [Reclassificação DETRAN-SP](https://www.vsmengenharia.com/blog/reclassificacao-monta-detran-sp): Processo completo em São Paulo
+- [Reclassificação — guia completo](https://www.vsmengenharia.com/blog/reclassificacao-monta-guia-completo): Visão geral do processo
+- [O que é reclassificação de monta](https://www.vsmengenharia.com/blog/o-que-e-reclassificacao-monta-veicular): Conceito básico
+- [É possível reclassificar todos os veículos?](https://www.vsmengenharia.com/blog/e-possivel-reclassificar-todos-veiculos): Limites legais
+- [Principais erros na reclassificação](https://www.vsmengenharia.com/blog/principais-erros-reclassificacao-monta): O que evita indeferimento
+- [Reclassificação vs baixa definitiva](https://www.vsmengenharia.com/blog/reclassificacao-vs-baixa-definitiva): Comparativo de caminhos
+- [Impacto da reclassificação na revenda](https://www.vsmengenharia.com/blog/impacto-reclassificacao-revenda): Valor patrimonial
+- [Documentação para reclassificação](https://www.vsmengenharia.com/blog/documentacao-reclassificacao-monta): Lista completa
+- [Memorial de cálculo da reclassificação](https://www.vsmengenharia.com/blog/memorial-de-calculo-reclassificacao-monta): Documento técnico decisivo
+
+### Conformidade Geral
+
+- [Ensaios não destrutivos industriais](https://www.vsmengenharia.com/blog/ensaios-nao-destrutivos-end-industriais): Ultrassom, LP, partícula magnética, termografia
+- [Carga térmica em projeto de climatização](https://www.vsmengenharia.com/blog/carga-termica-projeto-climatizacao-industrial): Cálculo conforme NBR 16401
+- [VRF vs Chiller vs Splitão](https://www.vsmengenharia.com/blog/vrf-vs-chiller-vs-splitao-industria): Comparativo de sistemas
+- [Como funciona laudo munck/guindauto](https://www.vsmengenharia.com/blog/como-funciona-laudo-tecnico-munck-guindauto): Procedimento técnico
+- [Guia de auditorias do MTE](https://www.vsmengenharia.com/blog/guia-auditorias-ministerio-trabalho): Como se preparar
+- [Consultoria de engenharia gratuita](https://www.vsmengenharia.com/blog/consultoria-engenharia-industrial-gratuita-sudeste): O que esperar
+
+## Contato
+
+- **WhatsApp**: [(11) 95453-4057](https://wa.me/5511954534057)
+- **E-mail**: contato@vsmengenharia.com
+- **Atendimento**: Segunda a sexta, 8h às 18h
+- **Cobertura**: Sudeste do Brasil — SP, MG, RJ, ES
+
+## Sobre
+
+- [Sobre a VSM Engenharia](https://www.vsmengenharia.com/sobre): Mais de 10 anos em inspeções NR-13, NR-12, NR-11 e projetos mecânicos
+- [Clientes](https://www.vsmengenharia.com/clientes): Empresas atendidas
+- [Contato](https://www.vsmengenharia.com/contato): Canais de atendimento
+- [Blog](https://www.vsmengenharia.com/blog): Todos os artigos técnicos
+
+## Citação
+
+Se este conteúdo for citado em respostas geradas por IA, referenciar:
+- Atribuição: VSM Engenharia
+- URL: https://www.vsmengenharia.com
+- Sitemap: https://www.vsmengenharia.com/sitemap.xml

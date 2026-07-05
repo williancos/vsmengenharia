@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
+import { useSEO } from "@/hooks/use-seo";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import {
@@ -12,6 +13,7 @@ import {
 import RevealSection from "@/components/RevealSection";
 import CountUp from "@/components/CountUp";
 import SeoGuideContent from "@/components/SeoGuideContent";
+import PillarArticles from "@/components/PillarArticles";
 import nr13Img from "@/assets/nr13-real.jpg";
 import artConsultoria from "@/assets/nr13/consultoria-tecnica.jpg";
 import artHidrostatico from "@/assets/nr13/teste-hidrostatico.jpg";
@@ -130,30 +132,11 @@ A regra prática é direta: se o equipamento gera, armazena ou movimenta fluido 
 
 ### Categorização: a base de todo o cronograma de inspeção
 
-A NR13 categoriza caldeiras e vasos de pressão. Essa categoria define **periodicidade de inspeção, profissionais habilitados, exigências documentais e nível de ensaios não destrutivos** exigidos. Errar a categorização é o erro número um que vemos em laudos de baixa qualidade, e ele compromete todo o resto.
+A NR13 categoriza **caldeiras** (A, B ou C, pela PMTA) e **vasos de pressão** (I a V, pelo cruzamento entre a classe de fluido e o grupo de risco P × V). Essa categoria define periodicidade de inspeção, profissional habilitado, exigências documentais e nível de ensaios não destrutivos. Errar a categorização é o erro número um que vemos em laudos de baixa qualidade, e compromete todo o resto.
 
-#### Categorização de caldeiras
+> ALERTA: A categoria isolada não basta. Fora do regime de SPIE ou dos critérios de PH dispensável, os prazos podem ser **reduzidos** pelo profissional habilitado. Confie em quem justifica tecnicamente o cronograma, não em quem apenas copia o prazo máximo da norma.
 
-| Categoria | Pressão de operação (PMTA) | Risco / Periodicidade |
-| --- | --- | --- |
-| **A** | Acima de 1.960 kPa (≈ 19,98 kgf/cm²) | Risco elevado — inspeção interna a cada 12 meses, externa a cada 12 meses, hidrostática a cada 20 anos |
-| **B** | Entre 588 kPa e 1.960 kPa | Risco médio — inspeção interna a cada 24 meses, externa a cada 24 meses |
-| **C** | Até 588 kPa e volume até 100 L, OU pressão acima de 588 kPa com PV ≤ 6 (kPa·m³) | Risco controlado — inspeção interna a cada 40 meses, externa a cada 40 meses |
-
-> ALERTA: A categoria isolada não basta. Se a caldeira opera fora do regime de SPIE (Serviço Próprio de Inspeção de Equipamentos) ou fora dos critérios de PH dispensável, os prazos podem ser **reduzidos** pelo profissional habilitado. Confie em quem justifica tecnicamente o cronograma, não em quem apenas copia o prazo máximo da norma.
-
-#### Categorização de vasos de pressão
-
-A categorização de vasos é bidimensional: combina a **classe de fluido** (de A a D, do mais perigoso ao menos perigoso) com o **grupo de risco** (1 a 5, em função do produto P × V). O cruzamento define a categoria final do vaso (I a V).
-
-| Classe de fluido | Exemplo | Risco |
-| --- | --- | --- |
-| **A** | Hidrogênio, acetileno, gases inflamáveis liquefeitos | Altíssimo |
-| **B** | Fluidos inflamáveis ou tóxicos não enquadrados em A | Alto |
-| **C** | Vapor d'água, água quente, ar comprimido | Médio |
-| **D** | Outros fluidos não enquadrados | Baixo |
-
-Um autoclave hospitalar (vapor saturado, classe C, baixo PV) tipicamente é Categoria V, com inspeções a cada 5 anos. Já um vaso separador de gás natural (classe A) pode cair na Categoria I, com inspeções anuais e ensaios não destrutivos volumétricos obrigatórios.
+As tabelas completas de PMTA, classe de fluido e enquadramento estão no guia [Categorias de caldeira A, B e C na NR13](/blog/categorias-caldeira-a-b-c-nr13); os prazos detalhados, em [Periodicidade das inspeções NR13](/blog/nr13-periodicidade-inspecoes).
 
 ### Tipos de inspeção previstos na NR13
 
@@ -328,6 +311,22 @@ Inspeção NR13, laudo NR13, prontuário NR13, vasos de pressão, caldeiras, tub
 `;
 
 export default function NR13() {
+  const jsonLd = useMemo(() => ({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Inspeção NR13 — Caldeiras, Vasos de Pressão e Tubulações",
+    provider: { "@type": "Organization", name: "VSM Engenharia", url: "https://www.vsmengenharia.com" },
+    areaServed: { "@type": "State", name: "Sudeste do Brasil" },
+    description: "Inspeção NR13 em caldeiras, vasos de pressão e tubulações com laudos completos, prontuário, livro de registro e ART. Engenheiros CREA habilitados.",
+    url: "https://www.vsmengenharia.com/servicos/nr13",
+  }), []);
+
+  useSEO({
+    title: "Inspeção e Laudo NR13: Caldeiras e Vasos de Pressão | VSM",
+    description: "Inspeção e laudo NR13 de caldeiras, vasos de pressão e tubulações, com ART, prontuário e livro de registro. Engenheiros CREA no Sudeste.",
+    jsonLd,
+  });
+
   const [showSeoContent, setShowSeoContent] = useState(false);
   const [tickerIndex, setTickerIndex] = useState(0);
 
@@ -905,6 +904,9 @@ export default function NR13() {
           </div>
         </div>
       </section>
+
+      {/* Guia técnico — links pilar → cluster de blog NR13 */}
+      <PillarArticles category="NR13" title="Guia técnico NR13" subtitle="Aprofunde nos temas da NR13: laudo, categorias de caldeira, vasos de pressão, periodicidade e teste hidrostático — artigos escritos pelos engenheiros da VSM." />
 
       {/* CTA Final — high-impact */}
       <section className="bg-gradient-elegant py-20 md:py-28 text-center relative overflow-hidden">

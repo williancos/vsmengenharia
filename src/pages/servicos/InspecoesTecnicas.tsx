@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
+import { useSEO } from "@/hooks/use-seo";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import {
@@ -295,6 +296,22 @@ Inspeção técnica industrial, laudo de estrutura metálica, perícia técnica,
 `;
 
 export default function InspecoesTecnicas() {
+  const jsonLd = useMemo(() => ({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Inspeções Técnicas — Estruturas Metálicas e Equipamentos",
+    provider: { "@type": "Organization", name: "VSM Engenharia", url: "https://www.vsmengenharia.com" },
+    areaServed: { "@type": "State", name: "Sudeste do Brasil" },
+    description: "Inspeções técnicas de estruturas metálicas, máquinas e equipamentos industriais com ensaios não destrutivos, laudos e ART.",
+    url: "https://www.vsmengenharia.com/servicos/inspecoes-tecnicas",
+  }), []);
+
+  useSEO({
+    title: "Inspeções Técnicas — Estruturas e Equipamentos | VSM Engenharia",
+    description: "Inspeções técnicas de estruturas metálicas, máquinas e equipamentos industriais. Ensaios não destrutivos, laudos aceitos em auditorias e ART.",
+    jsonLd,
+  });
+
   const [showSeoContent, setShowSeoContent] = useState(false);
   const [tickerIndex, setTickerIndex] = useState(0);
 
@@ -314,7 +331,12 @@ export default function InspecoesTecnicas() {
       </div>
 
       <section className="relative overflow-hidden min-h-[85vh] flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-primary/80" />
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroInspecoes})` }}
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-primary/70" />
         <div className="absolute inset-0 pattern-dots opacity-10" />
         <div className="relative container mx-auto px-4 py-20 md:py-28">
           <div className="grid lg:grid-cols-5 gap-12 items-center">

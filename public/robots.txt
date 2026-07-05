@@ -1,14 +1,120 @@
+# ────────────────────────────────────────────────────────────
+# robots.txt — VSM Engenharia
+# Search engines + AI crawlers (GEO)
+# Atualizado: 2026-05-31
+# ────────────────────────────────────────────────────────────
+
+# ─── Search engines ──────────────────────────────────────────
 User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# ─── Social unfurl ───────────────────────────────────────────
 User-agent: Twitterbot
 Allow: /
 
 User-agent: facebookexternalhit
 Allow: /
 
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+# ─── AI crawlers (GEO — Generative Engine Optimization) ──────
+# OpenAI — ChatGPT search, browsing, training
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic — Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google — Gemini, AI Overviews, SGE
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Microsoft — Copilot
+User-agent: cohere-ai
+Allow: /
+
+# Apple — Apple Intelligence
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Common Crawl (usado por vários LLMs como dataset)
+User-agent: CCBot
+Allow: /
+
+# ByteDance
+User-agent: Bytespider
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+# Meta — Llama training
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Mistral
+User-agent: MistralAI-User
+Allow: /
+
+# Diffbot (usado por vários AIs como fonte estruturada)
+User-agent: Diffbot
+Allow: /
+
+# ─── Default (catch-all) ─────────────────────────────────────
 User-agent: *
 Allow: /
+
+# ─── Maps ────────────────────────────────────────────────────
+Sitemap: https://www.vsmengenharia.com/sitemap.xml

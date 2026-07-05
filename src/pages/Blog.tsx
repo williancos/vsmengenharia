@@ -1,4 +1,5 @@
 import { useState, useMemo } from "react";
+import { useSEO } from "@/hooks/use-seo";
 import { Link } from "react-router-dom";
 import {
   FileCheck, ArrowRight, Search, BookOpen, Filter,
@@ -33,6 +34,11 @@ const leadMagnets = [
 ];
 
 export default function Blog() {
+  useSEO({
+    title: "Blog de Engenharia | Guias Técnicos NR13, NR12, NR11 — VSM Engenharia",
+    description: "Blog com guias práticos sobre NR13, NR12, NR11 e reclassificação veicular. Artigos técnicos escritos por engenheiros especializados com CREA ativo.",
+  });
+
   const [activeCategory, setActiveCategory] = useState("all");
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);

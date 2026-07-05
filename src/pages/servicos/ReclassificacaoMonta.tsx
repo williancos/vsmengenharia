@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
+import { useSEO } from "@/hooks/use-seo";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import {
@@ -12,6 +13,7 @@ import {
 import RevealSection from "@/components/RevealSection";
 import CountUp from "@/components/CountUp";
 import SeoGuideContent from "@/components/SeoGuideContent";
+import PillarArticles from "@/components/PillarArticles";
 import heroOriginal from "@/assets/reclassificacao/hero-original.jpg";
 import imgVeiculoSinistrado from "@/assets/reclassificacao/veiculo-sinistrado.jpg";
 import veiculo1 from "@/assets/reclassificacao/veiculo-1.jpg";
@@ -118,15 +120,11 @@ Este guia foi escrito por engenheiros mecânicos da **VSM Engenharia**, com base
 
 Quando um veículo sofre sinistro grave (colisão, capotamento, incêndio, alagamento), seguradora e perito de tráfego analisam a extensão do dano em relação ao valor de mercado e à integridade estrutural. Dessa análise sai a **classificação de monta**, que vai à frente do CRV/CRLV como anotação restritiva. A finalidade é proteger o consumidor: impede que veículo com dano estrutural relevante volte ao mercado sem reparo técnico comprovado e sem nova avaliação de engenharia.
 
-A classificação trabalha hoje em três faixas:
-
-| Classificação | O que significa | Pode reclassificar? |
-| --- | --- | --- |
-| **Pequena monta** | Danos cosméticos ou de baixa monta financeira, sem comprometimento estrutural | Não exige reclassificação — apenas reparo |
-| **Média monta** | Danos estruturais reparáveis em longarinas, colunas ou monobloco | Sim, com laudo de engenheiro mecânico |
-| **Grande monta** | Danos irreparáveis, perda total estrutural, fogo extenso, submersão prolongada | Não. Veículo destinado a desmonte (Resolução CONTRAN 11/1998 e atualizações) |
+A classificação trabalha em três faixas: **pequena monta** (danos cosméticos, sem comprometimento estrutural — só reparo), **média monta** (danos estruturais reparáveis em longarinas, colunas ou monobloco — reclassificável com laudo de engenheiro mecânico) e **grande monta** (danos irreparáveis, perda total estrutural — destinada a desmonte, não reclassificável).
 
 > ALERTA: Veículo classificado como **grande monta** não pode ser reclassificado. Tentativas de "rebaixar" para média monta caracterizam **adulteração de prontuário e fraude documental** (art. 311 e 297 do Código Penal). Fuja de qualquer prestador que prometa "transformar grande em média monta" — é crime.
+
+Explicamos cada faixa, o que consta no documento e o impacto na revenda no guia [Pequena, média e grande monta: o que significa no veículo](/blog/o-que-e-monta-veicular-pequena-media-grande).
 
 ### Quando a reclassificação é necessária
 
@@ -304,6 +302,22 @@ Reclassificação de monta, laudo de engenharia veicular, perícia de veículo s
 `;
 
 export default function ReclassificacaoMonta() {
+  const jsonLd = useMemo(() => ({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Reclassificação de Monta — Veículos Sinistrados",
+    provider: { "@type": "Organization", name: "VSM Engenharia", url: "https://www.vsmengenharia.com" },
+    areaServed: { "@type": "State", name: "Sudeste do Brasil" },
+    description: "Reclassificação de monta para veículos sinistrados junto ao DETRAN. Laudo técnico, memorial de cálculo e regularização completa.",
+    url: "https://www.vsmengenharia.com/servicos/reclassificacao-de-monta",
+  }), []);
+
+  useSEO({
+    title: "Reclassificação de Monta: Laudo DETRAN de Sinistrado | VSM",
+    description: "Reclassificação de monta de veículo sinistrado: laudo DETRAN, memorial de cálculo e regularização. Engenheiros especializados no Sudeste.",
+    jsonLd,
+  });
+
   const [showSeoContent, setShowSeoContent] = useState(false);
   const [tickerIndex, setTickerIndex] = useState(0);
 
@@ -323,7 +337,12 @@ export default function ReclassificacaoMonta() {
       </div>
 
       <section className="relative overflow-hidden min-h-[85vh] flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-primary/80" />
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroOriginal})` }}
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-primary/70" />
         <div className="absolute inset-0 pattern-dots opacity-10" />
         <div className="relative container mx-auto px-4 py-20 md:py-28">
           <div className="grid lg:grid-cols-5 gap-12 items-center">
@@ -803,6 +822,9 @@ export default function ReclassificacaoMonta() {
           </div>
         </div>
       </section>
+
+      {/* Guia técnico — links pilar → cluster de blog Reclassificação de Monta */}
+      <PillarArticles category="Reclassificação" title="Guia completo de reclassificação de monta" subtitle="Aprofunde nos temas: pequena, média e grande monta, DETRAN-SP/MG/RJ/ES, como tirar sinistro do documento, desvalorização e documentação — artigos escritos pelos engenheiros da VSM." />
 
       <section className="bg-gradient-elegant py-20 md:py-28 text-center relative overflow-hidden">
         <div className="absolute inset-0 pattern-dots opacity-10" />

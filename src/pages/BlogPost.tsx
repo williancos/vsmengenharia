@@ -1,5 +1,6 @@
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { useEffect, useState, useMemo } from "react";
+import { useSEO } from "@/hooks/use-seo";
 import {
   ArrowLeft, ArrowRight, Clock, Eye, Users, Shield, Phone,
   ChevronRight, CheckCircle2, Share2, Bookmark, Calendar,
@@ -8,6 +9,35 @@ import {
 import { Button } from "@/components/ui/button";
 import RevealSection from "@/components/RevealSection";
 import { allPosts, categoryConfig } from "@/data/blogData";
+
+/**
+ * Deriva a página-pilar de serviço a partir da categoria do post (e do slug,
+ * no caso de "Conformidade", que é um balde misto). Usado como fallback quando
+ * o post não define `relatedService` — garante que TODO post do blog tenha um
+ * link interno com âncora comercial para o serviço-pilar correspondente.
+ */
+function resolveRelatedService(post: { category: string; slug: string }): { label: string; href: string } {
+  switch (post.category) {
+    case "NR13":
+      return { label: "Inspeção e Laudo NR13", href: "/servicos/nr13" };
+    case "NR11":
+      return { label: "Inspeção NR11 e Plano de Rigging", href: "/servicos/nr11" };
+    case "NR12":
+      return { label: "Adequação NR12", href: "/servicos/nr12" };
+    case "Reclassificação":
+      return { label: "Reclassificação de Monta", href: "/servicos/reclassificacao-de-monta" };
+    case "Conformidade": {
+      const s = post.slug;
+      if (s.includes("pmoc") || s.includes("qualidade-do-ar"))
+        return { label: "PMOC — Climatização", href: "/servicos/pmoc" };
+      if (s.includes("carga-termica") || s.includes("vrf") || s.includes("chiller") || s.includes("climatiz"))
+        return { label: "Projetos de Climatização", href: "/servicos/projetos-climatizacao" };
+      return { label: "Inspeções Técnicas", href: "/servicos/inspecoes-tecnicas" };
+    }
+    default:
+      return { label: "Consultoria Gratuita", href: "/servicos/consultoria-gratuita" };
+  }
+}
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
@@ -47,40 +77,75 @@ export default function BlogPost() {
     window.scrollTo(0, 0);
   }, [slug]);
 
-  // SEO: title & meta description
-  useEffect(() => {
-    if (!post) return;
-    const prevTitle = document.title;
-    document.title = `${post.title} | Blog VSM Engenharia`;
-
-    const setMeta = (name: string, content: string, attr: "name" | "property" = "name") => {
-      let tag = document.querySelector(`meta[${attr}="${name}"]`) as HTMLMetaElement | null;
-      if (!tag) {
-        tag = document.createElement("meta");
-        tag.setAttribute(attr, name);
-        document.head.appendChild(tag);
-      }
-      tag.content = content;
-    };
-    const desc = post.metaDescription || post.excerpt;
-    setMeta("description", desc);
-    setMeta("og:title", post.title, "property");
-    setMeta("og:description", desc, "property");
-    setMeta("og:type", "article", "property");
-    if (post.coverImage) setMeta("og:image", post.coverImage, "property");
-
-    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.rel = "canonical";
-      document.head.appendChild(canonical);
-    }
-    canonical.href = window.location.href;
-
-    return () => {
-      document.title = prevTitle;
+  const articleJsonLd = useMemo(() => {
+    if (!post) return undefined;
+    return {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: post.title,
+      description: post.metaDescription || post.excerpt,
+      image: post.coverImage,
+      author: post.author
+        ? {
+            "@type": "Person",
+            name: post.author.name,
+            jobTitle: post.author.jobTitle,
+            identifier: post.author.crea,
+            ...(post.author.linkedin ? { sameAs: post.author.linkedin } : {}),
+          }
+        : { "@type": "Organization", name: "VSM Engenharia", url: "https://www.vsmengenharia.com" },
+      publisher: {
+        "@type": "Organization",
+        name: "VSM Engenharia",
+        url: "https://www.vsmengenharia.com",
+        logo: { "@type": "ImageObject", url: "https://www.vsmengenharia.com/og-image.webp" },
+      },
+      datePublished: post.date,
+      dateModified: post.dateModified || post.date,
+      mainEntityOfPage: `https://www.vsmengenharia.com/blog/${post.slug}`,
+      articleSection: post.category,
+      ...(post.keywords?.length ? { keywords: post.keywords.join(", ") } : {}),
     };
   }, [post]);
+
+  const breadcrumbJsonLd = useMemo(() => {
+    if (!post) return undefined;
+    return {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.vsmengenharia.com/" },
+        { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.vsmengenharia.com/blog" },
+        { "@type": "ListItem", position: 3, name: post.title, item: `https://www.vsmengenharia.com/blog/${post.slug}` },
+      ],
+    };
+  }, [post]);
+
+  const faqJsonLd = useMemo(() => {
+    if (!post?.faq?.length) return undefined;
+    return {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: post.faq.map((f) => ({
+        "@type": "Question",
+        name: f.question,
+        acceptedAnswer: { "@type": "Answer", text: f.answer },
+      })),
+    };
+  }, [post]);
+
+  const jsonLdAll = useMemo(
+    () => [articleJsonLd, breadcrumbJsonLd, faqJsonLd].filter(Boolean) as Record<string, unknown>[],
+    [articleJsonLd, breadcrumbJsonLd, faqJsonLd]
+  );
+
+  useSEO({
+    title: post ? `${post.title} | Blog VSM Engenharia` : "Blog VSM Engenharia",
+    description: post ? (post.metaDescription || post.excerpt) : "Artigos técnicos sobre engenharia industrial.",
+    ogType: "article",
+    ogImage: post?.coverImage,
+    jsonLd: jsonLdAll.length ? jsonLdAll : undefined,
+  });
 
   if (!post) {
     return (
@@ -110,6 +175,7 @@ export default function BlogPost() {
   };
 
   const hasContent = post.content && post.content.length > 0;
+  const relatedService = post.relatedService ?? resolveRelatedService(post);
 
   return (
     <>
@@ -292,7 +358,7 @@ export default function BlogPost() {
 
             {/* Sidebar — TOC + CTA (sticky) */}
             <aside className="lg:col-span-4 order-2 hidden lg:block">
-              <div className="sticky top-24 space-y-6 max-h-[calc(100vh-7rem)] overflow-y-auto scrollbar-thin pr-1">
+              <div className="sticky top-24 space-y-6">
                 {/* Table of contents */}
                 {post.toc && post.toc.length > 0 && (
                   <div className="bg-card rounded-xl border border-border/50 p-5">
@@ -308,15 +374,15 @@ export default function BlogPost() {
                   </div>
                 )}
 
-                {/* Related service CTA */}
-                {post.relatedService && (
+                {/* Related service CTA — sempre presente (deriva da categoria quando o post não define) */}
+                {relatedService && (
                   <div className="bg-gradient-elegant rounded-xl p-5 relative overflow-hidden">
                     <div className="absolute inset-0 pattern-dots opacity-10" />
                     <div className="relative">
                       <span className="text-[10px] font-bold tracking-widest text-cta uppercase">Serviço Relacionado</span>
-                      <h4 className="text-sm font-bold text-white mt-2 mb-3">{post.relatedService.label}</h4>
+                      <h4 className="text-sm font-bold text-white mt-2 mb-3">{relatedService.label}</h4>
                       <Button asChild size="sm" className="bg-cta text-cta-foreground hover:bg-cta-hover rounded-full text-xs w-full shadow-md">
-                        <Link to={post.relatedService.href}>
+                        <Link to={relatedService.href}>
                           Solicitar Orçamento <ArrowRight className="h-3.5 w-3.5 ml-1" />
                         </Link>
                       </Button>
@@ -399,8 +465,8 @@ export default function BlogPost() {
                     <Link to="/contato"><Phone className="h-5 w-5 mr-2" />Falar com Engenheiro</Link>
                   </Button>
                   <Button asChild className="bg-white text-primary font-semibold px-7 h-13 rounded-full hover:bg-white/90 transition-all">
-                    <Link to={post.relatedService?.href || "/servicos/consultoria-gratuita"}>
-                      {post.relatedService?.label || "Consultoria Gratuita"} <ChevronRight className="h-4 w-4 ml-1" />
+                    <Link to={relatedService.href}>
+                      {relatedService.label} <ChevronRight className="h-4 w-4 ml-1" />
                     </Link>
                   </Button>
                 </div>
@@ -427,7 +493,7 @@ export default function BlogPost() {
 function renderMarkdown(md: string): string {
   // Process tables first
   const tableRegex = /(?:^\|.+\|$\n?)+/gm;
-  let result = md.replace(tableRegex, (tableBlock) => {
+  const result = md.replace(tableRegex, (tableBlock) => {
     const rows = tableBlock.trim().split('\n').filter(r => r.trim());
     const htmlRows = rows
       .filter(row => !row.match(/^\|[\s-:|]+\|$/)) // skip separator

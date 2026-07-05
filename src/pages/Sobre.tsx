@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
+import { useSEO } from "@/hooks/use-seo";
 import {
   Shield, Award, Users, TrendingUp, Target, Eye, Heart, MapPin,
   CheckCircle2, Phone, BadgeCheck, Factory, Clock, FileText,
@@ -59,6 +60,11 @@ const services = [
 ];
 
 export default function Sobre() {
+  useSEO({
+    title: "Sobre a VSM Engenharia | Quem Somos e Nossa Missão",
+    description: "VSM Engenharia — mais de 10 anos em inspeções NR13, NR12, NR11 e projetos mecânicos. Engenheiros CREA habilitados protegendo sua operação no Sudeste.",
+  });
+
   return (
     <>
       {/* Hero — immersive with image */}

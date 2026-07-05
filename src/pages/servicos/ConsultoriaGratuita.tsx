@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
+import { useSEO } from "@/hooks/use-seo";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import {
@@ -85,6 +86,22 @@ const relatedServices = [
 ];
 
 export default function ConsultoriaGratuita() {
+  const jsonLd = useMemo(() => ({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Consultoria Gratuita em Conformidade Normativa",
+    provider: { "@type": "Organization", name: "VSM Engenharia", url: "https://www.vsmengenharia.com" },
+    areaServed: { "@type": "State", name: "Sudeste do Brasil" },
+    description: "Consultoria gratuita e sem compromisso sobre conformidade normativa NR13, NR12, NR11 e PMOC. Diagnóstico com resposta em 24h.",
+    url: "https://www.vsmengenharia.com/servicos/consultoria-gratuita",
+  }), []);
+
+  useSEO({
+    title: "Consultoria Gratuita em Conformidade Normativa | VSM Engenharia",
+    description: "Consultoria gratuita em NR13, NR12, NR11 e PMOC. Diagnóstico de conformidade sem compromisso com resposta em 24h de engenheiro especialista.",
+    jsonLd,
+  });
+
   const [tickerIndex, setTickerIndex] = useState(0);
 
   useEffect(() => {
@@ -103,7 +120,12 @@ export default function ConsultoriaGratuita() {
       </div>
 
       <section className="relative overflow-hidden min-h-[85vh] flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-primary/80" />
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroConsultoria})` }}
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-primary/70" />
         <div className="absolute inset-0 pattern-dots opacity-10" />
         <div className="relative container mx-auto px-4 py-20 md:py-28">
           <div className="grid lg:grid-cols-5 gap-12 items-center">

@@ -2,9 +2,11 @@ import { Mail, Phone, Clock, MapPin, Send, Shield, CheckCircle2, ArrowRight, Mes
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useState } from "react";
+import { useState, useMemo } from "react";
+import { useSEO } from "@/hooks/use-seo";
 import { Link } from "react-router-dom";
 import RevealSection from "@/components/RevealSection";
+import { trackLead } from "@/lib/analytics";
 
 const contactInfo = [
   { icon: Mail, label: "E-mail", value: "contato@vsmengenharia.com", href: "mailto:contato@vsmengenharia.com", desc: "Resposta em até 24h" },
@@ -20,12 +22,56 @@ const faqs = [
   { q: "Quais certificações vocês possuem?", a: "Todos os engenheiros possuem CREA ativo e habilitação específica para cada tipo de inspeção, com emissão de ART." },
 ];
 
+const WHATSAPP_NUMBER = "5511954534057";
+const SERVICE_LABELS: Record<string, string> = {
+  nr13: "Inspeção NR-13 (Caldeiras e Vasos)",
+  nr12: "Inspeção NR-12 (Segurança de Máquinas)",
+  nr11: "NR-11 / Plano de Rigging",
+  reclassificacao: "Reclassificação de Monta",
+  pmoc: "PMOC",
+  inspecoes: "Inspeções Técnicas",
+  "projetos-mecanicos": "Projetos Mecânicos",
+  climatizacao: "Projetos de Climatização",
+  consultoria: "Consultoria Gratuita",
+  outro: "Outro",
+};
+
 export default function Contato() {
+  useSEO({
+    title: "Contato | Fale com Engenheiro Especialista — VSM Engenharia",
+    description: "Entre em contato com engenheiro especialista da VSM. Consultoria gratuita, atendimento em 24h via WhatsApp, telefone ou e-mail. Todo Sudeste.",
+  });
+
   const [submitted, setSubmitted] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const fd = new FormData(e.currentTarget);
+    const get = (k: string) => String(fd.get(k) ?? "").trim();
+    const nome = get("nome");
+    const empresa = get("empresa");
+    const email = get("email");
+    const telefone = get("telefone");
+    const servicoVal = get("servico");
+    const servico = SERVICE_LABELS[servicoVal] || servicoVal;
+    const mensagem = get("mensagem");
+
+    // Monta a mensagem que abre no WhatsApp já preenchida com os dados do formulário
+    const linhas = [
+      "*Solicitação de orçamento — site VSM Engenharia*",
+      `*Nome:* ${nome}`,
+      empresa && `*Empresa:* ${empresa}`,
+      `*E-mail:* ${email}`,
+      telefone && `*Telefone:* ${telefone}`,
+      `*Serviço:* ${servico}`,
+      `*Mensagem:* ${mensagem}`,
+    ].filter(Boolean);
+    const texto = encodeURIComponent(linhas.join("\n"));
+
+    // Dispara a conversão (GA4) antes de abrir o WhatsApp
+    trackLead("form", { service: servicoVal });
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${texto}`, "_blank", "noopener,noreferrer");
     setSubmitted(true);
   };
 
@@ -100,8 +146,8 @@ export default function Contato() {
                       <div className="h-16 w-16 rounded-full bg-success/15 flex items-center justify-center mx-auto mb-5">
                         <CheckCircle2 className="h-8 w-8 text-success" />
                       </div>
-                      <h3 className="text-xl font-bold mb-2">Mensagem enviada com sucesso!</h3>
-                      <p className="text-sm text-muted-foreground mb-6">Nossa equipe técnica entrará em contato em até 24 horas.</p>
+                      <h3 className="text-xl font-bold mb-2">Abrimos o WhatsApp com sua solicitação!</h3>
+                      <p className="text-sm text-muted-foreground mb-6">Se o WhatsApp não abriu automaticamente, toque no botão abaixo para enviar sua mensagem. Nossa equipe responde em até 24h.</p>
                       <div className="flex flex-col sm:flex-row gap-3 justify-center">
                         <Button onClick={() => setSubmitted(false)} variant="outline" className="rounded-full">
                           Enviar nova mensagem
@@ -118,26 +164,26 @@ export default function Contato() {
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                           <label className="text-sm font-medium mb-1.5 block text-foreground">Nome *</label>
-                          <Input placeholder="Seu nome completo" required className="h-11 rounded-lg bg-background border-border/60 focus:border-primary/40" />
+                          <Input name="nome" placeholder="Seu nome completo" required className="h-11 rounded-lg bg-background border-border/60 focus:border-primary/40" />
                         </div>
                         <div>
                           <label className="text-sm font-medium mb-1.5 block text-foreground">Empresa</label>
-                          <Input placeholder="Nome da empresa" className="h-11 rounded-lg bg-background border-border/60 focus:border-primary/40" />
+                          <Input name="empresa" placeholder="Nome da empresa" className="h-11 rounded-lg bg-background border-border/60 focus:border-primary/40" />
                         </div>
                       </div>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                           <label className="text-sm font-medium mb-1.5 block text-foreground">E-mail *</label>
-                          <Input type="email" placeholder="seu@email.com" required className="h-11 rounded-lg bg-background border-border/60 focus:border-primary/40" />
+                          <Input name="email" type="email" placeholder="seu@email.com" required className="h-11 rounded-lg bg-background border-border/60 focus:border-primary/40" />
                         </div>
                         <div>
                           <label className="text-sm font-medium mb-1.5 block text-foreground">Telefone</label>
-                          <Input placeholder="(11) 95453-4057" className="h-11 rounded-lg bg-background border-border/60 focus:border-primary/40" />
+                          <Input name="telefone" placeholder="(11) 95453-4057" className="h-11 rounded-lg bg-background border-border/60 focus:border-primary/40" />
                         </div>
                       </div>
                       <div>
                         <label className="text-sm font-medium mb-1.5 block text-foreground">Serviço de interesse *</label>
-                        <select required className="flex h-11 w-full rounded-lg border border-border/60 bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus:border-primary/40">
+                        <select name="servico" required className="flex h-11 w-full rounded-lg border border-border/60 bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus:border-primary/40">
                           <option value="">Selecione o serviço...</option>
                           <option value="nr13">Inspeção NR-13 (Caldeiras e Vasos)</option>
                           <option value="nr12">Inspeção NR-12 (Segurança de Máquinas)</option>
@@ -153,7 +199,7 @@ export default function Contato() {
                       </div>
                       <div>
                         <label className="text-sm font-medium mb-1.5 block text-foreground">Mensagem *</label>
-                        <Textarea placeholder="Descreva sua necessidade, tipo de equipamento, prazo desejado..." rows={5} required className="rounded-lg bg-background border-border/60 focus:border-primary/40 resize-none" />
+                        <Textarea name="mensagem" placeholder="Descreva sua necessidade, tipo de equipamento, prazo desejado..." rows={5} required className="rounded-lg bg-background border-border/60 focus:border-primary/40 resize-none" />
                       </div>
                       <Button type="submit" size="lg" className="w-full bg-cta text-cta-foreground hover:bg-cta-hover font-semibold text-base h-12 rounded-full shadow-[0_6px_20px_-4px_hsl(var(--cta)/0.45)] hover:scale-[1.01] transition-all">
                         <Send className="h-4 w-4 mr-2" />

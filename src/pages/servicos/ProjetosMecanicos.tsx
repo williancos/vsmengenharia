@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
+import { useSEO } from "@/hooks/use-seo";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import {
@@ -212,6 +213,22 @@ Projeto mecânico industrial, projeto de proteção NR-12, projeto de equipament
 `;
 
 export default function ProjetosMecanicos() {
+  const jsonLd = useMemo(() => ({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Projetos Mecânicos — Memorial de Cálculo e Desenhos 2D/3D",
+    provider: { "@type": "Organization", name: "VSM Engenharia", url: "https://www.vsmengenharia.com" },
+    areaServed: { "@type": "State", name: "Sudeste do Brasil" },
+    description: "Projetos mecânicos com memorial de cálculo, desenhos técnicos 2D/3D, lista de materiais e ART. Proteções NR12 e equipamentos sob medida.",
+    url: "https://www.vsmengenharia.com/servicos/projetos-mecanicos",
+  }), []);
+
+  useSEO({
+    title: "Projetos Mecânicos — Memorial de Cálculo e Desenhos | VSM Engenharia",
+    description: "Projetos mecânicos especializados com memorial de cálculo, desenhos 2D/3D e ART. Proteções NR12 e equipamentos sob medida para indústria.",
+    jsonLd,
+  });
+
   const [showSeoContent, setShowSeoContent] = useState(false);
   const [tickerIndex, setTickerIndex] = useState(0);
 
@@ -231,7 +248,12 @@ export default function ProjetosMecanicos() {
       </div>
 
       <section className="relative overflow-hidden min-h-[85vh] flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-primary/80" />
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroProjetos})` }}
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-primary/70" />
         <div className="absolute inset-0 pattern-dots opacity-10" />
         <div className="relative container mx-auto px-4 py-20 md:py-28">
           <div className="grid lg:grid-cols-5 gap-12 items-center">

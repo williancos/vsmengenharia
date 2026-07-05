@@ -1,4 +1,5 @@
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useMemo } from "react";
+import { useSEO } from "@/hooks/use-seo";
 import {
   Building2, Users, Award, Shield, Phone, CheckCircle2, BadgeCheck,
   Star, Quote, ArrowRight, ChevronRight, Clock, Gauge, FileCheck,
@@ -161,6 +162,11 @@ function CarouselNav({ onPrev, onNext }: { onPrev: () => void; onNext: () => voi
 /* ── Page ── */
 
 export default function Clientes() {
+  useSEO({
+    title: "Clientes e Cases | Empresas que Confiam na VSM Engenharia",
+    description: "Mais de 150 empresas confiam na VSM Engenharia. Inspeções NR13, NR12, reclassificação e PMOC em indústrias, transportadoras e comércio no Sudeste.",
+  });
+
   const testimonialCarousel = useCarousel(testimonials.length);
   const casesCarousel = useCarousel(cases.length, 7000);
 
