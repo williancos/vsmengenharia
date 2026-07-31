@@ -13,6 +13,7 @@ import {
 import RevealSection from "@/components/RevealSection";
 import CountUp from "@/components/CountUp";
 import SeoGuideContent from "@/components/SeoGuideContent";
+import PillarArticles from "@/components/PillarArticles";
 import heroNR12 from "@/assets/nr12/hero-nr12.jpg";
 import imgPerimetral from "@/assets/nr12/protecao-perimetral.jpg";
 import imgIntertravamento from "@/assets/nr12/sistema-intertravamento.jpg";
@@ -1068,6 +1069,9 @@ export default function NR12() {
           </div>
         </div>
       </section>
+
+      {/* Guia técnico — links pilar → cluster de blog NR12 */}
+      <PillarArticles category="NR12" title="Guia técnico NR12" subtitle="Aprofunde nos temas da NR12: apreciação de riscos, proteções fixas e móveis, intertravamento, painel elétrico, laudo e treinamento — artigos escritos pelos engenheiros da VSM." limit={20} />
 
       {/* CTA Final */}
       <section className="bg-gradient-elegant py-20 md:py-28 text-center relative overflow-hidden">

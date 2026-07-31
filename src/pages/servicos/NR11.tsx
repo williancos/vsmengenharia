@@ -871,7 +871,7 @@ export default function NR11() {
       </section>
 
       {/* Guia técnico — links pilar → cluster de blog NR11 */}
-      <PillarArticles category="NR11" title="Guia técnico NR11 e Plano de Rigging" subtitle="Aprofunde nos temas de NR11: laudo de munck, plano de rigging, ponte rolante, empilhadeira, teste de carga e treinamento — artigos escritos pelos engenheiros da VSM." />
+      <PillarArticles category="NR11" title="Guia técnico NR11 e Plano de Rigging" subtitle="Aprofunde nos temas de NR11: laudo de munck, plano de rigging, ponte rolante, empilhadeira, teste de carga e treinamento — artigos escritos pelos engenheiros da VSM." limit={20} />
 
       <section className="bg-gradient-elegant py-20 md:py-28 text-center relative overflow-hidden">
         <div className="absolute inset-0 pattern-dots opacity-10" />

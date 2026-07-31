@@ -906,7 +906,7 @@ export default function NR13() {
       </section>
 
       {/* Guia técnico — links pilar → cluster de blog NR13 */}
-      <PillarArticles category="NR13" title="Guia técnico NR13" subtitle="Aprofunde nos temas da NR13: laudo, categorias de caldeira, vasos de pressão, periodicidade e teste hidrostático — artigos escritos pelos engenheiros da VSM." />
+      <PillarArticles category="NR13" title="Guia técnico NR13" subtitle="Aprofunde nos temas da NR13: laudo, categorias de caldeira, vasos de pressão, periodicidade e teste hidrostático — artigos escritos pelos engenheiros da VSM." limit={20} />
 
       {/* CTA Final — high-impact */}
       <section className="bg-gradient-elegant py-20 md:py-28 text-center relative overflow-hidden">

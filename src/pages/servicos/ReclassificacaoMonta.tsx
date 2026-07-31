@@ -824,7 +824,7 @@ export default function ReclassificacaoMonta() {
       </section>
 
       {/* Guia técnico — links pilar → cluster de blog Reclassificação de Monta */}
-      <PillarArticles category="Reclassificação" title="Guia completo de reclassificação de monta" subtitle="Aprofunde nos temas: pequena, média e grande monta, DETRAN-SP/MG/RJ/ES, como tirar sinistro do documento, desvalorização e documentação — artigos escritos pelos engenheiros da VSM." />
+      <PillarArticles category="Reclassificação" title="Guia completo de reclassificação de monta" subtitle="Aprofunde nos temas: pequena, média e grande monta, DETRAN-SP/MG/RJ/ES, como tirar sinistro do documento, desvalorização e documentação — artigos escritos pelos engenheiros da VSM." limit={20} />
 
       <section className="bg-gradient-elegant py-20 md:py-28 text-center relative overflow-hidden">
         <div className="absolute inset-0 pattern-dots opacity-10" />

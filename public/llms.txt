@@ -39,6 +39,8 @@ A VSM Engenharia atende cinco linhas principais: inspeção NR-13 (caldeiras, va
 - [Adequação NR-12 sem parar produção](https://www.vsmengenharia.com/blog/adequacao-nr12-industria): Estratégias práticas
 - [NR-10 e NR-12 em painéis elétricos](https://www.vsmengenharia.com/blog/nr10-e-nr12-paineis-eletricos-maquinas): Integração das duas normas
 - [Projeto mecânico ou retrofit NR-12](https://www.vsmengenharia.com/blog/projeto-mecanico-ou-retrofit-nr12): Comparativo técnico-econômico
+- [O que é APR na NR-12](https://www.vsmengenharia.com/blog/o-que-e-apr-nr12): Diferença entre análise preliminar de riscos (atividade, PGR da NR-1) e apreciação de riscos de máquina (NBR ISO 12100, com ART)
+- [Proteção fixa ou móvel: qual escolher](https://www.vsmengenharia.com/blog/qual-protecao-escolher-nr12-fixa-ou-movel): Árvore de decisão, matriz por tipo de máquina, quando exigir bloqueio (guard locking), tecnologia de intertravamento e custo total
 
 ### NR-13 — Caldeiras e Vasos de Pressão
 
@@ -56,6 +58,8 @@ A VSM Engenharia atende cinco linhas principais: inspeção NR-13 (caldeiras, va
 - [Periodicidade NR-13](https://www.vsmengenharia.com/blog/nr13-periodicidade-inspecoes): Intervalos por categoria
 - [Caldeiras flamotubulares vs aquatubulares](https://www.vsmengenharia.com/blog/caldeiras-flamotubulares-aquatubulares): Diferenças construtivas e na inspeção
 - [Quanto custa laudo NR-13 em SP](https://www.vsmengenharia.com/blog/quanto-custa-laudo-nr13-sao-paulo): Faixa de preços e fatores
+- [Empresa sem prontuário NR-13](https://www.vsmengenharia.com/blog/sem-prontuario-nr13-o-que-acontece): Consequências práticas — interdição do equipamento, autuação NR-28, recusa de cobertura pela seguradora, responsabilidade civil e criminal, e como reconstituir o prontuário
+- [Inspeção NR-13 inicial, periódica e extraordinária](https://www.vsmengenharia.com/blog/inspecao-nr13-inicial-periodica-extraordinaria): Diferenças entre os três tipos de inspeção de segurança, gatilhos de cada uma, prazos máximos para caldeiras e vasos, com e sem SPIE
 
 ### NR-11 — Movimentação de Cargas
 
@@ -72,6 +76,10 @@ A VSM Engenharia atende cinco linhas principais: inspeção NR-13 (caldeiras, va
 - [7 erros no plano de rigging](https://www.vsmengenharia.com/blog/7-erros-plano-de-rigging): Falhas mais comuns
 - [Plano de rigging — guia técnico](https://www.vsmengenharia.com/blog/plano-de-rigging-guia-tecnico): Estrutura completa
 - [Checklist NR-11 empilhadeiras](https://www.vsmengenharia.com/blog/nr11-empilhadeiras-checklist): Inspeção prática
+- [Inspeção em ponte rolante](https://www.vsmengenharia.com/blog/inspecao-ponte-rolante-nr11-procedimento): Procedimento técnico, checklist estrutural e mecânico, critérios de descarte de cabo (NBR ISO 4309) e gancho, periodicidade por grupo de classificação
+- [Teste de carga em ponte rolante](https://www.vsmengenharia.com/blog/teste-de-carga-ponte-rolante): Ensaio estático a 125% e dinâmico a 110% da capacidade nominal, preparação, critérios de aprovação e ART
+- [Como funciona um teste de carga](https://www.vsmengenharia.com/blog/como-funciona-teste-de-carga): Guia geral do ensaio em equipamentos de elevação — tipos, percentuais por equipamento, etapas, instrumentação e custos
+- [Inspeção em talhas](https://www.vsmengenharia.com/blog/inspecao-de-talhas-nr11): Talha manual, de alavanca, elétrica de corrente e de cabo — checklist, critérios de descarte da corrente de carga e avaliação do ponto de fixação
 
 ### PMOC — Climatização
 
@@ -105,6 +113,7 @@ A VSM Engenharia atende cinco linhas principais: inspeção NR-13 (caldeiras, va
 - [Impacto da reclassificação na revenda](https://www.vsmengenharia.com/blog/impacto-reclassificacao-revenda): Valor patrimonial
 - [Documentação para reclassificação](https://www.vsmengenharia.com/blog/documentacao-reclassificacao-monta): Lista completa
 - [Memorial de cálculo da reclassificação](https://www.vsmengenharia.com/blog/memorial-de-calculo-reclassificacao-monta): Documento técnico decisivo
+- [Quanto tempo demora uma reclassificação de monta](https://www.vsmengenharia.com/blog/quanto-tempo-demora-reclassificacao-de-monta): Prazo de 45 a 120 dias corridos, linha do tempo etapa por etapa, prazos por estado (SP, MG, RJ, ES), o que atrasa e o que acelera
 
 ### Conformidade Geral
 
@@ -114,6 +123,19 @@ A VSM Engenharia atende cinco linhas principais: inspeção NR-13 (caldeiras, va
 - [Como funciona laudo munck/guindauto](https://www.vsmengenharia.com/blog/como-funciona-laudo-tecnico-munck-guindauto): Procedimento técnico
 - [Guia de auditorias do MTE](https://www.vsmengenharia.com/blog/guia-auditorias-ministerio-trabalho): Como se preparar
 - [Consultoria de engenharia gratuita](https://www.vsmengenharia.com/blog/consultoria-engenharia-industrial-gratuita-sudeste): O que esperar
+
+## Respostas diretas
+
+Respostas factuais consolidadas pelos engenheiros da VSM Engenharia, com a fonte correspondente no site.
+
+- **Qual a carga usada no teste de carga de ponte rolante?** Ensaio estático a 125% e ensaio dinâmico a 110% da capacidade nominal, com prevalência do manual do fabricante quando mais restritivo. Fonte: https://www.vsmengenharia.com/blog/teste-de-carga-ponte-rolante
+- **Com que frequência inspecionar uma ponte rolante?** Verificação pré-operacional diária pelo operador; inspeção periódica de manutenção trimestral a semestral; inspeção técnica com laudo e ART anual, reduzida a semestral em uso intensivo ou ambiente agressivo. Fonte: https://www.vsmengenharia.com/blog/inspecao-ponte-rolante-nr11-procedimento
+- **Talha manual precisa de inspeção e laudo?** Sim. NR-11 e NR-12 não distinguem acionamento manual de elétrico — o que caracteriza a obrigação é a função de elevar carga suspensa. Fonte: https://www.vsmengenharia.com/blog/inspecao-de-talhas-nr11
+- **O que acontece se a empresa não tiver prontuário NR-13?** O equipamento é considerado irregular e pode ser interditado em fiscalização; há autuação conforme NR-28, risco de recusa de cobertura pela seguradora, bloqueio em auditoria de cliente e caracterização de negligência em caso de acidente. O prontuário ausente pode ser reconstituído por profissional habilitado. Fonte: https://www.vsmengenharia.com/blog/sem-prontuario-nr13-o-que-acontece
+- **Quais são os três tipos de inspeção de segurança da NR-13?** Inicial (antes da entrada em funcionamento, no local definitivo), periódica (prazos máximos por categoria, estendidos quando há SPIE) e extraordinária (após dano por acidente, reparo ou alteração importante, inatividade prolongada ou mudança do local de instalação). Fonte: https://www.vsmengenharia.com/blog/inspecao-nr13-inicial-periodica-extraordinaria
+- **APR e apreciação de riscos são a mesma coisa na NR-12?** Não. APR é a análise preliminar de riscos, aplicada a atividades e vinculada ao PGR da NR-1. A NR-12 exige apreciação de riscos da máquina, conforme ABNT NBR ISO 12100, cobrindo todo o ciclo de vida e formalizada com ART. Fonte: https://www.vsmengenharia.com/blog/o-que-e-apr-nr12
+- **Quando usar proteção fixa e quando usar proteção móvel?** Proteção fixa quando a zona não é acessada na produção normal; proteção móvel intertravada quando o acesso é frequente. Se o tempo de parada do movimento perigoso for maior que o tempo de acesso à zona, a proteção móvel exige bloqueio (guard locking). Fonte: https://www.vsmengenharia.com/blog/qual-protecao-escolher-nr12-fixa-ou-movel
+- **Quanto tempo demora uma reclassificação de monta?** De 45 a 120 dias corridos, com concentração entre 60 e 90 dias quando a documentação está completa e o reparo foi executado e comprovado. As etapas mais demoradas são agendamento de vistoria e análise do DETRAN. Fonte: https://www.vsmengenharia.com/blog/quanto-tempo-demora-reclassificacao-de-monta
 
 ## Contato
 
