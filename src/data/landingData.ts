@@ -643,10 +643,10 @@ O último ponto merece nota: **"laudo de reclassificação de monta" e "laudo de
 | Etapa | Prazo típico |
 | --- | --- |
 | Agendamento da inspeção | 1 a 5 dias |
-| Elaboração do laudo após a inspeção | 3 a 10 dias |
-| Processo completo de reclassificação | 45 a 120 dias |
+| Vistoria e emissão do laudo | cerca de 10 dias |
+| Processo completo de reclassificação | cerca de 40 a 50 dias |
 
-O laudo **não é o gargalo** do processo. A maior parte do tempo total se concentra em agendamento de vistoria e análise do órgão — detalhamento em [quanto tempo demora uma reclassificação de monta](/blog/quanto-tempo-demora-reclassificacao-de-monta).
+O laudo **não é o gargalo** do processo: o total se divide entre até 20 a 30 dias para dar entrada no DETRAN e cerca de 20 dias de análise — detalhamento em [quanto tempo demora uma reclassificação de monta](/blog/quanto-tempo-demora-reclassificacao-de-monta).
 
 O custo varia conforme porte do veículo, extensão do dano, necessidade de deslocamento e complexidade do memorial. Passageiro de porte médio com dano localizado fica numa faixa; veículo pesado, utilitário ou dano estrutural extenso, em outra. O orçamento é fechado antes da execução, sem cobrança adicional durante o serviço.
 

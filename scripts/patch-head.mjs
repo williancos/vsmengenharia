@@ -212,7 +212,7 @@ const staticRoutes = {
     faqs: [
       { question: "O que é um plano de rigging?", answer: "É o documento técnico de engenharia que define como uma operação de içamento será realizada com segurança: cálculo de carga, centro de gravidade, capacidade do equipamento, acessórios, croquis e ART do engenheiro responsável." },
       { question: "Quando o plano de rigging é obrigatório?", answer: "Em içamentos críticos: carga acima de 75% da capacidade do equipamento, içamento múltiplo, cargas de grande porte, ou próximo a redes elétricas, vias e áreas ocupadas." },
-      { question: "Todo caminhão munck precisa de teste de carga?", answer: "Sim. O teste de carga é parte da inspeção anual completa do guindauto, geralmente a 110% da capacidade nominal. Munck sem teste de carga não tem laudo válido." },
+      { question: "Ponte rolante precisa de teste de carga na inspeção periódica?", answer: "Sim. O teste de carga integra a inspeção periódica de ponte rolante, seguindo a ABNT NBR 16147, com aplicação progressiva de 50%, 100% e 110% da capacidade nominal e ensaio estático a 120% apenas quando aplicável. Em caminhão munck, o ensaio segue a tabela de carga do fabricante e cobre as configurações críticas." },
       { question: "Quem pode assinar um plano de rigging ou laudo NR11?", answer: "Engenheiro mecânico ou civil com CREA ativo e ART específica. Técnico em segurança do trabalho não tem atribuição para firmar plano de rigging." },
     ],
   },
@@ -236,7 +236,7 @@ const staticRoutes = {
       { question: "O que é reclassificação de monta?", answer: "É o processo técnico e legal que permite a um veículo sinistrado (com registro de pequena, média ou grande monta) voltar a circular após os reparos, mediante laudo de engenharia mecânica com ART e aprovação do DETRAN." },
       { question: "Qual a diferença entre pequena, média e grande monta?", answer: "Pequena monta: danos leves sem comprometimento estrutural. Média monta: danos estruturais reparáveis, permite reclassificação com laudo. Grande monta: danos irreparáveis, veículo destinado a desmonte — não pode ser reclassificado." },
       { question: "Como tirar o registro de sinistro do documento?", answer: "Por meio de laudo de reclassificação de monta emitido por engenheiro mecânico com ART, apresentado ao DETRAN junto à documentação do veículo reparado. Só é possível para pequena e média monta." },
-      { question: "Quanto tempo demora a reclassificação de monta?", answer: "O laudo de engenharia é emitido em 5 a 10 dias úteis; o processo no DETRAN varia de 30 a 90 dias conforme o estado (SP, MG, RJ, ES)." },
+      { question: "Quanto tempo demora a reclassificação de monta?", answer: "Cerca de 40 a 50 dias no total: até 20 a 30 dias desde o contato até dar entrada no DETRAN, incluindo a vistoria do engenheiro e a emissão do laudo em torno de 10 dias, mais cerca de 20 dias de análise do órgão. Os 90 dias frequentemente citados são o prazo para dar entrada no pedido, contado a partir da data do acidente — não a duração do processo." },
     ],
   },
   "/servicos/inspecoes-tecnicas":  { title: "Inspeções Técnicas — Estruturas e Equipamentos | VSM Engenharia", description: "Inspeções técnicas de estruturas metálicas, máquinas e equipamentos industriais. Ensaios não destrutivos, laudos aceitos em auditorias e ART.", jsonLd: { "@context": "https://schema.org", "@type": "Service", name: "Inspeções Técnicas", provider: { "@type": "Organization", name: "VSM Engenharia" }, areaServed: "Sudeste do Brasil", url: `${baseUrl}/servicos/inspecoes-tecnicas` } },
