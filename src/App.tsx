@@ -21,6 +21,9 @@ import InspecoesTecnicas from "./pages/servicos/InspecoesTecnicas";
 import ProjetosMecanicos from "./pages/servicos/ProjetosMecanicos";
 import ProjetosClimatizacao from "./pages/servicos/ProjetosClimatizacao";
 import ConsultoriaGratuita from "./pages/servicos/ConsultoriaGratuita";
+import InspecaoNR13SaoPaulo from "./pages/servicos/InspecaoNR13SaoPaulo";
+import InspecaoNR13CompressorAr from "./pages/servicos/InspecaoNR13CompressorAr";
+import LaudoRecuperabilidade from "./pages/servicos/LaudoRecuperabilidade";
 import Clientes from "./pages/Clientes";
 import NotFound from "./pages/NotFound";
 import { allPosts } from "./data/blogData";
@@ -89,6 +92,22 @@ export const routes: RouteRecord[] = [
             path: "servicos/consultoria-gratuita",
             Component: ConsultoriaGratuita,
             entry: "src/pages/servicos/ConsultoriaGratuita.tsx",
+          },
+          /* Landing pages de cauda comercial — separadas dos pilares para não competir com eles */
+          {
+            path: "servicos/inspecao-nr13-sao-paulo",
+            Component: InspecaoNR13SaoPaulo,
+            entry: "src/pages/servicos/InspecaoNR13SaoPaulo.tsx",
+          },
+          {
+            path: "servicos/inspecao-nr13-compressor-de-ar",
+            Component: InspecaoNR13CompressorAr,
+            entry: "src/pages/servicos/InspecaoNR13CompressorAr.tsx",
+          },
+          {
+            path: "servicos/laudo-de-recuperabilidade",
+            Component: LaudoRecuperabilidade,
+            entry: "src/pages/servicos/LaudoRecuperabilidade.tsx",
           },
         ],
       },

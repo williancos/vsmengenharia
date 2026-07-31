@@ -52,6 +52,23 @@ const criticalRoutes = [
   "/blog/nr11-empilhadeira-validade-treinamento",            // D3
   "/blog/pmoc-o-que-e-significado-completo",                 // E1
   "/blog/pmoc-ar-condicionado-obrigatorio-quem-deve-ter",    // E2
+
+  // Landing pages de cauda comercial (Jul 2026)
+  "/servicos/inspecao-nr13-sao-paulo",
+  "/servicos/inspecao-nr13-compressor-de-ar",
+  "/servicos/laudo-de-recuperabilidade",
+
+  // Cluster de elevação NR-11 e seleção de fornecedor (Jul 2026)
+  "/blog/inspecao-ponte-rolante-nr11-procedimento",
+  "/blog/como-funciona-teste-de-carga",
+  "/blog/inspecao-caminhao-munck-checklist",
+  "/blog/inspecao-guindaste-nr11",
+  "/blog/sem-prontuario-nr13-o-que-acontece",
+  "/blog/inspecao-nr13-inicial-periodica-extraordinaria",
+  "/blog/caldeiras-flamotubulares-aquatubulares",
+  "/blog/o-que-e-apr-nr12",
+  "/blog/quanto-tempo-demora-reclassificacao-de-monta",
+  "/blog/empresa-de-inspecao-nr13-como-escolher",
 ];
 
 // ── User-Agents que vamos simular ──────────────────────────────────

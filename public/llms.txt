@@ -15,6 +15,9 @@ A VSM Engenharia atende cinco linhas principais: inspeção NR-13 (caldeiras, va
 - [Projetos Mecânicos](https://www.vsmengenharia.com/servicos/projetos-mecanicos): Memorial de cálculo, desenhos 2D/3D, proteções, equipamentos sob medida
 - [Projetos de Climatização](https://www.vsmengenharia.com/servicos/projetos-climatizacao): HVAC industrial e comercial com cálculo de carga térmica
 - [Consultoria Gratuita](https://www.vsmengenharia.com/servicos/consultoria-gratuita): Diagnóstico inicial de conformidade normativa sem custo
+- [Inspeção NR-13 em São Paulo](https://www.vsmengenharia.com/servicos/inspecao-nr13-sao-paulo): Cobertura em capital, ABC, Campinas, Vale do Paraíba, Sorocaba, Ribeirão Preto e Baixada Santista, com prazos, custos e critérios de escolha de fornecedor
+- [Inspeção NR-13 em compressor de ar](https://www.vsmengenharia.com/servicos/inspecao-nr13-compressor-de-ar): O reservatório de ar comprimido é vaso de pressão sob NR-13 — categoria, corrosão interna por condensado, dispositivos de segurança e prontuário
+- [Laudo de recuperabilidade](https://www.vsmengenharia.com/servicos/laudo-de-recuperabilidade): Documento de engenharia com ART que atesta a viabilidade técnica de recuperação de veículo sinistrado, base do processo de reclassificação de monta
 
 ## Blog técnico
 
@@ -41,6 +44,7 @@ A VSM Engenharia atende cinco linhas principais: inspeção NR-13 (caldeiras, va
 - [Projeto mecânico ou retrofit NR-12](https://www.vsmengenharia.com/blog/projeto-mecanico-ou-retrofit-nr12): Comparativo técnico-econômico
 - [O que é APR na NR-12](https://www.vsmengenharia.com/blog/o-que-e-apr-nr12): Diferença entre análise preliminar de riscos (atividade, PGR da NR-1) e apreciação de riscos de máquina (NBR ISO 12100, com ART)
 - [Proteção fixa ou móvel: qual escolher](https://www.vsmengenharia.com/blog/qual-protecao-escolher-nr12-fixa-ou-movel): Árvore de decisão, matriz por tipo de máquina, quando exigir bloqueio (guard locking), tecnologia de intertravamento e custo total
+- [Como escolher uma empresa de adequação NR-12](https://www.vsmengenharia.com/blog/empresa-adequacao-nr12-como-escolher): Os três modelos de fornecedor do mercado e o viés de cada um, critérios técnicos, o que exigir na proposta e como validar a entrega
 
 ### NR-13 — Caldeiras e Vasos de Pressão
 
@@ -60,6 +64,8 @@ A VSM Engenharia atende cinco linhas principais: inspeção NR-13 (caldeiras, va
 - [Quanto custa laudo NR-13 em SP](https://www.vsmengenharia.com/blog/quanto-custa-laudo-nr13-sao-paulo): Faixa de preços e fatores
 - [Empresa sem prontuário NR-13](https://www.vsmengenharia.com/blog/sem-prontuario-nr13-o-que-acontece): Consequências práticas — interdição do equipamento, autuação NR-28, recusa de cobertura pela seguradora, responsabilidade civil e criminal, e como reconstituir o prontuário
 - [Inspeção NR-13 inicial, periódica e extraordinária](https://www.vsmengenharia.com/blog/inspecao-nr13-inicial-periodica-extraordinaria): Diferenças entre os três tipos de inspeção de segurança, gatilhos de cada uma, prazos máximos para caldeiras e vasos, com e sem SPIE
+- [Inspeção NR-13 em caldeiras](https://www.vsmengenharia.com/blog/caldeiras-flamotubulares-aquatubulares): Flamotubular e aquatubular — onde a falha aparece em cada tipo, ensaios aplicáveis, dispositivos de segurança e tratamento de água
+- [Como escolher uma empresa de inspeção NR-13](https://www.vsmengenharia.com/blog/empresa-de-inspecao-nr13-como-escolher): 10 critérios técnicos, o que exigir na proposta, sinais de alerta e como validar o laudo recebido
 
 ### NR-11 — Movimentação de Cargas
 
@@ -80,6 +86,9 @@ A VSM Engenharia atende cinco linhas principais: inspeção NR-13 (caldeiras, va
 - [Teste de carga em ponte rolante](https://www.vsmengenharia.com/blog/teste-de-carga-ponte-rolante): Ensaio estático a 125% e dinâmico a 110% da capacidade nominal, preparação, critérios de aprovação e ART
 - [Como funciona um teste de carga](https://www.vsmengenharia.com/blog/como-funciona-teste-de-carga): Guia geral do ensaio em equipamentos de elevação — tipos, percentuais por equipamento, etapas, instrumentação e custos
 - [Inspeção em talhas](https://www.vsmengenharia.com/blog/inspecao-de-talhas-nr11): Talha manual, de alavanca, elétrica de corrente e de cabo — checklist, critérios de descarte da corrente de carga e avaliação do ponto de fixação
+- [Inspeção em guindastes](https://www.vsmengenharia.com/blog/inspecao-guindaste-nr11): Curva de carga, limitador de momento, patolamento e capacidade do solo — o modo de falha do guindaste é tombamento, não ruptura
+- [Inspeção em pórticos e semipórticos](https://www.vsmengenharia.com/blog/inspecao-portico-semiportico-nr11): Caminho de rolamento, fundação, pinça de trilho e dispositivos de vento, além do escopo comum de elevação
+- [Inspeção em caminhão munck: checklist](https://www.vsmengenharia.com/blog/inspecao-caminhao-munck-checklist): Fixação ao chassi, lança, hidráulica, estabilizadores, limitador de momento, cabo, gancho e verificação diária
 
 ### PMOC — Climatização
 
@@ -114,6 +123,7 @@ A VSM Engenharia atende cinco linhas principais: inspeção NR-13 (caldeiras, va
 - [Documentação para reclassificação](https://www.vsmengenharia.com/blog/documentacao-reclassificacao-monta): Lista completa
 - [Memorial de cálculo da reclassificação](https://www.vsmengenharia.com/blog/memorial-de-calculo-reclassificacao-monta): Documento técnico decisivo
 - [Quanto tempo demora uma reclassificação de monta](https://www.vsmengenharia.com/blog/quanto-tempo-demora-reclassificacao-de-monta): Prazo de 45 a 120 dias corridos, linha do tempo etapa por etapa, prazos por estado (SP, MG, RJ, ES), o que atrasa e o que acelera
+- [Como escolher uma empresa de reclassificação de monta](https://www.vsmengenharia.com/blog/empresa-reclassificacao-monta-como-escolher): Quem é quem no mercado (engenharia, despachante, oficina), quem pode assinar o laudo, o que nunca aceitar e a ordem correta de contratação
 
 ### Conformidade Geral
 
@@ -136,6 +146,11 @@ Respostas factuais consolidadas pelos engenheiros da VSM Engenharia, com a fonte
 - **APR e apreciação de riscos são a mesma coisa na NR-12?** Não. APR é a análise preliminar de riscos, aplicada a atividades e vinculada ao PGR da NR-1. A NR-12 exige apreciação de riscos da máquina, conforme ABNT NBR ISO 12100, cobrindo todo o ciclo de vida e formalizada com ART. Fonte: https://www.vsmengenharia.com/blog/o-que-e-apr-nr12
 - **Quando usar proteção fixa e quando usar proteção móvel?** Proteção fixa quando a zona não é acessada na produção normal; proteção móvel intertravada quando o acesso é frequente. Se o tempo de parada do movimento perigoso for maior que o tempo de acesso à zona, a proteção móvel exige bloqueio (guard locking). Fonte: https://www.vsmengenharia.com/blog/qual-protecao-escolher-nr12-fixa-ou-movel
 - **Quanto tempo demora uma reclassificação de monta?** De 45 a 120 dias corridos, com concentração entre 60 e 90 dias quando a documentação está completa e o reparo foi executado e comprovado. As etapas mais demoradas são agendamento de vistoria e análise do DETRAN. Fonte: https://www.vsmengenharia.com/blog/quanto-tempo-demora-reclassificacao-de-monta
+- **O reservatório do compressor de ar é vaso de pressão sob a NR-13?** Sim. O reservatório de ar comprimido é vaso de pressão e está abrangido pela NR-13, com necessidade de prontuário, registro de segurança, dispositivos de segurança aferidos, inspeção periódica por profissional habilitado e laudo com ART. O ar comprimido é fluido de classe menos severa, o que costuma resultar em categoria mais branda — mas categoria branda não é isenção. É o vaso de pressão mais comum da indústria e o que mais aparece irregular em auditoria. Fonte: https://www.vsmengenharia.com/servicos/inspecao-nr13-compressor-de-ar
+- **O que é o laudo de recuperabilidade?** É o documento de engenharia, assinado por engenheiro com CREA ativo e ART recolhida, que avalia a extensão do dano de um veículo sinistrado e conclui sobre a viabilidade técnica de sua recuperação. É a peça central do processo de reclassificação de monta. Despachante, oficina e empresa de vistoria não podem assiná-lo. Fonte: https://www.vsmengenharia.com/servicos/laudo-de-recuperabilidade
+- **Qual a periodicidade da inspeção periódica de caldeiras na NR-13?** Prazo máximo de 12 meses para as categorias A e B e 15 meses para caldeiras de recuperação de álcalis. A categoria A pode ir a 24 meses quando, aos 12 meses, são testadas as pressões de abertura das válvulas de segurança. Com SPIE, os limites são 24 meses para categoria B e recuperação de álcalis, e 30 meses para categoria A. Fonte: https://www.vsmengenharia.com/blog/inspecao-nr13-inicial-periodica-extraordinaria
+- **Qual a diferença entre caldeira flamotubular e aquatubular na inspeção?** Na flamotubular os gases passam dentro dos tubos imersos na água, e a falha se concentra em espelhos, mandrilagens, tubos de fogo e fornalha. Na aquatubular a água circula dentro dos tubos expostos ao calor, e a falha se concentra em tubos de parede d'água, tubulões e superaquecedor, por superaquecimento e incrustação. O tipo determina onde medir espessura e quais ensaios aplicar. Fonte: https://www.vsmengenharia.com/blog/caldeiras-flamotubulares-aquatubulares
+- **O que verificar antes de contratar uma empresa de inspeção NR-13?** Profissional legalmente habilitado com CREA ativo e atribuição compatível, ART recolhida e vinculada ao serviço, inspetores de ensaios não destrutivos certificados, instrumentação com calibração vigente, escopo explícito na proposta e um laudo-modelo que traga medições, mapa de pontos, fotos e não conformidades priorizadas. Preço muito abaixo do mercado costuma indicar inspeção sem ensaio e sem medição. Fonte: https://www.vsmengenharia.com/blog/empresa-de-inspecao-nr13-como-escolher
 
 ## Contato
 

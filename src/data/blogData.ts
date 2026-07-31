@@ -47,6 +47,12 @@ import cover_apr_nr12 from "@/assets/nr12/protecao-industrial-maquinas.jpg";
 import cover_escolha_protecao_nr12 from "@/assets/nr12/sistema-intertravamento.jpg";
 import cover_prazo_reclassificacao from "@/assets/reclassificacao/veiculo-sinistrado.jpg";
 
+/* ── Covers — cauda comercial e gaps de elevação (Jul 2026) ── */
+import cover_empresa_inspecao_nr13 from "@/assets/nr13/consultoria-tecnica.jpg";
+import cover_empresa_nr12 from "@/assets/nr12/protecao-perimetral.jpg";
+import cover_empresa_monta from "@/assets/reclassificacao/art-eficiencia.jpg";
+import cover_inspecao_munck_checklist from "@/assets/nr11/laudo-munck.jpg";
+
 /* ── Category config ── */
 
 export const categoryConfig: Record<string, { gradient: string; badge: string; icon: typeof Shield }> = {
@@ -227,7 +233,9 @@ A VSM Engenharia está pronta para ajudar sua frota a operar com segurança máx
 
 📞 **Ligue agora:** (11) 95453-4057
 
-📩 **Solicite um orçamento:** [aq](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)ui`
+📩 **Solicite um orçamento:** [aq](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)ui
+
+Veja também o [checklist de inspeção em caminhão munck](/blog/inspecao-caminhao-munck-checklist).`
     ],
   },
   {
@@ -509,7 +517,9 @@ Fale com nossa equipe, envie as fotos do seu veículo e receba uma avaliação t
 
 📩 **Solicite um orçamento:** [aq](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)ui
 
-Veja também [quanto tempo demora uma reclassificação de monta](/blog/quanto-tempo-demora-reclassificacao-de-monta).`
+Veja também [quanto tempo demora uma reclassificação de monta](/blog/quanto-tempo-demora-reclassificacao-de-monta).
+
+O documento técnico central do processo tem página própria: [laudo de recuperabilidade](/servicos/laudo-de-recuperabilidade).`
     ],
   },
   {
@@ -936,7 +946,9 @@ Se você teve seu carro classificado como média ou grande monta, não arrisque 
 
 📩 **Solicite um orçamento:** [aq](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)u
 
-Veja também [quanto tempo demora uma reclassificação de monta](/blog/quanto-tempo-demora-reclassificacao-de-monta).`
+Veja também [quanto tempo demora uma reclassificação de monta](/blog/quanto-tempo-demora-reclassificacao-de-monta).
+
+Veja também [laudo de recuperabilidade](/servicos/laudo-de-recuperabilidade).`
     ],
   },
   {
@@ -1110,7 +1122,9 @@ Na **VSM Engenharia**, somos especialistas em processos de reclassificação de 
 
   
   
-[Entre em contato agora mesmo](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)`
+[Entre em contato agora mesmo](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)
+
+Veja também [como escolher uma empresa de reclassificação de monta](/blog/empresa-reclassificacao-monta-como-escolher).`
     ],
   },
   {
@@ -1232,7 +1246,9 @@ Entre em contato com a **VSM Engenharia** e solicite um orçamento completo de 
 
 📩 **Solicite um orçamento:** [aq](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)ui
 
-Veja também [como funciona um teste de carga](/blog/como-funciona-teste-de-carga) e [teste de carga em ponte rolante](/blog/teste-de-carga-ponte-rolante).`
+Veja também [como funciona um teste de carga](/blog/como-funciona-teste-de-carga) e [teste de carga em ponte rolante](/blog/teste-de-carga-ponte-rolante).
+
+Veja também o [checklist de inspeção em caminhão munck](/blog/inspecao-caminhao-munck-checklist).`
     ],
   },
   {
@@ -1327,7 +1343,9 @@ Na **VSM Engenharia**, oferecemos inspeções completas e emissão de laudos té
 
 📩 **Solicite um orçamento:** [aq](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)ui
 
-Veja também [como funciona um teste de carga](/blog/como-funciona-teste-de-carga) e [inspeção em talhas](/blog/inspecao-de-talhas-nr11).`
+Veja também [como funciona um teste de carga](/blog/como-funciona-teste-de-carga) e [inspeção em talhas](/blog/inspecao-de-talhas-nr11).
+
+Veja também o [checklist de inspeção em caminhão munck](/blog/inspecao-caminhao-munck-checklist).`
     ],
   },
   {
@@ -1443,7 +1461,9 @@ Não corra riscos desnecessários. Agende agora mesmo a inspeção do seu caminh
 
 📞 **Ligue agora:** (11) 95453-4057
 
-📩 **Solicite um orçamento:** [aq](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)ui`
+📩 **Solicite um orçamento:** [aq](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)ui
+
+Veja também o [checklist de inspeção em caminhão munck](/blog/inspecao-caminhao-munck-checklist) e [inspeção em guindastes](/blog/inspecao-guindaste-nr11).`
     ],
   },
   {
@@ -1580,7 +1600,9 @@ Contratar uma inspeção NR-13 é uma decisão que impacta diretamente a **segur
 
 Ao seguir este checklist, você garante que está contratando uma empresa qualificada, com instrumentação adequada e que entregará documentação completa e válida.
 
-**A VSM Engenharia** realiza inspeções NR-13 com engenheiros CREA ativo, instrumentação calibrada, ART inclusa e laudos entregues em até 5 dias úteis. Entre em contato para uma avaliação gratuita.`,
+**A VSM Engenharia** realiza inspeções NR-13 com engenheiros CREA ativo, instrumentação calibrada, ART inclusa e laudos entregues em até 5 dias úteis. Entre em contato para uma avaliação gratuita.
+
+Veja também [inspeção NR-13 em caldeiras](/blog/caldeiras-flamotubulares-aquatubulares) e [como escolher uma empresa de inspeção NR-13](/blog/empresa-de-inspecao-nr13-como-escolher).`,
     ],
   },
   {
@@ -1717,7 +1739,268 @@ Investir em um plano bem elaborado, com equipe treinada e equipamentos adequados
   { slug: "nr11-empilhadeiras-checklist", title: "Checklist de inspeção NR-11 para empilhadeiras e guindastes", category: "NR11", excerpt: "Lista completa de verificação para inspeção de equipamentos de movimentação conforme a NR-11, incluindo pontos críticos.", coverImage: cover_nr11_empilhadeiras_checklist, readTime: "7 min", date: "1 Fev 2026", views: 260, featured: false, relatedService: { label: "Inspeções NR-11", href: "/servicos/nr11" }, keyTakeaways: ["Inspeção pré-uso deve ser feita diariamente pelo operador", "Inspeção periódica requer engenheiro habilitado", "Freios, direção e sistema hidráulico são itens críticos", "Documentação de inspeção deve ser arquivada"] },
   { slug: "documentacao-reclassificacao-monta", title: "Documentação completa para Reclassificação de Monta no DETRAN", category: "Reclassificação", excerpt: "Passo a passo de toda a documentação necessária para dar entrada na reclassificação de monta junto ao DETRAN.", coverImage: cover_documentacao_reclassificacao_monta, readTime: "9 min", date: "25 Jan 2026", views: 240, featured: false, relatedService: { label: "Reclassificação de Monta", href: "/servicos/reclassificacao-de-monta" }, keyTakeaways: ["Laudo técnico de engenheiro mecânico é o documento principal", "Fotos detalhadas do veículo são obrigatórias", "O processo varia ligeiramente entre estados", "Prazos dependem da agilidade na documentação"] },
   { slug: "nr12-categorias-risco", title: "NR-12: Entenda as categorias de risco e como classificar suas máquinas", category: "NR12", excerpt: "Aprenda a classificar suas máquinas nas categorias de risco corretas conforme a NR-12 e defina as medidas de proteção adequadas.", coverImage: cover_nr12_categorias_risco, readTime: "8 min", date: "18 Jan 2026", views: 210, featured: false, relatedService: { label: "Adequação NR-12", href: "/servicos/nr12" }, keyTakeaways: ["Categorias vão de B a 4, sendo 4 a de maior risco", "A classificação define o nível de proteção exigido", "Análise de risco (HRN/APR) é obrigatória", "Máquinas de mesma categoria podem ter medidas diferentes"] },
-  { slug: "caldeiras-flamotubulares-aquatubulares", title: "Caldeiras flamotubulares vs aquatubulares: diferenças na inspeção NR-13", category: "NR13", excerpt: "Entenda as diferenças construtivas entre caldeiras flamotubulares e aquatubulares e como isso impacta os requisitos de inspeção.", coverImage: cover_caldeiras_flamotubulares_aquatubulares, readTime: "10 min", date: "10 Jan 2026", views: 195, featured: false, relatedService: { label: "Inspeção NR-13", href: "/servicos/nr13" }, keyTakeaways: ["Flamotubulares: gases quentes passam pelos tubos imersos em água", "Aquatubulares: água circula dentro dos tubos expostos ao calor", "Cada tipo exige técnicas de inspeção específicas", "A periodicidade pode variar conforme o tipo e a categoria"] },
+  {
+    slug: "caldeiras-flamotubulares-aquatubulares",
+    title: "Inspeção NR-13 em caldeiras: flamotubulares e aquatubulares",
+    category: "NR13",
+    excerpt: "O tipo construtivo da caldeira muda o que se inspeciona, onde a falha aparece e quais ensaios se aplicam. Veja o escopo da inspeção em cada tipo.",
+    metaDescription: "Inspeção NR-13 em caldeiras: diferenças entre flamotubulares e aquatubulares, pontos críticos de cada tipo, ensaios, prazos e documentação. VSM Engenharia.",
+    coverImage: cover_caldeiras_flamotubulares_aquatubulares,
+    readTime: "9 min",
+    date: "10 Jan 2026",
+    dateModified: "31 Jul 2026",
+    views: 195,
+    featured: false,
+    relatedService: { label: "Inspeção e Laudo NR-13", href: "/servicos/nr13" },
+    keywords: ["inspeção nr13 em caldeiras", "inspeção de caldeira", "caldeira flamotubular", "caldeira aquatubular", "inspeção interna de caldeira"],
+    keyTakeaways: [
+      "Flamotubular: gases passam dentro dos tubos, imersos na água — falha típica no espelho e nos tubos de fogo",
+      "Aquatubular: água circula dentro dos tubos expostos ao calor — falha típica por superaquecimento e incrustação",
+      "O tipo construtivo determina onde medir espessura e quais ensaios aplicar",
+      "Falta de água é o evento que mais destrói caldeira, e não deixa sinal externo"
+    ],
+    toc: [
+      { id: "por-que-o-tipo-importa", label: "Por que o tipo construtivo importa" },
+      { id: "flamotubular", label: "Caldeira flamotubular" },
+      { id: "aquatubular", label: "Caldeira aquatubular" },
+      { id: "comparativo", label: "Comparativo para a inspeção" },
+      { id: "escopo", label: "Escopo da inspeção de caldeira" },
+      { id: "ensaios", label: "Ensaios aplicáveis por tipo" },
+      { id: "dispositivos", label: "Dispositivos de segurança e teste de acumulação" },
+      { id: "agua", label: "Tratamento de água: a causa raiz silenciosa" },
+      { id: "prazos", label: "Prazos e categorias" },
+      { id: "documentacao", label: "Documentação e operador" },
+      { id: "faq", label: "Perguntas frequentes" }
+    ],
+    faq: [
+      { question: "Qual a diferença prática entre caldeira flamotubular e aquatubular na inspeção?", answer: "Muda onde a falha aparece e, portanto, onde a inspeção concentra esforço. Na flamotubular, os pontos críticos são o espelho (principalmente na região das mandrilagens), os tubos de fogo, a fornalha e as costuras do corpo — a inspeção interna exige entrada no casco e verificação tubo a tubo. Na aquatubular, o foco vai para os tubos de parede d'água, tubulões, superaquecedores e regiões sujeitas a superaquecimento e incrustação, com maior peso na medição de espessura de tubos e na análise de depósitos." },
+      { question: "Com que frequência a caldeira precisa ser inspecionada?", answer: "A inspeção periódica de caldeiras é constituída por exames interno e externo, com prazo máximo de 12 meses para as categorias A e B e 15 meses para caldeiras de recuperação de álcalis. A categoria A pode ir a 24 meses quando, aos 12 meses, são testadas as pressões de abertura das válvulas de segurança. Estabelecimentos com SPIE podem estender: 24 meses para categoria B e recuperação de álcalis, e 30 meses para categoria A. Além disso, há a inspeção inicial antes da entrada em operação e a extraordinária, disparada por evento." },
+      { question: "O que acontece com a caldeira após uma falta de água?", answer: "Falta de água provoca superaquecimento localizado: sem água para retirar o calor, o metal do tubo ou do espelho ultrapassa a temperatura de projeto e sofre alteração metalúrgica, com perda de resistência mecânica, empolamento e possível colapso. O ponto crítico é que a caldeira pode voltar a operar aparentemente normal, sem sinal externo do dano. Por isso a reativação após esse evento exige inspeção extraordinária, com avaliação dirigida às regiões afetadas." },
+      { question: "Preciso parar a caldeira para inspecionar?", answer: "O exame externo pode ser conduzido com a caldeira em operação ou em parada curta. O exame interno exige parada completa: despressurização, drenagem, resfriamento, ventilação, remoção de depósitos e abertura das bocas de visita, com entrada em espaço confinado. É evento programado, tipicamente de 2 a 5 dias conforme o porte, e precisa ser previsto no planejamento de produção." }
+    ],
+    content: [
+`A **inspeção NR-13 em caldeiras** segue os mesmos princípios normativos independentemente do tipo construtivo — mesma classificação por categoria, mesmos tipos de inspeção, mesma exigência de profissional habilitado e ART.
+
+O que muda, e muda bastante, é o **conteúdo técnico da inspeção**: onde a degradação se manifesta, quais regiões concentram risco, quais ensaios fazem sentido e o que precisa ser medido. Uma caldeira flamotubular e uma aquatubular falham por mecanismos diferentes, e uma inspeção genérica tende a olhar para o lugar errado.
+
+Este artigo apresenta as diferenças construtivas na medida em que elas afetam a inspeção, e o escopo do serviço em cada caso.`,
+
+`## Por que o tipo construtivo importa {#por-que-o-tipo-importa}
+
+A diferença entre os dois tipos é a relação entre a água e o fogo:
+
+| Tipo | Configuração | Consequência |
+| --- | --- | --- |
+| **Flamotubular** | Gases de combustão passam **dentro** dos tubos, que ficam imersos na água | Grande volume de água acumulada; falha concentra em espelho e tubos de fogo |
+| **Aquatubular** | Água circula **dentro** dos tubos, expostos aos gases | Menor volume de água; falha concentra em tubos por superaquecimento |
+
+Essa inversão define tudo o mais: o volume de água armazenado, a velocidade de resposta a variações de carga, a energia liberada em caso de ruptura e — o que interessa aqui — **os pontos onde a inspeção precisa concentrar esforço**.`,
+
+`## Caldeira flamotubular {#flamotubular}
+
+Também chamada de fogotubular ou pirotubular. Construção mais simples, comum em indústrias de porte pequeno e médio: alimentícia, têxtil, laticínios, frigorífico, hospitalar.
+
+### Características
+
+- Gases quentes circulam dentro de tubos imersos no volume de água
+- Grande volume de água armazenado
+- Pressões de trabalho tipicamente mais baixas
+- Resposta mais lenta a variações de demanda
+- Construção compacta, custo menor
+
+### Pontos críticos da inspeção
+
+| Região | O que ocorre |
+| --- | --- |
+| **Espelhos** | Trincas nas regiões entre mandrilagens, por tensão térmica cíclica |
+| **Mandrilagem dos tubos** | Vazamento, afrouxamento, corrosão na junção |
+| **Tubos de fogo** | Corrosão interna por condensado ácido, incrustação externa, deformação |
+| **Fornalha (tubulão de chamas)** | Deformação, empolamento, colapso por superaquecimento |
+| **Costuras do corpo** | Trincas em solda longitudinal e circunferencial |
+| **Região da linha d'água** | Corrosão acelerada na interface água-vapor |
+| **Fundo do casco** | Depósito e corrosão sob depósito |
+| **Tirantes e estais** | Ruptura, alongamento, corrosão |
+
+O grande volume de água tem uma implicação de segurança relevante: em caso de ruptura, a água superaquecida vaporiza instantaneamente, liberando energia muito superior à que a pressão de operação sugere. É o que torna a explosão de flamotubular tão destrutiva.`,
+
+`## Caldeira aquatubular {#aquatubular}
+
+Água circula dentro dos tubos, que formam as paredes da câmara de combustão. Construção mais complexa, usada em plantas de maior porte: papel e celulose, sucroalcooleiro, química, siderurgia, geração de energia.
+
+### Características
+
+- Água dentro dos tubos, expostos diretamente aos gases
+- Menor volume de água armazenado
+- Pressões e temperaturas de trabalho mais altas
+- Resposta rápida a variação de carga
+- Maior capacidade de geração
+
+### Pontos críticos da inspeção
+
+| Região | O que ocorre |
+| --- | --- |
+| **Tubos de parede d'água** | Superaquecimento, erosão por cinzas, corrosão externa |
+| **Tubulões (superior e inferior)** | Corrosão interna, trincas em bocais, estado dos separadores |
+| **Mandrilagem nos tubulões** | Vazamento e afrouxamento |
+| **Superaquecedor** | Superaquecimento por circulação deficiente, fluência do material |
+| **Economizador** | Corrosão por ponto de orvalho ácido |
+| **Pré-aquecedor de ar** | Corrosão e entupimento |
+| **Tubos de circulação (downcomers)** | Obstrução, que compromete a circulação natural |
+| **Refratários** | Degradação, exposição de tubos |
+
+O mecanismo de falha dominante é o **superaquecimento localizado**: qualquer coisa que reduza a circulação de água em um tubo — incrustação interna, obstrução, depósito — faz a temperatura do metal subir rapidamente, porque não há reserva de água para absorver o calor.
+
+Em caldeira de recuperação de álcalis, no setor de papel e celulose, soma-se um risco específico e severo: o contato entre água e o licor fundido, que produz explosão de natureza distinta. Esse tipo de caldeira tem prazo próprio de inspeção na norma, justamente por isso.`,
+
+`## Comparativo para a inspeção {#comparativo}
+
+| Aspecto | Flamotubular | Aquatubular |
+| --- | --- | --- |
+| **Acesso interno** | Entrada no casco, inspeção tubo a tubo | Acesso a tubulões e à câmara de combustão |
+| **Foco da medição de espessura** | Casco, espelho, fornalha | Tubos de parede, tubulões, superaquecedor |
+| **Falha típica** | Trinca em espelho, colapso de fornalha | Ruptura de tubo por superaquecimento |
+| **Efeito da incrustação** | Perda de rendimento, superaquecimento local | Superaquecimento rápido com ruptura |
+| **Tempo de parada para exame interno** | Menor | Maior, pela complexidade |
+| **Limpeza pré-inspeção** | Remoção de depósitos e fuligem | Remoção de cinzas e depósitos internos |
+| **Energia liberada em ruptura** | Muito alta, pelo volume de água | Alta, mas com menor volume acumulado |
+
+A diferença na coluna "efeito da incrustação" é a que mais impacta a operação diária: na aquatubular, uma incrustação de poucos milímetros já compromete a troca térmica de um tubo e pode levá-lo à ruptura. Na flamotubular, a mesma incrustação degrada rendimento antes de virar risco estrutural.`,
+
+`## Escopo da inspeção de caldeira {#escopo}
+
+Independentemente do tipo, a inspeção periódica é constituída por exames interno e externo.
+
+### Exame externo
+
+- ☐ Corpo, costuras, isolamento térmico e revestimento
+- ☐ Fundação, base, suportação e ancoragem
+- ☐ Tubulações de interligação, suportes e dilatação
+- ☐ Dispositivos de segurança e instrumentação
+- ☐ Sistema de alimentação de água e de combustível
+- ☐ Sistema de exaustão e chaminé
+- ☐ Condições da casa de caldeiras, ventilação, iluminação e saídas
+- ☐ Sinalização e identificação de PMTA
+
+### Exame interno
+
+- ☐ Programação de parada, drenagem, resfriamento e ventilação
+- ☐ Remoção de depósitos e limpeza para permitir avaliação
+- ☐ Liberação para entrada em espaço confinado, com monitoramento
+- ☐ Superfícies internas: corrosão, erosão, depósito, empolamento
+- ☐ Tubos: estado, deformação, espessura
+- ☐ Espelhos e mandrilagens, na flamotubular
+- ☐ Tubulões e separadores, na aquatubular
+- ☐ Soldas internas e regiões de tensão
+- ☐ Tirantes, estais e reforços
+- ☐ Bocas de visita, tampas e vedações
+- ☐ Registro fotográfico completo
+- ☐ Fechamento e verificação de estanqueidade
+
+O procedimento geral e os tipos de inspeção estão em [inspeção NR-13: tipos, periodicidade e procedimento](/blog/inspecao-nr13-tipos-periodicidade-procedimento), e a classificação por gatilho em [inspeção NR-13 inicial, periódica e extraordinária](/blog/inspecao-nr13-inicial-periodica-extraordinaria).`,
+
+`## Ensaios aplicáveis por tipo {#ensaios}
+
+| Ensaio | Flamotubular | Aquatubular |
+| --- | --- | --- |
+| **Ultrassom de espessura** | Casco, espelho, fornalha | Tubos de parede, tubulões, coletores |
+| **Líquido penetrante** | Soldas de espelho e costuras | Soldas de bocais e ligações |
+| **Partícula magnética** | Costuras e regiões de tensão | Soldas de tubulão e coletores |
+| **Radiografia** | Análise definitiva de soldas | Soldas de tubos e bocais |
+| **Réplica metalográfica** | Menos frequente | Regiões sujeitas a fluência, em alta temperatura |
+| **Teste hidrostático** | Pós-reparo ou quando indicado | Pós-reparo ou quando indicado |
+| **Análise de depósitos** | Avaliação do tratamento de água | Crítica, pelo risco de superaquecimento |
+
+Os ensaios são executados por inspetor certificado no método, sob supervisão do profissional habilitado que integra os resultados ao laudo. Detalhamento em [ensaios não destrutivos industriais](/blog/ensaios-nao-destrutivos-end-industriais) e, para o teste hidrostático, em [teste hidrostático em vaso de pressão](/blog/teste-hidrostatico-vaso-pressao-quando-fazer).
+
+Ponto de método que faz diferença ao longo dos anos: a medição de espessura precisa usar **mapa de pontos fixo e identificado**. Medir em pontos diferentes a cada inspeção impede o cálculo de taxa de corrosão e a estimativa de vida remanescente.`,
+
+`## Dispositivos de segurança e teste de acumulação {#dispositivos}
+
+| Dispositivo | Verificação |
+| --- | --- |
+| **Válvulas de segurança** | Quantidade, dimensionamento, pressão de abertura aferida e registrada |
+| **Controle de nível** | Funcionamento, redundância, teste de atuação |
+| **Sistema de alarme e corte por baixo nível** | Atuação efetiva — barreira contra falta de água |
+| **Indicadores de nível** | Legíveis, com purga funcionando |
+| **Manômetros** | Calibração vigente, faixa adequada |
+| **Pressostatos** | Ajuste abaixo da PMTA |
+| **Sistema de purga e descarga de fundo** | Operante, com procedimento definido |
+| **Intertravamentos de queimador** | Detecção de chama, purga de pré-varredura, bloqueio |
+
+O **teste de acumulação** merece destaque: verifica se as válvulas de segurança conseguem aliviar a pressão gerada com a caldeira em plena carga. É item da inspeção inicial e não pode ser substituído pela simples verificação da placa de identificação da válvula — o que se testa é a capacidade real de alívio diante da geração real de vapor.
+
+O conjunto de controle de nível é a barreira contra o evento mais destrutivo da operação de caldeiras, tratado a seguir.`,
+
+`## Tratamento de água: a causa raiz silenciosa {#agua}
+
+Boa parte das falhas de caldeira tem origem na qualidade da água, não em defeito construtivo:
+
+| Problema | Efeito |
+| --- | --- |
+| **Incrustação** | Isola o metal da água, provoca superaquecimento e reduz rendimento |
+| **Corrosão por oxigênio** | Pites em superfícies internas, com perda localizada de espessura |
+| **Corrosão cáustica** | Ataque sob depósito, em regiões de alta concentração |
+| **Arraste de sólidos** | Contamina o vapor e deposita em superaquecedor e turbina |
+| **Fragilização** | Trincas em regiões de tensão, sob condições específicas |
+
+A inspeção precisa avaliar não só o estado do metal, mas os **indícios do que o causou**: aspecto e espessura dos depósitos, distribuição da corrosão e coerência com o histórico de tratamento de água.
+
+Laudo que aponta corrosão sem apontar a causa provável entrega meio diagnóstico — a empresa corrige o sintoma e o mecanismo continua atuando até a próxima inspeção.
+
+E a **falta de água** merece registro próprio: é o evento que mais destrói caldeira. Sem água para retirar o calor, o metal superaquece, perde resistência e pode empolar ou colapsar — e a caldeira volta a operar sem sinal externo do dano. Por isso a reativação após esse evento exige inspeção extraordinária dirigida às regiões afetadas.`,
+
+`## Prazos e categorias {#prazos}
+
+A inspeção periódica de caldeiras é constituída por exames interno e externo, com os prazos máximos:
+
+| Situação | Prazo máximo |
+| --- | --- |
+| Caldeiras das categorias A e B | 12 meses |
+| Caldeiras de recuperação de álcalis, qualquer categoria | 15 meses |
+| Categoria A, com teste das pressões de abertura das válvulas de segurança aos 12 meses | 24 meses |
+
+Estabelecimentos que possuam **SPIE** — Serviço Próprio de Inspeção de Equipamentos, formalizado conforme anexo específico da norma — podem estender:
+
+| Situação com SPIE | Prazo máximo |
+| --- | --- |
+| Caldeiras de recuperação de álcalis | 24 meses |
+| Caldeiras da categoria B | 24 meses |
+| Caldeiras da categoria A | 30 meses |
+
+A extensão depende do cumprimento integral dos requisitos do SPIE — não basta ter equipe interna de manutenção. A classificação por categoria está detalhada em [categorias de caldeira A, B e C](/blog/categorias-caldeira-a-b-c-nr13).`,
+
+`## Documentação e operador {#documentacao}
+
+A caldeira precisa manter:
+
+1. **Prontuário** — dados de projeto, material, PMTA, categoria, memorial, registros
+2. **Registro de segurança** — ocorrências de operação, manutenção e inspeção
+3. **Laudos de inspeção** com ART
+4. **Projeto de instalação** e condições da casa de caldeiras
+5. **Certificados de treinamento** dos operadores
+6. **Registros de aferição** das válvulas de segurança
+7. **Calibração** de manômetros e instrumentos
+8. **Registros do tratamento de água**
+
+Dois pontos com peso próprio:
+
+**Operador treinado.** A operação de caldeira exige treinamento específico conforme o anexo da norma, com carga horária definida pela categoria do equipamento. Requisitos em [treinamento NR-13 para operador de caldeira](/blog/treinamento-nr13-operador-caldeira-prazo).
+
+**Prontuário.** Sem ele, não há PMTA nem categoria definidas — e sem isso não há prazo aplicável nem critério para avaliar resultados. As consequências práticas estão em [empresa sem prontuário NR-13](/blog/sem-prontuario-nr13-o-que-acontece).
+
+## Próximo passo {#proximo-passo}
+
+O tipo construtivo não muda a obrigação normativa, mas muda tudo na execução: onde medir, o que ensaiar e qual mecanismo de degradação vigiar. Inspeção genérica em caldeira tende a olhar para o lugar errado.
+
+A VSM Engenharia executa inspeção NR-13 em caldeiras flamotubulares e aquatubulares, vasos de pressão, tubulações e reservatórios de ar comprimido em todo o Sudeste, com profissional habilitado, ensaios não destrutivos, laudo completo, prontuário e ART.
+
+📞 **(11) 95453-4057**
+📩 **[Solicitar orçamento pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
+📧 **contato@vsmengenharia.com**
+
+Conheça o serviço de [inspeção e laudo NR-13](/servicos/nr13), a página de [inspeção NR-13 em São Paulo](/servicos/inspecao-nr13-sao-paulo) e o artigo [checklist de inspeção NR-13](/blog/checklist-inspecao-nr13).`
+    ],
+  },
   {
     slug: "pmoc-lei-13589-quem-e-obrigado",
     title: "PMOC: o que é, quem é obrigado e o que diz a Lei 13.589/2018",
@@ -2501,7 +2784,9 @@ Peça orçamento detalhado com:
 - ✅ ART já incluída
 - ✅ Cláusula de revisão pós-correções
 
-A **VSM Engenharia** atende em toda a Grande São Paulo e Sudeste, com orçamento detalhado em 24h. Veja [Inspeção NR-13](/servicos/nr13) ou solicite [consultoria gratuita](/servicos/consultoria-gratuita). Aprofunde em [laudo NR-13: quem pode emitir e o que contém](/blog/laudo-nr13-quanto-custa-quem-pode-emitir) e [inspeção NR-13: tipos e procedimento](/blog/inspecao-nr13-tipos-periodicidade-procedimento).`
+A **VSM Engenharia** atende em toda a Grande São Paulo e Sudeste, com orçamento detalhado em 24h. Veja [Inspeção NR-13](/servicos/nr13) ou solicite [consultoria gratuita](/servicos/consultoria-gratuita). Aprofunde em [laudo NR-13: quem pode emitir e o que contém](/blog/laudo-nr13-quanto-custa-quem-pode-emitir) e [inspeção NR-13: tipos e procedimento](/blog/inspecao-nr13-tipos-periodicidade-procedimento).
+
+Veja também a página de [inspeção NR-13 em São Paulo](/servicos/inspecao-nr13-sao-paulo) e [como escolher uma empresa de inspeção NR-13](/blog/empresa-de-inspecao-nr13-como-escolher).`
     ],
   },
   {
@@ -2595,7 +2880,9 @@ O DETRAN exige **laudo**, mas só dá validade ao laudo que vem **acompanhado de
 5. **ART de engenheiro mecânico** com atribuição plena em mecânica veicular
 6. **Acompanhamento** até a aprovação no DETRAN
 
-A **VSM Engenharia** já entregou centenas de processos aprovados em DETRAN-SP, MG, RJ e ES. Conheça [reclassificação de monta](/servicos/reclassificacao-de-monta).`
+A **VSM Engenharia** já entregou centenas de processos aprovados em DETRAN-SP, MG, RJ e ES. Conheça [reclassificação de monta](/servicos/reclassificacao-de-monta).
+
+Veja também [laudo de recuperabilidade](/servicos/laudo-de-recuperabilidade).`
     ],
   },
   {
@@ -2877,7 +3164,9 @@ A VSM Engenharia oferece **análise técnica preliminar gratuita** do BAT e das 
 📩 **[Solicitar análise gratuita pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
 📧 **contato@vsmengenharia.com**
 
-Conheça em detalhe o serviço de [reclassificação de monta da VSM Engenharia](/servicos/reclassificacao-de-monta).`
+Conheça em detalhe o serviço de [reclassificação de monta da VSM Engenharia](/servicos/reclassificacao-de-monta).
+
+Para avaliar a viabilidade técnica do seu caso, veja [laudo de recuperabilidade](/servicos/laudo-de-recuperabilidade).`
     ],
   },
   {
@@ -3550,7 +3839,9 @@ Antes de aceitar a anotação como definitiva, **descubra se há caminho legal p
 📩 **[Solicitar análise gratuita pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
 📧 **contato@vsmengenharia.com**
 
-Conheça o serviço de [reclassificação de monta](/servicos/reclassificacao-de-monta).`
+Conheça o serviço de [reclassificação de monta](/servicos/reclassificacao-de-monta).
+
+O documento técnico exigido no processo é o [laudo de recuperabilidade](/servicos/laudo-de-recuperabilidade).`
     ],
   },
   {
@@ -4713,7 +5004,9 @@ A VSM Engenharia emite laudos NR-12 em todo o Sudeste com engenheiros mecânicos
 📩 **[Solicitar orçamento pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
 📧 **contato@vsmengenharia.com**
 
-Conheça o serviço de [NR-12](/servicos/nr12) e os artigos [apreciação de risco NR-12](/blog/apreciacao-de-risco-nr12-modelo-pratico) e [o que é APR na NR-12](/blog/o-que-e-apr-nr12).`
+Conheça o serviço de [NR-12](/servicos/nr12) e os artigos [apreciação de risco NR-12](/blog/apreciacao-de-risco-nr12-modelo-pratico) e [o que é APR na NR-12](/blog/o-que-e-apr-nr12).
+
+Antes de contratar, veja [como escolher uma empresa de adequação NR-12](/blog/empresa-adequacao-nr12-como-escolher).`
     ],
   },
   {
@@ -4911,7 +5204,9 @@ A VSM Engenharia conduz programas completos de adequação NR-12 em todo o Sudes
 
 Conheça o serviço de [NR-12](/servicos/nr12) e a [consultoria gratuita](/servicos/consultoria-gratuita).
 
-Veja também [o que é APR na NR-12](/blog/o-que-e-apr-nr12) e [proteção fixa ou móvel: qual escolher](/blog/qual-protecao-escolher-nr12-fixa-ou-movel).`
+Veja também [o que é APR na NR-12](/blog/o-que-e-apr-nr12) e [proteção fixa ou móvel: qual escolher](/blog/qual-protecao-escolher-nr12-fixa-ou-movel).
+
+Antes de contratar, veja [como escolher uma empresa de adequação NR-12](/blog/empresa-adequacao-nr12-como-escolher).`
     ],
   },
   {
@@ -5108,7 +5403,9 @@ A VSM Engenharia executa apreciação de risco com metodologia ISO 12100 + HRN e
 📩 **[Solicitar orçamento pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
 📧 **contato@vsmengenharia.com**
 
-Conheça o serviço de [NR-12](/servicos/nr12) e entenda a diferença entre os documentos em [o que é APR na NR-12](/blog/o-que-e-apr-nr12).`
+Conheça o serviço de [NR-12](/servicos/nr12) e entenda a diferença entre os documentos em [o que é APR na NR-12](/blog/o-que-e-apr-nr12).
+
+Antes de contratar, veja [como escolher uma empresa de adequação NR-12](/blog/empresa-adequacao-nr12-como-escolher).`
     ],
   },
   {
@@ -7139,7 +7436,9 @@ A VSM Engenharia faz inspeção, laudo, prontuário e ART NR-13 em todo o Sudest
 
 Conheça o serviço de [inspeção NR-13](/servicos/nr13).
 
-Veja também [inspeção NR-13 inicial, periódica e extraordinária](/blog/inspecao-nr13-inicial-periodica-extraordinaria) e [empresa sem prontuário NR-13](/blog/sem-prontuario-nr13-o-que-acontece).`
+Veja também [inspeção NR-13 inicial, periódica e extraordinária](/blog/inspecao-nr13-inicial-periodica-extraordinaria) e [empresa sem prontuário NR-13](/blog/sem-prontuario-nr13-o-que-acontece).
+
+Veja também [inspeção NR-13 em caldeiras](/blog/caldeiras-flamotubulares-aquatubulares) e a página de [inspeção NR-13 em São Paulo](/servicos/inspecao-nr13-sao-paulo).`
     ],
   },
   {
@@ -7327,7 +7626,9 @@ A VSM Engenharia faz inventário, classificação e categorização de vasos de 
 📩 **[Solicitar orçamento pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
 📧 **contato@vsmengenharia.com**
 
-Conheça o serviço de [inspeção NR-13](/servicos/nr13) e o artigo [categorias de caldeira](/blog/categorias-caldeira-a-b-c-nr13).`
+Conheça o serviço de [inspeção NR-13](/servicos/nr13) e o artigo [categorias de caldeira](/blog/categorias-caldeira-a-b-c-nr13).
+
+O caso mais comum e menos controlado de vaso de pressão tem página própria: [inspeção NR-13 em compressor de ar e reservatório de ar comprimido](/servicos/inspecao-nr13-compressor-de-ar).`
     ],
   },
   {
@@ -7514,7 +7815,9 @@ A VSM Engenharia executa inspeções NR-13 completas (visual + ensaios + laudo +
 📩 **[Solicitar orçamento pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
 📧 **contato@vsmengenharia.com**
 
-Conheça o serviço de [inspeção NR-13](/servicos/nr13), o [checklist de inspeção NR-13](/blog/checklist-inspecao-nr13) e a classificação por gatilho em [inspeção NR-13 inicial, periódica e extraordinária](/blog/inspecao-nr13-inicial-periodica-extraordinaria).`
+Conheça o serviço de [inspeção NR-13](/servicos/nr13), o [checklist de inspeção NR-13](/blog/checklist-inspecao-nr13) e a classificação por gatilho em [inspeção NR-13 inicial, periódica e extraordinária](/blog/inspecao-nr13-inicial-periodica-extraordinaria).
+
+Para o escopo por tipo construtivo de caldeira, veja [inspeção NR-13 em caldeiras: flamotubulares e aquatubulares](/blog/caldeiras-flamotubulares-aquatubulares).`
     ],
   },
   {
@@ -7687,7 +7990,9 @@ A VSM Engenharia emite laudos NR-13 com PLH SNQC em todo o Sudeste, com cotaçã
 
 Conheça o serviço de [inspeção NR-13](/servicos/nr13) e o artigo [quanto custa laudo NR-13 em SP](/blog/quanto-custa-laudo-nr13-sao-paulo).
 
-Veja também [empresa sem prontuário NR-13](/blog/sem-prontuario-nr13-o-que-acontece) e [inspeção NR-13 inicial, periódica e extraordinária](/blog/inspecao-nr13-inicial-periodica-extraordinaria).`
+Veja também [empresa sem prontuário NR-13](/blog/sem-prontuario-nr13-o-que-acontece) e [inspeção NR-13 inicial, periódica e extraordinária](/blog/inspecao-nr13-inicial-periodica-extraordinaria).
+
+Antes de contratar, veja [como escolher uma empresa de inspeção NR-13](/blog/empresa-de-inspecao-nr13-como-escolher).`
     ],
   },
   {
@@ -8204,7 +8509,9 @@ A VSM Engenharia faz estruturação, digitalização e atualização contínua d
 📩 **[Solicitar consultoria pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
 📧 **contato@vsmengenharia.com**
 
-Veja o artigo [laudo NR-13](/blog/laudo-nr13-quanto-custa-quem-pode-emitir), as consequências práticas da ausência do documento em [empresa sem prontuário NR-13](/blog/sem-prontuario-nr13-o-que-acontece) e o serviço de [inspeção NR-13](/servicos/nr13).`
+Veja o artigo [laudo NR-13](/blog/laudo-nr13-quanto-custa-quem-pode-emitir), as consequências práticas da ausência do documento em [empresa sem prontuário NR-13](/blog/sem-prontuario-nr13-o-que-acontece) e o serviço de [inspeção NR-13](/servicos/nr13).
+
+O equipamento que mais aparece sem prontuário é o reservatório de ar comprimido — veja [inspeção NR-13 em compressor de ar](/servicos/inspecao-nr13-compressor-de-ar).`
     ],
   },
   {
@@ -8382,7 +8689,9 @@ A VSM Engenharia faz inventário, categorização e programa NR-13 completo em t
 📩 **[Solicitar orçamento pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
 📧 **contato@vsmengenharia.com**
 
-Conheça o serviço de [inspeção NR-13](/servicos/nr13) e o artigo [caldeiras flamotubulares vs aquatubulares](/blog/caldeiras-flamotubulares-aquatubulares).`
+Conheça o serviço de [inspeção NR-13](/servicos/nr13) e o artigo [caldeiras flamotubulares vs aquatubulares](/blog/caldeiras-flamotubulares-aquatubulares).
+
+Veja também [inspeção NR-13 em caldeiras: flamotubulares e aquatubulares](/blog/caldeiras-flamotubulares-aquatubulares).`
     ],
   },
   {
@@ -9291,7 +9600,9 @@ A VSM Engenharia faz programa integrado de ponte rolante (laudo + treinamento + 
 📩 **[Solicitar orçamento pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
 📧 **contato@vsmengenharia.com**
 
-Conheça os serviços de [NR-11](/servicos/nr11) e [NR-12](/servicos/nr12), e aprofunde no procedimento técnico em [inspeção em ponte rolante: checklist e periodicidade](/blog/inspecao-ponte-rolante-nr11-procedimento) e [teste de carga em ponte rolante](/blog/teste-de-carga-ponte-rolante).`
+Conheça os serviços de [NR-11](/servicos/nr11) e [NR-12](/servicos/nr12), e aprofunde no procedimento técnico em [inspeção em ponte rolante: checklist e periodicidade](/blog/inspecao-ponte-rolante-nr11-procedimento) e [teste de carga em ponte rolante](/blog/teste-de-carga-ponte-rolante).
+
+Para pórticos e semipórticos, o escopo específico está em [inspeção em pórticos e semipórticos](/blog/inspecao-portico-semiportico-nr11).`
     ],
   },
   {
@@ -10972,7 +11283,9 @@ A VSM Engenharia executa inspeção técnica de pontes rolantes, pórticos, talh
 📩 **[Solicitar orçamento pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
 📧 **contato@vsmengenharia.com**
 
-Conheça o serviço de [inspeção NR-11](/servicos/nr11) e os artigos [teste de carga em ponte rolante](/blog/teste-de-carga-ponte-rolante) e [inspeção em talhas](/blog/inspecao-de-talhas-nr11).`
+Conheça o serviço de [inspeção NR-11](/servicos/nr11) e os artigos [teste de carga em ponte rolante](/blog/teste-de-carga-ponte-rolante) e [inspeção em talhas](/blog/inspecao-de-talhas-nr11).
+
+Para equipamentos sobre trilho externo, veja [inspeção em pórticos e semipórticos](/blog/inspecao-portico-semiportico-nr11); para equipamentos móveis, [inspeção em guindastes](/blog/inspecao-guindaste-nr11).`
     ],
   },
   {
@@ -11482,7 +11795,9 @@ A VSM Engenharia executa teste de carga em pontes rolantes, talhas, monovias, p�
 📩 **[Solicitar orçamento pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
 📧 **contato@vsmengenharia.com**
 
-Conheça o serviço de [inspeção NR-11](/servicos/nr11) e os artigos [teste de carga em ponte rolante](/blog/teste-de-carga-ponte-rolante), [inspeção em talhas](/blog/inspecao-de-talhas-nr11) e [inspeção em ponte rolante](/blog/inspecao-ponte-rolante-nr11-procedimento).`
+Conheça o serviço de [inspeção NR-11](/servicos/nr11) e os artigos [teste de carga em ponte rolante](/blog/teste-de-carga-ponte-rolante), [inspeção em talhas](/blog/inspecao-de-talhas-nr11) e [inspeção em ponte rolante](/blog/inspecao-ponte-rolante-nr11-procedimento).
+
+Para equipamentos móveis, veja [inspeção em guindastes](/blog/inspecao-guindaste-nr11) e o [checklist de inspeção em caminhão munck](/blog/inspecao-caminhao-munck-checklist).`
     ],
   },
   {
@@ -11727,7 +12042,9 @@ A VSM Engenharia executa inspeção de talhas, monovias, pontes rolantes e pórt
 📩 **[Solicitar orçamento pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
 📧 **contato@vsmengenharia.com**
 
-Conheça o serviço de [inspeção NR-11](/servicos/nr11) e os artigos [inspeção em ponte rolante](/blog/inspecao-ponte-rolante-nr11-procedimento) e [teste de carga em ponte rolante](/blog/teste-de-carga-ponte-rolante).`
+Conheça o serviço de [inspeção NR-11](/servicos/nr11) e os artigos [inspeção em ponte rolante](/blog/inspecao-ponte-rolante-nr11-procedimento) e [teste de carga em ponte rolante](/blog/teste-de-carga-ponte-rolante).
+
+Veja também [inspeção em pórticos e semipórticos](/blog/inspecao-portico-semiportico-nr11) e [inspeção em guindastes](/blog/inspecao-guindaste-nr11).`
     ],
   },
   {
@@ -11968,7 +12285,9 @@ A boa notícia é que o problema tem solução técnica definida e prazo previs�
 📩 **[Solicitar orçamento pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
 📧 **contato@vsmengenharia.com**
 
-Conheça o serviço de [inspeção e laudo NR-13](/servicos/nr13) e os artigos [prontuário NR-13: o que deve conter](/blog/prontuario-nr13-o-que-deve-conter) e [laudo NR-13: quanto custa e quem pode emitir](/blog/laudo-nr13-quanto-custa-quem-pode-emitir).`
+Conheça o serviço de [inspeção e laudo NR-13](/servicos/nr13) e os artigos [prontuário NR-13: o que deve conter](/blog/prontuario-nr13-o-que-deve-conter) e [laudo NR-13: quanto custa e quem pode emitir](/blog/laudo-nr13-quanto-custa-quem-pode-emitir).
+
+Veja também [inspeção NR-13 em compressor de ar](/servicos/inspecao-nr13-compressor-de-ar) e [como escolher uma empresa de inspeção NR-13](/blog/empresa-de-inspecao-nr13-como-escolher).`
     ],
   },
   {
@@ -12213,7 +12532,9 @@ A VSM Engenharia estrutura e executa programas de inspeção NR-13 em caldeiras,
 📩 **[Solicitar orçamento pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
 📧 **contato@vsmengenharia.com**
 
-Conheça o serviço de [inspeção e laudo NR-13](/servicos/nr13) e os artigos [inspeção NR-13: tipos e procedimento](/blog/inspecao-nr13-tipos-periodicidade-procedimento) e [checklist de inspeção NR-13](/blog/checklist-inspecao-nr13).`
+Conheça o serviço de [inspeção e laudo NR-13](/servicos/nr13) e os artigos [inspeção NR-13: tipos e procedimento](/blog/inspecao-nr13-tipos-periodicidade-procedimento) e [checklist de inspeção NR-13](/blog/checklist-inspecao-nr13).
+
+Para o escopo por tipo construtivo, veja [inspeção NR-13 em caldeiras](/blog/caldeiras-flamotubulares-aquatubulares).`
     ],
   },
   {
@@ -12454,7 +12775,9 @@ A VSM Engenharia executa apreciação de riscos, projeto de adequação, implant
 📩 **[Solicitar orçamento pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
 📧 **contato@vsmengenharia.com**
 
-Conheça o serviço de [adequação NR-12](/servicos/nr12) e os artigos [apreciação de risco NR-12: modelo prático](/blog/apreciacao-de-risco-nr12-modelo-pratico) e [NR-12: quem precisa fazer](/blog/nr12-quem-precisa-fazer).`
+Conheça o serviço de [adequação NR-12](/servicos/nr12) e os artigos [apreciação de risco NR-12: modelo prático](/blog/apreciacao-de-risco-nr12-modelo-pratico) e [NR-12: quem precisa fazer](/blog/nr12-quem-precisa-fazer).
+
+Antes de contratar, veja [como escolher uma empresa de adequação NR-12](/blog/empresa-adequacao-nr12-como-escolher).`
     ],
   },
   {
@@ -12695,7 +13018,9 @@ A VSM Engenharia executa apreciação de riscos, projeto e fabricação de prote
 📩 **[Solicitar orçamento pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
 📧 **contato@vsmengenharia.com**
 
-Conheça o serviço de [adequação NR-12](/servicos/nr12) e os artigos [proteção fixa e móvel NR-12](/blog/protecao-fixa-movel-nr12) e [adequação NR-12 passo a passo](/blog/adequacao-nr12-passo-a-passo).`
+Conheça o serviço de [adequação NR-12](/servicos/nr12) e os artigos [proteção fixa e móvel NR-12](/blog/protecao-fixa-movel-nr12) e [adequação NR-12 passo a passo](/blog/adequacao-nr12-passo-a-passo).
+
+Antes de contratar, veja [como escolher uma empresa de adequação NR-12](/blog/empresa-adequacao-nr12-como-escolher).`
     ],
   },
   {
@@ -12915,7 +13240,1309 @@ A VSM Engenharia emite laudo técnico de recuperabilidade com ART e acompanha o 
 📩 **[Solicitar orçamento pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
 📧 **contato@vsmengenharia.com**
 
-Conheça o serviço de [reclassificação de monta](/servicos/reclassificacao-de-monta) e os artigos [como tirar sinistro do documento do veículo](/blog/como-tirar-sinistro-do-documento-do-veiculo) e [o que é monta veicular: pequena, média e grande](/blog/o-que-e-monta-veicular-pequena-media-grande).`
+Conheça o serviço de [reclassificação de monta](/servicos/reclassificacao-de-monta) e os artigos [como tirar sinistro do documento do veículo](/blog/como-tirar-sinistro-do-documento-do-veiculo) e [o que é monta veicular: pequena, média e grande](/blog/o-que-e-monta-veicular-pequena-media-grande).
+
+Veja também [laudo de recuperabilidade](/servicos/laudo-de-recuperabilidade) e [como escolher uma empresa de reclassificação de monta](/blog/empresa-reclassificacao-monta-como-escolher).`
+    ],
+  },
+  {
+    slug: "empresa-de-inspecao-nr13-como-escolher",
+    title: "Empresas de inspeção NR-13: 10 critérios para escolher",
+    category: "NR13",
+    excerpt: "Nem toda empresa de inspeção NR-13 entrega laudo que sustenta auditoria. Veja os 10 critérios técnicos de avaliação e os sinais de alerta antes de contratar.",
+    metaDescription: "Como escolher uma empresa de inspeção NR-13: 10 critérios técnicos, o que exigir na proposta, sinais de alerta e como validar o laudo recebido. VSM Engenharia.",
+    coverImage: cover_empresa_inspecao_nr13,
+    readTime: "8 min",
+    date: "30 Jul 2026",
+    dateModified: "30 Jul 2026",
+    views: 67,
+    featured: false,
+    relatedService: { label: "Inspeção e Laudo NR-13", href: "/servicos/nr13" },
+    keywords: ["empresas de inspeção nr13", "empresa de inspeção nr13", "como escolher empresa inspeção nr13", "contratar inspeção nr13"],
+    keyTakeaways: [
+      "O critério eliminatório é a ART: laudo sem ART recolhida é documento sem valor legal",
+      "Preço muito abaixo do mercado normalmente significa inspeção sem ensaio e sem medição",
+      "Peça um laudo-modelo antes de contratar — é o teste mais revelador de todos",
+      "Empresa que não atualiza o prontuário entrega meio serviço"
+    ],
+    toc: [
+      { id: "por-que-a-escolha-importa", label: "Por que a escolha importa" },
+      { id: "criterio-eliminatorio", label: "O critério eliminatório: ART" },
+      { id: "os-10-criterios", label: "Os 10 critérios de avaliação" },
+      { id: "laudo-modelo", label: "Peça um laudo-modelo" },
+      { id: "o-que-exigir-na-proposta", label: "O que exigir na proposta" },
+      { id: "sinais-de-alerta", label: "Sinais de alerta" },
+      { id: "preco", label: "Como interpretar o preço" },
+      { id: "validar-o-laudo", label: "Como validar o laudo recebido" },
+      { id: "faq", label: "Perguntas frequentes" }
+    ],
+    faq: [
+      { question: "Qualquer engenheiro pode fazer inspeção NR-13?", answer: "Não. É preciso ser profissional legalmente habilitado: engenheiro com registro ativo no CREA e atribuição compatível com a atividade — tipicamente mecânica ou metalúrgica. Engenheiro civil ou de produção não tem atribuição para firmar laudo de caldeira ou vaso de pressão. Para os equipamentos de categoria mais crítica, a norma prevê exigência adicional de qualificação do profissional. Peça o número do CREA e confira." },
+      { question: "Como sei se o laudo que recebi tem validade?", answer: "Verifique quatro coisas: se há ART recolhida e referenciada no documento; se o profissional que assina tem CREA ativo e atribuição compatível; se o laudo registra os itens verificados individualmente, com valores medidos, e não apenas uma conclusão genérica; e se traz registro fotográfico dos pontos avaliados. Laudo que falha em qualquer desses pontos é frágil em auditoria e não protege a empresa em caso de acidente." },
+      { question: "Vale a pena contratar a empresa mais barata?", answer: "Preço muito abaixo da faixa de mercado quase sempre significa escopo reduzido: sem medição de espessura, sem ensaio não destrutivo, sem atualização de prontuário, com visita rápida e laudo padronizado. O documento existe, mas não sustenta auditoria e, pior, em caso de acidente demonstra que houve uma verificação formal que não identificou o risco. O critério correto é comparar escopo, não preço isolado." },
+      { question: "A empresa precisa ter certificação ou credenciamento específico?", answer: "A NR-13 não exige credenciamento de empresa por órgão certificador para a inspeção em geral — a responsabilidade é do profissional habilitado que assina. O que importa é a qualificação do profissional, a certificação dos inspetores de ensaios não destrutivos nos métodos aplicados e a calibração vigente da instrumentação. Desconfie de quem alega credenciamento genérico sem apresentar a documentação correspondente." }
+    ],
+    content: [
+`Contratar inspeção NR-13 tem uma armadilha específica: **o comprador raramente consegue avaliar a qualidade do que recebeu**. O laudo chega, tem carimbo, tem assinatura, e vai para a pasta. A qualidade só é testada meses depois — em auditoria, em uma exigência de cliente, ou, na pior hipótese, na investigação de um acidente.
+
+Nesse momento, a diferença entre um laudo bem feito e um laudo formal fica evidente. E não há como refazer o passado: se o equipamento operou dois anos com base numa inspeção superficial, esses dois anos existiram.
+
+Este artigo apresenta os critérios objetivos para avaliar qualquer empresa de inspeção NR-13 — inclusive a VSM Engenharia. São critérios verificáveis antes de assinar, não impressões.`,
+
+`## Por que a escolha importa {#por-que-a-escolha-importa}
+
+A inspeção NR-13 não é um serviço de comodidade documental. É a verificação de integridade de equipamentos que armazenam energia suficiente para destruir uma planta.
+
+Um laudo malfeito produz três efeitos simultâneos:
+
+| Efeito | Consequência |
+| --- | --- |
+| **Falsa segurança** | A empresa acredita que o equipamento está verificado quando não está |
+| **Falsa conformidade** | O documento não sustenta auditoria nem regulação de sinistro |
+| **Agravante em acidente** | Demonstra que houve verificação formal que não detectou o risco |
+
+O terceiro é o mais grave e o menos compreendido. Ter um laudo ruim é pior do que não ter laudo: ele documenta que a empresa contratou uma verificação e que essa verificação passou ao largo do problema.`,
+
+`## O critério eliminatório: ART {#criterio-eliminatorio}
+
+Antes de qualquer outro critério: **o laudo precisa vir com ART — Anotação de Responsabilidade Técnica — recolhida no CREA e vinculada ao serviço**.
+
+A ART é o que transforma o documento em peça técnica com responsabilidade atribuída a um profissional identificável. Sem ela, o laudo é uma opinião impressa.
+
+O que verificar:
+
+- ☐ Número da ART citado no laudo
+- ☐ ART efetivamente recolhida, não apenas preenchida
+- ☐ Objeto da ART compatível com o serviço executado
+- ☐ Profissional da ART é o mesmo que assina o laudo
+- ☐ CREA do profissional ativo e com atribuição compatível
+
+Empresa que hesita em fornecer o número da ART ou que entrega o laudo prometendo "enviar a ART depois" está sinalizando um problema. A ART é emitida no ato da contratação do serviço, não como anexo posterior.`,
+
+`## Os 10 critérios de avaliação {#os-10-criterios}
+
+| # | Critério | O que verificar |
+| --- | --- | --- |
+| 1 | **Profissional habilitado** | Engenheiro com CREA ativo e atribuição compatível; número verificável |
+| 2 | **ART recolhida** | Vinculada ao serviço, com objeto compatível |
+| 3 | **Qualificação para categoria crítica** | Equipamentos de categoria mais exigente demandam qualificação específica do profissional |
+| 4 | **Inspetores de END certificados** | Certificação vigente no método aplicado — ultrassom, líquido penetrante, partícula magnética |
+| 5 | **Instrumentação calibrada** | Certificados de calibração vigentes do medidor de espessura e dos manômetros |
+| 6 | **Escopo explícito na proposta** | O que está incluso, o que é extra, e o que não está coberto |
+| 7 | **Tratamento do prontuário** | A empresa atualiza o prontuário e o registro de segurança, ou só entrega um PDF? |
+| 8 | **Capacidade de reconstituição** | Sabe reconstituir prontuário e calcular PMTA quando não há documentação? |
+| 9 | **Modelo de laudo** | Traz medições, mapa de pontos, fotos e não conformidades priorizadas? |
+| 10 | **Continuidade** | Mantém histórico entre inspeções para calcular taxa de corrosão? |
+
+Os critérios 8 e 10 separam prestadores pontuais de parceiros técnicos.
+
+O critério 8 importa porque a maioria das plantas tem pelo menos um equipamento sem prontuário — reservatório de ar comprimido, vaso herdado, equipamento comprado usado. Empresa que só inspeciona o que já tem documentação devolve o problema para você.
+
+O critério 10 é o que torna o programa útil: medir espessura uma vez informa o estado atual; medir **nos mesmos pontos** ao longo dos anos informa a **taxa de corrosão** e permite estimar vida remanescente. Empresa que refaz a malha de medição em pontos diferentes a cada inspeção destrói essa capacidade.`,
+
+`## Peça um laudo-modelo {#laudo-modelo}
+
+É o teste mais revelador e quase ninguém faz: **peça um laudo-modelo antes de contratar** (com dados do cliente anonimizados).
+
+O que procurar no modelo:
+
+| Sinal de qualidade | Sinal de problema |
+| --- | --- |
+| Itens verificados listados individualmente, com resultado | Conclusão genérica do tipo "equipamento em condições de uso" |
+| Valores medidos de espessura, com mapa de pontos identificado | Nenhum número, apenas texto descritivo |
+| Registro fotográfico dos pontos avaliados | Uma ou duas fotos gerais do equipamento |
+| Não conformidades classificadas por criticidade, com prazo | Lista solta de observações, sem priorização |
+| Cálculo da espessura mínima requerida e da PMTA | Nenhum cálculo |
+| Justificativa técnica do próximo prazo | Prazo genérico "12 meses" sem fundamentação |
+| Referência normativa e metodologia declaradas | Nenhuma referência |
+| ART citada | ART ausente ou "em processo" |
+
+Um laudo de 3 páginas sem medições e sem fotos não é um laudo econômico — é um laudo que não verificou. O padrão de um documento tecnicamente completo está descrito em [laudo NR-13: quanto custa, quem pode emitir e o que contém](/blog/laudo-nr13-quanto-custa-quem-pode-emitir).`,
+
+`## O que exigir na proposta {#o-que-exigir-na-proposta}
+
+A proposta precisa responder, por escrito:
+
+- ☐ **Quais equipamentos** estão cobertos, identificados individualmente
+- ☐ **Qual tipo de inspeção** — inicial, periódica ou extraordinária; externa, interna ou ambas
+- ☐ **Quais ensaios** estão inclusos e em qual extensão (número de pontos de ultrassom, por exemplo)
+- ☐ **Se há necessidade de parada** e de quanto tempo
+- ☐ **Se o prontuário será atualizado** ou apenas o laudo entregue
+- ☐ **O que acontece se faltar documentação** — reconstituição está inclusa ou é extra?
+- ☐ **Prazo de entrega** do laudo após a execução
+- ☐ **Quem é o profissional responsável** e qual seu CREA
+- ☐ **O que não está incluso** — teste hidrostático, reparos, calibração de válvulas
+- ☐ **Condições de repetição** caso alguma etapa precise ser refeita
+
+O item mais esquecido é o penúltimo. Muita proposta é comparada como se cobrisse a mesma coisa, quando uma inclui teste hidrostático e a outra não. Comparar preço sem comparar escopo leva sempre à escolha errada.
+
+> **Quer uma proposta com escopo detalhado?** A VSM Engenharia envia orçamento com escopo técnico fechado em até 24h. [Solicite pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento).`,
+
+`## Sinais de alerta {#sinais-de-alerta}
+
+| Sinal | O que costuma indicar |
+| --- | --- |
+| **Orçamento sem visita nem questionário técnico** | Escopo definido no chute; surpresas depois |
+| **Promessa de laudo "no mesmo dia"** | Sem análise técnica, sem cálculo, sem ensaio |
+| **Laudo emitido só com fotos enviadas por você** | Não houve inspeção — documento frágil |
+| **Preço muito abaixo da faixa de mercado** | Escopo reduzido silenciosamente |
+| **Recusa em informar CREA ou ART** | Problema de habilitação |
+| **"Resolvemos com a fiscalização"** | Sinal claro para encerrar a conversa |
+| **Sem certificado de calibração da instrumentação** | Medições sem rastreabilidade |
+| **Não pergunta sobre o prontuário** | Vai entregar laudo solto, sem integrar ao histórico |
+| **Modelo de laudo indisponível** | Provavelmente não há o que mostrar |
+
+O sinal mais perigoso é o penúltimo, porque parece um detalhe burocrático. Na prática, um laudo que não conversa com o prontuário não permite calcular taxa de corrosão nem justificar prazos — o programa de inspeção vira uma sequência de fotografias isoladas. O papel do documento está em [prontuário NR-13: o que deve conter](/blog/prontuario-nr13-o-que-deve-conter).`,
+
+`## Como interpretar o preço {#preco}
+
+Faixas praticadas no Sudeste em 2026, para inspeção com laudo e ART:
+
+| Equipamento | Faixa de mercado |
+| --- | --- |
+| Reservatório de ar comprimido | R$ 900 – R$ 2.500 |
+| Vaso de pressão pequeno | R$ 1.500 – R$ 3.500 |
+| Vaso de pressão médio | R$ 3.000 – R$ 8.000 |
+| Caldeira pequena | R$ 3.000 – R$ 7.000 |
+| Caldeira média | R$ 6.000 – R$ 15.000 |
+
+Como ler um orçamento fora da faixa:
+
+- **Muito abaixo** — verifique o escopo linha a linha. Normalmente falta medição de espessura, ensaio, ou atualização de prontuário.
+- **Muito acima** — pode ser legítimo se inclui reconstituição de prontuário, teste hidrostático, malha extensa de ultrassom ou mobilização complexa. Peça a discriminação.
+- **Sem discriminação** — peça. Proposta que não separa itens não permite comparação.
+
+Um ponto que reduz custo de forma legítima: **contratar em lote**. Vários equipamentos no mesmo endereço diluem a mobilização e reduzem bastante o custo unitário. Referências de precificação em [quanto custa um laudo NR-13 em São Paulo](/blog/quanto-custa-laudo-nr13-sao-paulo).`,
+
+`## Como validar o laudo recebido {#validar-o-laudo}
+
+Recebeu o laudo? Faça esta verificação antes de arquivar:
+
+1. ☐ **ART** citada, recolhida e com objeto compatível
+2. ☐ **CREA** do profissional ativo e com atribuição compatível
+3. ☐ **Identificação do equipamento** completa — fabricante, série, PMTA, categoria, volume
+4. ☐ **Itens verificados** listados individualmente, com resultado
+5. ☐ **Medições registradas** com valor numérico e mapa de pontos
+6. ☐ **Relatórios de ensaio** anexados, quando houve ensaio
+7. ☐ **Registro fotográfico** dos pontos avaliados e das não conformidades
+8. ☐ **Não conformidades** classificadas por criticidade, com prazo de correção
+9. ☐ **Conclusão objetiva** sobre aptidão operacional
+10. ☐ **Próximo prazo** definido, com justificativa técnica
+11. ☐ **Prontuário atualizado** e devolvido
+12. ☐ **Registro de segurança** com a anotação da inspeção
+
+E o passo que a maioria pula: **executar o plano de ação**. Laudo com não conformidade não corrigida deixa de ser proteção e passa a ser prova de que a empresa conhecia o risco. Se não há orçamento para corrigir tudo de uma vez, registre a priorização e o cronograma — decisão documentada é defensável; omissão não é.
+
+## Próximo passo {#proximo-passo}
+
+Escolher empresa de inspeção NR-13 é decisão técnica, não cotação. Os critérios são verificáveis antes de contratar: habilitação, ART, escopo escrito, instrumentação calibrada, modelo de laudo e tratamento do prontuário.
+
+A VSM Engenharia executa inspeção NR-13 em caldeiras, vasos de pressão, tubulações e reservatórios de ar comprimido em todo o Sudeste, com profissional habilitado, ensaios, laudo completo, prontuário atualizado e ART.
+
+📞 **(11) 95453-4057**
+📩 **[Solicitar orçamento pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
+📧 **contato@vsmengenharia.com**
+
+Conheça o serviço de [inspeção e laudo NR-13](/servicos/nr13), a página de [inspeção NR-13 em São Paulo](/servicos/inspecao-nr13-sao-paulo) e o artigo [empresa sem prontuário NR-13](/blog/sem-prontuario-nr13-o-que-acontece).`
+    ],
+  },
+  {
+    slug: "empresa-adequacao-nr12-como-escolher",
+    title: "Empresas de adequação NR-12: como escolher e o que exigir",
+    category: "NR12",
+    excerpt: "Adequação NR-12 mal contratada vira retrabalho caro. Veja os critérios técnicos, os três modelos de fornecedor do mercado e o que precisa estar na proposta.",
+    metaDescription: "Como escolher empresa de adequação NR-12: critérios técnicos, modelos de fornecedor, o que exigir na proposta, sinais de alerta e validação do laudo.",
+    coverImage: cover_empresa_nr12,
+    readTime: "8 min",
+    date: "30 Jul 2026",
+    dateModified: "30 Jul 2026",
+    views: 61,
+    featured: false,
+    relatedService: { label: "NR-12 · Segurança de Máquinas", href: "/servicos/nr12" },
+    keywords: ["empresas de adequação nr12", "empresa de adequação nr12", "contratar adequação nr12", "como escolher empresa nr12"],
+    keyTakeaways: [
+      "O mercado tem três modelos de fornecedor, e cada um tem um viés previsível na solução proposta",
+      "Adequação sem apreciação de riscos prévia é venda de proteção, não engenharia",
+      "Exija especificação técnica das medidas: tipo, material, distância e nível de desempenho requerido",
+      "Proteção que conflita com a rotina é removida — o fornecedor precisa entender o processo"
+    ],
+    toc: [
+      { id: "o-que-e-adequacao", label: "O que a adequação envolve" },
+      { id: "tres-modelos", label: "Os três modelos de fornecedor" },
+      { id: "criterios", label: "Critérios de avaliação" },
+      { id: "proposta", label: "O que exigir na proposta" },
+      { id: "sinais-de-alerta", label: "Sinais de alerta" },
+      { id: "custo", label: "Como o custo se forma" },
+      { id: "validar", label: "Como validar a entrega" },
+      { id: "faq", label: "Perguntas frequentes" }
+    ],
+    faq: [
+      { question: "Preciso contratar uma empresa ou posso adequar internamente?", answer: "A execução pode ser interna, mas a apreciação de riscos e o laudo exigem engenheiro com CREA ativo e atribuição compatível, com ART recolhida. Muitas indústrias adotam um modelo misto: contratam a apreciação de riscos e o projeto com engenharia externa, e executam a fabricação e a montagem com equipe própria ou com serralheria local, sob supervisão técnica. É um arranjo eficiente quando há estrutura interna de manutenção." },
+      { question: "A empresa que vende a proteção pode fazer a apreciação de riscos?", answer: "Pode, desde que tenha profissional habilitado e recolha ART. O ponto de atenção não é legal, é de viés: quem vende a solução tem incentivo natural para que a apreciação conclua pela solução que vende. Isso não significa má-fé — significa que vale pedir a fundamentação técnica das medidas propostas e, em parques grandes, considerar separar quem avalia de quem fornece." },
+      { question: "Quanto tempo leva a adequação de um parque de máquinas?", answer: "Depende do tamanho do parque e da criticidade. A apreciação de riscos costuma levar de 1 a 3 dias por máquina em campo, mais análise. O projeto das medidas, de 1 a 4 semanas. A fabricação e a montagem variam com o volume e com a janela de parada disponível. Um parque de 20 máquinas raramente se resolve em menos de 3 a 6 meses do início ao laudo final, e adequar tudo de uma vez normalmente não é viável sem parar produção." },
+      { question: "O laudo NR-12 tem validade definida em norma?", answer: "A norma não fixa um prazo de validade em meses. Na prática, o laudo precisa ser revisado sempre que houver modificação na máquina, mudança de processo ou de layout, adaptação de acessório, acidente ou quase acidente, e atualização normativa relevante. Muitas empresas adotam revisão anual como rotina de gestão, o que é boa prática, mas o gatilho técnico é a mudança, não o calendário." }
+    ],
+    content: [
+`Adequação NR-12 é o serviço de conformidade com maior variação de qualidade do mercado industrial — e com o maior custo de erro. Uma proteção mal especificada não é apenas dinheiro perdido: é uma barreira que o operador vai contornar, um intertravamento que a produção vai ponteirar, e um laudo que não se sustenta.
+
+O problema começa na contratação. Muita empresa compra adequação como se comprasse serralheria: pede orçamento de "gradil para as máquinas" e escolhe o menor preço por metro. O resultado é previsível — proteção instalada, produção reclamando, proteção removida em três meses, dinheiro gasto duas vezes.
+
+Este artigo apresenta os critérios para avaliar fornecedores de adequação NR-12, os três modelos de empresa que existem no mercado e o que precisa constar na proposta.`,
+
+`## O que a adequação envolve {#o-que-e-adequacao}
+
+Adequação NR-12 completa tem cinco etapas, e um fornecedor pode cobrir todas ou apenas parte:
+
+| Etapa | Entrega |
+| --- | --- |
+| **1. Inventário e priorização** | Lista das máquinas com identificação individual e ordem de execução por criticidade |
+| **2. Apreciação de riscos** | Avaliação técnica por máquina, em todas as fases de vida, com ART |
+| **3. Projeto das medidas** | Especificação de proteções, dispositivos, comando seguro e nível de desempenho |
+| **4. Execução** | Fabricação, montagem, integração elétrica e programação |
+| **5. Validação e laudo** | Verificação de que a medida funciona como especificado, laudo e ART |
+
+A etapa 2 é a fundação. Adequação que começa direto na etapa 4 — comprar e instalar proteção — é venda de produto, não engenharia. O conteúdo e a metodologia estão em [apreciação de risco NR-12: metodologia ISO 12100](/blog/apreciacao-de-risco-nr12-modelo-pratico), e a distinção entre os documentos em [o que é APR na NR-12](/blog/o-que-e-apr-nr12).
+
+A etapa 5 também costuma ser omitida. Instalar uma chave de segurança não é o mesmo que validar que a função de segurança responde corretamente à falha. Sem validação, a medida pode estar instalada e não funcionar.`,
+
+`## Os três modelos de fornecedor {#tres-modelos}
+
+O mercado tem três perfis, cada um com uma força e um viés previsível:
+
+| Modelo | Força | Viés a observar |
+| --- | --- | --- |
+| **Engenharia consultiva** | Apreciação e projeto independentes, sem interesse na solução vendida | Pode não executar — você precisa contratar a fabricação à parte |
+| **Fabricante ou integrador** | Executa rápido, domina a tecnologia que representa | Tende a especificar a solução que fabrica ou representa |
+| **Serralheria com engenheiro contratado** | Preço baixo em estrutura metálica | Frequentemente fraco em comando seguro, intertravamento e nível de desempenho |
+
+Nenhum modelo é errado. O erro é contratar sem saber qual deles se está contratando.
+
+Dois arranjos que funcionam bem na prática:
+
+- **Parque grande e crítico**: separar quem faz a apreciação de riscos de quem fornece a solução. O custo adicional da avaliação independente costuma se pagar em especificação mais enxuta.
+- **Parque pequeno ou médio**: fornecedor único, desde que tenha engenheiro próprio com atribuição em máquinas e demonstre competência tanto em estrutura quanto em comando seguro.
+
+O ponto fraco mais comum do terceiro modelo é a parte elétrica. Estrutura metálica bem feita com intertravamento mal integrado é uma adequação que reprova exatamente onde importa — os critérios estão em [painel elétrico NR-12: categoria de segurança](/blog/painel-eletrico-nr12-categoria-seguranca).`,
+
+`## Critérios de avaliação {#criterios}
+
+| # | Critério | O que verificar |
+| --- | --- | --- |
+| 1 | **Engenheiro com atribuição em máquinas** | CREA ativo; mecânica, eletricista, controle e automação ou segurança do trabalho |
+| 2 | **ART** | Recolhida para apreciação, projeto e laudo |
+| 3 | **Metodologia declarada** | Referência à ABNT NBR ISO 12100 e critérios de estimativa explícitos |
+| 4 | **Cobertura de todas as fases de vida** | Operação, regulagem, limpeza, manutenção, troca de ferramenta |
+| 5 | **Competência em comando seguro** | Sabe definir e implementar nível de desempenho conforme ISO 13849-1 |
+| 6 | **Especificação técnica das medidas** | Tipo, material, distância de segurança, tecnologia de intertravamento |
+| 7 | **Validação pós-instalação** | Testa a função de segurança, não apenas a instalação |
+| 8 | **Entendimento do processo produtivo** | Pergunta sobre frequência de acesso, turnos, rotina de limpeza e troca |
+| 9 | **Documentação entregue** | Apreciação, projeto, memorial, diagramas, manual e laudo |
+| 10 | **Plano de execução sem parar a produção** | Sequenciamento por criticidade e uso de janelas de manutenção |
+
+O critério 8 é o que mais diferencia fornecedores na prática. Adequação é um problema de engenharia **e** de processo: proteção que impede uma rotina necessária será contornada. Fornecedor que não pergunta quantas vezes por turno o operador acessa a zona vai especificar errado — a lógica de decisão está em [proteção fixa ou móvel: qual escolher para cada máquina](/blog/qual-protecao-escolher-nr12-fixa-ou-movel).`,
+
+`## O que exigir na proposta {#proposta}
+
+- ☐ **Lista das máquinas** cobertas, com identificação individual (TAG, fabricante, série)
+- ☐ **Etapas incluídas** — apreciação, projeto, execução, validação, laudo
+- ☐ **Metodologia** da apreciação de riscos declarada
+- ☐ **Fases de vida** que serão avaliadas
+- ☐ **Nível de detalhe da especificação** — a proposta gera projeto executável ou apenas recomendações?
+- ☐ **Responsável técnico** identificado, com CREA
+- ☐ **ART** de cada etapa
+- ☐ **Prazo por etapa** e janela de parada necessária
+- ☐ **O que não está incluso** — fabricação, montagem, programação, peças
+- ☐ **Critério de validação** da eficácia das medidas
+- ☐ **Garantia** sobre a solução implantada
+- ☐ **Condições de revisão** se a máquina for modificada depois
+
+O item mais decisivo é o quinto. Uma apreciação que conclui "instalar proteção na zona de prensagem" não é executável: falta tipo, material, distância, tecnologia de intertravamento e nível de desempenho. Sem isso, o problema volta para você na hora de comprar.
+
+> **Precisa de apreciação e projeto com ART?** A VSM Engenharia executa adequação NR-12 completa em todo o Sudeste. [Fale com um engenheiro](/contato).`,
+
+`## Sinais de alerta {#sinais-de-alerta}
+
+| Sinal | O que indica |
+| --- | --- |
+| **Orçamento por metro de gradil, sem apreciação** | Venda de estrutura, não adequação |
+| **Não pergunta sobre a rotina de operação** | Vai especificar solução que conflita com a produção |
+| **Só fala de proteção física, nunca de comando** | Provável fraqueza em intertravamento e nível de desempenho |
+| **Promete "deixar a fábrica em conformidade" sem visitar** | Diagnóstico impossível sem campo |
+| **Laudo prometido antes da execução das medidas** | Laudo de conformidade sem conformidade |
+| **Sem ART nas etapas técnicas** | Sem responsabilidade atribuída |
+| **Solução idêntica para máquinas diferentes** | Não houve apreciação individual |
+| **Ignora manutenção e limpeza** | Metade das fases de vida fica sem avaliação |
+| **Não menciona validação** | Instalação sem verificação de eficácia |
+
+O quinto sinal merece destaque: **laudo não é entregável de contratação, é resultado de conformidade alcançada**. Fornecedor que oferece o laudo como parte do pacote inicial, antes de qualquer medida implantada, está oferecendo um documento que não corresponde ao estado da máquina.`,
+
+`## Como o custo se forma {#custo}
+
+A adequação tem três blocos de custo que precisam ser vistos separadamente:
+
+| Bloco | O que inclui |
+| --- | --- |
+| **Engenharia** | Apreciação de riscos, projeto, especificação, validação, laudo, ART |
+| **Material e fabricação** | Estrutura, proteções, chaves, sensores, relés, cabeamento, painel |
+| **Montagem e integração** | Instalação mecânica, integração elétrica, programação, testes |
+
+Variáveis que mais movem o total: quantidade e complexidade das máquinas, tecnologia de intertravamento exigida pelo nível de desempenho, necessidade de parada de produção e condição do painel elétrico existente.
+
+Um fator subestimado: **o estado do painel**. Máquina antiga frequentemente exige repotenciação elétrica para receber comando seguro adequado, e isso pode representar parcela relevante do custo. A comparação entre reformar e projetar novo está em [projeto mecânico ou retrofit NR-12](/blog/projeto-mecanico-ou-retrofit-nr12).
+
+Faixas de referência de laudo e adequação estão em [laudo NR-12: quando é obrigatório e quanto custa](/blog/laudo-nr12-quando-e-obrigatorio-quanto-custa).`,
+
+`## Como validar a entrega {#validar}
+
+Ao receber a adequação, verifique:
+
+1. ☐ **Apreciação de riscos** individual por máquina, com ART
+2. ☐ **Todas as fases de vida** avaliadas, não só a operação normal
+3. ☐ **Mau uso razoavelmente previsível** considerado
+4. ☐ **Medidas especificadas tecnicamente**, não descritas genericamente
+5. ☐ **Hierarquia respeitada** — eliminar, proteger, informar (nessa ordem)
+6. ☐ **Nível de desempenho** definido para cada função de segurança
+7. ☐ **Diagramas elétricos** atualizados conforme instalado
+8. ☐ **Teste funcional** de cada dispositivo, documentado
+9. ☐ **Validação da função de segurança**, não apenas da instalação
+10. ☐ **Laudo com ART** e conclusão objetiva
+11. ☐ **Treinamento** da equipe sobre as novas condições de operação
+12. ☐ **Registro fotográfico** do antes e depois
+
+E a verificação mais honesta de todas: **volte à máquina 60 dias depois**. Se a proteção foi calçada, o atuador foi preso com abraçadeira ou a porta está mantida aberta, a especificação estava errada — e o problema não se resolve com advertência ao operador, e sim revendo a solução. O diagnóstico de campo está em [proteção fixa ou móvel: qual escolher](/blog/qual-protecao-escolher-nr12-fixa-ou-movel).
+
+## Próximo passo {#proximo-passo}
+
+Contratar adequação NR-12 é contratar engenharia, não metros de gradil. Os critérios são verificáveis: habilitação do responsável técnico, metodologia declarada, cobertura de todas as fases de vida, especificação executável, competência em comando seguro e validação da eficácia.
+
+A VSM Engenharia executa apreciação de riscos, projeto de proteções, integração de dispositivos de segurança, validação e laudo NR-12 em todo o Sudeste, com engenheiros habilitados e ART.
+
+📞 **(11) 95453-4057**
+📩 **[Solicitar orçamento pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
+📧 **contato@vsmengenharia.com**
+
+Conheça o serviço de [adequação NR-12](/servicos/nr12) e os artigos [adequação NR-12 passo a passo](/blog/adequacao-nr12-passo-a-passo) e [NR-12: quem precisa fazer](/blog/nr12-quem-precisa-fazer).`
+    ],
+  },
+  {
+    slug: "empresa-reclassificacao-monta-como-escolher",
+    title: "Empresa de reclassificação de monta: como escolher com segurança",
+    category: "Reclassificação",
+    excerpt: "O mercado de reclassificação de monta tem despachante, oficina e engenharia — e só uma delas pode assinar o laudo. Veja como avaliar e o que nunca aceitar.",
+    metaDescription: "Como escolher empresa de reclassificação de monta: quem pode assinar o laudo, critérios de avaliação, sinais de alerta e o que exigir antes de pagar.",
+    coverImage: cover_empresa_monta,
+    readTime: "8 min",
+    date: "30 Jul 2026",
+    dateModified: "30 Jul 2026",
+    views: 94,
+    featured: false,
+    relatedService: { label: "Reclassificação de Monta", href: "/servicos/reclassificacao-de-monta" },
+    keywords: ["empresa de reclassificação de monta", "empresas de reclassificação de monta", "quem faz reclassificação de monta", "contratar reclassificação de monta"],
+    keyTakeaways: [
+      "Só engenheiro com CREA ativo e ART pode assinar o laudo — despachante e oficina não podem",
+      "Promessa de aprovação garantida é o sinal de alerta mais confiável do setor",
+      "Laudo emitido sem inspeção presencial é a causa mais comum de exigência",
+      "Contrate o laudo antes do reparo: evita investir em veículo sem viabilidade técnica"
+    ],
+    toc: [
+      { id: "quem-e-quem", label: "Quem é quem nesse mercado" },
+      { id: "quem-assina", label: "Quem pode assinar o laudo" },
+      { id: "criterios", label: "Critérios de avaliação" },
+      { id: "nunca-aceite", label: "O que nunca aceitar" },
+      { id: "perguntas", label: "8 perguntas antes de contratar" },
+      { id: "ordem-correta", label: "A ordem correta de contratação" },
+      { id: "custo", label: "Como interpretar o preço" },
+      { id: "faq", label: "Perguntas frequentes" }
+    ],
+    faq: [
+      { question: "Despachante pode fazer a reclassificação de monta?", answer: "Despachante pode conduzir o trâmite administrativo — protocolo, acompanhamento, agendamento —, e isso tem valor real. O que ele não pode é assinar o laudo de recuperabilidade, que é atividade técnica privativa de engenheiro com CREA ativo e ART recolhida. Muitos despachantes trabalham em parceria com engenheiros, o que é um arranjo legítimo: nesse caso, peça para saber quem é o engenheiro responsável e confira o CREA." },
+      { question: "A oficina que vai reparar pode emitir o laudo?", answer: "Não. Oficina executa o reparo; o laudo é documento de engenharia. Além da questão de habilitação, há um problema de independência: quem executa o reparo avaliando a própria execução é parte interessada. O arranjo saudável é o laudo definir o memorial dos reparos, a oficina executar conforme esse memorial, e o engenheiro verificar a conformidade da execução." },
+      { question: "Existe empresa que garante a aprovação no DETRAN?", answer: "Não existe garantia legítima de deferimento. A decisão é do órgão, com base no conjunto: laudo, documentação, reparo executado e vistoria. Quem promete aprovação garantida está prometendo algo que não controla, ou sugerindo caminho que você não quer percorrer. O que um bom serviço entrega é reduzir drasticamente a chance de exigência — não garantia de resultado." },
+      { question: "Vale contratar pelo menor preço?", answer: "Na reclassificação, o preço do laudo é uma fração pequena do custo total do processo, que inclui reparo, taxas e tempo. Economizar no laudo costuma custar caro: laudo raso gera exigência, e cada exigência adiciona de 15 a 30 dias ao processo, além do risco de indeferimento. O critério correto é a qualidade técnica do documento, verificável pedindo um laudo-modelo." }
+    ],
+    content: [
+`O mercado de reclassificação de monta é povoado por três tipos de prestador — engenharia, despachante e oficina — e a maior parte dos problemas vem de contratar um esperando o que só outro pode entregar.
+
+Some-se a isso o perfil do contratante: normalmente uma pessoa física, lidando com o assunto pela primeira vez, sob pressão de tempo, tentando recuperar valor de um veículo que já lhe custou caro. É um cenário em que promessas fáceis encontram terreno fértil.
+
+Este artigo separa os papéis, define o que exigir e lista o que nunca aceitar.`,
+
+`## Quem é quem nesse mercado {#quem-e-quem}
+
+| Prestador | O que faz | O que não pode fazer |
+| --- | --- | --- |
+| **Engenheiro / empresa de engenharia** | Inspeção, avaliação estrutural, memorial de reparos, laudo com ART | — |
+| **Despachante** | Trâmite administrativo, protocolo, acompanhamento, agendamento | Assinar o laudo técnico |
+| **Oficina / funilaria** | Execução do reparo conforme o memorial | Assinar o laudo técnico |
+| **Empresa de vistoria** | Vistoria de identificação veicular | Assinar o laudo de recuperabilidade |
+
+Os três primeiros são complementares e frequentemente atuam em parceria — arranjo legítimo e comum. O problema não é a parceria; é a **opacidade** sobre quem faz o quê.
+
+Pergunta que resolve na primeira conversa: *"quem é o engenheiro que vai assinar o laudo e qual o CREA dele?"*. Resposta direta é bom sinal. Evasiva é resposta suficiente.`,
+
+`## Quem pode assinar o laudo {#quem-assina}
+
+O laudo de recuperabilidade — também chamado no mercado de laudo de reclassificação de monta — é **atividade técnica privativa de engenheiro** com CREA ativo e atribuição compatível, com ART recolhida.
+
+Requisitos verificáveis:
+
+- ☐ **Engenheiro identificado** no documento, com nome e CREA
+- ☐ **CREA ativo** e com atribuição compatível
+- ☐ **ART recolhida**, com número citado no laudo
+- ☐ **Inspeção presencial** efetivamente realizada
+
+O último item é o mais violado. Laudo emitido apenas com fotos enviadas por WhatsApp é frágil e frequentemente gera exigência — e faz sentido que gere: ninguém avalia integridade estrutural por foto de celular.
+
+O detalhamento do que o documento precisa conter está em [laudo de recuperabilidade](/servicos/laudo-de-recuperabilidade).`,
+
+`## Critérios de avaliação {#criterios}
+
+| # | Critério | O que verificar |
+| --- | --- | --- |
+| 1 | **Engenheiro identificado** | Nome e CREA informados sem hesitação |
+| 2 | **ART** | Recolhida e citada no laudo |
+| 3 | **Inspeção presencial** | O engenheiro vê o veículo — não só fotos |
+| 4 | **Análise prévia da situação** | Verifica restrições, débitos e alienação antes de começar |
+| 5 | **Laudo-modelo disponível** | Mostra um exemplo anonimizado |
+| 6 | **Memorial detalhado** | Define reparo por região, com método |
+| 7 | **Registro fotográfico extenso** | Fotos gerais e de detalhe de cada região |
+| 8 | **Orientação sobre o reparo** | Explica o que fotografar durante a execução |
+| 9 | **Transparência sobre prazo** | Fala em 45 a 120 dias, não em "duas semanas" |
+| 10 | **Sem promessa de garantia** | Não garante deferimento |
+
+O critério 4 evita a perda mais frustrante: iniciar o processo e descobrir depois que há bloqueio judicial, débito impeditivo ou alienação sem anuência do credor. Uma verificação de 10 minutos no começo economiza semanas.
+
+O critério 8 é o que separa um prestador de um orientador. Reparo estrutural precisa ser fotografado **durante** a execução — com a peça removida e a estrutura exposta. Depois de montado, não há como comprovar. Quem avisa isso antes está pensando no seu processo.`,
+
+`## O que nunca aceitar {#nunca-aceite}
+
+| Sinal | Por que encerrar a conversa |
+| --- | --- |
+| **"Garanto a aprovação"** | Ninguém controla a decisão do órgão |
+| **"Tenho contato lá dentro"** | Sugere caminho irregular; risco jurídico é seu |
+| **"Não precisa ver o carro, manda foto"** | Laudo frágil, exigência quase certa |
+| **"Faço sem ART, sai mais barato"** | Documento sem valor técnico |
+| **"Resolvo em 15 dias"** | Incompatível com os prazos reais do processo |
+| **"Pode reparar primeiro, depois eu laudo"** | Inverte a ordem e arrisca reparo fora do memorial |
+| **"Não precisa das notas fiscais das peças"** | A comprovação é exigida |
+| **Pagamento integral antecipado sem contrato** | Sem previsão de entrega nem responsabilidade definida |
+| **Recusa em informar o CREA** | Sinal suficiente por si só |
+
+O primeiro item é o mais frequente e o mais eficaz comercialmente — justamente por ser o que o contratante mais quer ouvir. Um prestador honesto explica que a decisão é do órgão e que o trabalho dele é eliminar as causas de exigência. A lista dessas causas está em [principais erros na reclassificação de monta](/blog/principais-erros-reclassificacao-monta).`,
+
+`## 8 perguntas antes de contratar {#perguntas}
+
+Perguntas curtas cujas respostas revelam bastante:
+
+1. **Quem é o engenheiro responsável e qual o CREA?** — resposta direta ou evasiva
+2. **A ART está inclusa no valor?** — precisa estar
+3. **O engenheiro vem ver o veículo?** — presencial é o padrão correto
+4. **Posso ver um laudo-modelo?** — quem tem, mostra
+5. **O laudo define o memorial dos reparos?** — sem memorial, a oficina improvisa
+6. **Vocês verificam restrições e débitos antes de começar?** — evita processo natimorto
+7. **Qual o prazo realista até a conclusão?** — 45 a 120 dias é a faixa honesta
+8. **O que acontece se houver exigência?** — acompanhamento incluso ou cobrado à parte?
+
+A pergunta 8 costuma revelar diferenças relevantes de escopo entre propostas que pareciam equivalentes. Exigência é evento comum; saber quem responde por ela evita surpresa.
+
+> **Quer avaliar a viabilidade do seu caso?** A VSM Engenharia analisa a situação do veículo e emite laudo de recuperabilidade com ART em SP, MG, RJ e ES. [Solicite pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento).`,
+
+`## A ordem correta de contratação {#ordem-correta}
+
+Erro clássico: reparar primeiro e procurar o laudo depois. A sequência correta:
+
+1. **Verificação da situação do veículo** — restrições, débitos, multas, alienação, numerações
+2. **Laudo de recuperabilidade** — avalia viabilidade e define o memorial dos reparos
+3. **Decisão informada** — com o laudo em mãos, você sabe se vale investir no reparo
+4. **Reparo conforme o memorial**, com registro fotográfico durante a execução e notas fiscais guardadas
+5. **Protocolo com documentação completa** — de uma vez, sem complementação posterior
+6. **Vistoria**
+7. **Análise e emissão** do documento
+
+Reparar antes do laudo cria dois riscos concretos: investir em veículo cuja recuperação não teria viabilidade técnica reconhecida, e executar reparo com método que o laudo não pode chancelar — obrigando a refazer.
+
+O cronograma completo, com a duração de cada etapa, está em [quanto tempo demora uma reclassificação de monta](/blog/quanto-tempo-demora-reclassificacao-de-monta).`,
+
+`## Como interpretar o preço {#custo}
+
+No custo total do processo — laudo, reparo, taxas, tempo parado —, o laudo é a menor parcela e a de maior alavancagem.
+
+| Faixa | Leitura |
+| --- | --- |
+| **Muito abaixo do mercado** | Provável laudo sem inspeção presencial, sem memorial e possivelmente sem ART |
+| **Dentro da faixa** | Compare escopo: inspeção presencial, memorial, acompanhamento e resposta a exigência |
+| **Acima da faixa** | Pode ser legítimo se inclui acompanhamento completo do processo e resposta a exigências |
+
+A conta que orienta a decisão: **cada exigência custa de 15 a 30 dias**. Um laudo mais barato que gere duas exigências custa, em tempo, mais do que a diferença de preço — e prolonga o período em que o veículo continua com a restrição, sem poder ser transferido nem vendido pelo valor real.
+
+O tamanho desse prejuízo está quantificado em [média monta: desvalorização e quanto se perde](/blog/media-monta-desvalorizacao-quanto-perde).
+
+## Próximo passo {#proximo-passo}
+
+A escolha se resume a três verificações: quem é o engenheiro responsável, se a inspeção é presencial e se o laudo traz memorial detalhado com ART. Quem atende aos três está entregando engenharia; quem falha em algum está vendendo expectativa.
+
+A VSM Engenharia emite laudo de recuperabilidade com ART e acompanha o processo de reclassificação de monta em São Paulo, Minas Gerais, Rio de Janeiro e Espírito Santo.
+
+📞 **(11) 95453-4057**
+📩 **[Solicitar orçamento pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
+📧 **contato@vsmengenharia.com**
+
+Conheça o serviço de [reclassificação de monta](/servicos/reclassificacao-de-monta), a página de [laudo de recuperabilidade](/servicos/laudo-de-recuperabilidade) e o artigo [guia completo de reclassificação de monta](/blog/reclassificacao-monta-guia-completo).`
+    ],
+  },
+  {
+    slug: "inspecao-guindaste-nr11",
+    title: "Inspeção em guindastes: NR-11, checklist e periodicidade",
+    category: "NR11",
+    excerpt: "Guindaste móvel, sobre esteiras ou de torre exige inspeção estrutural, de mecanismos, de estabilidade e de dispositivos limitadores. Veja o escopo completo.",
+    metaDescription: "Inspeção em guindastes conforme NR-11 e NR-12: tipos, checklist técnico, limitador de momento, estabilidade, teste de carga, periodicidade e laudo com ART.",
+    coverImage: cover_plano_de_rigging_guia_tecnico,
+    readTime: "9 min",
+    date: "31 Jul 2026",
+    dateModified: "31 Jul 2026",
+    views: 58,
+    featured: false,
+    relatedService: { label: "NR-11 · Movimentação de Cargas", href: "/servicos/nr11" },
+    keywords: ["inspeção em guindastes", "inspeção de guindaste", "checklist guindaste", "laudo de guindaste", "limitador de momento"],
+    keyTakeaways: [
+      "Em guindaste, o limite raramente é a resistência da lança — é a estabilidade do conjunto",
+      "A capacidade não é um número: é uma curva que varia com raio, ângulo e comprimento de lança",
+      "Limitador de momento e indicador de carga são dispositivos de segurança, não acessórios",
+      "Patolamento sobre solo sem verificação de capacidade é a causa mais comum de tombamento"
+    ],
+    toc: [
+      { id: "guindaste-nas-normas", label: "Guindaste nas normas" },
+      { id: "tipos", label: "Tipos de guindaste e o que muda" },
+      { id: "curva-de-carga", label: "Curva de carga: o conceito central" },
+      { id: "estrutura", label: "Checklist — estrutura e lança" },
+      { id: "mecanismos", label: "Checklist — mecanismos e hidráulica" },
+      { id: "estabilidade", label: "Estabilidade, patolamento e solo" },
+      { id: "dispositivos", label: "Dispositivos de segurança e limitadores" },
+      { id: "cabo-gancho", label: "Cabo de aço, gancho e acessórios" },
+      { id: "teste-de-carga", label: "Teste de carga e estabilidade" },
+      { id: "periodicidade", label: "Periodicidade e documentação" },
+      { id: "erros-comuns", label: "Erros que causam acidente" },
+      { id: "faq", label: "Perguntas frequentes" }
+    ],
+    faq: [
+      { question: "Qual a periodicidade da inspeção de guindaste?", answer: "Verificação diária pelo operador antes do turno; inspeção periódica de manutenção conforme o programa e o manual do fabricante, tipicamente trimestral; e inspeção técnica completa com laudo e ART anual na maior parte das operações. Guindaste de uso intensivo, em ambiente agressivo ou com histórico de ocorrência demanda intervalo menor. Obras e contratos industriais frequentemente exigem laudo vigente com prazo próprio, independentemente do programa interno." },
+      { question: "O que é o limitador de momento e por que ele importa tanto?", answer: "É o dispositivo que monitora continuamente o momento de tombamento — o produto entre a carga içada e o raio em que ela está — e bloqueia ou alarma quando o valor se aproxima do limite da configuração. Importa porque o modo de falha típico do guindaste não é a lança quebrar, é o equipamento tombar. Limitador desativado, ponteado ou descalibrado remove justamente a barreira que impede o operador de exceder a curva de carga sem perceber." },
+      { question: "Guindaste precisa de teste de carga todo ano?", answer: "O ensaio é obrigatório na entrada em operação, após reforma ou reparo estrutural, após troca de componente da cadeia de sustentação, após acidente ou sobrecarga, e quando a capacidade é alterada. Em guindaste, o ensaio precisa cobrir as configurações críticas de raio e comprimento de lança, não apenas uma posição — porque a capacidade varia ao longo da curva. Muitos contratos e seguradoras exigem ensaio periódico, o que na prática torna a repetição anual comum." },
+      { question: "Posso patolar o guindaste em qualquer piso?", answer: "Não. A sapata concentra carga muito elevada em área pequena, e a capacidade de suporte do solo precisa ser verificada. Asfalto quente, piso sobre galeria, tampa de poço de visita, aterro recente e proximidade de talude são situações de risco. A prática correta usa placas de distribuição dimensionadas para a pressão de contato admissível do solo. Recalque sob uma sapata durante o içamento é uma das causas mais frequentes de tombamento." }
+    ],
+    content: [
+`Guindaste é o equipamento de movimentação de carga com o modo de falha mais específico do setor: **ele raramente quebra — ele tomba**.
+
+Essa distinção organiza toda a inspeção. Em ponte rolante, a pergunta central é se a estrutura e os mecanismos suportam a carga. Em guindaste, a estrutura costuma ser o elemento menos crítico: o que define o limite é o **equilíbrio do conjunto** — carga, raio, contrapeso, base de apoio e capacidade do solo.
+
+Este artigo apresenta o escopo da inspeção em guindastes móveis, sobre esteiras, de torre e articulados, com atenção aos itens que a inspeção genérica de equipamento de elevação costuma deixar de fora.`,
+
+`## Guindaste nas normas {#guindaste-nas-normas}
+
+| Referência | O que trata |
+| --- | --- |
+| **NR-11** | Movimentação de cargas, operação, treinamento, sinalização |
+| **NR-12** | Segurança da máquina, comando, dispositivos, Anexo XII (equipamentos de guindar) |
+| **NR-18** | Quando o guindaste opera em canteiro de obras |
+| **NR-35** | Trabalho em altura durante manutenção e montagem |
+| **NR-10** | Proximidade de redes elétricas energizadas |
+| **ABNT NBR ISO 4310** | Procedimentos de ensaio de carga em guindastes |
+| **ABNT NBR ISO 4309** | Inspeção e critérios de descarte de cabo de aço |
+| **ABNT NBR ISO 12480-1** | Uso seguro — planejamento, organização e seleção de pessoal |
+| **ABNT NBR 14768** | Guindaste articulado hidráulico (munck) |
+| **Manual do fabricante** | Curva de carga, limites de configuração e critérios de manutenção |
+
+O manual do fabricante tem peso especial aqui: é ele que traz a **tabela de carga**, e nenhuma norma genérica substitui esse documento. Guindaste operando sem a tabela de carga acessível ao operador é não conformidade direta.
+
+A proximidade de rede elétrica merece nota: contato de lança com linha energizada é uma das principais causas de morte em operação com guindaste, e a distância mínima de segurança precisa constar do planejamento — assunto tratado no [plano de rigging](/blog/7-erros-plano-de-rigging).`,
+
+`## Tipos de guindaste e o que muda {#tipos}
+
+| Tipo | Característica | Ponto crítico da inspeção |
+| --- | --- | --- |
+| **Móvel sobre pneus** | Alta mobilidade, patolamento obrigatório | Sapatas, suspensão, pressão de pneus, solo |
+| **Sobre esteiras** | Estabilidade maior, deslocamento com carga em alguns modelos | Esteiras, roletes, giro, base |
+| **Articulado (munck)** | Montado sobre caminhão | Fixação ao chassi, lança articulada, estabilizadores |
+| **De torre** | Obras verticais, montagem e ascensão | Ancoragem, ascensão, torre, contrapeso, lastro |
+| **Florestal e industrial** | Aplicação específica, uso intensivo | Desgaste acelerado, ciclos elevados |
+| **Sobre caminhão (telescópico)** | Lança telescópica de grande alcance | Patins, roldanas de extensão, sincronismo |
+
+O guindaste articulado sobre caminhão tem cluster próprio de conteúdo, com o roteiro de inspeção específico em [inspeção em caminhão munck](/blog/inspecao-caminhao-munck-checklist).
+
+Em guindaste de torre, a inspeção incorpora dois itens ausentes nos demais: **ancoragem à estrutura da obra** e **procedimento de ascensão** (telescopagem da torre). São operações de risco elevado, com procedimento próprio do fabricante.`,
+
+`## Curva de carga: o conceito central {#curva-de-carga}
+
+A capacidade de um guindaste **não é um número** — é uma superfície de valores que varia com:
+
+- **Raio** — distância horizontal entre o centro de giro e a carga
+- **Comprimento da lança** — cada extensão reduz a capacidade
+- **Ângulo da lança**
+- **Configuração de contrapeso**
+- **Posição do patolamento** — total, parcial ou sobre pneus
+- **Setor de giro** — frontal, lateral ou traseiro, conforme o equipamento
+- **Uso de jib ou extensão**
+
+Um guindaste "de 50 toneladas" levanta 50 toneladas apenas na configuração mais favorável — raio mínimo, lança recolhida, patolamento total. A 20 metros de raio, o mesmo equipamento pode estar limitado a uma fração disso.
+
+A inspeção precisa verificar:
+
+- ☐ **Tabela de carga** presente, legível e correspondente ao equipamento e à configuração
+- ☐ **Tabela acessível na cabine**, não guardada em pasta no escritório
+- ☐ **Indicador de raio e ângulo** funcionando
+- ☐ **Indicador de comprimento de lança** funcionando em lanças telescópicas
+- ☐ **Coerência** entre a tabela, o limitador de momento e a configuração real do equipamento
+
+O último item revela um problema silencioso: equipamento que teve contrapeso alterado, lança substituída ou jib adicionado sem atualização da tabela e do limitador opera com referência errada.`,
+
+`## Checklist — estrutura e lança {#estrutura}
+
+- ☐ **Lança**: empenamento, amassamento, trincas em solda, corrosão, deformação de perfil
+- ☐ **Seções telescópicas**: alinhamento, folgas, estado dos patins de deslizamento, desgaste
+- ☐ **Pinos e buchas** de articulação: desgaste, folga, travamento, contrapinos
+- ☐ **Base e mesa giratória**: fixação, estado da coroa de giro, folga do rolamento de giro
+- ☐ **Parafusos da coroa de giro**: aperto e integridade — item de consequência catastrófica
+- ☐ **Chassi e estrutura de apoio**: trincas, deformação, corrosão
+- ☐ **Contrapeso**: fixação, integridade, correspondência com a configuração declarada
+- ☐ **Estrutura de patolamento**: vigas, alojamentos, travamentos
+- ☐ **Cabine**: fixação, visibilidade, proteção contra queda de objetos
+- ☐ **Escadas, plataformas e pontos de ancoragem** para manutenção
+
+O **rolamento de giro** e seus parafusos merecem atenção específica: é o elemento que transmite todo o esforço entre a superestrutura e a base. Falha ali significa separação do conjunto giratório, com consequência total. A verificação de torque dos parafusos segue procedimento e periodicidade do fabricante, e precisa estar documentada.
+
+Trincas em solda de lança e de base exigem ensaio adequado — líquido penetrante e partícula magnética são os métodos aplicáveis, conforme [ensaios não destrutivos industriais](/blog/ensaios-nao-destrutivos-end-industriais).`,
+
+`## Checklist — mecanismos e hidráulica {#mecanismos}
+
+### Sistema hidráulico
+
+- ☐ Vazamentos em cilindros, mangueiras, conexões e blocos
+- ☐ Estado das mangueiras: ressecamento, abrasão, bolhas, prazo de vida
+- ☐ Cilindros: haste sem risco, corrosão ou empenamento; vedação íntegra
+- ☐ **Válvulas de retenção pilotada (holding valves)** nos cilindros de lança e patolamento
+- ☐ Pressão de trabalho conforme especificação
+- ☐ Nível, aspecto e temperatura do óleo; estado dos filtros
+- ☐ Ausência de reparo improvisado em linha de pressão
+
+### Mecanismos
+
+- ☐ **Guincho principal e auxiliar**: tambor, sulco, fixação do cabo, voltas mortas
+- ☐ **Freios** de elevação e de giro: eficácia e ajuste
+- ☐ **Mecanismo de giro**: folga, ruído, lubrificação
+- ☐ **Redutores**: nível de óleo, vazamento, ruído
+- ☐ **Roldanas e moitão**: desgaste de canaleta, giro livre, trava
+- ☐ Motor e transmissão do veículo, quando aplicável
+
+A **válvula de retenção pilotada** é o item hidráulico de maior consequência: é ela que impede a queda da lança ou o recolhimento do patolamento em caso de ruptura de mangueira. Guindaste com essa válvula removida ou inoperante perde a proteção contra o modo de falha mais violento do sistema hidráulico.`,
+
+`## Estabilidade, patolamento e solo {#estabilidade}
+
+Este é o bloco que distingue a inspeção de guindaste de qualquer outra.
+
+### Patolamento
+
+- ☐ Cilindros de patolamento sem vazamento e com retenção efetiva
+- ☐ Extensão total das vigas, com travamento
+- ☐ Sapatas íntegras, sem deformação
+- ☐ Indicador de nível funcionando
+- ☐ Sensor de patolamento integrado ao limitador, quando o equipamento possui
+
+### Solo e distribuição de carga
+
+- ☐ Capacidade de suporte do solo verificada para a pressão de contato
+- ☐ Placas de distribuição dimensionadas — não improvisadas
+- ☐ Distância segura de talude, vala, galeria, tampa de poço e aterro recente
+- ☐ Nivelamento do equipamento dentro da tolerância do fabricante
+
+A carga sob uma sapata pode superar em muito o que o piso aparenta suportar. Asfalto em dia quente, laje sobre subsolo, tampa de caixa de inspeção e aterro não compactado são armadilhas clássicas. **Recalque de uma sapata durante o içamento** altera o nivelamento, muda a distribuição e pode levar ao tombamento em segundos.
+
+Um detalhe operacional que a inspeção deve verificar: se as **placas de distribuição existem e estão dimensionadas**. É comum encontrar chapas ou pedaços de madeira improvisados, sem qualquer cálculo de área necessária.
+
+> **Precisa de inspeção e laudo de guindaste com ART?** A VSM Engenharia executa inspeção técnica de guindastes, munck, pontes rolantes e pórticos em todo o Sudeste. [Solicite pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento).`,
+
+`## Dispositivos de segurança e limitadores {#dispositivos}
+
+| Dispositivo | Função | Verificação |
+| --- | --- | --- |
+| **Limitador de momento (LMI)** | Bloqueia ou alarma ao aproximar do limite de tombamento | Funcional e calibrado para a configuração real |
+| **Indicador de carga** | Informa a carga içada | Leitura coerente com carga conhecida |
+| **Indicador de raio e ângulo** | Base para leitura da tabela de carga | Funcionando e legível |
+| **Fim de curso de elevação** | Impede o choque do moitão contra a ponta da lança | Atuação efetiva |
+| **Fim de curso de lança** | Limita extensão e ângulo | Atuação efetiva |
+| **Válvulas de retenção pilotada** | Impedem queda por ruptura hidráulica | Presentes e operantes |
+| **Anemômetro** | Monitora vento, em guindaste de torre e operações de porte | Funcionando |
+| **Sinalização sonora e luminosa** | Alerta durante movimentação | Operante |
+| **Parada de emergência** | Interrompe movimentos | Acessível e funcional |
+| **Trava de gancho** | Impede desengate da carga | Presente e íntegra |
+
+O teste do limitador de momento é o ponto alto da inspeção: verifica-se se ele **efetivamente atua** ao se aproximar do limite, com carga conhecida e em configuração controlada — não apenas se a tela liga.
+
+Achado grave e recorrente: **limitador desativado, ponteado ou com chave de bypass instalada** para permitir operação acima da curva. É a remoção deliberada da barreira que impede o tombamento, e caracteriza risco grave e iminente.`,
+
+`## Cabo de aço, gancho e acessórios {#cabo-gancho}
+
+Aplicam-se os mesmos critérios objetivos usados em qualquer equipamento de elevação:
+
+- **Cabo de aço** — contagem de arames rompidos em 6d e 30d, redução de diâmetro, corrosão, amassamento, gaiola de passarinho, dano térmico e ruptura junto à terminação, conforme a ABNT NBR ISO 4309
+- **Gancho** — abertura de boca medida e comparada com a original, desgaste de garganta, torção, trincas por ensaio, trava de segurança
+- **Moitão e roldanas** — canaleta, giro livre, rolamentos, proteção contra saída do cabo
+- **Terminações** — soquete, cunha, clipes com quantidade, espaçamento e orientação corretos
+
+O detalhamento dos critérios de descarte está em [inspeção em ponte rolante](/blog/inspecao-ponte-rolante-nr11-procedimento) e, para acessórios e talhas, em [inspeção em talhas](/blog/inspecao-de-talhas-nr11).
+
+Os **acessórios de içamento** — cintas, manilhas, balancins, cabos de aço avulsos — têm inspeção própria e certificação individual. Guindaste em ordem com acessório reprovado continua sendo uma operação insegura, e essa parte costuma ficar fora do escopo quando não é explicitamente contratada.`,
+
+`## Teste de carga e estabilidade {#teste-de-carga}
+
+Em guindaste, o ensaio tem uma particularidade: **não basta uma posição**.
+
+Como a capacidade varia ao longo da curva, o ensaio precisa cobrir as configurações críticas — raio máximo, lança estendida, e as posições onde a limitação é por estabilidade em vez de resistência estrutural.
+
+Situações que exigem ensaio:
+
+- Entrada em operação
+- Após reforma ou reparo estrutural
+- Após troca de componente da cadeia de sustentação
+- Após acidente, sobrecarga ou tombamento
+- Alteração de configuração — contrapeso, lança, jib
+- Exigência contratual ou de seguradora
+
+O procedimento geral, com percentuais, instrumentação e critérios de aprovação, está em [como funciona um teste de carga](/blog/como-funciona-teste-de-carga).
+
+Verificação obrigatória no ensaio de guindaste: **coerência entre a carga real aplicada e a leitura do indicador de carga e do limitador de momento**. Se o dispositivo lê valor diferente do real, toda a operação diária está baseada em informação errada.`,
+
+`## Periodicidade e documentação {#periodicidade}
+
+| Nível | Executor | Frequência típica |
+| --- | --- | --- |
+| Verificação pré-operacional | Operador | Diária, antes do turno |
+| Inspeção de manutenção | Equipe técnica | Conforme manual, tipicamente trimestral |
+| Inspeção técnica com laudo e ART | Engenheiro habilitado | Anual; semestral em uso intensivo |
+| Inspeção extraordinária | Engenheiro habilitado | Após acidente, sobrecarga, reforma ou realocação |
+
+Documentação que a operação precisa manter disponível:
+
+1. Laudo de inspeção vigente com ART
+2. Tabela de carga do equipamento, acessível ao operador
+3. Manual do fabricante
+4. Registros de manutenção preventiva e corretiva
+5. Certificados de treinamento do operador, sinaleiro e amarrador
+6. Certificados dos acessórios de içamento
+7. Registro de calibração do limitador de momento
+8. Plano de rigging para as operações críticas
+
+Os requisitos de formação de operador e sinaleiro estão em [treinamento NR-11: conteúdo e carga horária](/blog/treinamento-nr11-conteudo-carga-horaria), e o controle de vencimentos em [validade NR-11](/blog/validade-nr11-quando-renovar-treinamento).`,
+
+`## Erros que causam acidente {#erros-comuns}
+
+| Erro | Consequência |
+| --- | --- |
+| Operar sem consultar a tabela de carga | Excesso de momento sem percepção do operador |
+| Limitador de momento desativado ou ponteado | Remove a barreira contra tombamento |
+| Patolamento parcial com tabela de patolamento total | Capacidade real muito inferior à consultada |
+| Solo sem verificação de capacidade | Recalque de sapata e tombamento |
+| Placas de distribuição improvisadas | Pressão de contato acima do admissível |
+| Içamento com carga de peso desconhecido | Impossível verificar a curva |
+| Tração lateral da carga | Esforço fora da condição de projeto da lança |
+| Proximidade de rede energizada sem distância de segurança | Risco elétrico com consequência fatal |
+| Alteração de configuração sem atualizar tabela e limitador | Operação com referência errada |
+| Acessórios de içamento sem certificação | Elo fraco fora do escopo da inspeção |
+
+Os três primeiros aparecem juntos com frequência, e formam a sequência mais comum de tombamento: patolamento parcial por falta de espaço, limitador contornado porque "estava apitando", e tabela não consultada porque "o operador tem experiência".
+
+## Próximo passo {#proximo-passo}
+
+Inspeção de guindaste bem executada olha para além da estrutura: verifica a curva de carga, o limitador de momento, o patolamento e a capacidade do solo — os elementos que definem o modo de falha real do equipamento.
+
+A VSM Engenharia executa inspeção técnica de guindastes, caminhões munck, pontes rolantes, pórticos e talhas em todo o Sudeste, com engenheiro mecânico, ensaios não destrutivos, teste de carga, laudo completo e ART.
+
+📞 **(11) 95453-4057**
+📩 **[Solicitar orçamento pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
+📧 **contato@vsmengenharia.com**
+
+Conheça o serviço de [inspeção NR-11](/servicos/nr11) e os artigos [inspeção em caminhão munck](/blog/inspecao-caminhao-munck-checklist) e [como funciona um teste de carga](/blog/como-funciona-teste-de-carga).`
+    ],
+  },
+  {
+    slug: "inspecao-portico-semiportico-nr11",
+    title: "Inspeção em pórticos e semipórticos: escopo técnico e checklist",
+    category: "NR11",
+    excerpt: "Pórtico e semipórtico somam os riscos da ponte rolante aos da operação em pátio: trilho externo, vento, estabilidade e caminho de rolamento. Veja o escopo completo.",
+    metaDescription: "Inspeção em pórticos e semipórticos NR-11: checklist estrutural, caminho de rolamento, pinça de vento, estabilidade, teste de carga e laudo com ART.",
+    coverImage: cover_7_erros_plano_de_rigging,
+    readTime: "8 min",
+    date: "31 Jul 2026",
+    dateModified: "31 Jul 2026",
+    views: 52,
+    featured: false,
+    relatedService: { label: "NR-11 · Movimentação de Cargas", href: "/servicos/nr11" },
+    keywords: ["inspeção de pórtico", "inspeção pórtico rolante", "semipórtico", "checklist pórtico", "pinça de vento"],
+    keyTakeaways: [
+      "Pórtico acumula os riscos da ponte rolante mais os da operação a céu aberto",
+      "Vento é variável de projeto: dispositivo de ancoragem e pinça de trilho são itens de segurança",
+      "Desalinhamento do caminho de rolamento é a causa raiz mais comum de desgaste acelerado",
+      "Em pórtico de pátio, o trilho e sua fundação fazem parte do escopo da inspeção"
+    ],
+    toc: [
+      { id: "o-que-e", label: "Pórtico e semipórtico: o que muda" },
+      { id: "normas", label: "Base normativa" },
+      { id: "estrutura", label: "Checklist — estrutura e pernas" },
+      { id: "caminho-rolamento", label: "Caminho de rolamento e fundação" },
+      { id: "vento", label: "Vento, ancoragem e pinça de trilho" },
+      { id: "mecanismos", label: "Mecanismos, cabo e gancho" },
+      { id: "eletrica", label: "Alimentação elétrica e comando" },
+      { id: "desalinhamento", label: "Desalinhamento: causa raiz do desgaste" },
+      { id: "teste-carga", label: "Teste de carga" },
+      { id: "periodicidade", label: "Periodicidade e documentação" },
+      { id: "faq", label: "Perguntas frequentes" }
+    ],
+    faq: [
+      { question: "Qual a diferença entre pórtico e semipórtico?", answer: "No pórtico, a viga principal se apoia em duas pernas que correm sobre trilhos no piso. No semipórtico, um lado se apoia em perna sobre trilho no piso e o outro corre sobre trilho elevado, fixado em estrutura predial ou em viga de rolamento. A consequência prática para a inspeção é que o semipórtico exige avaliação simultânea do trilho de piso e do trilho elevado, com a estrutura de apoio predial incluída no escopo." },
+      { question: "Pórtico externo precisa de dispositivo contra vento?", answer: "Sim. Equipamento em pátio aberto está sujeito a esforço de vento que pode deslocá-lo sobre os trilhos. Os dispositivos usuais são pinças de trilho, travas mecânicas de estacionamento, tirantes de ancoragem em pontos fixos e anemômetro com alarme. A inspeção precisa verificar não só a existência, mas o estado e a efetividade desses dispositivos, e se há procedimento definido para o que fazer quando o vento ultrapassa o limite de operação." },
+      { question: "O trilho do pórtico entra na inspeção?", answer: "Sim, e é um dos itens mais importantes. O caminho de rolamento define o comportamento de todo o equipamento: desalinhamento, desnível e recalque de fundação geram esforço lateral não previsto no projeto, que acelera o desgaste de rodas, flanges e estrutura. Inspecionar o pórtico ignorando o trilho é avaliar o sintoma e deixar a causa de fora." },
+      { question: "Pórtico de baixa capacidade também precisa de laudo?", answer: "Sim. A obrigação decorre da função de elevar carga suspensa, não da capacidade nominal. Pórtico leve de oficina, inclusive os móveis e desmontáveis, é equipamento de elevação sob NR-11 e NR-12, com necessidade de inspeção, registro e laudo. Pórticos móveis de pequeno porte são, aliás, dos equipamentos mais negligenciados justamente por serem percebidos como ferramenta." }
+    ],
+    content: [
+`Pórtico e semipórtico são, do ponto de vista mecânico, pontes rolantes que trazem a própria estrutura de apoio. Essa diferença aparentemente simples adiciona um conjunto de riscos que não existe em uma ponte convencional instalada dentro de um galpão: **trilho ao nível do piso, operação a céu aberto, exposição ao vento e fundação sujeita a recalque**.
+
+A consequência prática é que a inspeção precisa cobrir três frentes: o equipamento, o caminho de rolamento com sua fundação, e os dispositivos de proteção contra deslocamento pelo vento.
+
+Este artigo apresenta o escopo completo. Os critérios comuns a todo equipamento de elevação — cabo, gancho, freios — estão detalhados em [inspeção em ponte rolante](/blog/inspecao-ponte-rolante-nr11-procedimento), e aqui o foco é no que é específico do pórtico.`,
+
+`## Pórtico e semipórtico: o que muda {#o-que-e}
+
+| Configuração | Apoio | Implicação para a inspeção |
+| --- | --- | --- |
+| **Pórtico** | Duas pernas sobre trilhos no piso | Dois caminhos de rolamento no solo, com fundação |
+| **Semipórtico** | Uma perna no piso, outro lado em trilho elevado | Trilho de piso mais estrutura predial de apoio |
+| **Pórtico móvel sobre rodas** | Rodízios, sem trilho | Piso de circulação, travas dos rodízios, estabilidade |
+| **Pórtico desmontável** | Montagem temporária | Procedimento de montagem, travamentos, ancoragem |
+| **Pórtico de pátio (externo)** | Trilhos externos | Vento, drenagem, corrosão, iluminação |
+
+O pórtico móvel sobre rodas e o desmontável são os mais negligenciados: por serem transportáveis, acabam tratados como ferramenta e não como equipamento de elevação. Ambos exigem inspeção, registro e laudo — e o desmontável exige ainda verificação do procedimento de montagem, porque o equipamento é remontado a cada uso.`,
+
+`## Base normativa {#normas}
+
+| Referência | Aplicação |
+| --- | --- |
+| **NR-11** | Movimentação de cargas, operação, treinamento, sinalização |
+| **NR-12** | Máquina, comando seguro, dispositivos, Anexo XII |
+| **NR-35** | Trabalho em altura em manutenção sobre a viga |
+| **NR-10** | Instalação elétrica e alimentação |
+| **ABNT NBR 8400** | Cálculo e classificação de equipamentos de levantamento |
+| **ABNT NBR ISO 4309** | Cabo de aço — inspeção e descarte |
+| **ABNT NBR ISO 9927** | Inspeção de equipamentos de elevação |
+
+Em pórtico externo, entra ainda a consideração de **carga de vento** no dimensionamento estrutural e nos dispositivos de ancoragem — parâmetro que não existe em ponte rolante abrigada.`,
+
+`## Checklist — estrutura e pernas {#estrutura}
+
+### Viga principal
+
+- ☐ Trincas em cordões de solda, especialmente nas ligações viga-perna
+- ☐ Flecha residual medida e comparada com a referência de projeto
+- ☐ Deformação de alma e mesa, amassamento por impacto
+- ☐ Corrosão com perda de seção — medição de espessura por ultrassom
+- ☐ Estado da pintura como indicador de ponto de fadiga
+
+### Pernas e travessas
+
+- ☐ Verticalidade e alinhamento das pernas
+- ☐ Trincas nas ligações perna-viga e perna-truque
+- ☐ Deformação por impacto — pontos baixos são alvo frequente de colisão de empilhadeira
+- ☐ Contraventamentos e travessas íntegros
+- ☐ Corrosão na base das pernas, onde há acúmulo de água
+
+### Truques e conjunto de rodas
+
+- ☐ Rodas: desgaste de friso e pista, ovalização, trinca
+- ☐ Rolamentos e mancais
+- ☐ Articulação dos truques
+- ☐ Raspadores de trilho presentes e ajustados
+- ☐ Batentes e para-choques nas extremidades
+
+O ponto de corrosão na **base das pernas** é específico do pórtico: a região fica ao nível do piso, sujeita a lavagem, chuva, produto químico derramado e acúmulo de água. É o local onde a perda de seção mais frequentemente passa despercebida em inspeção puramente visual.
+
+Os raspadores de trilho parecem detalhe menor, mas evitam que detrito sob a roda gere descarrilamento ou desgaste acelerado.`,
+
+`## Caminho de rolamento e fundação {#caminho-rolamento}
+
+Este é o bloco mais específico do pórtico — e o mais omitido.
+
+- ☐ **Alinhamento** dos trilhos: paralelismo e bitola constante ao longo de todo o curso
+- ☐ **Nivelamento**: desnível entre os dois trilhos e ao longo de cada um
+- ☐ **Fixação**: grampos, talas, parafusos, chumbadores
+- ☐ **Emendas** de trilho: alinhamento, folga de dilatação, ausência de degrau
+- ☐ **Desgaste do boleto** e estado da superfície de rolamento
+- ☐ **Fundação**: trincas, recalque, infiltração, exposição de armadura
+- ☐ **Drenagem**: acúmulo de água na canaleta do trilho
+- ☐ **Limpeza**: detritos, materiais e obstruções no caminho
+- ☐ **Batentes de fim de curso** nas extremidades, íntegros e fixados
+- ☐ **Sinalização e delimitação** da faixa de circulação do equipamento
+
+A medição de **bitola e nivelamento** ao longo do curso é o que transforma essa etapa em dado técnico. Trilho que abre ou fecha bitola ao longo do percurso força o equipamento lateralmente a cada movimento — e essa força não estava no projeto.
+
+Em pórtico de pátio, a **fundação** merece verificação própria: recalque diferencial altera o nivelamento e produz o mesmo efeito de desalinhamento, com a agravante de ser progressivo.`,
+
+`## Vento, ancoragem e pinça de trilho {#vento}
+
+Exclusivo de equipamento em área aberta, e frequentemente ausente do escopo de inspeções genéricas.
+
+| Dispositivo | Função | Verificação |
+| --- | --- | --- |
+| **Pinça de trilho** | Trava o equipamento ao trilho fora de operação | Acionamento, garras, mola, folga |
+| **Trava mecânica de estacionamento** | Fixa o equipamento em posição definida | Integridade e acesso ao ponto de travamento |
+| **Tirantes de ancoragem** | Ancoram a estrutura a pontos fixos | Estado dos tirantes, olhais e chumbadores |
+| **Anemômetro** | Mede velocidade do vento e alarma | Funcionamento e ajuste do alarme |
+| **Procedimento de vento** | Define ação ao ultrapassar o limite | Documentado, treinado e afixado |
+
+O último item é o que costuma faltar. Ter pinça de trilho não resolve se não há procedimento definindo **em que velocidade de vento** a operação para e o equipamento é travado, e quem toma essa decisão.
+
+Um pórtico de pátio deslocado pelo vento percorre o trilho sem controle até colidir com o batente ou com outro equipamento — cenário com histórico real de acidente grave em portos e pátios industriais.
+
+> **Seu pórtico de pátio tem laudo e dispositivo de vento verificado?** A VSM Engenharia executa inspeção técnica com laudo e ART em todo o Sudeste. [Fale com um engenheiro](/contato).`,
+
+`## Mecanismos, cabo e gancho {#mecanismos}
+
+Os critérios são os mesmos aplicados a qualquer equipamento de elevação:
+
+- **Mecanismo de elevação** — tambor, sulco, voltas mortas, redutor, freio com teste de retenção sob carga
+- **Mecanismo de translação** — rodas, freios, redutores, guias antibalanço
+- **Cabo de aço** — arames rompidos em 6d e 30d, redução de diâmetro, corrosão, amassamento, gaiola de passarinho, dano térmico, conforme ABNT NBR ISO 4309
+- **Gancho** — abertura de boca medida, desgaste de garganta, torção, trincas por ensaio, trava de segurança
+- **Moitão e roldanas** — canaleta, giro livre, rolamentos, proteção contra saída do cabo
+
+O detalhamento dos critérios de descarte está em [inspeção em ponte rolante](/blog/inspecao-ponte-rolante-nr11-procedimento). Para talhas acopladas ao pórtico, o escopo específico está em [inspeção em talhas](/blog/inspecao-de-talhas-nr11).
+
+Em ambiente externo, a periodicidade de verificação do cabo tende a ser menor: exposição a chuva, maresia e particulado acelera a corrosão, inclusive a interna, que é a mais difícil de detectar.`,
+
+`## Alimentação elétrica e comando {#eletrica}
+
+- ☐ **Cabo festão ou enrolador**: isolação, fixação, ausência de emenda exposta, curso livre
+- ☐ **Barramento blindado**, quando usado: estado dos coletores e da proteção
+- ☐ **Grau de proteção** dos painéis adequado à exposição — chuva, poeira, maresia
+- ☐ **Aterramento** da estrutura, do trilho e dos painéis
+- ☐ **Botoeira ou controle remoto**: identificação dos movimentos, retorno ao neutro, vedação
+- ☐ **Parada de emergência** acessível e efetiva
+- ☐ **Fim de curso** de elevação e de translação em ambos os sentidos
+- ☐ **Sinalização sonora e luminosa** de movimentação
+- ☐ **Iluminação** da área de operação, em uso noturno
+- ☐ **Chave geral seccionadora** com previsão de bloqueio para manutenção
+
+O grau de proteção dos painéis é o item que mais falha em pórtico externo: painel especificado para ambiente interno, instalado a céu aberto, acumula umidade e falha por corrosão de contatos — com a falha se manifestando em comandos erráticos. Os critérios de comando seguro estão em [painel elétrico NR-12](/blog/painel-eletrico-nr12-categoria-seguranca).`,
+
+`## Desalinhamento: causa raiz do desgaste {#desalinhamento}
+
+Quando um pórtico apresenta desgaste acelerado de rodas e flanges, a causa quase nunca está nas rodas.
+
+Sinais que apontam desalinhamento:
+
+- Desgaste assimétrico dos frisos das rodas
+- Marcas de atrito lateral no boleto do trilho
+- Movimento em diagonal ("caranguejamento") durante a translação
+- Ruído de arraste ao deslocar
+- Consumo desigual entre os motores de translação
+- Trincas recorrentes na mesma região estrutural
+
+Causas raiz mais frequentes:
+
+| Causa | Verificação |
+| --- | --- |
+| Trilhos fora de paralelismo | Medição de bitola ao longo de todo o curso |
+| Desnível entre trilhos | Nivelamento topográfico |
+| Recalque de fundação | Comparação com a referência original |
+| Rodas com diâmetros diferentes | Medição das rodas |
+| Sincronismo de acionamento | Ajuste dos inversores e dos freios |
+| Estrutura empenada por impacto | Levantamento dimensional da estrutura |
+
+Trocar rodas sem corrigir a causa é gasto recorrente: as novas se desgastam no mesmo padrão. A inspeção técnica precisa entregar não só o achado, mas a **causa provável e a medição que a sustenta**.`,
+
+`## Teste de carga {#teste-carga}
+
+Pórtico e semipórtico seguem os mesmos percentuais aplicados a ponte rolante: **ensaio estático a 125%** e **dinâmico a 110%** da capacidade nominal, com prevalência do manual do fabricante.
+
+Particularidades do ensaio em pórtico:
+
+- A medição de flecha deve considerar também a **deformação das pernas**, não apenas da viga
+- O ensaio dinâmico precisa percorrer **todo o curso do trilho**, e não um trecho
+- Em pórtico externo, o ensaio deve ser feito em **condição de vento adequada**
+- A **fundação** deve ser observada durante o ensaio — recalque sob carga majorada é achado relevante
+
+Situações que exigem ensaio: entrada em operação, após reforma ou reparo estrutural, após troca de componente da cadeia de sustentação, após acidente ou sobrecarga, após realocação e mudança do caminho de rolamento, e em reativação após inatividade prolongada.
+
+Procedimento completo em [teste de carga em ponte rolante](/blog/teste-de-carga-ponte-rolante) e visão geral em [como funciona um teste de carga](/blog/como-funciona-teste-de-carga).`,
+
+`## Periodicidade e documentação {#periodicidade}
+
+| Nível | Executor | Frequência típica |
+| --- | --- | --- |
+| Verificação pré-operacional | Operador | Diária |
+| Inspeção de manutenção | Equipe técnica | Trimestral a semestral |
+| Inspeção técnica com laudo e ART | Engenheiro habilitado | Anual; semestral em pátio externo ou uso intensivo |
+| Levantamento do caminho de rolamento | Engenheiro habilitado | Anual, ou quando surgirem sinais de desalinhamento |
+| Inspeção extraordinária | Engenheiro habilitado | Após acidente, impacto, vendaval ou realocação |
+
+Ambiente externo justifica intervalo menor: maresia, chuva, particulado e variação térmica aceleram a degradação de estrutura, cabo e componentes elétricos.
+
+O laudo deve conter, além dos itens usuais, as **medições do caminho de rolamento** — bitola, nivelamento e desgaste do boleto — com valores registrados, permitindo comparação com a inspeção seguinte.
+
+## Próximo passo {#proximo-passo}
+
+Inspecionar pórtico é inspecionar três coisas: o equipamento, o caminho de rolamento com sua fundação e os dispositivos que impedem o deslocamento pelo vento. Deixar o trilho de fora do escopo é avaliar o sintoma e ignorar a causa.
+
+A VSM Engenharia executa inspeção técnica de pórticos, semipórticos, pontes rolantes, talhas e guindastes em todo o Sudeste, com engenheiro mecânico, ensaios não destrutivos, levantamento do caminho de rolamento, teste de carga, laudo e ART.
+
+📞 **(11) 95453-4057**
+📩 **[Solicitar orçamento pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
+📧 **contato@vsmengenharia.com**
+
+Conheça o serviço de [inspeção NR-11](/servicos/nr11) e os artigos [inspeção em ponte rolante](/blog/inspecao-ponte-rolante-nr11-procedimento) e [inspeção em talhas](/blog/inspecao-de-talhas-nr11).`
+    ],
+  },
+  {
+    slug: "inspecao-caminhao-munck-checklist",
+    title: "Inspeção em caminhão munck: checklist técnico completo",
+    category: "NR11",
+    excerpt: "Checklist de inspeção do guindauto item a item: chassi e fixação, lança, hidráulica, estabilizadores, limitador de momento, cabo, gancho e documentação.",
+    metaDescription: "Inspeção em caminhão munck: checklist técnico completo — fixação ao chassi, lança, hidráulica, estabilizadores, limitador de momento, cabo, gancho e ART.",
+    coverImage: cover_inspecao_munck_checklist,
+    readTime: "9 min",
+    date: "31 Jul 2026",
+    dateModified: "31 Jul 2026",
+    views: 103,
+    featured: true,
+    relatedService: { label: "Laudo NR-11 Munck", href: "/servicos/nr11" },
+    keywords: ["inspeção em caminhão munck", "inspeção de munck", "checklist munck", "inspeção guindauto", "laudo munck"],
+    keyTakeaways: [
+      "A fixação do equipamento ao chassi é o item de maior consequência e o menos inspecionado",
+      "Capacidade de munck é curva, não número: varia com raio, lanças estendidas e posição de giro",
+      "Estabilizadores e capacidade do solo determinam o limite real de operação",
+      "Verificação diária pelo operador é exigência, não boa prática — e precisa ter registro"
+    ],
+    toc: [
+      { id: "escopo", label: "Escopo da inspeção" },
+      { id: "chassi-fixacao", label: "Chassi, fixação e contrachassi" },
+      { id: "lanca", label: "Lança, articulações e pinos" },
+      { id: "hidraulica", label: "Sistema hidráulico" },
+      { id: "estabilizadores", label: "Estabilizadores e solo" },
+      { id: "limitador", label: "Limitador de momento e tabela de carga" },
+      { id: "cabo-gancho", label: "Cabo, gancho e acessórios" },
+      { id: "comandos", label: "Comandos, sinalização e cabine" },
+      { id: "veiculo", label: "Parte veicular" },
+      { id: "diaria", label: "Verificação diária do operador" },
+      { id: "documentacao", label: "Documentação e periodicidade" },
+      { id: "faq", label: "Perguntas frequentes" }
+    ],
+    faq: [
+      { question: "Qual a periodicidade da inspeção de caminhão munck?", answer: "Verificação diária pelo operador antes do turno, com registro; inspeção de manutenção conforme o manual do fabricante, tipicamente trimestral; e inspeção técnica completa com laudo e ART anual na maior parte das operações. Munck de locação, uso intensivo ou operação em ambiente agressivo demanda intervalo menor. Contratos de obra e clientes industriais costumam exigir laudo vigente com prazo próprio, frequentemente anual." },
+      { question: "O que mais reprova um munck em inspeção?", answer: "Em ordem de frequência: vazamento hidráulico e mangueiras ressecadas, ausência ou inoperância de válvulas de retenção pilotada nos cilindros, limitador de momento desativado ou descalibrado, cabo de aço fora dos critérios de descarte, gancho com abertura de boca acima do limite ou sem trava, folga excessiva em pinos e buchas, e problemas na fixação do equipamento ao chassi. Este último é o mais grave e o menos verificado." },
+      { question: "Por que a fixação ao chassi é tão crítica?", answer: "Porque todo o esforço de içamento — incluindo o momento de tombamento — é transferido do equipamento para o chassi do caminhão por meio dessa interface. Contrachassi mal dimensionado, grampos frouxos, solda executada diretamente na longarina do chassi ou reforços improvisados criam concentração de tensão em uma estrutura que não foi projetada para aquilo. É uma falha que se desenvolve lentamente, por trincas, e cuja consequência é a separação do conjunto sob carga." },
+      { question: "Munck precisa de teste de carga na inspeção anual?", answer: "O teste é obrigatório na entrada em operação, após reforma ou reparo estrutural, após troca de componente da cadeia de sustentação, após acidente ou sobrecarga, e quando há alteração de capacidade. Muitas operações adotam o ensaio anual junto com a inspeção técnica, por exigência de contrato ou de seguradora. Em munck, o ensaio precisa cobrir configurações críticas de raio e lanças estendidas, porque a capacidade varia ao longo da curva." }
+    ],
+    content: [
+`O caminhão munck — tecnicamente **guindaste articulado hidráulico**, ou guindauto — é o equipamento de elevação mais disseminado fora do ambiente fabril: obra, montagem, distribuição, energia, telecom, saneamento.
+
+Também é o que opera nas condições menos controladas. Ponte rolante trabalha sempre no mesmo galpão, sobre o mesmo trilho. O munck trabalha em local diferente a cada dia, sobre solo desconhecido, frequentemente sob pressão de prazo e com espaço restrito para patolar.
+
+Este é o checklist técnico da inspeção, item a item. Para o conteúdo e a estrutura do documento resultante, veja [laudo NR-11 para caminhão munck](/blog/laudo-nr11-caminhao-munck-vsm); para o procedimento de elaboração, [como funciona o laudo técnico de munck](/blog/como-funciona-laudo-tecnico-munck-guindauto).`,
+
+`## Escopo da inspeção {#escopo}
+
+A inspeção cobre oito frentes, e a omissão de qualquer uma compromete o laudo:
+
+| Frente | Por que importa |
+| --- | --- |
+| **Chassi e fixação** | Interface que transfere todo o esforço ao veículo |
+| **Estrutura da lança** | Elemento sujeito a fadiga e impacto |
+| **Sistema hidráulico** | Fonte de falha súbita com queda de carga |
+| **Estabilizadores** | Definem a estabilidade real do conjunto |
+| **Dispositivos de segurança** | Limitador de momento, retenções, fins de curso |
+| **Cabo, gancho e acessórios** | Cadeia de sustentação da carga |
+| **Comandos e sinalização** | Interface do operador |
+| **Parte veicular** | O caminhão é parte do equipamento |
+
+A última frente costuma ser tratada como assunto de outra área — "o caminhão é da manutenção da frota". Mas suspensão fadigada, pneus abaixo da pressão e freios deficientes alteram o comportamento do conjunto durante o içamento.`,
+
+`## Chassi, fixação e contrachassi {#chassi-fixacao}
+
+O item de maior consequência de toda a inspeção, e o mais frequentemente ignorado.
+
+- ☐ **Contrachassi (falso chassi)**: presença, dimensionamento, integridade, ausência de trincas
+- ☐ **Grampos e parafusos de fixação**: quantidade, aperto, ausência de alongamento ou deformação
+- ☐ **Ausência de solda direta na longarina** do chassi do veículo
+- ☐ **Trincas** nas regiões de transição e nos pontos de ancoragem
+- ☐ **Deformação da longarina** — flambagem local, torção, empenamento
+- ☐ **Base do equipamento**: coroa de giro, parafusos e torque conforme fabricante
+- ☐ **Distribuição de peso** e respeito aos limites de eixo
+- ☐ **Documentação da instalação** — projeto e responsável técnico da montagem
+- ☐ **Compatibilidade** entre a capacidade do equipamento e o veículo que o recebe
+
+Dois achados que caracterizam risco grave:
+
+**Solda direta na longarina do chassi.** A longarina é dimensionada para flexão distribuída; solda cria zona termicamente afetada e concentração de tensão, iniciando trinca que se propaga sob os ciclos normais de operação.
+
+**Equipamento remanejado para outro caminhão sem projeto.** Munck transferido de um veículo para outro sem verificação de compatibilidade, sem contrachassi adequado e sem responsável técnico é situação comum no mercado de usados — e a interface passa a ser o elo mais fraco do conjunto.
+
+Os **parafusos da coroa de giro** merecem verificação de torque com periodicidade definida pelo fabricante, documentada. É a ligação entre a parte giratória e a base.`,
+
+`## Lança, articulações e pinos {#lanca}
+
+- ☐ **Seções da lança**: empenamento, amassamento, deformação de perfil
+- ☐ **Trincas em solda**, especialmente nas regiões de articulação e nas mudanças de seção
+- ☐ **Patins de deslizamento** das seções telescópicas: desgaste, folga, lubrificação
+- ☐ **Pinos e buchas**: desgaste, folga radial, travamento, contrapinos e trava
+- ☐ **Articulação principal** e articulação da lança dobrável
+- ☐ **Corrosão** com perda de seção
+- ☐ **Ponta de lança**: roldana, proteção contra saída do cabo, fim de curso
+- ☐ **Extensões manuais e jib**: travamento, pinos, integridade
+- ☐ **Placa de identificação** e tabela de carga legíveis
+
+A **folga em pinos e buchas** é o achado mais comum e o mais subestimado: além de reduzir a precisão do posicionamento, gera choque a cada início e fim de movimento, acelerando a fadiga nas soldas de articulação.
+
+Trincas em solda de lança exigem detecção por ensaio adequado — líquido penetrante ou partícula magnética, conforme o material e o acesso, conforme [ensaios não destrutivos industriais](/blog/ensaios-nao-destrutivos-end-industriais). Fadiga estrutural e seus sinais de alerta estão detalhados em [como detectar fadiga estrutural em caminhões munck](/blog/fadiga-estrutural-caminhoes-munck).`,
+
+`## Sistema hidráulico {#hidraulica}
+
+- ☐ **Vazamentos** em cilindros, mangueiras, conexões, blocos e bomba
+- ☐ **Mangueiras**: ressecamento, abrasão, bolhas, capa danificada, prazo de vida
+- ☐ **Cilindros**: haste sem risco, corrosão ou empenamento; vedação íntegra
+- ☐ **Válvulas de retenção pilotada (holding valves)** nos cilindros de lança e estabilizadores
+- ☐ **Válvula de alívio** ajustada conforme especificação
+- ☐ **Pressão de trabalho** conforme manual
+- ☐ **Óleo**: nível, aspecto, contaminação, temperatura
+- ☐ **Filtros** dentro do intervalo de troca
+- ☐ **Tomada de força**: acionamento, ruído, fixação
+- ☐ **Ausência de reparo improvisado** em linha de pressão
+
+As **válvulas de retenção pilotada** são o item hidráulico de maior consequência. São elas que impedem a queda da lança ou o recolhimento do estabilizador em caso de ruptura de mangueira. Removidas, bloqueadas ou inoperantes, o sistema perde a proteção contra o modo de falha mais violento: perda súbita de pressão com carga suspensa.
+
+Sobre mangueiras: a inspeção visual detecta a degradação externa, mas mangueira hidráulica tem **vida útil**, e a substituição preventiva por tempo de uso é prática correta mesmo sem sinal aparente.`,
+
+`## Estabilizadores e solo {#estabilizadores}
+
+- ☐ **Cilindros dos estabilizadores** sem vazamento, com retenção efetiva
+- ☐ **Extensão total das vigas**, com travamento
+- ☐ **Sapatas**: integridade, articulação, ausência de deformação
+- ☐ **Indicador de nível** presente e funcionando
+- ☐ **Sensor de patolamento** integrado ao limitador, quando o equipamento possui
+- ☐ **Placas de distribuição** disponíveis e dimensionadas
+- ☐ **Procedimento de verificação do solo** definido
+
+O munck opera sobre solo diferente a cada serviço. A sapata concentra carga elevada em área pequena, e a capacidade de suporte precisa ser verificada em cada local — asfalto quente, tampa de caixa de inspeção, galeria enterrada, aterro recente e proximidade de vala são as armadilhas recorrentes.
+
+Ponto crítico da operação real: **patolamento parcial por falta de espaço**. Quando o estabilizador não abre totalmente, a base de apoio diminui e a capacidade real cai — mas o operador frequentemente segue consultando a tabela de patolamento total. Equipamentos com sensor de patolamento corrigem a curva automaticamente; sem sensor, depende inteiramente de disciplina operacional.
+
+> **Precisa de laudo NR-11 do seu munck com ART?** A VSM Engenharia executa inspeção completa com teste de carga em todo o Sudeste. [Solicite pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento).`,
+
+`## Limitador de momento e tabela de carga {#limitador}
+
+A capacidade do munck **não é o número pintado na lança**. É uma curva que varia com raio, número de lanças estendidas, ângulo e, em alguns equipamentos, setor de giro.
+
+- ☐ **Tabela de carga** presente, legível e correspondente ao equipamento
+- ☐ **Tabela acessível ao operador** no posto de comando
+- ☐ **Limitador de momento** presente, funcional e calibrado
+- ☐ **Teste de atuação** do limitador com carga conhecida
+- ☐ **Indicador de carga** com leitura coerente
+- ☐ **Ausência de bypass** — chave, ponte ou desativação
+- ☐ **Fim de curso** de elevação do moitão
+- ☐ **Coerência** entre tabela, limitador e configuração real
+
+Achado que caracteriza risco grave: **limitador ponteado ou com chave de desativação**. Ocorre quando o dispositivo "atrapalha" porque atua em operações fora da curva — que é exatamente a função dele. Desativá-lo remove a única barreira automática contra o tombamento.
+
+Outro achado relevante: equipamento que recebeu **jib, extensão ou alteração de configuração** sem atualização da tabela e do limitador. Passa a operar com referência que não corresponde à realidade física.`,
+
+`## Cabo, gancho e acessórios {#cabo-gancho}
+
+- ☐ **Cabo de aço**: arames rompidos em trechos de 6d e 30d, redução de diâmetro, corrosão, amassamento, gaiola de passarinho, dano térmico, ruptura junto à terminação — conforme ABNT NBR ISO 4309
+- ☐ **Enrolamento no tambor**: sulco, voltas mortas, fixação da extremidade
+- ☐ **Roldanas**: canaleta, giro livre, rolamento, proteção contra saída do cabo
+- ☐ **Gancho**: abertura de boca medida e comparada com a original, desgaste de garganta, torção, trincas por ensaio
+- ☐ **Trava de segurança do gancho** presente e atuante
+- ☐ **Moitão**: integridade, giro, porca e contrapino
+- ☐ **Acessórios de içamento**: cintas, manilhas, cabos avulsos, com certificado individual e dentro dos critérios de descarte
+
+Os critérios objetivos de descarte estão detalhados em [inspeção em ponte rolante](/blog/inspecao-ponte-rolante-nr11-procedimento).
+
+Os **acessórios** costumam ficar fora do escopo quando não são explicitamente contratados — e são o elo que mais frequentemente falha, porque ficam no compartimento do caminhão, expostos, sem controle individual e sem descarte quando chegam ao limite.`,
+
+`## Comandos, sinalização e cabine {#comandos}
+
+- ☐ **Alavancas de comando**: identificação clara, retorno ao neutro, ausência de folga
+- ☐ **Controle remoto**, quando existente: bateria, alcance, parada de emergência, retorno ao neutro
+- ☐ **Parada de emergência** acessível de todos os postos de comando
+- ☐ **Sinalização sonora** de movimentação e de ré
+- ☐ **Sinalização luminosa** e faixas refletivas
+- ☐ **Plataforma e apoios** do posto de operação, com antiderrapante
+- ☐ **Espelhos e visibilidade** da área de trabalho
+- ☐ **Proteções** de partes móveis conforme NR-12
+- ☐ **Adesivos de segurança** e advertências legíveis`,
+
+`## Parte veicular {#veiculo}
+
+O caminhão faz parte do equipamento:
+
+- ☐ **Pneus**: estado, sulco, pressão — pressão baixa altera o nivelamento no patolamento
+- ☐ **Suspensão**: feixes de mola, amortecedores, bolsas de ar
+- ☐ **Freios**: eficiência, estacionamento, sistema pneumático
+- ☐ **Direção**: folga, vazamento
+- ☐ **Iluminação e sinalização** veicular
+- ☐ **Documentação do veículo** regular
+- ☐ **Limites de peso por eixo** respeitados com o equipamento instalado
+- ☐ **Calços** disponíveis para imobilização durante a operação
+
+A pressão dos pneus tem efeito direto: em içamentos com patolamento parcial ou em equipamentos que apoiam parte da carga sobre os pneus, a diferença de pressão altera o nivelamento e a distribuição do esforço.`,
+
+`## Verificação diária do operador {#diaria}
+
+Exigência com registro, não boa prática opcional. Antes de cada turno:
+
+- ☐ Vazamentos visíveis no sistema hidráulico
+- ☐ Nível de óleo hidráulico
+- ☐ Estado aparente do cabo e do gancho, com trava
+- ☐ Funcionamento do limitador de momento
+- ☐ Teste dos comandos e da parada de emergência
+- ☐ Estabilizadores: acionamento e retenção
+- ☐ Sinalização sonora e luminosa
+- ☐ Tabela de carga presente e legível
+- ☐ Pneus e itens veiculares básicos
+- ☐ Ausência de dano aparente na lança
+
+O registro em ficha diária é o que demonstra a rotina em auditoria e em investigação de acidente. Verificação feita sem registro, do ponto de vista documental, não aconteceu.`,
+
+`## Documentação e periodicidade {#documentacao}
+
+| Nível | Executor | Frequência |
+| --- | --- | --- |
+| Verificação diária | Operador | A cada turno, com registro |
+| Inspeção de manutenção | Equipe técnica | Conforme manual, tipicamente trimestral |
+| Inspeção técnica com laudo e ART | Engenheiro habilitado | Anual; menor em uso intensivo ou locação |
+| Inspeção extraordinária | Engenheiro habilitado | Após acidente, sobrecarga, reforma ou remanejamento |
+
+Documentação a manter disponível:
+
+1. Laudo de inspeção vigente com ART
+2. Tabela de carga acessível ao operador
+3. Manual do fabricante
+4. Projeto e responsável técnico da instalação do equipamento no chassi
+5. Registros de manutenção e da verificação diária
+6. Certificados de treinamento do operador, sinaleiro e amarrador
+7. Certificados dos acessórios de içamento
+8. Registro de calibração do limitador de momento
+9. Plano de rigging nas operações críticas
+
+O item 4 é o mais ausente do conjunto, sobretudo em equipamentos de segunda mão. Sem o projeto da instalação, não há como afirmar que a interface entre equipamento e chassi foi dimensionada — o que devolve o problema ao item de maior consequência da inspeção.
+
+## Próximo passo {#proximo-passo}
+
+Inspeção de munck bem feita começa onde a inspeção superficial termina: na fixação ao chassi, nas válvulas de retenção, na calibração do limitador e na coerência entre tabela de carga e configuração real do equipamento.
+
+A VSM Engenharia executa inspeção de caminhões munck, guindastes, pontes rolantes, pórticos e talhas em todo o Sudeste, com engenheiro mecânico, ensaios não destrutivos, teste de carga, laudo completo e ART.
+
+📞 **(11) 95453-4057**
+📩 **[Solicitar orçamento pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
+📧 **contato@vsmengenharia.com**
+
+Conheça o serviço de [inspeção NR-11](/servicos/nr11) e os artigos [laudo NR-11 para caminhão munck](/blog/laudo-nr11-caminhao-munck-vsm) e [teste de carga em caminhão munck](/blog/teste-de-carga-caminhao-munck).`
     ],
   }
 ];

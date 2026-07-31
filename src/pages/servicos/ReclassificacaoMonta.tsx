@@ -824,6 +824,19 @@ export default function ReclassificacaoMonta() {
       </section>
 
       {/* Guia técnico — links pilar → cluster de blog Reclassificação de Monta */}
+            {/* Página de serviço especializada — documento técnico do processo */}
+      <section className="py-12 bg-secondary border-t border-border/50">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-xl md:text-2xl font-black mb-5 text-center">Documento técnico do processo</h2>
+          <div className="grid grid-cols-1 gap-3">
+            <Link to="/servicos/laudo-de-recuperabilidade" className="group flex items-center justify-between gap-4 bg-card rounded-xl p-4 border hover:border-cta/30 hover:shadow-elevated transition-all">
+              <span className="text-sm font-semibold group-hover:text-cta transition-colors">Laudo de recuperabilidade — o que é, o que contém e quem emite</span>
+              <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-cta group-hover:translate-x-1 transition-all shrink-0" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <PillarArticles category="Reclassificação" title="Guia completo de reclassificação de monta" subtitle="Aprofunde nos temas: pequena, média e grande monta, DETRAN-SP/MG/RJ/ES, como tirar sinistro do documento, desvalorização e documentação — artigos escritos pelos engenheiros da VSM." limit={20} />
 
       <section className="bg-gradient-elegant py-20 md:py-28 text-center relative overflow-hidden">

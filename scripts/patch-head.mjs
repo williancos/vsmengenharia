@@ -100,6 +100,62 @@ function extractBlogPosts(src) {
 const blogPosts = extractBlogPosts(blogSrc);
 console.log(`[patch-head] Extraídos ${blogPosts.length} posts do blogData.ts`);
 
+// ── Landing pages de serviço (landingData.ts) ──────────────────────
+// Mesmo parser simples do blogData: o script roda em Node puro e não
+// consegue importar o .ts (imports de assets via alias @/).
+const landingSrc = readFileSync(resolve(__dirname, "..", "src", "data", "landingData.ts"), "utf-8");
+
+function extractLandingRoutes(src) {
+  const routes = {};
+  const slugRe = /slug:\s*"(servicos\/[^"]+)"/g;
+  const positions = [];
+  let m;
+  while ((m = slugRe.exec(src)) !== null) positions.push({ slug: m[1], idx: m.index });
+
+  for (let i = 0; i < positions.length; i++) {
+    const start = positions[i].idx;
+    const end = i + 1 < positions.length ? positions[i + 1].idx : src.length;
+    const chunk = src.slice(start, end);
+
+    const title = chunk.match(/title:\s*"((?:[^"\\]|\\.)*)"/)?.[1] || "";
+    // metaDescription costuma quebrar linha após os dois-pontos
+    const description = chunk.match(/metaDescription:\s*\n?\s*"((?:[^"\\]|\\.)*)"/)?.[1] || "";
+    const serviceName = chunk.match(/serviceName:\s*"((?:[^"\\]|\\.)*)"/)?.[1] || title;
+    const h1 = chunk.match(/h1:\s*"((?:[^"\\]|\\.)*)"/)?.[1] || title;
+
+    const faqs = [];
+    const faqBlock = chunk.match(/faq:\s*\[([\s\S]*?)\]\s*,\s*relatedPosts:/)?.[1];
+    if (faqBlock) {
+      const qaRe = /\{\s*question:\s*"((?:[^"\\]|\\.)*)"\s*,\s*answer:\s*"((?:[^"\\]|\\.)*)"\s*\}/g;
+      let qa;
+      while ((qa = qaRe.exec(faqBlock)) !== null) {
+        faqs.push({ question: qa[1].replace(/\\"/g, '"'), answer: qa[2].replace(/\\"/g, '"') });
+      }
+    }
+
+    const url = `${baseUrl}/${positions[i].slug}`;
+    routes[`/${positions[i].slug}`] = {
+      title: title.replace(/\\"/g, '"'),
+      description: description.replace(/\\"/g, '"'),
+      jsonLd: {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: serviceName.replace(/\\"/g, '"'),
+        serviceType: serviceName.replace(/\\"/g, '"'),
+        description: description.replace(/\\"/g, '"'),
+        url,
+        provider: { "@type": "Organization", name: "VSM Engenharia", url: baseUrl, telephone: "+5511954534057" },
+        areaServed: AREA_SERVED,
+      },
+      faqs,
+    };
+  }
+  return routes;
+}
+
+const landingRoutes = extractLandingRoutes(landingSrc);
+console.log(`[patch-head] Extraídas ${Object.keys(landingRoutes).length} landing pages do landingData.ts`);
+
 // ── Rotas estáticas ────────────────────────────────────────────────
 const staticRoutes = {
   "/": {
@@ -131,7 +187,7 @@ const staticRoutes = {
     },
     faqs: [
       { question: "Quem pode emitir o laudo NR13?", answer: "Somente engenheiro mecânico (ou metalúrgico) com registro ativo no CREA e ART baixada. Engenheiro civil ou de produção não pode assinar laudo NR13." },
-      { question: "Qual a periodicidade da inspeção NR13?", answer: "Depende da categoria. Caldeiras categoria A: inspeção interna e externa a cada 12 meses; categoria B: 24 meses; categoria C: 40 meses. Vasos de pressão variam de 1 a 10 anos conforme categoria." },
+      { question: "Qual a periodicidade da inspeção NR13?", answer: "Depende do equipamento e da categoria. Caldeiras: prazo máximo de 12 meses para as categorias A e B, 15 meses para caldeiras de recuperação de álcalis e 24 meses para categoria A quando as válvulas de segurança são testadas aos 12 meses; com SPIE os prazos vão a 24 meses (categoria B e recuperação de álcalis) e 30 meses (categoria A). Vasos de pressão: exame externo de 1 a 5 anos e exame interno de 3 a 10 anos, conforme a categoria I a V." },
       { question: "Quanto custa uma inspeção NR13?", answer: "Varia por categoria, tipo e quantidade de equipamentos e ensaios necessários. A VSM emite orçamento com escopo técnico em até 24h — preço sem escopo é sinal de laudo conformista." },
       { question: "O que é entregue ao final da inspeção NR13?", answer: "Laudo técnico, prontuário atualizado, livro de registro de segurança, memorial de cálculo quando aplicável, relatório fotográfico e ART registrada no CREA." },
     ],
@@ -187,6 +243,7 @@ const staticRoutes = {
   "/servicos/projetos-mecanicos":  { title: "Projetos Mecânicos — Memorial de Cálculo e Desenhos | VSM Engenharia", description: "Projetos mecânicos especializados com memorial de cálculo, desenhos 2D/3D e ART. Proteções NR12 e equipamentos sob medida para indústria.", jsonLd: { "@context": "https://schema.org", "@type": "Service", name: "Projetos Mecânicos", provider: { "@type": "Organization", name: "VSM Engenharia" }, areaServed: "Sudeste do Brasil", url: `${baseUrl}/servicos/projetos-mecanicos` } },
   "/servicos/projetos-climatizacao":  { title: "Projetos de Climatização HVAC | VSM Engenharia", description: "Projetos HVAC completos com cálculo de carga térmica preciso. Projetos executivos, eficiência energética e conformidade com normas ABNT e ASHRAE.", jsonLd: { "@context": "https://schema.org", "@type": "Service", name: "Projetos de Climatização HVAC", provider: { "@type": "Organization", name: "VSM Engenharia" }, areaServed: "Sudeste do Brasil", url: `${baseUrl}/servicos/projetos-climatizacao` } },
   "/servicos/consultoria-gratuita":  { title: "Consultoria Gratuita em Conformidade Normativa | VSM Engenharia", description: "Consultoria gratuita em NR13, NR12, NR11 e PMOC. Diagnóstico de conformidade sem compromisso com resposta em 24h de engenheiro especialista.", jsonLd: { "@context": "https://schema.org", "@type": "Service", name: "Consultoria Gratuita", provider: { "@type": "Organization", name: "VSM Engenharia" }, areaServed: "Sudeste do Brasil", url: `${baseUrl}/servicos/consultoria-gratuita` } },
+  ...landingRoutes,
 };
 
 // ── Caminha por dist/ e coleta HTMLs ───────────────────────────────

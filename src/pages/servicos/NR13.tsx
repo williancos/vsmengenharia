@@ -906,6 +906,23 @@ export default function NR13() {
       </section>
 
       {/* Guia técnico — links pilar → cluster de blog NR13 */}
+            {/* Páginas de serviço especializadas — cauda comercial */}
+      <section className="py-12 bg-secondary border-t border-border/50">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-xl md:text-2xl font-black mb-5 text-center">Serviços NR13 especializados</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <Link to="/servicos/inspecao-nr13-sao-paulo" className="group flex items-center justify-between gap-4 bg-card rounded-xl p-4 border hover:border-cta/30 hover:shadow-elevated transition-all">
+              <span className="text-sm font-semibold group-hover:text-cta transition-colors">Inspeção NR13 em São Paulo</span>
+              <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-cta group-hover:translate-x-1 transition-all shrink-0" />
+            </Link>
+            <Link to="/servicos/inspecao-nr13-compressor-de-ar" className="group flex items-center justify-between gap-4 bg-card rounded-xl p-4 border hover:border-cta/30 hover:shadow-elevated transition-all">
+              <span className="text-sm font-semibold group-hover:text-cta transition-colors">Inspeção NR13 em compressor de ar</span>
+              <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-cta group-hover:translate-x-1 transition-all shrink-0" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <PillarArticles category="NR13" title="Guia técnico NR13" subtitle="Aprofunde nos temas da NR13: laudo, categorias de caldeira, vasos de pressão, periodicidade e teste hidrostático — artigos escritos pelos engenheiros da VSM." limit={20} />
 
       {/* CTA Final — high-impact */}
