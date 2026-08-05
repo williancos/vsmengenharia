@@ -6,7 +6,7 @@ import { useState, useMemo } from "react";
 import { useSEO } from "@/hooks/use-seo";
 import { Link } from "react-router-dom";
 import RevealSection from "@/components/RevealSection";
-import { trackLead } from "@/lib/analytics";
+import { trackConversion } from "@/lib/conversions";
 
 const contactInfo = [
   { icon: Mail, label: "E-mail", value: "contato@vsmengenharia.com", href: "mailto:contato@vsmengenharia.com", desc: "Resposta em até 24h" },
@@ -69,9 +69,18 @@ export default function Contato() {
     ].filter(Boolean);
     const texto = encodeURIComponent(linhas.join("\n"));
 
-    // Dispara a conversão (GA4) antes de abrir o WhatsApp
-    trackLead("form", { service: servicoVal });
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${texto}`, "_blank", "noopener,noreferrer");
+    // Aberto dentro do gesto do clique — em setTimeout o navegador bloquearia.
+    const win = window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${texto}`, "_blank");
+    if (!win) {
+      // Popup bloqueado: não houve entrega, então não conta conversão. O painel
+      // de sucesso oferece o link manual, cujo clique vira conversão de WhatsApp.
+      setSubmitted(true);
+      return;
+    }
+    win.opener = null;
+
+    // Conversão só depois da entrega confirmada, nunca no onSubmit cru.
+    trackConversion("form", { form_location: "contato", service: servicoVal });
     setSubmitted(true);
   };
 

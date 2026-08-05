@@ -7,6 +7,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Layout from "@/components/Layout";
 import ScrollToTop from "@/components/ScrollToTop";
+import ConversionListeners from "@/components/ConversionListeners";
+import AnalyticsRouteTracker from "@/components/AnalyticsRouteTracker";
 import Index from "./pages/Index";
 import Sobre from "./pages/Sobre";
 import Blog from "./pages/Blog";
@@ -39,6 +41,8 @@ const AppShell = () => (
         <Toaster />
         <Sonner />
         <ScrollToTop />
+        <ConversionListeners />
+        <AnalyticsRouteTracker />
         <Outlet />
       </TooltipProvider>
     </QueryClientProvider>

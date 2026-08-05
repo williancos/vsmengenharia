@@ -1,23 +1,17 @@
 /**
- * GA4 — rastreamento de conversões (leads).
- *
- * ┌─ COMO ATIVAR ────────────────────────────────────────────────────────────┐
- * │ Substitua GA4_MEASUREMENT_ID abaixo pelo "ID de métricas" do seu fluxo de │
- * │ dados GA4:  GA4 → Admin → Fluxos de dados → Web → ID de métricas          │
- * │ (formato G-XXXXXXXXXX). Enquanto estiver "G-XXXXXXXXXX", o rastreamento    │
- * │ fica INATIVO (apenas emite um aviso no console).                          │
- * └──────────────────────────────────────────────────────────────────────────┘
+ * GA4 — bootstrap e pageviews.
  *
  * O gtag.js já é carregado no index.html (Google Ads AW-11359694680). Aqui
- * apenas adicionamos o GA4 como segundo destino e disparamos os eventos de
- * conversão. Não é preciso mexer no index.html.
+ * apenas adicionamos o GA4 como segundo destino. Não é preciso mexer no
+ * index.html e não há GTM no projeto.
  *
- * Depois de ativar, marque o evento "generate_lead" como Evento-chave (conversão)
- * em GA4 → Admin → Eventos-chave.
+ * Os eventos de conversão (formulário, WhatsApp, telefone) ficam em
+ * src/lib/conversions.ts — este arquivo cuida só de configuração e pageview.
  */
-export const GA4_MEASUREMENT_ID = "G-ZWMHRXHZPR";
+// Tipado como string (e não como literal) para que a checagem de placeholder
+// abaixo continue válida se o ID voltar a ser G-XXXXXXXXXX.
+export const GA4_MEASUREMENT_ID: string = "G-ZWMHRXHZPR";
 
-type LeadMethod = "whatsapp" | "phone" | "form";
 type GtagFn = (...args: unknown[]) => void;
 
 function getGtag(): GtagFn | null {
@@ -29,17 +23,10 @@ function getGtag(): GtagFn | null {
 const isConfigured = () =>
   /^G-[A-Z0-9]{6,}$/.test(GA4_MEASUREMENT_ID) && GA4_MEASUREMENT_ID !== "G-XXXXXXXXXX";
 
-/** Dispara um evento de conversão (lead) no GA4 (direcionado só ao GA4, não ao Ads). */
-export function trackLead(method: LeadMethod, extra: Record<string, unknown> = {}): void {
-  const gtag = getGtag();
-  if (!gtag || !isConfigured()) return;
-  gtag("event", "generate_lead", { method, send_to: GA4_MEASUREMENT_ID, ...extra });
-}
-
 /**
- * Inicializa o GA4 e o rastreamento delegado de cliques (WhatsApp e telefone).
- * Um único listener global cobre os ~194 botões de WhatsApp e o link de telefone
- * sem precisar instrumentar cada botão. Client-only e idempotente.
+ * Habilita o destino GA4. Roda uma única vez no bootstrap — nunca por rota,
+ * porque um segundo `config` geraria pageview duplicado e atrapalharia a
+ * atribuição. Client-only e idempotente.
  */
 export function initAnalytics(): void {
   if (typeof window === "undefined" || typeof document === "undefined") return;
@@ -48,27 +35,24 @@ export function initAnalytics(): void {
   w.__vsmAnalytics = true;
 
   if (!isConfigured()) {
-    console.warn("[analytics] GA4 inativo — defina GA4_MEASUREMENT_ID em src/lib/analytics.ts para ativar o rastreamento de conversões.");
+    console.warn("[analytics] GA4 inativo — defina GA4_MEASUREMENT_ID em src/lib/analytics.ts.");
     return;
   }
 
-  // send_page_view: false — o pageview do GA4 já é coberto por outra via (tags
-  // conectadas ao Ads). Aqui só habilitamos o destino GA4 para os eventos de
-  // conversão, sem duplicar pageview.
+  // send_page_view: false de propósito — o pageview é enviado por
+  // trackPageview(), que também cobre as trocas de rota do SPA. Deixar o
+  // config mandar o primeiro pageview duplicaria a primeira página.
   getGtag()?.("config", GA4_MEASUREMENT_ID, { send_page_view: false });
+}
 
-  document.addEventListener(
-    "click",
-    (e) => {
-      const el = (e.target as HTMLElement | null)?.closest?.("a[href]") as HTMLAnchorElement | null;
-      if (!el) return;
-      const href = el.getAttribute("href") || "";
-      if (href.includes("wa.me") || href.includes("api.whatsapp.com")) {
-        trackLead("whatsapp", { link_url: href });
-      } else if (href.startsWith("tel:")) {
-        trackLead("phone", { link_url: href });
-      }
-    },
-    { capture: true },
-  );
+/** Envia um page_view do GA4 para a rota atual (inclusive a primeira). */
+export function trackPageview(path: string): void {
+  if (typeof window === "undefined") return;
+  if (!isConfigured()) return;
+  getGtag()?.("event", "page_view", {
+    send_to: GA4_MEASUREMENT_ID,
+    page_path: path,
+    page_location: window.location.href,
+    page_title: document.title,
+  });
 }

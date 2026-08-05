@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import RevealSection from "@/components/RevealSection";
 import CountUp from "@/components/CountUp";
+import { trackConversion } from "@/lib/conversions";
 
 import heroImg from "@/assets/hero-inspection.jpg";
 import inspectionDocsImg from "@/assets/inspection-documents.jpg";
@@ -410,6 +411,8 @@ function CasesCarousel() {
   );
 }
 
+const HOME_WHATSAPP_NUMBER = "5511954534057";
+
 export default function Index() {
   const jsonLd = useMemo(() => ([
     {
@@ -440,6 +443,40 @@ export default function Index() {
     canonical: "https://www.vsmengenharia.com",
     jsonLd,
   });
+
+  const [formSent, setFormSent] = useState(false);
+
+  // O formulário não tem backend: monta a mensagem e entrega no WhatsApp, mesmo
+  // padrão da página de Contato. A conversão só conta depois que a janela do
+  // WhatsApp abriu de fato — nunca no onSubmit cru.
+  const handleContactSubmit = useCallback((e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const fd = new FormData(e.currentTarget);
+    const get = (k: string) => String(fd.get(k) ?? "").trim();
+
+    const linhas = [
+      "*Solicitação de orçamento — site VSM Engenharia*",
+      `*Nome:* ${get("name")}`,
+      get("company") && `*Empresa:* ${get("company")}`,
+      `*E-mail:* ${get("email")}`,
+      get("phone") && `*Telefone:* ${get("phone")}`,
+      `*Mensagem:* ${get("message")}`,
+    ].filter(Boolean);
+    const url = `https://wa.me/${HOME_WHATSAPP_NUMBER}?text=${encodeURIComponent(linhas.join("\n"))}`;
+
+    // Aberto dentro do gesto do clique — em setTimeout o navegador bloquearia.
+    const win = window.open(url, "_blank");
+    if (!win) {
+      // Popup bloqueado: não houve entrega, então não conta conversão. O painel
+      // de sucesso oferece o link manual, cujo clique vira conversão de WhatsApp.
+      setFormSent(true);
+      return;
+    }
+    win.opener = null;
+
+    trackConversion("form", { form_location: "home" });
+    setFormSent(true);
+  }, []);
 
   return (
     <>
@@ -1219,12 +1256,33 @@ export default function Index() {
                 <h3 className="text-xl font-extrabold mb-1">Solicitar Orçamento</h3>
                 <p className="text-xs text-muted-foreground mb-6">Preencha o formulário abaixo e nossa equipe entrará em contato.</p>
 
-                <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); }}>
+                {formSent ? (
+                  <div className="bg-success/5 border border-success/20 rounded-xl p-8 text-center">
+                    <div className="h-14 w-14 rounded-full bg-success/15 flex items-center justify-center mx-auto mb-4">
+                      <CheckCircle2 className="h-7 w-7 text-success" />
+                    </div>
+                    <h4 className="text-lg font-bold mb-2">Abrimos o WhatsApp com sua solicitação!</h4>
+                    <p className="text-sm text-muted-foreground mb-5">
+                      Se o WhatsApp não abriu automaticamente, toque no botão abaixo. Respondemos em até 24h.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                      <Button onClick={() => setFormSent(false)} variant="outline" className="rounded-xl">
+                        Enviar nova mensagem
+                      </Button>
+                      <Button asChild className="bg-cta text-cta-foreground hover:bg-cta-hover rounded-xl">
+                        <a href={`https://wa.me/${HOME_WHATSAPP_NUMBER}`} target="_blank" rel="noopener noreferrer">
+                          <Phone className="h-4 w-4 mr-2" />Falar no WhatsApp
+                        </a>
+                      </Button>
+                    </div>
+                  </div>
+                ) : (
+                <form className="space-y-4" onSubmit={handleContactSubmit}>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div className="relative">
                       <label htmlFor="contact-name" className="sr-only">Seu nome</label>
                       <Users className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" aria-hidden="true" />
-                      <input id="contact-name" name="name" type="text" placeholder="Seu nome" aria-label="Seu nome" autoComplete="name" className="w-full h-11 pl-10 pr-4 rounded-xl border border-border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-cta/50 focus:border-cta/50" />
+                      <input id="contact-name" name="name" type="text" placeholder="Seu nome" aria-label="Seu nome" autoComplete="name" required className="w-full h-11 pl-10 pr-4 rounded-xl border border-border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-cta/50 focus:border-cta/50" />
                     </div>
                     <div className="relative">
                       <label htmlFor="contact-company" className="sr-only">Empresa</label>
@@ -1241,13 +1299,13 @@ export default function Index() {
                     <div className="relative">
                       <label htmlFor="contact-email" className="sr-only">E-mail</label>
                       <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" aria-hidden="true" />
-                      <input id="contact-email" name="email" type="email" placeholder="E-mail" aria-label="E-mail" autoComplete="email" className="w-full h-11 pl-10 pr-4 rounded-xl border border-border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-cta/50 focus:border-cta/50" />
+                      <input id="contact-email" name="email" type="email" placeholder="E-mail" aria-label="E-mail" autoComplete="email" required className="w-full h-11 pl-10 pr-4 rounded-xl border border-border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-cta/50 focus:border-cta/50" />
                     </div>
                   </div>
                   <div className="relative">
                     <label htmlFor="contact-message" className="sr-only">Mensagem sobre seu projeto</label>
                     <ClipboardCheck className="absolute left-3 top-3.5 h-4 w-4 text-muted-foreground" aria-hidden="true" />
-                    <textarea id="contact-message" name="message" placeholder="Conte-nos sobre seu projeto..." aria-label="Mensagem sobre seu projeto" rows={4} className="w-full pl-10 pr-4 py-3 rounded-xl border border-border bg-background text-sm resize-none focus:outline-none focus:ring-2 focus:ring-cta/50 focus:border-cta/50" />
+                    <textarea id="contact-message" name="message" placeholder="Conte-nos sobre seu projeto..." aria-label="Mensagem sobre seu projeto" rows={4} required className="w-full pl-10 pr-4 py-3 rounded-xl border border-border bg-background text-sm resize-none focus:outline-none focus:ring-2 focus:ring-cta/50 focus:border-cta/50" />
                   </div>
                   <Button type="submit" className="w-full bg-cta text-cta-foreground hover:bg-cta-hover font-bold rounded-xl h-12 text-base shadow-lg shadow-cta/30">
                     <Send className="mr-2 h-4 w-4" />
@@ -1257,6 +1315,7 @@ export default function Index() {
                     Ao enviar, você concorda com nossa Política de Privacidade.
                   </p>
                 </form>
+                )}
               </div>
             </RevealSection>
           </div>
