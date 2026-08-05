@@ -1,15 +1,13 @@
 /**
  * Conversões — Google Ads (AW-11359694680) + GA4 (G-ZWMHRXHZPR).
  *
- * ┌─ COMO ATIVAR ────────────────────────────────────────────────────────────┐
- * │ Troque os placeholders COLE_O_ROTULO_* em CONV abaixo pelo rótulo que o   │
- * │ Google Ads gera ao criar cada ação de conversão:                          │
- * │   Ads → Metas → Conversões → <ação> → Configurar tag → Instalar manualmente│
- * │ O snippet mostra send_to no formato "AW-11359694680/AbCdEfGhIjKlMn".      │
- * │ Copie só a parte depois da barra.                                         │
+ * ┌─ RÓTULOS ────────────────────────────────────────────────────────────────┐
+ * │ Os send_to abaixo vêm das 3 ações criadas em 04/08/2026 na conta          │
+ * │ 518-206-5427 (VSM Engenharia Mecânica). Para reconferir:                  │
+ * │   Ads → Metas → Conversões → <ação> → Gerenciar → Ver snippet de evento   │
  * │                                                                           │
- * │ Enquanto estiver COLE_O_ROTULO_*, o evento do Ads NÃO é enviado (evita    │
- * │ lixo na conta); o evento do GA4 continua disparando normalmente.          │
+ * │ Se algum rótulo voltar a ser COLE_O_ROTULO_*, o evento do Ads NÃO é       │
+ * │ enviado (evita lixo na conta); o do GA4 continua disparando normalmente.  │
  * └──────────────────────────────────────────────────────────────────────────┘
  *
  * O gtag.js já é carregado no index.html. Aqui só disparamos os eventos —
@@ -21,9 +19,9 @@ export const ADS_ID = "AW-11359694680";
 
 /** send_to de cada ação de conversão do Google Ads. */
 export const CONV = {
-  form: `${ADS_ID}/COLE_O_ROTULO_FORM`,
-  whatsapp: `${ADS_ID}/COLE_O_ROTULO_WHATSAPP`,
-  phone: `${ADS_ID}/COLE_O_ROTULO_PHONE`,
+  form: `${ADS_ID}/qri_CJXlmdwcENje3Kgq`, // Formulário — Contato
+  whatsapp: `${ADS_ID}/DNqHCJjlmdwcENje3Kgq`, // WhatsApp — Clique
+  phone: `${ADS_ID}/ShteCJvlmdwcENje3Kgq`, // Telefone — Clique
 } as const;
 
 export type ConversionKey = keyof typeof CONV;
