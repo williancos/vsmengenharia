@@ -19,6 +19,9 @@
  *
  * Resultado: 100% das rotas servem HTML com head + body completos
  * para qualquer crawler (Googlebot, GPTBot, ClaudeBot, PerplexityBot).
+ *
+ * Também corrige os preloads de imagem — ver fixImagePreloads() abaixo. Essa
+ * parte roda em TODO HTML gerado, inclusive nas rotas sem metadado mapeado.
  */
 
 import { readFileSync, writeFileSync, readdirSync, statSync } from "fs";
@@ -317,6 +320,89 @@ function buildFaqSchema(faqs) {
   };
 }
 
+// ── Preloads de imagem ─────────────────────────────────────────────
+/**
+ * O vite-react-ssg emite <link rel="preload" as="image"> para TODO asset que
+ * aparece no grafo de módulos da rota (renderPreloadLink em
+ * vite-react-ssg/dist/shared). Como o app é servido em poucos chunks, o grafo
+ * de qualquer rota alcança quase todas as imagens do site — o resultado eram
+ * 98 preloads em prioridade alta por página, disputando banda justamente com
+ * o recurso do LCP.
+ *
+ * Aqui derrubamos todos e reinjetamos só o que a página declarou como
+ * prioritário: os <img fetchpriority="high">. O marcador fica no JSX, então o
+ * autor da página controla o preload sem tocar neste script.
+ */
+const PRELOAD_IMG_RE = /<link\b[^>]*\brel="preload"[^>]*\bas="image"[^>]*>\s*/gi;
+
+function fixImagePreloads(html) {
+  let out = html.replace(PRELOAD_IMG_RE, "");
+
+  // <img> prioritários da própria página, na ordem em que aparecem.
+  const hrefs = [];
+  const imgRe = /<img\b[^>]*>/gi;
+  let m;
+  while ((m = imgRe.exec(out))) {
+    const tag = m[0];
+    if (!/\bfetchpriority="high"/i.test(tag)) continue;
+    const src = tag.match(/\bsrc="([^"]+)"/i)?.[1];
+    if (!src || src.startsWith("data:")) continue;
+    const srcset = tag.match(/\bsrcset="([^"]+)"/i)?.[1];
+    const sizes = tag.match(/\bsizes="([^"]+)"/i)?.[1];
+    if (!hrefs.some((h) => h.src === src)) hrefs.push({ src, srcset, sizes });
+  }
+
+  if (!hrefs.length) return out;
+
+  // imagesrcset/imagesizes fazem o preload escolher a mesma candidata que o
+  // <img> vai escolher — sem isso o browser baixaria duas larguras diferentes.
+  const links = hrefs
+    .map(({ src, srcset, sizes }) => {
+      // Valores vêm de atributos já serializados pelo React — reescapar aqui
+      // transformaria &amp; em &amp;amp; e quebraria a URL.
+      const parts = [`rel="preload"`, `as="image"`, `href="${src}"`, `fetchpriority="high"`];
+      if (srcset) parts.push(`imagesrcset="${srcset}"`);
+      if (sizes) parts.push(`imagesizes="${sizes}"`);
+      return `<link ${parts.join(" ")}>`;
+    })
+    .join("\n");
+
+  return out.replace("</head>", `${links}\n</head>`);
+}
+
+// ── Ordem do <head> ────────────────────────────────────────────────
+/**
+ * O preload scanner enfileira os recursos na ordem em que aparecem no <head>,
+ * e o vite-react-ssg escreve o <script type="module">, os modulepreload dos
+ * chunks e só depois a folha de estilo. Resultado: ~128 KB de JS de hidratação
+ * entram na frente dos 17 KB de CSS que bloqueiam a pintura e da imagem do
+ * LCP — em conexão lenta é exatamente a ordem errada, porque o HTML já vem
+ * pré-renderizado e o JS não é necessário para pintar nada.
+ *
+ * Aqui o CSS e os preloads de imagem prioritária sobem para antes do JS.
+ */
+const CSS_LINK_RE = /<link\b[^>]*\brel="stylesheet"[^>]*>/gi;
+const IMG_PRELOAD_RE = /<link\b[^>]*\brel="preload"[^>]*\bas="image"[^>]*>/gi;
+const PRIMEIRO_JS_RE = /<(?:script\b[^>]*\btype="module"|link\b[^>]*\brel="modulepreload")/i;
+
+function reorderHead(html) {
+  const fimHead = html.indexOf("</head>");
+  if (fimHead === -1) return html;
+  let head = html.slice(0, fimHead);
+  const resto = html.slice(fimHead);
+
+  const criticos = [...(head.match(CSS_LINK_RE) || []), ...(head.match(IMG_PRELOAD_RE) || [])];
+  if (!criticos.length) return html;
+
+  for (const tag of criticos) head = head.replace(tag, "");
+
+  const alvo = head.search(PRIMEIRO_JS_RE);
+  if (alvo === -1) return html; // sem JS no head: a ordem atual já serve
+
+  head = head.slice(0, alvo) + criticos.join("") + "\n" + head.slice(alvo);
+  return head + resto;
+}
+
 // ── Patch do HTML ──────────────────────────────────────────────────
 function escapeAttr(s) {
   return String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -380,10 +466,15 @@ function patchHead(html, route) {
 const files = walk(distDir);
 let patched = 0;
 let skipped = 0;
+let preloadsRemoved = 0;
 for (const file of files) {
   const route = fileToRoute(file);
   const html = readFileSync(file, "utf-8");
-  const newHtml = patchHead(html, route);
+
+  // Preloads e ordem do head são corrigidos em toda página, mapeada ou não.
+  preloadsRemoved += (html.match(PRELOAD_IMG_RE) || []).length;
+  const newHtml = reorderHead(fixImagePreloads(patchHead(html, route)));
+
   if (newHtml !== html) {
     writeFileSync(file, newHtml);
     patched++;
@@ -392,3 +483,4 @@ for (const file of files) {
   }
 }
 console.log(`[patch-head] Patched ${patched} arquivos | skipped ${skipped} (rota não mapeada)`);
+console.log(`[patch-head] Preloads de imagem removidos: ${preloadsRemoved}`);

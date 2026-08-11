@@ -13,7 +13,8 @@ import {
 import RevealSection from "@/components/RevealSection";
 import CountUp from "@/components/CountUp";
 import SeoGuideContent from "@/components/SeoGuideContent";
-import heroPmoc from "@/assets/pmoc/hero-pmoc.jpg";
+import { imgProps } from "@/lib/responsive-img";
+import heroPmoc from "@/assets/pmoc/hero-pmoc.jpg?w=480;768;1024;1440;1920&format=webp&as=img";
 import artPmocFaq from "@/assets/pmoc/art-pmoc-faq.jpg";
 import artQuemAssina from "@/assets/pmoc/art-quem-assina.jpg";
 import artLei13589 from "@/assets/pmoc/art-lei-13589.jpg";
@@ -351,11 +352,16 @@ export default function PMOC() {
       </div>
 
       <section className="relative overflow-hidden min-h-[85vh] flex items-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroPmoc})` }}
-          aria-hidden="true"
-        />
+        <div className="absolute inset-0">
+          <img
+            {...imgProps(heroPmoc)}
+            alt=""
+            aria-hidden="true"
+            className="w-full h-full object-cover"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-primary/70" />
         <div className="absolute inset-0 pattern-dots opacity-10" />
         <div className="relative container mx-auto px-4 py-20 md:py-28">
@@ -472,7 +478,7 @@ export default function PMOC() {
               </div>
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden shadow-elevated bg-secondary">
-                  <img src={heroPmoc} alt="PMOC e ART — Plano de Manutenção, Operação e Controle de sistemas de climatização" className="w-full h-auto object-contain" />
+                  <img src={heroPmoc.src} alt="PMOC e ART — Plano de Manutenção, Operação e Controle de sistemas de climatização" className="w-full h-auto object-contain" width={1024} height={1024} loading="lazy" decoding="async" />
                 </div>
                 <div className="absolute -bottom-6 -left-4 md:-left-8 bg-card border-2 border-cta/20 rounded-2xl p-4 shadow-elevated">
                   <div className="flex items-center gap-3">

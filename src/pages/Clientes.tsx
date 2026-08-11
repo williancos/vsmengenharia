@@ -15,7 +15,8 @@ import useEmblaCarousel from "embla-carousel-react";
 import caseIndustrialImg from "@/assets/case-industrial.jpg";
 import caseFoodImg from "@/assets/case-food-factory.jpg";
 import caseTransportImg from "@/assets/case-transport.jpg";
-import teamImg from "@/assets/team-engineers.jpg";
+import { imgProps } from "@/lib/responsive-img";
+import teamImg from "@/assets/team-engineers.jpg?w=480;768;1024;1440;1920&format=webp&as=img";
 
 /* ── Data ── */
 
@@ -138,9 +139,19 @@ function useCarousel(count: number, autoplayMs = 5000) {
 
 function CarouselDots({ count, selected, onDot }: { count: number; selected: number; onDot: (i: number) => void }) {
   return (
-    <div className="flex gap-2 items-center">
+    // Mesmo padrão acessível do CarouselDots do Index.tsx: sem o aria-label,
+    // são botões só de estilo, sem nome nenhum para leitor de tela.
+    <div className="flex gap-2 items-center" role="tablist" aria-label="Selecionar slide">
       {Array.from({ length: count }).map((_, i) => (
-        <button key={i} onClick={() => onDot(i)} className={`h-2 rounded-full transition-all duration-300 ${i === selected ? "w-6 bg-cta" : "w-2 bg-white/20 hover:bg-white/40"}`} />
+        <button
+          key={i}
+          type="button"
+          role="tab"
+          aria-selected={i === selected}
+          aria-label={`Ir para o slide ${i + 1} de ${count}`}
+          onClick={() => onDot(i)}
+          className={`h-2 rounded-full transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cta focus-visible:ring-offset-2 focus-visible:ring-offset-primary ${i === selected ? "w-6 bg-cta" : "w-2 bg-white/20 hover:bg-white/40"}`}
+        />
       ))}
     </div>
   );
@@ -175,7 +186,7 @@ export default function Clientes() {
       {/* ═══ HERO ═══ */}
       <section className="relative overflow-hidden min-h-[70vh] flex items-center">
         <div className="absolute inset-0">
-          <img src={teamImg} alt="Equipe de engenheiros VSM Engenharia" className="w-full h-full object-cover" />
+          <img {...imgProps(teamImg)} alt="Equipe de engenheiros VSM Engenharia" className="w-full h-full object-cover" fetchpriority="high" decoding="async" />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/50" />
           <div className="absolute inset-0 pattern-dots opacity-10" />
         </div>

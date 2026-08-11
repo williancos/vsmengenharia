@@ -14,7 +14,8 @@ import RevealSection from "@/components/RevealSection";
 import CountUp from "@/components/CountUp";
 import SeoGuideContent from "@/components/SeoGuideContent";
 import PillarArticles from "@/components/PillarArticles";
-import heroOriginal from "@/assets/reclassificacao/hero-original.jpg";
+import { imgProps } from "@/lib/responsive-img";
+import heroOriginal from "@/assets/reclassificacao/hero-original.jpg?w=480;768;1024;1440;1920&format=webp&as=img";
 import imgVeiculoSinistrado from "@/assets/reclassificacao/veiculo-sinistrado.jpg";
 import veiculo1 from "@/assets/reclassificacao/veiculo-1.jpg";
 import veiculo2 from "@/assets/reclassificacao/veiculo-2.jpeg";
@@ -337,11 +338,16 @@ export default function ReclassificacaoMonta() {
       </div>
 
       <section className="relative overflow-hidden min-h-[85vh] flex items-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroOriginal})` }}
-          aria-hidden="true"
-        />
+        <div className="absolute inset-0">
+          <img
+            {...imgProps(heroOriginal)}
+            alt=""
+            aria-hidden="true"
+            className="w-full h-full object-cover"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-primary/70" />
         <div className="absolute inset-0 pattern-dots opacity-10" />
         <div className="relative container mx-auto px-4 py-20 md:py-28">
@@ -459,7 +465,7 @@ export default function ReclassificacaoMonta() {
               </div>
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden shadow-elevated">
-                  <img src={imgVeiculoSinistrado} alt="Veículo sinistrado em processo de reclassificação de monta" className="w-full h-80 md:h-[28rem] object-cover" />
+                  <img src={imgVeiculoSinistrado} alt="Veículo sinistrado em processo de reclassificação de monta" className="w-full h-80 md:h-[28rem] object-cover" loading="lazy" decoding="async" />
                 </div>
                 <div className="absolute -bottom-6 -left-4 md:-left-8 bg-card border-2 border-cta/20 rounded-2xl p-4 shadow-elevated">
                   <div className="flex items-center gap-3">

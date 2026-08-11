@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, BookOpen } from "lucide-react";
-import { allPosts } from "@/data/blogData";
+import { allPosts } from "@/data/generated/blogMeta";
 
 interface PillarArticlesProps {
   /** Categoria do cluster: "NR13" | "NR11" | "NR12" | "Reclassificação" | "Conformidade" */

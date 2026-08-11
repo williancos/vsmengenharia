@@ -2,7 +2,10 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logoImg from "@/assets/logo.png";
+// A logo é exibida com 56px de altura (169px de largura); as variantes cobrem
+// 1x e 2x. Sem isso o PNG de 500px e 56 KB era baixado inteiro em toda página.
+import logoImg from "@/assets/logo.png?w=169;338&format=webp&as=img";
+import { imgProps } from "@/lib/responsive-img";
 
 const services = [
   { label: "NR13", href: "/servicos/nr13" },
@@ -33,7 +36,15 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-primary shadow-lg">
       <div className="container mx-auto flex items-center justify-between py-3 px-4">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logoImg} alt="VSM Engenharia" className="h-14 w-auto" />
+          {/* Header é sticky e aparece em todas as rotas: candidato a LCP nas
+              páginas sem imagem de hero. width/height evitam o salto de layout. */}
+          <img
+            {...imgProps(logoImg, "169px")}
+            alt="VSM Engenharia"
+            className="h-14 w-auto"
+            fetchpriority="high"
+            decoding="async"
+          />
         </Link>
 
         {/* Desktop nav */}

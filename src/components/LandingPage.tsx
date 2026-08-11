@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import RevealSection from "@/components/RevealSection";
 import { renderMarkdown } from "@/lib/markdown";
-import { allPosts } from "@/data/blogData";
+import { allPosts } from "@/data/generated/blogMeta";
 import type { LandingConfig } from "@/data/landingData";
 
 const BASE_URL = "https://www.vsmengenharia.com";
@@ -131,7 +131,7 @@ export default function LandingPage({ config }: { config: LandingConfig }) {
             {config.heroImage && (
               <div className="lg:col-span-2">
                 <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10 aspect-[4/3] bg-black/20">
-                  <img src={config.heroImage} alt={config.h1} className="w-full h-full object-cover" />
+                  <img src={config.heroImage} alt={config.h1} className="w-full h-full object-cover" fetchpriority="high" decoding="async" />
                 </div>
               </div>
             )}

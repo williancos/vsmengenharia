@@ -13,7 +13,8 @@ import {
 import RevealSection from "@/components/RevealSection";
 import CountUp from "@/components/CountUp";
 import SeoGuideContent from "@/components/SeoGuideContent";
-import heroProjetos from "@/assets/projetos-mecanicos/hero-projetos.jpg";
+import { imgProps } from "@/lib/responsive-img";
+import heroProjetos from "@/assets/projetos-mecanicos/hero-projetos.jpg?w=480;768;1024;1440;1920&format=webp&as=img";
 
 const tickerMessages = [
   "⚠️ Proteções de máquinas inadequadas = risco de acidente e interdição",
@@ -248,11 +249,16 @@ export default function ProjetosMecanicos() {
       </div>
 
       <section className="relative overflow-hidden min-h-[85vh] flex items-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroProjetos})` }}
-          aria-hidden="true"
-        />
+        <div className="absolute inset-0">
+          <img
+            {...imgProps(heroProjetos)}
+            alt=""
+            aria-hidden="true"
+            className="w-full h-full object-cover"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-primary/70" />
         <div className="absolute inset-0 pattern-dots opacity-10" />
         <div className="relative container mx-auto px-4 py-20 md:py-28">
@@ -341,7 +347,7 @@ export default function ProjetosMecanicos() {
         </div>
       </section>
 
-      <RevealSection><section className="py-20 md:py-24"><div className="container mx-auto px-4 max-w-6xl"><div className="grid lg:grid-cols-2 gap-12 items-center"><div><span className="text-cta font-bold text-sm tracking-widest uppercase mb-3 block">Entenda</span><h2 className="text-3xl md:text-4xl font-black mb-6">Projetos Mecânicos Sob Medida</h2><p className="text-muted-foreground leading-relaxed mb-4 text-lg">Desenvolvemos projetos mecânicos completos: desde <strong className="text-foreground">proteções de máquinas para NR12</strong> até equipamentos especiais e estruturas metálicas.</p><p className="text-muted-foreground leading-relaxed mb-6">Cada projeto inclui memorial de cálculo, desenhos técnicos detalhados, lista de materiais e ART.</p><div className="bg-destructive/5 border-l-4 border-destructive rounded-r-xl p-5 mb-6"><div className="flex items-start gap-3"><AlertTriangle className="h-6 w-6 text-destructive shrink-0 mt-0.5" /><div><h4 className="font-bold text-destructive mb-1">Sem projeto = sem conformidade</h4><p className="text-sm text-muted-foreground">Proteções improvisadas sem projeto de engenharia <strong className="text-foreground">não são aceitas</strong> em auditorias do MTE e não protegem o gestor legalmente.</p></div></div></div><Button asChild className="bg-cta text-cta-foreground hover:bg-cta-hover font-bold rounded-xl"><a href="https://wa.me/5511954534057" target="_blank" rel="noopener noreferrer"><Phone className="h-4 w-4 mr-2" /> Solicitar projeto</a></Button></div><div className="relative"><div className="rounded-2xl overflow-hidden shadow-elevated h-80 md:h-[28rem]"><img src={heroProjetos} alt="Projeto mecânico industrial em CAD com proteções NR12" loading="lazy" width={1024} height={768} className="w-full h-full object-cover" /></div><div className="absolute -bottom-6 -left-4 md:-left-8 bg-card border-2 border-cta/20 rounded-2xl p-4 shadow-elevated"><div className="flex items-center gap-3"><div className="h-12 w-12 rounded-xl bg-cta/10 flex items-center justify-center"><BadgeCheck className="h-6 w-6 text-cta" /></div><div><p className="font-black text-lg text-cta">CREA Ativo</p><p className="text-xs text-muted-foreground">Projetos com ART</p></div></div></div></div></div></div></section></RevealSection>
+      <RevealSection><section className="py-20 md:py-24"><div className="container mx-auto px-4 max-w-6xl"><div className="grid lg:grid-cols-2 gap-12 items-center"><div><span className="text-cta font-bold text-sm tracking-widest uppercase mb-3 block">Entenda</span><h2 className="text-3xl md:text-4xl font-black mb-6">Projetos Mecânicos Sob Medida</h2><p className="text-muted-foreground leading-relaxed mb-4 text-lg">Desenvolvemos projetos mecânicos completos: desde <strong className="text-foreground">proteções de máquinas para NR12</strong> até equipamentos especiais e estruturas metálicas.</p><p className="text-muted-foreground leading-relaxed mb-6">Cada projeto inclui memorial de cálculo, desenhos técnicos detalhados, lista de materiais e ART.</p><div className="bg-destructive/5 border-l-4 border-destructive rounded-r-xl p-5 mb-6"><div className="flex items-start gap-3"><AlertTriangle className="h-6 w-6 text-destructive shrink-0 mt-0.5" /><div><h4 className="font-bold text-destructive mb-1">Sem projeto = sem conformidade</h4><p className="text-sm text-muted-foreground">Proteções improvisadas sem projeto de engenharia <strong className="text-foreground">não são aceitas</strong> em auditorias do MTE e não protegem o gestor legalmente.</p></div></div></div><Button asChild className="bg-cta text-cta-foreground hover:bg-cta-hover font-bold rounded-xl"><a href="https://wa.me/5511954534057" target="_blank" rel="noopener noreferrer"><Phone className="h-4 w-4 mr-2" /> Solicitar projeto</a></Button></div><div className="relative"><div className="rounded-2xl overflow-hidden shadow-elevated h-80 md:h-[28rem]"><img src={heroProjetos.src} alt="Projeto mecânico industrial em CAD com proteções NR12" loading="lazy" decoding="async" width={1024} height={768} className="w-full h-full object-cover" /></div><div className="absolute -bottom-6 -left-4 md:-left-8 bg-card border-2 border-cta/20 rounded-2xl p-4 shadow-elevated"><div className="flex items-center gap-3"><div className="h-12 w-12 rounded-xl bg-cta/10 flex items-center justify-center"><BadgeCheck className="h-6 w-6 text-cta" /></div><div><p className="font-black text-lg text-cta">CREA Ativo</p><p className="text-xs text-muted-foreground">Projetos com ART</p></div></div></div></div></div></div></section></RevealSection>
 
       <RevealSection><section className="bg-secondary py-20 md:py-24 pattern-grid"><div className="container mx-auto px-4"><div className="text-center mb-12"><span className="text-cta font-bold text-sm tracking-widest uppercase mb-3 block">Escopo</span><h2 className="text-3xl md:text-4xl font-black mb-4">Tipos de Projeto</h2></div><div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">{projectTypes.map((eq) => (<div key={eq.title} className="group bg-card rounded-2xl p-7 shadow-soft hover:shadow-elevated transition-all duration-300 border hover:-translate-y-1"><div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-cta/10 to-primary/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform"><eq.icon className="h-7 w-7 text-cta" /></div><h3 className="font-bold text-lg mb-2">{eq.title}</h3><p className="text-sm text-muted-foreground mb-4">{eq.desc}</p><div className="flex items-center gap-1.5 text-xs font-semibold text-cta"><TrendingUp className="h-3.5 w-3.5" />{eq.count}</div></div>))}</div></div></section></RevealSection>
 

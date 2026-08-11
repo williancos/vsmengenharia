@@ -14,7 +14,8 @@ import RevealSection from "@/components/RevealSection";
 import CountUp from "@/components/CountUp";
 import SeoGuideContent from "@/components/SeoGuideContent";
 import PillarArticles from "@/components/PillarArticles";
-import heroNR12 from "@/assets/nr12/hero-nr12.jpg";
+import { imgProps } from "@/lib/responsive-img";
+import heroNR12 from "@/assets/nr12/hero-nr12.jpg?w=480;768;1024;1440;1920&format=webp&as=img";
 import imgPerimetral from "@/assets/nr12/protecao-perimetral.jpg";
 import imgIntertravamento from "@/assets/nr12/sistema-intertravamento.jpg";
 import imgCompleta from "@/assets/nr12/protecao-completa.jpg";
@@ -488,11 +489,16 @@ export default function NR12() {
 
       {/* Hero */}
       <section className="relative overflow-hidden min-h-[85vh] flex items-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroNR12})` }}
-          aria-hidden="true"
-        />
+        <div className="absolute inset-0">
+          <img
+            {...imgProps(heroNR12)}
+            alt=""
+            aria-hidden="true"
+            className="w-full h-full object-cover"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-primary/70" />
         <div className="absolute inset-0 pattern-dots opacity-10" />
         <div className="relative container mx-auto px-4 py-20 md:py-28">
@@ -630,10 +636,11 @@ export default function NR12() {
                 <div className="relative">
                   <div className="rounded-2xl overflow-hidden shadow-elevated h-80 md:h-[28rem]">
                     <img
-                      src={heroNR12}
+                      src={heroNR12.src}
                       alt="Adequação NR12 - máquinas e equipamentos industriais - VSM Engenharia"
                       className="w-full h-full object-cover"
                       loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <div className="absolute -bottom-6 -left-4 md:-left-8 bg-card border-2 border-cta/20 rounded-2xl p-4 shadow-elevated">

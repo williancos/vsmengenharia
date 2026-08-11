@@ -9,7 +9,8 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import RevealSection from "@/components/RevealSection";
 import CountUp from "@/components/CountUp";
-import teamImg from "@/assets/team-engineers.jpg";
+import { imgProps } from "@/lib/responsive-img";
+import teamImg from "@/assets/team-engineers.jpg?w=480;768;1024;1440;1920&format=webp&as=img";
 import factoryImg from "@/assets/factory-interior.jpg";
 
 const stats = [
@@ -70,7 +71,7 @@ export default function Sobre() {
       {/* Hero — immersive with image */}
       <section className="relative overflow-hidden min-h-[70vh] flex items-center">
         <div className="absolute inset-0">
-          <img src={teamImg} alt="Equipe de engenheiros VSM Engenharia" className="w-full h-full object-cover" />
+          <img {...imgProps(teamImg)} alt="Equipe de engenheiros VSM Engenharia" className="w-full h-full object-cover" fetchpriority="high" decoding="async" />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/50" />
           <div className="absolute inset-0 pattern-dots opacity-10" />
         </div>
@@ -160,7 +161,7 @@ export default function Sobre() {
                 </div>
                 <div className="relative">
                   <div className="rounded-2xl overflow-hidden shadow-elevated">
-                    <img src={factoryImg} alt="Interior de planta industrial atendida pela VSM Engenharia" className="w-full h-80 md:h-[28rem] object-cover" />
+                    <img src={factoryImg} alt="Interior de planta industrial atendida pela VSM Engenharia" className="w-full h-80 md:h-[28rem] object-cover" loading="lazy" decoding="async" />
                   </div>
                   <div className="absolute -bottom-6 -left-4 md:-left-8 bg-card border-2 border-cta/20 rounded-2xl p-4 shadow-elevated">
                     <div className="flex items-center gap-3">

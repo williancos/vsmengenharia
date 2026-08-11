@@ -8,7 +8,8 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import RevealSection from "@/components/RevealSection";
-import { allPosts, categoryConfig } from "@/data/blogData";
+import { allPosts, categoryConfig } from "@/data/generated/blogMeta";
+import type { BlogPostDetail } from "@/data/generated/blogDetail";
 import { renderMarkdown } from "@/lib/markdown";
 
 /**
@@ -40,14 +41,25 @@ function resolveRelatedService(post: { category: string; slug: string }): { labe
   }
 }
 
-export default function BlogPost() {
-  const { slug } = useParams<{ slug: string }>();
+/**
+ * `detail` (corpo, FAQ, sumário, takeaways) chega por prop, carregado pela
+ * rota do post junto com este módulo — cada post tem o seu chunk. Ver a
+ * montagem das rotas em App.tsx e o gerador em scripts/split-blog-data.mjs.
+ *
+ * As props são opcionais para a rota continuar funcionando se um dia voltar a
+ * ser paramétrica (`blog/:slug`): sem elas, cai no useParams e renderiza sem
+ * corpo, que é o mesmo comportamento de um post sem `content`.
+ */
+export default function BlogPost({ slug: slugProp, detail }: { slug?: string; detail?: BlogPostDetail } = {}) {
+  const params = useParams<{ slug: string }>();
+  const slug = slugProp ?? params.slug;
   const navigate = useNavigate();
   const [readProgress, setReadProgress] = useState(0);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [copied, setCopied] = useState(false);
 
-  const post = allPosts.find((p) => p.slug === slug);
+  const meta = allPosts.find((p) => p.slug === slug);
+  const post = useMemo(() => (meta ? { ...meta, ...(detail ?? {}) } : undefined), [meta, detail]);
   const config = post ? categoryConfig[post.category] : null;
   const Icon = config?.icon || Shield;
 
@@ -238,7 +250,7 @@ export default function BlogPost() {
             {post.coverImage && (
               <div className="lg:col-span-2">
                 <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10 aspect-[4/3] bg-black/20">
-                  <img src={post.coverImage} alt={post.title} className="w-full h-full object-cover" />
+                  <img src={post.coverImage} alt={post.title} className="w-full h-full object-cover" fetchpriority="high" decoding="async" />
                 </div>
               </div>
             )}

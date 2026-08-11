@@ -11,9 +11,10 @@ import {
 import { Button } from "@/components/ui/button";
 import RevealSection from "@/components/RevealSection";
 import CountUp from "@/components/CountUp";
-import { allPosts, categoryConfig } from "@/data/blogData";
+import { allPosts, categoryConfig } from "@/data/generated/blogMeta";
 
-import heroImg from "@/assets/team-engineers.jpg";
+import { imgProps } from "@/lib/responsive-img";
+import heroImg from "@/assets/team-engineers.jpg?w=480;768;1024;1440;1920&format=webp&as=img";
 
 const categories = [
   { key: "all", label: "Todos", icon: BookOpen },
@@ -93,7 +94,7 @@ export default function Blog() {
       {/* ── Hero ── */}
       <section className="relative overflow-hidden min-h-[55vh] flex items-center">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="Conteúdos técnicos VSM Engenharia" className="w-full h-full object-cover" />
+          <img {...imgProps(heroImg)} alt="Conteúdos técnicos VSM Engenharia" className="w-full h-full object-cover" fetchpriority="high" decoding="async" />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/90 to-primary/60" />
           <div className="absolute inset-0 pattern-dots opacity-10" />
         </div>
@@ -209,7 +210,7 @@ export default function Blog() {
                 <Link to={`/blog/${featuredPosts[0]?.slug}`} className="group block relative rounded-2xl overflow-hidden h-full min-h-[380px]">
                   {featuredPosts[0]?.coverImage ? (
                     <>
-                      <img src={featuredPosts[0].coverImage} alt={featuredPosts[0].title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                      <img src={featuredPosts[0].coverImage} alt={featuredPosts[0].title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20" />
                     </>
                   ) : (
@@ -243,7 +244,7 @@ export default function Blog() {
                       <Link to={`/blog/${post.slug}`} className="group flex bg-card rounded-xl border border-border/50 overflow-hidden hover:shadow-lg transition-all hover:-translate-y-0.5 h-full">
                         <div className={`relative w-36 md:w-40 shrink-0 ${post.coverImage ? "" : `bg-gradient-to-br ${cfg?.gradient}`} flex items-center justify-center overflow-hidden`}>
                           {post.coverImage ? (
-                            <img src={post.coverImage} alt={post.title} className="absolute inset-0 w-full h-full object-cover" />
+                            <img src={post.coverImage} alt={post.title} className="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" />
                           ) : (
                             <>
                               <div className="absolute inset-0 pattern-dots opacity-10" />
@@ -356,7 +357,7 @@ export default function Blog() {
                       <Link to={`/blog/${post.slug}`} className="group block bg-card rounded-xl border border-border/50 overflow-hidden hover:shadow-elevated transition-all hover:-translate-y-1 h-full">
                         <div className={`relative h-40 ${post.coverImage ? "" : `bg-gradient-to-br ${cfg?.gradient}`} flex items-center justify-center overflow-hidden`}>
                           {post.coverImage ? (
-                            <img src={post.coverImage} alt={post.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            <img src={post.coverImage} alt={post.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" />
                           ) : (
                             <>
                               <div className="absolute inset-0 pattern-grid opacity-10" />

@@ -143,6 +143,14 @@
     );
   }
 
+  /*
+   * `content-visibility: auto` nas seções do RevealSection foi testado e
+   * descartado: cortou o styleLayout pela metade, mas o trabalho de renderizar
+   * as seções conforme entram na viewport voltava como long task — o TBT da
+   * home subiu de ~40 ms para ~250 ms e a nota média ficou igual (~88). Além
+   * disso, seção fora da tela sai em branco em captura de página inteira.
+   */
+
   /* Scroll reveal */
   .reveal {
     opacity: 0;

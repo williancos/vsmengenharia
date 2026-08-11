@@ -1,15 +1,55 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11359694680"></script>
+    <meta charset="UTF-8" />
+    <!--
+      Google tag (gtag.js) — Google Ads AW-11359694680 (+ GA4 configurado em
+      src/lib/analytics.ts).
+
+      O stub abaixo é o de sempre e continua síncrono no topo do <head>: ele só
+      cria `dataLayer` e a função `gtag`, que enfileira as chamadas. O que mudou
+      é QUANDO o gtag.js de verdade é buscado — antes disputava banda e CPU com
+      o LCP; agora entra na primeira interação do usuário ou 3,5 s depois do
+      load, o que vier primeiro.
+
+      Nada de medição se perde: tudo que for chamado antes fica na fila do
+      dataLayer e é despachado quando o script chega. Os gatilhos são eventos
+      que precedem o `click` (pointerdown/touchstart/keydown), então quem clica
+      num link de WhatsApp já disparou o carregamento — e o preconnect acima
+      deixa a conexão pronta. A janela de 800 ms do `event_callback` em
+      src/lib/conversions.ts cobre o resto.
+    -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'AW-11359694680');
+
+      (function () {
+        var carregado = false;
+        var eventos = ['pointerdown', 'touchstart', 'keydown', 'scroll'];
+
+        function carregar() {
+          if (carregado) return;
+          carregado = true;
+          eventos.forEach(function (e) { removeEventListener(e, carregar, true); });
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=AW-11359694680';
+          document.head.appendChild(s);
+        }
+
+        eventos.forEach(function (e) {
+          addEventListener(e, carregar, { capture: true, once: true, passive: true });
+        });
+
+        // Rede de segurança: visita sem interação nenhuma também tem que contar.
+        var atraso = function () { setTimeout(carregar, 3500); };
+        if (document.readyState === 'complete') atraso();
+        else addEventListener('load', atraso, { once: true });
+      })();
     </script>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VSM Engenharia | Inspeções NR13, NR12, NR11 e Reclassificação de Monta</title>
     <meta name="description" content="Inspeções técnicas NR13, NR12 e NR11 com laudos completos, reclassificação de monta e projetos mecânicos para indústrias no Sudeste. Segurança, conformidade e agilidade">

@@ -13,28 +13,35 @@ import RevealSection from "@/components/RevealSection";
 import CountUp from "@/components/CountUp";
 import { trackConversion } from "@/lib/conversions";
 
-import heroImg from "@/assets/hero-inspection.jpg";
-import inspectionDocsImg from "@/assets/inspection-documents.jpg";
-import factoryImg from "@/assets/factory-interior.jpg";
-import riggingImg from "@/assets/rigging-crane.jpg";
-import teamImg from "@/assets/team-engineers.jpg";
-import vehicleImg from "@/assets/vehicle-inspection.jpg";
-import pmocImg from "@/assets/pmoc-hvac.jpg";
-import technicalImg from "@/assets/technical-inspection.jpg";
-import climatizacaoImg from "@/assets/climatizacao-project.jpg";
-import consultoriaImg from "@/assets/consultoria-meeting.jpg";
-import caseIndustrialImg from "@/assets/case-industrial.jpg";
-import caseFoodImg from "@/assets/case-food-factory.jpg";
-import caseTransportImg from "@/assets/case-transport.jpg";
-import blogNr13Img from "@/assets/blog-nr13.jpg";
-import blogRiggingImg from "@/assets/blog-rigging.jpg";
-import blogVehicleImg from "@/assets/blog-vehicle.jpg";
-import nr13RealImg from "@/assets/nr13-real.jpg";
-import nr12RealImg from "@/assets/nr12-real.jpg";
-import nr11RealImg from "@/assets/nr11-real.jpg";
-import reclassificacaoRealImg from "@/assets/reclassificacao-real.jpg";
-import pmocRealImg from "@/assets/pmoc-real.jpg";
-import consultoriaRealImg from "@/assets/consultoria-real.jpg";
+import { imgProps } from "@/lib/responsive-img";
+import heroImg from "@/assets/hero-inspection.jpg?w=480;768;1024;1440;1920&format=webp&as=img";
+/**
+ * Todas as imagens abaixo aparecem em card ou colagem, nunca em largura total:
+ * no celular ocupam ~412 px, no desktop ~380–600 px. Sem estas variantes o
+ * padrão do vite.config servia 1280 px para todas — eram ~550 KB descendo em
+ * paralelo com a imagem do LCP, disputando a mesma banda.
+ */
+import inspectionDocsImg from "@/assets/inspection-documents.jpg?w=400;640;900&format=webp&as=img";
+import factoryImg from "@/assets/factory-interior.jpg?w=400;640;900&format=webp&as=img";
+import riggingImg from "@/assets/rigging-crane.jpg?w=400;640;900&format=webp&as=img";
+import teamImg from "@/assets/team-engineers.jpg?w=400;640;900&format=webp&as=img";
+import vehicleImg from "@/assets/vehicle-inspection.jpg?w=400;640;900&format=webp&as=img";
+import pmocImg from "@/assets/pmoc-hvac.jpg?w=400;640;900&format=webp&as=img";
+import technicalImg from "@/assets/technical-inspection.jpg?w=400;640;900&format=webp&as=img";
+import climatizacaoImg from "@/assets/climatizacao-project.jpg?w=400;640;900&format=webp&as=img";
+import consultoriaImg from "@/assets/consultoria-meeting.jpg?w=400;640;900&format=webp&as=img";
+import caseIndustrialImg from "@/assets/case-industrial.jpg?w=400;640;900&format=webp&as=img";
+import caseFoodImg from "@/assets/case-food-factory.jpg?w=400;640;900&format=webp&as=img";
+import caseTransportImg from "@/assets/case-transport.jpg?w=400;640;900&format=webp&as=img";
+import blogNr13Img from "@/assets/blog-nr13.jpg?w=400;640;900&format=webp&as=img";
+import blogRiggingImg from "@/assets/blog-rigging.jpg?w=400;640;900&format=webp&as=img";
+import blogVehicleImg from "@/assets/blog-vehicle.jpg?w=400;640;900&format=webp&as=img";
+import nr13RealImg from "@/assets/nr13-real.jpg?w=400;640;900&format=webp&as=img";
+import nr12RealImg from "@/assets/nr12-real.jpg?w=400;640;900&format=webp&as=img";
+import nr11RealImg from "@/assets/nr11-real.jpg?w=400;640;900&format=webp&as=img";
+import reclassificacaoRealImg from "@/assets/reclassificacao-real.jpg?w=400;640;900&format=webp&as=img";
+import pmocRealImg from "@/assets/pmoc-real.jpg?w=400;640;900&format=webp&as=img";
+import consultoriaRealImg from "@/assets/consultoria-real.jpg?w=400;640;900&format=webp&as=img";
 import useEmblaCarousel from "embla-carousel-react";
 import ClientLogosCarousel from "@/components/ClientLogos";
 
@@ -377,7 +384,7 @@ function CasesCarousel() {
                 <div key={c.title} className="flex-[0_0_100%] min-w-0">
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 bg-white/[0.04] rounded-2xl border border-white/[0.08] overflow-hidden">
                     <div className="relative h-56 lg:h-auto min-h-[260px]">
-                      <img src={c.image} alt={c.title} loading="lazy" width={1280} height={720} className="absolute inset-0 w-full h-full object-cover" />
+                      <img {...imgProps(c.image, "(min-width: 1024px) 50vw, 100vw")} alt={c.title} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover" />
                       <div className="absolute top-4 left-4">
                         <span className="px-3 py-1 rounded-full bg-cta text-cta-foreground text-xs font-bold">{c.tag}</span>
                       </div>
@@ -485,11 +492,13 @@ export default function Index() {
         {/* Full-screen background image */}
         <div className="absolute inset-0">
           <img
-            src={heroImg}
+            {...imgProps(heroImg)}
             alt="Engenheiro realizando inspeção em vaso de pressão industrial"
             className="w-full h-full object-cover"
             width={1920}
             height={1080}
+            fetchpriority="high"
+            decoding="async"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/30" />
         </div>
@@ -662,10 +671,11 @@ export default function Index() {
                   className="group relative rounded-3xl overflow-hidden cursor-pointer"
                 >
                   <img
-                    src={s.image}
+                    {...imgProps(s.image, "(min-width: 1024px) 33vw, 100vw")}
                     alt={s.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent" />
                   
@@ -708,7 +718,7 @@ export default function Index() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="col-span-2 relative rounded-2xl overflow-hidden shadow-elevated group">
                   <img
-                    src={teamImg}
+                    {...imgProps(teamImg, "(min-width: 1024px) 40vw, 100vw")}
                     alt="Equipe de engenheiros VSM em campo"
                     className="w-full aspect-[16/10] object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
@@ -720,7 +730,7 @@ export default function Index() {
                 </div>
                 <div className="relative rounded-xl overflow-hidden shadow-elevated group">
                   <img
-                    src={inspectionDocsImg}
+                    {...imgProps(inspectionDocsImg, "(min-width: 1024px) 20vw, 50vw")}
                     alt="Documentação técnica de inspeção"
                     className="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
@@ -729,7 +739,7 @@ export default function Index() {
                 </div>
                 <div className="relative rounded-xl overflow-hidden shadow-elevated group">
                   <img
-                    src={factoryImg}
+                    {...imgProps(factoryImg, "(min-width: 1024px) 20vw, 50vw")}
                     alt="Interior de fábrica com equipamentos industriais"
                     className="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
@@ -1133,7 +1143,7 @@ export default function Index() {
                   className="group bg-background rounded-2xl border border-border/60 overflow-hidden hover:shadow-elevated hover:border-cta/20 transition-all duration-300 hover:-translate-y-1"
                 >
                   <div className="h-48 relative overflow-hidden">
-                    <img src={post.image} alt={post.title} loading="lazy" width={960} height={640} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img {...imgProps(post.image, "(min-width: 1024px) 33vw, 100vw")} alt={post.title} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                     <div className="absolute top-4 left-4">
                       <span className="px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-bold">

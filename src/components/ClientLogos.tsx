@@ -88,6 +88,7 @@ export default function ClientLogosCarousel({ className = "" }: ClientLogosCarou
                   alt={logo.name}
                   className="max-h-full max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>

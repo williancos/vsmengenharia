@@ -1,52 +1,80 @@
 import type { RouteRecord } from "vite-react-ssg";
 import { Outlet } from "react-router-dom";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { createHead, UnheadProvider } from "@unhead/react/client";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
 import Layout from "@/components/Layout";
 import ScrollToTop from "@/components/ScrollToTop";
 import ConversionListeners from "@/components/ConversionListeners";
-import Index from "./pages/Index";
-import Sobre from "./pages/Sobre";
-import Blog from "./pages/Blog";
-import BlogPost from "./pages/BlogPost";
-import Contato from "./pages/Contato";
-import NR13 from "./pages/servicos/NR13";
-import NR12 from "./pages/servicos/NR12";
-import NR11 from "./pages/servicos/NR11";
-import PMOC from "./pages/servicos/PMOC";
-import ReclassificacaoMonta from "./pages/servicos/ReclassificacaoMonta";
-import InspecoesTecnicas from "./pages/servicos/InspecoesTecnicas";
-import ProjetosMecanicos from "./pages/servicos/ProjetosMecanicos";
-import ProjetosClimatizacao from "./pages/servicos/ProjetosClimatizacao";
-import ConsultoriaGratuita from "./pages/servicos/ConsultoriaGratuita";
-import InspecaoNR13SaoPaulo from "./pages/servicos/InspecaoNR13SaoPaulo";
-import InspecaoNR13CompressorAr from "./pages/servicos/InspecaoNR13CompressorAr";
-import LaudoRecuperabilidade from "./pages/servicos/LaudoRecuperabilidade";
-import Clientes from "./pages/Clientes";
-import NotFound from "./pages/NotFound";
-import { allPosts } from "./data/blogData";
+import { blogSlugs } from "./data/generated/blogSlugs";
+import type { BlogPostDetail } from "./data/generated/blogDetail";
 
-const queryClient = new QueryClient();
 const head = createHead();
 
-/* App shell — providers + Layout (com Outlet das rotas filhas) */
+/**
+ * Uma rota literal por post, em vez de uma única `blog/:slug`.
+ *
+ * Com rota paramétrica só existe um ponto de `lazy`, então o corpo dos 94
+ * posts caía num chunk só: 1 MB baixado e compilado em toda página de post
+ * para usar ~11 KB dele. Com uma rota por slug, cada post traz o seu módulo
+ * de `detail` e nada mais.
+ *
+ * O `import.meta.glob` é o que faz o Rollup emitir um chunk por arquivo de
+ * detail; sem ele um `import(\`...${slug}\`)` viraria import dinâmico opaco.
+ *
+ * A tabela vem de `blogSlugs` (só os 94 slugs, ~4 KB) e não de `allPosts`:
+ * este módulo é o entry do app e carrega em toda página, então importar o
+ * índice inteiro aqui colocaria 59 KB de metadado de blog na home e nas
+ * páginas de serviço, que não listam artigo nenhum.
+ */
+const detailModules = import.meta.glob<{ detail: BlogPostDetail }>("./data/generated/detail/*.ts");
+
+const blogPostRoutes: RouteRecord[] = blogSlugs.map((slug) => ({
+  path: `blog/${slug}`,
+  entry: "src/pages/BlogPost.tsx",
+  lazy: async () => {
+    const [mod, detailMod] = await Promise.all([
+      import("./pages/BlogPost"),
+      detailModules[`./data/generated/detail/${slug}.ts`]?.(),
+    ]);
+    const BlogPost = mod.default;
+    const detail = detailMod?.detail;
+    return { Component: () => <BlogPost slug={slug} detail={detail} /> };
+  },
+}));
+
+/**
+ * App shell — providers + Layout (com Outlet das rotas filhas).
+ *
+ * Já esteve aqui um `QueryClientProvider`, um `TooltipProvider` e os dois
+ * Toasters (radix + sonner). Nenhum tinha consumidor: o site não chama
+ * `useQuery`/`useMutation`, não usa `<Tooltip>` e não dispara `toast()` em
+ * lugar nenhum — só existe o hook `use-toast`, que ninguém importa. Eram
+ * ~110 KB de JS baixado, compilado e montado nas 111 páginas para nada.
+ *
+ * Os componentes seguem em `src/components/ui/` (arquivo não importado não
+ * entra no bundle), então voltar a usar qualquer um é só remontar o provider.
+ */
 const AppShell = () => (
   <UnheadProvider head={head}>
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <ScrollToTop />
-        <ConversionListeners />
-        <Outlet />
-      </TooltipProvider>
-    </QueryClientProvider>
+    <ScrollToTop />
+    <ConversionListeners />
+    <Outlet />
   </UnheadProvider>
 );
 
+/**
+ * Cada página vem por `lazy`, não por import estático, para que o Rollup gere
+ * um chunk por rota. Com import estático o build saía num único app.js de
+ * 2,2 MB: quem abria a home baixava e compilava também as 12 páginas de
+ * serviço, o blog e os 94 posts.
+ *
+ * Duas restrições moldam o formato verboso abaixo:
+ *
+ *  1. O `import(...)` tem que estar literal DENTRO da função passada em `lazy`.
+ *     O vite-react-ssg lê `lazy.toString()` e extrai os imports por regex para
+ *     saber quais assets pertencem à rota (é o que evita flash sem estilo).
+ *     Extrair isso para um helper esconderia o literal no closure.
+ *  2. As páginas exportam `default`; o react-router só olha `Component`.
+ */
 export const routes: RouteRecord[] = [
   {
     path: "/",
@@ -55,65 +83,100 @@ export const routes: RouteRecord[] = [
       {
         Component: Layout,
         children: [
-          { index: true, Component: Index, entry: "src/pages/Index.tsx" },
-          { path: "sobre", Component: Sobre, entry: "src/pages/Sobre.tsx" },
-          { path: "blog", Component: Blog, entry: "src/pages/Blog.tsx" },
           {
-            path: "blog/:slug",
-            Component: BlogPost,
-            entry: "src/pages/BlogPost.tsx",
-            getStaticPaths: () => allPosts.map((p) => `/blog/${p.slug}`),
+            index: true,
+            lazy: async () => ({ Component: (await import("./pages/Index")).default }),
+            entry: "src/pages/Index.tsx",
           },
-          { path: "contato", Component: Contato, entry: "src/pages/Contato.tsx" },
-          { path: "clientes", Component: Clientes, entry: "src/pages/Clientes.tsx" },
-          { path: "servicos/nr13", Component: NR13, entry: "src/pages/servicos/NR13.tsx" },
-          { path: "servicos/nr12", Component: NR12, entry: "src/pages/servicos/NR12.tsx" },
-          { path: "servicos/nr11", Component: NR11, entry: "src/pages/servicos/NR11.tsx" },
-          { path: "servicos/pmoc", Component: PMOC, entry: "src/pages/servicos/PMOC.tsx" },
+          {
+            path: "sobre",
+            lazy: async () => ({ Component: (await import("./pages/Sobre")).default }),
+            entry: "src/pages/Sobre.tsx",
+          },
+          {
+            path: "blog",
+            lazy: async () => ({ Component: (await import("./pages/Blog")).default }),
+            entry: "src/pages/Blog.tsx",
+          },
+          ...blogPostRoutes,
+          {
+            path: "contato",
+            lazy: async () => ({ Component: (await import("./pages/Contato")).default }),
+            entry: "src/pages/Contato.tsx",
+          },
+          {
+            path: "clientes",
+            lazy: async () => ({ Component: (await import("./pages/Clientes")).default }),
+            entry: "src/pages/Clientes.tsx",
+          },
+          {
+            path: "servicos/nr13",
+            lazy: async () => ({ Component: (await import("./pages/servicos/NR13")).default }),
+            entry: "src/pages/servicos/NR13.tsx",
+          },
+          {
+            path: "servicos/nr12",
+            lazy: async () => ({ Component: (await import("./pages/servicos/NR12")).default }),
+            entry: "src/pages/servicos/NR12.tsx",
+          },
+          {
+            path: "servicos/nr11",
+            lazy: async () => ({ Component: (await import("./pages/servicos/NR11")).default }),
+            entry: "src/pages/servicos/NR11.tsx",
+          },
+          {
+            path: "servicos/pmoc",
+            lazy: async () => ({ Component: (await import("./pages/servicos/PMOC")).default }),
+            entry: "src/pages/servicos/PMOC.tsx",
+          },
           {
             path: "servicos/reclassificacao-de-monta",
-            Component: ReclassificacaoMonta,
+            lazy: async () => ({ Component: (await import("./pages/servicos/ReclassificacaoMonta")).default }),
             entry: "src/pages/servicos/ReclassificacaoMonta.tsx",
           },
           {
             path: "servicos/inspecoes-tecnicas",
-            Component: InspecoesTecnicas,
+            lazy: async () => ({ Component: (await import("./pages/servicos/InspecoesTecnicas")).default }),
             entry: "src/pages/servicos/InspecoesTecnicas.tsx",
           },
           {
             path: "servicos/projetos-mecanicos",
-            Component: ProjetosMecanicos,
+            lazy: async () => ({ Component: (await import("./pages/servicos/ProjetosMecanicos")).default }),
             entry: "src/pages/servicos/ProjetosMecanicos.tsx",
           },
           {
             path: "servicos/projetos-climatizacao",
-            Component: ProjetosClimatizacao,
+            lazy: async () => ({ Component: (await import("./pages/servicos/ProjetosClimatizacao")).default }),
             entry: "src/pages/servicos/ProjetosClimatizacao.tsx",
           },
           {
             path: "servicos/consultoria-gratuita",
-            Component: ConsultoriaGratuita,
+            lazy: async () => ({ Component: (await import("./pages/servicos/ConsultoriaGratuita")).default }),
             entry: "src/pages/servicos/ConsultoriaGratuita.tsx",
           },
           /* Landing pages de cauda comercial — separadas dos pilares para não competir com eles */
           {
             path: "servicos/inspecao-nr13-sao-paulo",
-            Component: InspecaoNR13SaoPaulo,
+            lazy: async () => ({ Component: (await import("./pages/servicos/InspecaoNR13SaoPaulo")).default }),
             entry: "src/pages/servicos/InspecaoNR13SaoPaulo.tsx",
           },
           {
             path: "servicos/inspecao-nr13-compressor-de-ar",
-            Component: InspecaoNR13CompressorAr,
+            lazy: async () => ({ Component: (await import("./pages/servicos/InspecaoNR13CompressorAr")).default }),
             entry: "src/pages/servicos/InspecaoNR13CompressorAr.tsx",
           },
           {
             path: "servicos/laudo-de-recuperabilidade",
-            Component: LaudoRecuperabilidade,
+            lazy: async () => ({ Component: (await import("./pages/servicos/LaudoRecuperabilidade")).default }),
             entry: "src/pages/servicos/LaudoRecuperabilidade.tsx",
           },
         ],
       },
-      { path: "*", Component: NotFound, entry: "src/pages/NotFound.tsx" },
+      {
+        path: "*",
+        lazy: async () => ({ Component: (await import("./pages/NotFound")).default }),
+        entry: "src/pages/NotFound.tsx",
+      },
     ],
   },
 ];

@@ -13,7 +13,8 @@ import {
 import RevealSection from "@/components/RevealSection";
 import CountUp from "@/components/CountUp";
 import SeoGuideContent from "@/components/SeoGuideContent";
-import heroInspecoes from "@/assets/inspecoes/hero-inspecoes.jpg";
+import { imgProps } from "@/lib/responsive-img";
+import heroInspecoes from "@/assets/inspecoes/hero-inspecoes.jpg?w=480;768;1024;1440;1920&format=webp&as=img";
 
 const tickerMessages = [
   "⚠️ Estruturas sem inspeção periódica podem colapsar sem aviso",
@@ -331,11 +332,16 @@ export default function InspecoesTecnicas() {
       </div>
 
       <section className="relative overflow-hidden min-h-[85vh] flex items-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroInspecoes})` }}
-          aria-hidden="true"
-        />
+        <div className="absolute inset-0">
+          <img
+            {...imgProps(heroInspecoes)}
+            alt=""
+            aria-hidden="true"
+            className="w-full h-full object-cover"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-primary/70" />
         <div className="absolute inset-0 pattern-dots opacity-10" />
         <div className="relative container mx-auto px-4 py-20 md:py-28">
@@ -452,7 +458,7 @@ export default function InspecoesTecnicas() {
               </div>
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden shadow-elevated h-80 md:h-[28rem]">
-                  <img src={heroInspecoes} alt="Inspeção técnica de equipamentos industriais com engenheiro mecânico" loading="lazy" width={1024} height={768} className="w-full h-full object-cover" />
+                  <img src={heroInspecoes.src} alt="Inspeção técnica de equipamentos industriais com engenheiro mecânico" loading="lazy" decoding="async" width={1024} height={768} className="w-full h-full object-cover" />
                 </div>
                 <div className="absolute -bottom-6 -left-4 md:-left-8 bg-card border-2 border-cta/20 rounded-2xl p-4 shadow-elevated">
                   <div className="flex items-center gap-3">

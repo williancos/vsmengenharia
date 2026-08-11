@@ -12,7 +12,8 @@ import {
 } from "lucide-react";
 import RevealSection from "@/components/RevealSection";
 import CountUp from "@/components/CountUp";
-import heroConsultoria from "@/assets/consultoria/hero-consultoria.jpg";
+import { imgProps } from "@/lib/responsive-img";
+import heroConsultoria from "@/assets/consultoria/hero-consultoria.jpg?w=480;768;1024;1440;1920&format=webp&as=img";
 
 const tickerMessages = [
   "🎁 Consultoria 100% gratuita e sem compromisso",
@@ -120,11 +121,16 @@ export default function ConsultoriaGratuita() {
       </div>
 
       <section className="relative overflow-hidden min-h-[85vh] flex items-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroConsultoria})` }}
-          aria-hidden="true"
-        />
+        <div className="absolute inset-0">
+          <img
+            {...imgProps(heroConsultoria)}
+            alt=""
+            aria-hidden="true"
+            className="w-full h-full object-cover"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-primary/70" />
         <div className="absolute inset-0 pattern-dots opacity-10" />
         <div className="relative container mx-auto px-4 py-20 md:py-28">
@@ -242,7 +248,7 @@ export default function ConsultoriaGratuita() {
               </div>
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden shadow-elevated h-80 md:h-[28rem]">
-                  <img src={heroConsultoria} alt="Consultoria técnica gratuita com engenheiros mecânicos" loading="lazy" width={1024} height={768} className="w-full h-full object-cover" />
+                  <img src={heroConsultoria.src} alt="Consultoria técnica gratuita com engenheiros mecânicos" loading="lazy" decoding="async" width={1024} height={768} className="w-full h-full object-cover" />
                 </div>
                 <div className="absolute -bottom-6 -left-4 md:-left-8 bg-card border-2 border-success/20 rounded-2xl p-4 shadow-elevated">
                   <div className="flex items-center gap-3">

@@ -14,7 +14,8 @@ import RevealSection from "@/components/RevealSection";
 import CountUp from "@/components/CountUp";
 import SeoGuideContent from "@/components/SeoGuideContent";
 import PillarArticles from "@/components/PillarArticles";
-import nr13Img from "@/assets/nr13-real.jpg";
+import { imgProps } from "@/lib/responsive-img";
+import nr13Img from "@/assets/nr13-real.jpg?w=480;768;1024;1440;1920&format=webp&as=img";
 import artConsultoria from "@/assets/nr13/consultoria-tecnica.jpg";
 import artHidrostatico from "@/assets/nr13/teste-hidrostatico.jpg";
 import artTipos from "@/assets/nr13/tipos-inspecoes.jpg";
@@ -349,7 +350,7 @@ export default function NR13() {
       {/* Hero — full-width immersive */}
       <section className="relative overflow-hidden min-h-[85vh] flex items-center">
         <div className="absolute inset-0">
-          <img src={nr13Img} alt="Inspeção NR13 em caldeira industrial" className="w-full h-full object-cover" />
+          <img {...imgProps(nr13Img)} alt="Inspeção NR13 em caldeira industrial" className="w-full h-full object-cover" fetchpriority="high" decoding="async" />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/50" />
           <div className="absolute inset-0 pattern-dots opacity-10" />
         </div>
@@ -481,7 +482,7 @@ export default function NR13() {
                 </div>
                 <div className="relative">
                   <div className="rounded-2xl overflow-hidden shadow-elevated">
-                    <img src={nr13Img} alt="Engenheiro realizando inspeção NR13 em vaso de pressão industrial" className="w-full h-80 md:h-[28rem] object-cover" />
+                    <img src={nr13Img.src} alt="Engenheiro realizando inspeção NR13 em vaso de pressão industrial" className="w-full h-80 md:h-[28rem] object-cover" loading="lazy" decoding="async" />
                   </div>
                   {/* Floating badge */}
                   <div className="absolute -bottom-6 -left-4 md:-left-8 bg-card border-2 border-cta/20 rounded-2xl p-4 shadow-elevated">
@@ -546,7 +547,7 @@ export default function NR13() {
               <div className="relative">
                 <div className="absolute -top-4 -left-4 w-24 h-24 bg-destructive/10 rounded-full blur-2xl" />
                 <div className="relative rounded-2xl overflow-hidden shadow-elevated">
-                  <img src={caldeiraReal} alt="Vasos de pressão industriais em inspeção NR13" className="w-full h-80 md:h-[28rem] object-cover" />
+                  <img src={caldeiraReal} alt="Vasos de pressão industriais em inspeção NR13" className="w-full h-80 md:h-[28rem] object-cover" loading="lazy" decoding="async" />
                   <div className="absolute bottom-6 left-6 bg-destructive text-destructive-foreground rounded-xl px-6 py-4 shadow-lg">
                     <p className="font-black text-lg leading-none">PADRÃO RBC</p>
                     <p className="text-xs mt-1 opacity-90">Rastreabilidade Metrológica Garantida</p>

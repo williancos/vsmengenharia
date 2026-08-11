@@ -5,7 +5,10 @@ import reactRefresh from "eslint-plugin-react-refresh";
 import tseslint from "typescript-eslint";
 
 export default tseslint.config(
-  { ignores: ["dist"] },
+  // `src/data/generated` é saída de scripts/split-blog-data.mjs: herda o
+  // markdown de blogData.ts (com os mesmos espaços irregulares) e não é
+  // editado à mão. `.claude` guarda worktrees de sessão, fora do projeto.
+  { ignores: ["dist", "src/data/generated", ".claude"] },
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ["**/*.{ts,tsx}"],
