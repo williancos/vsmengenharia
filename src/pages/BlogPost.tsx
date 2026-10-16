@@ -1,16 +1,21 @@
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { useEffect, useState, useMemo } from "react";
+import { Fragment, useEffect, useState, useMemo } from "react";
 import { useSEO } from "@/hooks/use-seo";
 import {
   ArrowLeft, ArrowRight, Clock, Eye, Users, Shield, Phone,
-  ChevronRight, CheckCircle2, Share2, Bookmark, Calendar,
+  ChevronRight, CheckCircle2, Share2, Calendar,
   ChevronUp, FileText, AlertTriangle, Lightbulb
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import RevealSection from "@/components/RevealSection";
+import {
+  DiagnosticCta, ProposalCta, PostFaq, TestimonialCard,
+  ServiceSidebarCard, StickyMobileCta, TrustStats, WhatsAppGlyph,
+} from "@/components/BlogConversion";
 import { allPosts, categoryConfig } from "@/data/generated/blogMeta";
 import type { BlogPostDetail } from "@/data/generated/blogDetail";
 import { renderMarkdown } from "@/lib/markdown";
+import { resolveTopic, whatsappHref, articleMessage, PHONE_HREF, PHONE_LABEL } from "@/data/blogConversion";
 
 /**
  * Deriva a página-pilar de serviço a partir da categoria do post (e do slug,
@@ -56,6 +61,7 @@ export default function BlogPost({ slug: slugProp, detail }: { slug?: string; de
   const navigate = useNavigate();
   const [readProgress, setReadProgress] = useState(0);
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const [showStickyCta, setShowStickyCta] = useState(false);
   const [copied, setCopied] = useState(false);
 
   const meta = allPosts.find((p) => p.slug === slug);
@@ -80,6 +86,11 @@ export default function BlogPost({ slug: slugProp, detail }: { slug?: string; de
       const visible = Math.min(Math.max(-rect.top, 0), total);
       setReadProgress(Math.min((visible / total) * 100, 100));
       setShowBackToTop(window.scrollY > 600);
+      // A barra do celular sai quando o CTA final entra na tela — dali para baixo
+      // ele já cumpre o papel, e o rodapé fica livre.
+      const finalCta = document.getElementById("post-cta-final");
+      const reachedFinal = finalCta ? finalCta.getBoundingClientRect().top < window.innerHeight : false;
+      setShowStickyCta(window.scrollY > 600 && !reachedFinal);
     };
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -189,6 +200,13 @@ export default function BlogPost({ slug: slugProp, detail }: { slug?: string; de
 
   const hasContent = post.content && post.content.length > 0;
   const relatedService = post.relatedService ?? resolveRelatedService(post);
+  const topic = resolveTopic(relatedService.href);
+  const articleWhatsApp = whatsappHref(articleMessage(post.title, topic));
+
+  // Diagnóstico entra depois de ~1/3 do corpo: o leitor já entendeu o tema e
+  // ainda tem a maior parte do artigo pela frente. Em post curto, vai no fim.
+  const sectionCount = post.content?.length ?? 0;
+  const diagnosticAfter = sectionCount >= 3 ? Math.max(1, Math.floor(sectionCount / 3)) : sectionCount - 1;
 
   return (
     <>
@@ -224,7 +242,19 @@ export default function BlogPost({ slug: slugProp, detail }: { slug?: string; de
               </div>
 
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-white leading-[1.1] mb-5">{post.title}</h1>
-              <p className="text-lg text-white/70 leading-relaxed mb-8">{post.excerpt}</p>
+              <p className="text-lg text-white/70 leading-relaxed mb-6">{post.excerpt}</p>
+
+              {/* CTA do topo — para quem chega pela busca já decidido a contratar */}
+              <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-8">
+                <a href={articleWhatsApp} target="_blank" rel="noopener noreferrer" data-cta="blog_hero"
+                  className="inline-flex items-center justify-center gap-2 bg-cta text-cta-foreground hover:bg-cta-hover font-semibold text-sm h-11 px-6 rounded-full shadow-[0_6px_20px_-4px_hsl(var(--cta)/0.5)] transition-all hover:-translate-y-0.5">
+                  <WhatsAppGlyph /> Falar com um engenheiro
+                </a>
+                <Link to={relatedService.href}
+                  className="inline-flex items-center justify-center gap-1.5 text-sm font-semibold text-white/85 hover:text-white h-11 px-5 rounded-full border border-white/25 hover:bg-white/10 transition-all">
+                  {relatedService.label} <ChevronRight className="h-4 w-4" />
+                </Link>
+              </div>
 
               {/* Author + Share */}
               <div className="flex items-center justify-between flex-wrap gap-4">
@@ -288,12 +318,15 @@ export default function BlogPost({ slug: slugProp, detail }: { slug?: string; de
               {hasContent ? (
                 <div className="prose prose-lg max-w-none">
                   {post.content!.map((section, i) => (
-                    <RevealSection key={i} delay={i * 50}>
-                      <div
-                        className="mb-8 blog-content"
-                        dangerouslySetInnerHTML={{ __html: renderMarkdown(section) }}
-                      />
-                    </RevealSection>
+                    <Fragment key={i}>
+                      <RevealSection delay={Math.min(i, 4) * 50}>
+                        <div
+                          className="mb-8 blog-content"
+                          dangerouslySetInnerHTML={{ __html: renderMarkdown(section) }}
+                        />
+                      </RevealSection>
+                      {i === diagnosticAfter && <DiagnosticCta topic={topic} postTitle={post.title} />}
+                    </Fragment>
                   ))}
                 </div>
               ) : (
@@ -308,6 +341,14 @@ export default function BlogPost({ slug: slugProp, detail }: { slug?: string; de
                   </div>
                 </RevealSection>
               )}
+
+              {/* Pedido de proposta — fecha o conteúdo editorial, antes do FAQ */}
+              {hasContent && <ProposalCta topic={topic} postTitle={post.title} />}
+
+              {/* FAQ visível: o mesmo conteúdo do FAQPage do JSON-LD e o destino do item "Perguntas frequentes" do sumário */}
+              {post.faq && post.faq.length > 0 && <PostFaq faq={post.faq} />}
+
+              {topic.testimonial && <TestimonialCard testimonial={topic.testimonial} />}
 
               {/* Tags + share */}
               <RevealSection>
@@ -336,14 +377,17 @@ export default function BlogPost({ slug: slugProp, detail }: { slug?: string; de
                     <h3 className="font-bold text-base mb-1">VSM Engenharia</h3>
                     <p className="text-xs text-muted-foreground leading-relaxed mb-3">
                       Especialistas em inspeções NR-13, NR-12, NR-11, Reclassificação de Monta e projetos mecânicos.
-                      Engenheiros com CREA ativo e mais de 10 anos de experiência no Sudeste do Brasil.
+                      Engenheiros com CREA ativo, ART em todos os serviços e atendimento em todo o Sudeste.
                     </p>
-                    <div className="flex gap-2">
+                    <TrustStats className="mb-4" />
+                    <div className="flex flex-wrap gap-2">
                       <Button asChild size="sm" className="rounded-full text-xs bg-cta text-cta-foreground hover:bg-cta-hover">
-                        <Link to="/contato"><Phone className="h-3 w-3 mr-1" />Fale Conosco</Link>
+                        <a href={articleWhatsApp} target="_blank" rel="noopener noreferrer" data-cta="blog_autor">
+                          <WhatsAppGlyph className="h-3 w-3 mr-1" />Falar com um engenheiro
+                        </a>
                       </Button>
                       <Button asChild size="sm" variant="outline" className="rounded-full text-xs">
-                        <Link to="/sobre">Sobre Nós</Link>
+                        <Link to="/sobre">Sobre a VSM</Link>
                       </Button>
                     </div>
                   </div>
@@ -387,33 +431,8 @@ export default function BlogPost({ slug: slugProp, detail }: { slug?: string; de
                   </div>
                 )}
 
-                {/* Related service CTA — sempre presente (deriva da categoria quando o post não define) */}
-                {relatedService && (
-                  <div className="bg-gradient-elegant rounded-xl p-5 relative overflow-hidden">
-                    <div className="absolute inset-0 pattern-dots opacity-10" />
-                    <div className="relative">
-                      <span className="text-[10px] font-bold tracking-widest text-cta uppercase">Serviço Relacionado</span>
-                      <h4 className="text-sm font-bold text-white mt-2 mb-3">{relatedService.label}</h4>
-                      <Button asChild size="sm" className="bg-cta text-cta-foreground hover:bg-cta-hover rounded-full text-xs w-full shadow-md">
-                        <Link to={relatedService.href}>
-                          Solicitar Orçamento <ArrowRight className="h-3.5 w-3.5 ml-1" />
-                        </Link>
-                      </Button>
-                    </div>
-                  </div>
-                )}
-
-                {/* Consult CTA */}
-                <div className="bg-card rounded-xl border border-border/50 p-5">
-                  <div className="flex items-center gap-2 mb-3">
-                    <Phone className="h-4 w-4 text-cta" />
-                    <h4 className="text-sm font-bold">Dúvidas?</h4>
-                  </div>
-                  <p className="text-xs text-muted-foreground mb-3">Fale com um engenheiro especialista sobre este tema.</p>
-                  <Button asChild size="sm" variant="outline" className="rounded-full text-xs w-full">
-                    <Link to="/contato">Falar com Engenheiro</Link>
-                  </Button>
-                </div>
+                {/* Serviço relacionado — sempre presente (deriva da categoria quando o post não define) */}
+                <ServiceSidebarCard topic={topic} postTitle={post.title} service={relatedService} />
               </div>
             </aside>
           </div>
@@ -459,29 +478,35 @@ export default function BlogPost({ slug: slugProp, detail }: { slug?: string; de
       )}
 
       {/* ── CTA Final ── */}
-      <section className="py-14">
+      <section id="post-cta-final" className="py-14">
         <div className="container mx-auto px-4">
           <RevealSection>
             <div className="relative bg-gradient-elegant rounded-2xl p-8 md:p-14 overflow-hidden text-center">
               <div className="absolute inset-0 pattern-dots opacity-10" />
               <div className="absolute top-0 right-0 w-72 h-72 bg-cta/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
               <div className="relative max-w-2xl mx-auto">
-                <span className="bg-cta/20 text-cta px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-5 inline-block">Consultoria Gratuita</span>
-                <h2 className="text-2xl md:text-3xl font-black text-white mb-4 leading-tight">
-                  Precisa de ajuda com <span className="text-cta">{post.category === "Reclassificação" ? "reclassificação de monta" : post.category}?</span>
-                </h2>
+                <span className="bg-cta/20 text-cta px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-5 inline-block">Avaliação técnica sem custo</span>
+                <h2 className="text-2xl md:text-3xl font-black text-white mb-4 leading-tight">{topic.finalHeadline}</h2>
                 <p className="text-white/70 leading-relaxed mb-7">
-                  Nossos engenheiros estão prontos para ajudar sua empresa com orientação técnica gratuita.
+                  Conte o seu caso pelo WhatsApp. Um engenheiro avalia a situação, indica a norma aplicável e envia escopo, prazo e valor em até 24h.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <Button asChild className="bg-cta text-cta-foreground hover:bg-cta-hover font-semibold text-base px-7 h-13 rounded-full shadow-[0_6px_20px_-4px_hsl(var(--cta)/0.45)] hover:scale-[1.02] transition-all">
-                    <Link to="/contato"><Phone className="h-5 w-5 mr-2" />Falar com Engenheiro</Link>
+                    <a href={articleWhatsApp} target="_blank" rel="noopener noreferrer" data-cta="blog_final">
+                      <WhatsAppGlyph className="h-5 w-5 mr-2" />Falar com um engenheiro
+                    </a>
                   </Button>
                   <Button asChild className="bg-white text-primary font-semibold px-7 h-13 rounded-full hover:bg-white/90 transition-all">
                     <Link to={relatedService.href}>
                       {relatedService.label} <ChevronRight className="h-4 w-4 ml-1" />
                     </Link>
                   </Button>
+                </div>
+                <div className="flex items-center justify-center gap-x-5 gap-y-2 flex-wrap text-white/60 text-xs mt-7">
+                  <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-cta" />Engenheiros com CREA ativo</span>
+                  <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-cta" />ART em todos os serviços</span>
+                  <span className="flex items-center gap-1.5"><CheckCircle2 className="h-3.5 w-3.5 text-cta" />Atendimento em todo o Sudeste</span>
+                  <a href={PHONE_HREF} data-cta="blog_final_tel" className="flex items-center gap-1.5 hover:text-white transition-colors"><Phone className="h-3.5 w-3.5 text-cta" />{PHONE_LABEL}</a>
                 </div>
               </div>
             </div>
@@ -497,6 +522,9 @@ export default function BlogPost({ slug: slugProp, detail }: { slug?: string; de
           <ChevronUp className="h-5 w-5" />
         </button>
       )}
+
+      {/* Celular: barra fixa com o tema do post (a lateral só existe no desktop) */}
+      <StickyMobileCta topic={topic} postTitle={post.title} visible={showStickyCta} />
     </>
   );
 }

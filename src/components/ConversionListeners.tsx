@@ -30,6 +30,10 @@ export default function ConversionListeners() {
       const params = {
         link_url: href,
         link_text: anchor.textContent?.trim().slice(0, 100) || undefined,
+        // Posição do botão (data-cta="blog_hero", "blog_diagnostico"...) — mede
+        // qual CTA converte. Para aparecer nos relatórios do GA4, registrar
+        // `cta_location` como dimensão personalizada de evento.
+        cta_location: anchor.dataset.cta || undefined,
       };
 
       // Abre em nova aba/app (target=_blank, tel:, clique com modificador): a
