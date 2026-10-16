@@ -142,13 +142,15 @@ O reservatório de ar comprimido merece destaque: é vaso de pressão sob NR-13,
 | Situação | Prazo máximo |
 | --- | --- |
 | Categorias A e B | 12 meses |
-| Recuperação de álcalis, qualquer categoria | 15 meses |
+| Recuperação de álcalis, qualquer categoria | 18 meses |
 | Categoria A, com teste das válvulas de segurança aos 12 meses | 24 meses |
+| Categoria B, com SGC conforme Anexo IV | 30 meses |
 | Com SPIE — recuperação de álcalis | 24 meses |
 | Com SPIE — categoria B | 24 meses |
 | Com SPIE — categoria A | 30 meses |
+| Com SPIE — categoria A com SIS conforme Anexo IV | 48 meses |
 
-O prazo é **máximo**, não recomendado: o profissional habilitado pode determinar intervalo menor com base em taxa de corrosão medida, histórico e condições operacionais. A classificação por categoria está em [vasos de pressão NR-13](/blog/vasos-de-pressao-nr13-classificacao-categoria) e [categorias de caldeira A, B e C](/blog/categorias-caldeira-a-b-c-nr13).`,
+O prazo é **máximo**, não recomendado: o profissional habilitado pode determinar intervalo menor com base em taxa de corrosão medida, histórico e condições operacionais. A classificação por categoria está em [vasos de pressão NR-13](/blog/vasos-de-pressao-nr13-classificacao-categoria) e [categorias de caldeira A e B](/blog/categorias-caldeira-a-b-c-nr13).`,
 
 `## Custos praticados em SP {#custos}
 

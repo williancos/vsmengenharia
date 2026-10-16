@@ -28,7 +28,7 @@ export const detail: BlogPostDetail = {
     ],
   faq: [
       { question: "Qual a diferença prática entre caldeira flamotubular e aquatubular na inspeção?", answer: "Muda onde a falha aparece e, portanto, onde a inspeção concentra esforço. Na flamotubular, os pontos críticos são o espelho (principalmente na região das mandrilagens), os tubos de fogo, a fornalha e as costuras do corpo — a inspeção interna exige entrada no casco e verificação tubo a tubo. Na aquatubular, o foco vai para os tubos de parede d'água, tubulões, superaquecedores e regiões sujeitas a superaquecimento e incrustação, com maior peso na medição de espessura de tubos e na análise de depósitos." },
-      { question: "Com que frequência a caldeira precisa ser inspecionada?", answer: "A inspeção periódica de caldeiras é constituída por exames interno e externo, com prazo máximo de 12 meses para as categorias A e B e 15 meses para caldeiras de recuperação de álcalis. A categoria A pode ir a 24 meses quando, aos 12 meses, são testadas as pressões de abertura das válvulas de segurança. Estabelecimentos com SPIE podem estender: 24 meses para categoria B e recuperação de álcalis, e 30 meses para categoria A. Além disso, há a inspeção inicial antes da entrada em operação e a extraordinária, disparada por evento." },
+      { question: "Com que frequência a caldeira precisa ser inspecionada?", answer: "A inspeção periódica de caldeiras é constituída por exames interno e externo, com prazo máximo de 12 meses para as categorias A e B e 18 meses para caldeiras de recuperação de álcalis. A categoria A pode ir a 24 meses quando, aos 12 meses, são testadas as pressões de abertura das válvulas de segurança, e a categoria B a 30 meses quando dotada de sistema de gerenciamento de combustão (SGC) conforme o Anexo IV. Estabelecimentos com SPIE podem estender: 24 meses para categoria B e recuperação de álcalis, 30 meses para categoria A e 48 meses para categoria A com sistema instrumentado de segurança (SIS). Além disso, há a inspeção inicial antes da entrada em operação e a extraordinária, disparada por evento." },
       { question: "O que acontece com a caldeira após uma falta de água?", answer: "Falta de água provoca superaquecimento localizado: sem água para retirar o calor, o metal do tubo ou do espelho ultrapassa a temperatura de projeto e sofre alteração metalúrgica, com perda de resistência mecânica, empolamento e possível colapso. O ponto crítico é que a caldeira pode voltar a operar aparentemente normal, sem sinal externo do dano. Por isso a reativação após esse evento exige inspeção extraordinária, com avaliação dirigida às regiões afetadas." },
       { question: "Preciso parar a caldeira para inspecionar?", answer: "O exame externo pode ser conduzido com a caldeira em operação ou em parada curta. O exame interno exige parada completa: despressurização, drenagem, resfriamento, ventilação, remoção de depósitos e abertura das bocas de visita, com entrada em espaço confinado. É evento programado, tipicamente de 2 a 5 dias conforme o porte, e precisa ser previsto no planejamento de produção." }
     ],
@@ -200,8 +200,9 @@ A inspeção periódica de caldeiras é constituída por exames interno e extern
 | Situação | Prazo máximo |
 | --- | --- |
 | Caldeiras das categorias A e B | 12 meses |
-| Caldeiras de recuperação de álcalis, qualquer categoria | 15 meses |
+| Caldeiras de recuperação de álcalis, qualquer categoria | 18 meses |
 | Categoria A, com teste das pressões de abertura das válvulas de segurança aos 12 meses | 24 meses |
+| Categoria B, com sistema de gerenciamento de combustão (SGC) conforme Anexo IV | 30 meses |
 
 Estabelecimentos que possuam **SPIE** — Serviço Próprio de Inspeção de Equipamentos, formalizado conforme anexo específico da norma — podem estender:
 
@@ -210,8 +211,9 @@ Estabelecimentos que possuam **SPIE** — Serviço Próprio de Inspeção de Equ
 | Caldeiras de recuperação de álcalis | 24 meses |
 | Caldeiras da categoria B | 24 meses |
 | Caldeiras da categoria A | 30 meses |
+| Caldeiras da categoria A com sistema instrumentado de segurança (SIS) conforme Anexo IV | 48 meses |
 
-A extensão depende do cumprimento integral dos requisitos do SPIE — não basta ter equipe interna de manutenção. A classificação por categoria está detalhada em [categorias de caldeira A, B e C](/blog/categorias-caldeira-a-b-c-nr13).`,
+A extensão depende do cumprimento integral dos requisitos do SPIE — não basta ter equipe interna de manutenção. A classificação por categoria está detalhada em [categorias de caldeira A e B](/blog/categorias-caldeira-a-b-c-nr13).`,
 
 `## Documentação e operador {#documentacao}
 

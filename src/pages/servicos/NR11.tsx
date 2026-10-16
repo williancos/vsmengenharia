@@ -152,7 +152,7 @@ Movimentar carga é fácil. Movimentar carga **com segurança, repetidamente, em
 
 Este guia foi escrito por engenheiros mecânicos da **VSM Engenharia** com base em mais de 800 inspeções de equipamentos de içamento e centenas de planos de rigging executados em obras críticas do Sudeste — refinaria, siderurgia, montagem industrial, infraestrutura urbana, eólico onshore, óleo & gás. O objetivo é dar à pessoa que assina o documento — ou que confia nele — a base técnica para distinguir um plano de rigging real de uma planilha decorativa.
 
-> NOTA: A NR11 vigente foi atualizada pela **Portaria SEPRT nº 2.318/2020** e aplica-se a transporte, movimentação, armazenagem e manuseio de materiais. Para atividades específicas, ela conversa diretamente com a **NR-18** (construção civil), **NR-12** (segurança em máquinas), **NR-34** (construção naval) e **NR-35** (trabalho em altura).
+> NOTA: A NR11 vigente teve sua última alteração pela **Portaria MTPS nº 505/2016**, que deu nova redação ao Anexo I (chapas de rochas ornamentais), e aplica-se a transporte, movimentação, armazenagem e manuseio de materiais. Para atividades específicas, ela conversa diretamente com a **NR-18** (construção civil), **NR-12** (segurança em máquinas), **NR-34** (construção naval) e **NR-35** (trabalho em altura).
 
 ### O que é a NR11 e qual o seu escopo
 
@@ -170,9 +170,9 @@ Para operações **externas em construção civil**, a NR-18 sobrepõe-se com re
 
 ### Equipamentos cobertos pela NR11 — e o que cada inspeção exige
 
-A inspeção NR11 não é uma atividade única: o escopo varia drasticamente conforme o tipo de equipamento. A tabela abaixo resume os principais equipamentos, periodicidades e exigências de ensaio.
+A inspeção NR11 não é uma atividade única: o escopo varia drasticamente conforme o tipo de equipamento. O texto da NR11 não fixa prazos de inspeção para esses equipamentos: exige que sejam conservados em perfeitas condições de trabalho e que cabos de aço, cordas, correntes, roldanas e ganchos sejam **inspecionados permanentemente**, com substituição das partes defeituosas (subitens 11.1.3 e 11.1.3.1). A única periodicidade anual escrita na norma é a do Relatório de Inspeção do Anexo I, restrito aos equipamentos de movimentação de chapas de rochas ornamentais. As periodicidades da tabela abaixo são, portanto, **referências de prática**, que vêm do manual do fabricante, das normas técnicas ABNT aplicáveis e do plano de manutenção da empresa — e o engenheiro responsável pode reduzi-las conforme o regime de uso.
 
-| Equipamento | Periodicidade mínima | Ensaios típicos | Documentação |
+| Equipamento | Periodicidade de referência (fabricante / normas técnicas / plano de manutenção) | Ensaios típicos | Documentação |
 | --- | --- | --- | --- |
 | Ponte rolante / pórtico | Anual (inspeção completa) + diária (operador) | Visual, END em ganchos e cabos, teste dinâmico de freio | Laudo + ART + Livro de Inspeção |
 | Caminhão munck / guindauto | Anual + teste de carga | Visual, LP em soldas críticas, teste de carga 1,1× SWL | Laudo + ART + Certificado |
@@ -240,7 +240,7 @@ Em guindastes telescópicos, a reação por sapata pode chegar a 60% do peso tot
 
 ### Capacitação de operadores — o item mais ignorado da NR11
 
-Operadores de empilhadeira, ponte rolante, guindaste e munck **precisam de treinamento específico** com carga horária mínima e reciclagem periódica (empilhadeira e ponte rolante a cada 3 anos; guindaste/munck e rigger anualmente). Operador sem certificado é, na prática, o mesmo que máquina sem laudo: a empresa responde objetivamente por qualquer acidente.
+Operadores de equipamentos de transporte com força motriz própria **precisam de treinamento específico**, dado pela empresa (subitem 11.1.5), e de cartão de identificação com nome e fotografia, válido por 1 ano e revalidado mediante exame de saúde completo (subitens 11.1.6 e 11.1.6.1). A NR11 não fixa carga horária nem prazo de reciclagem do treinamento; esses parâmetros vêm do programa de capacitação da empresa, do manual do fabricante e das normas técnicas aplicáveis. Operador sem certificado é, na prática, o mesmo que máquina sem laudo: a empresa responde objetivamente por qualquer acidente.
 
 O conteúdo programático e as cargas horárias por equipamento estão detalhados em [Treinamento NR11: conteúdo e carga horária](/blog/treinamento-nr11-conteudo-carga-horaria) e em [Validade da NR11: quando renovar o treinamento](/blog/validade-nr11-quando-renovar-treinamento).
 
@@ -334,7 +334,7 @@ Rio de Janeiro: capital, Niterói, São Gonçalo, Duque de Caxias, Itaboraí (CO
 
 ### P: Qual a periodicidade da inspeção NR11?
 
-> R: Para a maioria dos equipamentos a inspeção técnica é **anual**, mas há exigência de **inspeção diária** (pré-operação) feita pelo operador, registrada em checklist. Empilhadeiras geralmente têm inspeção semestral mais detalhada além da anual.
+> R: O texto da NR11 não fixa prazo: exige que os equipamentos sejam conservados em perfeitas condições e que cabos, correntes, roldanas e ganchos sejam **inspecionados permanentemente** (subitem 11.1.3.1). Na prática, a periodicidade vem do manual do fabricante, das normas técnicas aplicáveis e do plano de manutenção: o usual é verificação **diária** pré-operação pelo operador, registrada em checklist, e inspeção técnica com laudo e ART pelo menos **anual** — em empilhadeiras de uso intensivo, também uma inspeção técnica semestral.
 
 ### P: Preciso de teste de carga em todo munck?
 

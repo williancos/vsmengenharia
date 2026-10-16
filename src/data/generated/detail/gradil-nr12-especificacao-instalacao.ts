@@ -41,7 +41,7 @@ Especificação correta envolve **vão de malha**, **altura**, **fixação estru
 - **Fixo** — instalado com fixação rígida, sem abertura prevista durante operação normal
 - **Móvel** — com portas, portinholas ou setores deslizantes para acesso de manutenção, geralmente com intertravamento de segurança
 
-O gradil enquadra-se como **proteção fixa ou móvel** conforme classificação da NR-12 (item 12.38 e seguintes), abordada também em [proteção fixa e móvel NR-12](/blog/protecao-fixa-movel-nr12).`,
+O gradil enquadra-se como **proteção fixa ou móvel** conforme classificação da NR-12 (subitens 12.5.4 a 12.5.8), abordada também em [proteção fixa e móvel NR-12](/blog/protecao-fixa-movel-nr12).`,
 
 `## Especificações técnicas {#especificacoes-tecnicas}
 

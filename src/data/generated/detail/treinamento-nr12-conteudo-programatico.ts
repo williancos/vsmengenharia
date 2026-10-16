@@ -38,9 +38,9 @@ A NR-12 (Anexo II) define conteúdo programático mínimo, carga horária e os t
 
 A NR-12 trata treinamento em vários itens:
 
-- **Item 12.86** — capacitação obrigatória antes da operação
-- **Anexo II** — conteúdo programático e carga horária mínima
-- **Itens 12.87 a 12.91** — periodicidade, reciclagem, supervisão
+- **Subitens 12.16.1 a 12.16.3** — capacitação obrigatória antes que o trabalhador assuma a função, com carga horária mínima definida pelo empregador
+- **Anexo II** — conteúdo programático mínimo
+- **Subitens 12.16.8 e 12.16.8.1** — reciclagem quando houver modificações que impliquem novos riscos
 
 A norma exige treinamento **prévio à operação**: operador novo ou transferido para máquina diferente não pode operar antes da capacitação. Operação sem treinamento é causa de autuação direta.`,
 

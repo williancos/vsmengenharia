@@ -114,7 +114,7 @@ Faixas observadas em SP 2026:
 | Vaso categoria V (externa + interna + ART) | R$ 1.800 – R$ 3.500 |
 | Vaso categoria III/IV (com ensaios básicos) | R$ 3.500 – R$ 6.500 |
 | Vaso categoria I/II (com ensaios completos) | R$ 6.500 – R$ 12.000 |
-| Caldeira flamotubular C (externa + interna) | R$ 3.500 – R$ 6.000 |
+| Caldeira flamotubular B de pequeno porte (exames interno e externo) | R$ 3.500 – R$ 6.000 |
 | Caldeira flamotubular B (com ensaios) | R$ 6.000 – R$ 10.000 |
 | Caldeira aquatubular A | R$ 10.000 – R$ 25.000+ |
 | Tubulação por metro linear | R$ 80 – R$ 200/m |

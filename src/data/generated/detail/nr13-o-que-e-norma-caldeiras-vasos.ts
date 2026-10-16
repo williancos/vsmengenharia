@@ -10,7 +10,7 @@ export const detail: BlogPostDetail = {
   keyTakeaways: [
       "NR-13 estabelece os requisitos mínimos de segurança para caldeiras, vasos de pressão e tubulações",
       "Aplica-se a equipamentos em operação, fabricação, montagem e reparo",
-      "Define categorias de equipamentos (A/B/C para caldeiras; I a V para vasos)",
+      "Define categorias de equipamentos (A e B para caldeiras; I a V para vasos)",
       "Inspeção e laudo são privativos de Profissional Legalmente Habilitado (PLH)"
     ],
   toc: [
@@ -25,18 +25,18 @@ export const detail: BlogPostDetail = {
     ],
   faq: [
       { question: "Quais equipamentos estão sujeitos à NR-13?", answer: "Caldeiras a vapor de qualquer pressão e capacidade; vasos de pressão com PV maior que 8 (produto de pressão em MPa pelo volume em m³); tubulações industriais que transportam fluidos perigosos ou em condições críticas; trocadores de calor, autoclaves, vasos cilíndricos e esféricos sob pressão. A norma cobre operação, manutenção, inspeção e reparo desses equipamentos." },
-      { question: "Quem é o Profissional Legalmente Habilitado (PLH) na NR-13?", answer: "É o engenheiro mecânico, naval ou de áreas afins com registro ativo no CREA e qualificação reconhecida pelo SNQC (Sistema Nacional de Qualificação e Certificação) para caldeiras categoria A e vasos categoria I. Para equipamentos de menor categoria, basta CREA ativo com atribuição compatível. PLH assina laudos, prontuário e ART." },
-      { question: "Caldeira pequena precisa cumprir NR-13?", answer: "Sim. A NR-13 aplica-se a toda caldeira a vapor independente do porte. Mesmo geradores de vapor de pequena capacidade (caldeira de panificação, vapor para autoclave hospitalar) estão sujeitos à norma. Categorias diferenciam exigências e periodicidade, mas a obrigação principal é uniforme." },
+      { question: "Quem é o Profissional Legalmente Habilitado (PLH) na NR-13?", answer: "É o profissional com competência legal para o exercício da engenharia nas atividades de projeto de construção, acompanhamento da operação e da manutenção, inspeção e supervisão de inspeção de caldeiras, vasos de pressão, tubulações e tanques metálicos, conforme a regulamentação profissional vigente (subitem 13.3.2). A certificação de competências do PLH existe, mas é voluntária, por organismo acreditado pelo Inmetro (subitem 13.3.2.1 e Anexo III). O PLH assina laudos, prontuário e ART." },
+      { question: "Caldeira pequena precisa cumprir NR-13?", answer: "Sim, se a pressão de operação for superior a 60 kPa (subitem 13.2.1, alínea a): a NR-13 não distingue porte nem setor, e caldeiras pequenas, como as de panificação e lavanderia, entram na categoria B. A exceção são as caldeiras com volume inferior a cem litros, que estão fora do campo de aplicação da norma (subitem 13.2.2, alínea k)." },
       { question: "Vaso de ar comprimido está em NR-13?", answer: "Depende. Vaso de ar comprimido com PV maior que 8 (ex: pressão de 10 bar × volume de 0,1 m³ = PV de 1 — não está; pressão de 8 bar × volume de 1 m³ = PV de 8 — está). O cálculo do PV é o critério primário. Em dúvida, consultar engenheiro responsável antes de assumir isenção." }
     ],
   content: [
 `A **NR-13** é a Norma Regulamentadora nº 13, do Ministério do Trabalho, que define os requisitos mínimos de segurança para projeto, operação, manutenção, inspeção e reparo de **caldeiras, vasos de pressão e tubulações** em instalações industriais. Vincula empregadores, fabricantes, importadores, montadores e Profissionais Legalmente Habilitados (PLH).
 
-É uma das normas mais técnicas do conjunto regulamentador brasileiro, com terminologia rigorosa, categorização precisa de equipamentos e exigência de qualificação certificada para os profissionais em equipamentos críticos. Este artigo apresenta a estrutura, o objetivo, os equipamentos abrangidos e as categorias.`,
+É uma das normas mais técnicas do conjunto regulamentador brasileiro, com terminologia rigorosa, categorização precisa de equipamentos e exigências de capacitação para os operadores. Este artigo apresenta a estrutura, o objetivo, os equipamentos abrangidos e as categorias.`,
 
 `## O que é a NR-13 {#o-que-e-nr13}
 
-A NR-13 é norma regulamentadora vinculada à **CLT (art. 200)** e atualizada pela **Portaria SEPRT nº 1.082/2018**, com revisões posteriores. Foi instituída originalmente em 1978 e reformulada com profundidade em 1995, 2014 e 2018. A versão atual é tecnicamente alinhada com normas internacionais (ASME, EN 13445, ISO).
+A NR-13 é norma regulamentadora vinculada à **CLT (art. 200)** e tem hoje a redação dada pela **Portaria MTP nº 1.846/2022**, alterada pela Portaria MTP nº 4.219/2022. Foi instituída em 1978 e passou por alterações totais em 1984, 1994 e 2014, além de revisões parciais em 2008, 2017, 2018 e 2019. A versão atual é tecnicamente alinhada com normas internacionais (ASME, EN 13445, ISO).
 
 Define requisitos para:
 
@@ -72,7 +72,7 @@ A norma vincula:
 | Importador | Equivalência ao código de projeto, documentação |
 | Empresa montadora | Qualificação WPS/PQR, soldadores qualificados |
 | PLH | Inspeção, laudo, prontuário, ART |
-| Operador | Curso obrigatório (caldeira categoria A) |
+| Operador de caldeira | Treinamento de segurança (mínimo 40 h) e prática supervisionada (80 h na categoria A, 60 h na B) — Anexo I |
 
 Não há isenção por porte ou setor — caldeira de panificação familiar está tão obrigada quanto refinaria de petróleo.`,
 
@@ -80,13 +80,14 @@ Não há isenção por porte ou setor — caldeira de panificação familiar est
 
 A NR-13 está organizada em blocos:
 
-- **13.1 a 13.3** — disposições gerais e definições
+- **13.1 a 13.3** — objetivo, campo de aplicação e disposições gerais
 - **13.4** — caldeiras (categoria, instalação, operação, inspeção)
 - **13.5** — vasos de pressão (categoria, classificação, inspeção)
 - **13.6** — tubulações
-- **Anexos I a IV** — definições e tabelas complementares
+- **13.7** — tanques metálicos de armazenamento
+- **Anexos I a IV e Glossário** — capacitação, SPIE, certificação do PLH, ampliação de prazos e terminologia
 
-O item **13.4.4** (inspeção de caldeiras) e o item **13.5.4** (inspeção de vasos) são os mais cobrados em auditoria. O item **13.4.1.6** trata da operação por pessoal qualificado em caldeira categoria A.`,
+O item **13.4.4** (inspeção de caldeiras) e o item **13.5.4** (inspeção de vasos) são os mais cobrados em auditoria. O subitem **13.4.3.3** exige que toda caldeira esteja sob operação e controle de operador de caldeira.`,
 
 `## Anexos da NR-13 {#anexos-da-nr13}
 
@@ -94,12 +95,12 @@ A NR-13 tem anexos com função técnica específica:
 
 | Anexo | Conteúdo |
 | --- | --- |
-| **I** | Glossário (terminologia técnica) |
-| **II** | Capacitação de Operadores de Caldeira |
-| **III** | Requisitos para Certificação de SPIE-NR-13 |
-| **IV** | Notificações e Investigações de Acidentes e Ocorrências |
+| **I** | Capacitação e treinamento (operadores de caldeira e de unidades de processo) |
+| **II** | Requisitos para certificação de Serviço Próprio de Inspeção de Equipamentos (SPIE) |
+| **III** | Certificação voluntária de competências do PLH |
+| **IV** | Ampliação de prazo de inspeção de caldeiras categoria A com SIS e categoria B com SGC |
 
-O Anexo II é o documento de referência para o **curso obrigatório de operador de caldeira categoria A** — assunto tratado em [treinamento NR-13](/blog/treinamento-nr13-operador-caldeira-prazo).`,
+A terminologia técnica fica no Glossário, ao final da norma. O Anexo I é o documento de referência para o **treinamento de operador de caldeira de qualquer categoria** — assunto tratado em [treinamento NR-13](/blog/treinamento-nr13-operador-caldeira-prazo).`,
 
 `## Categorias de equipamentos {#categorias-de-equipamentos}
 
@@ -109,11 +110,10 @@ A categorização é a base de toda a estrutura NR-13.
 
 | Categoria | Critério | Operador exigido |
 | --- | --- | --- |
-| **A** | PMTA maior que 1,96 MPa (~20 kgf/cm²) | Operador qualificado pelo Anexo II |
-| **B** | PMTA entre 0,588 MPa e 1,96 MPa | Operador treinado |
-| **C** | PMTA menor que 0,588 MPa e volume maior que 100 L | Operador treinado |
+| **A** | Pressão de operação igual ou superior a 1.960 kPa (19,98 kgf/cm²) | Treinamento de 40 h + prática supervisionada de 80 h (Anexo I) |
+| **B** | Pressão de operação superior a 60 kPa e inferior a 1.960 kPa | Treinamento de 40 h + prática supervisionada de 60 h (Anexo I) |
 
-PMTA = Pressão Máxima de Trabalho Admissível. Detalhamento em [categorias de caldeira A, B e C](/blog/categorias-caldeira-a-b-c-nr13).
+O critério é a pressão de operação (subitem 13.4.1.1). A categoria C, que aparece em laudos e materiais antigos, existiu nas redações de 1994 e 2014 e não consta da norma vigente. Detalhamento em [categorias de caldeira A e B](/blog/categorias-caldeira-a-b-c-nr13).
 
 ### Vasos de pressão
 

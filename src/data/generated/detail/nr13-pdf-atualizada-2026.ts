@@ -9,7 +9,7 @@ export const detail: BlogPostDetail = {
   keywords: ["nr13 pdf", "nr13 pdf atualizada", "nr13 atualizada", "download nr13", "nr13 vigente"],
   keyTakeaways: [
       "Versão oficial da NR-13 está sempre no portal gov.br/trabalho-e-emprego",
-      "Última grande atualização foi pela Portaria SEPRT 1.082/2018, com revisões posteriores",
+      "Redação vigente dada pela Portaria MTP 1.846/2022, alterada pela Portaria MTP 4.219/2022",
       "Portarias menores continuam saindo — acompanhar é parte da conformidade",
       "Cuidado com PDFs antigos circulando em sites genéricos — frequentemente desatualizados"
     ],
@@ -25,7 +25,7 @@ export const detail: BlogPostDetail = {
     ],
   faq: [
       { question: "Onde baixar a NR-13 atualizada gratuitamente?", answer: "No portal oficial do Ministério do Trabalho e Emprego: gov.br/trabalho-e-emprego, seção de Normas Regulamentadoras. Ali está sempre a versão consolidada vigente, com todas as portarias incorporadas. É a única fonte 100% confiável. PDFs circulando em outros sites podem estar desatualizados." },
-      { question: "Quando foi a última atualização grande da NR-13?", answer: "A última reformulação ampla foi pela Portaria SEPRT 1.082/2018, que reorganizou o texto e atualizou várias exigências técnicas. Após isso, vieram portarias menores ajustando itens específicos e anexos. A norma continua viva — novas portarias podem ser publicadas a qualquer momento." },
+      { question: "Quando foi a última atualização grande da NR-13?", answer: "A redação vigente foi dada pela Portaria MTP nº 1.846/2022 e alterada pela Portaria MTP nº 4.219/2022. Antes dela, a última alteração total foi a da Portaria MTE nº 594/2014, seguida das revisões parciais das Portarias MTb nº 1.084/2017 e nº 1.082/2018 — esta incluiu os tanques metálicos de armazenamento e deu à norma o título atual — e da Portaria SEPRT nº 915/2019. Novas portarias podem ser publicadas a qualquer momento; a referência é sempre o PDF vigente no gov.br." },
       { question: "Laudos NR-13 emitidos antes de 2018 ainda valem?", answer: "Tecnicamente continuam válidos como evidência de inspeção na data de emissão, mas a conformidade aos critérios revisados precisa ser verificada. Recomendação: revisar todos os laudos pré-2018 quando houver fiscalização programada, mudança de processo, sinistro ou na próxima inspeção periódica." },
       { question: "Posso usar versão impressa antiga da NR-13?", answer: "Para consulta histórica, sim. Para conformidade técnica e cumprimento legal, não — sempre usar versão vigente. Em fiscalização, auditor verifica conformidade contra o texto atual, e não contra versões anteriores. Manter cópia impressa antiga é útil para histórico, mas operação técnica segue o texto vigente." }
     ],
@@ -48,7 +48,7 @@ Fontes alternativas (porém oficiais):
 - **Portal da SIT (Secretaria de Inspeção do Trabalho)**
 - **Portal CONFEA/CREA** — referências técnicas vinculadas
 
-Evite sites genéricos de download, blogs e fóruns — PDFs ali podem ser de versões pré-2018.`,
+Evite sites genéricos de download, blogs e fóruns — PDFs ali podem ser de versões anteriores a 2022.`,
 
 `## Últimas atualizações relevantes {#ultimas-atualizacoes}
 
@@ -56,12 +56,14 @@ Histórico de portarias relevantes:
 
 | Ano | Portaria | O que mudou |
 | --- | --- | --- |
-| 2014 | Portaria MTE 594/2014 | Atualização técnica e Anexo II revisado |
-| 2018 | Portaria SEPRT 1.082/2018 | Reformulação completa, texto base atual |
-| 2019 a 2024 | Portarias SIT diversas | Ajustes pontuais |
-| 2025 a 2026 | Notas técnicas | Esclarecimentos de interpretação |
+| 2014 | Portaria MTE 594/2014 | Alteração total; a norma passa a se chamar "Caldeiras, Vasos de Pressão e Tubulações" |
+| 2017 | Portaria MTb 1.084/2017 | Alteração parcial |
+| 2018 | Portaria MTb 1.082/2018 | Alteração parcial: inclui tanques metálicos de armazenamento (título atual), ampliação de prazos de caldeiras com SIS e certificação voluntária de competências do PH |
+| 2019 | Portaria SEPRT 915/2019 | Alteração parcial: harmonização com a nova NR-01 |
+| 2022 | Portaria MTP 1.846/2022 | Redação vigente |
+| 2022 | Portaria MTP 4.219/2022 | Alteração da redação vigente |
 
-A frequência de atualizações **aumentou após 2018**. Acompanhar virou parte do trabalho técnico do PLH e do escritório de engenharia.`,
+A frequência de atualizações **aumentou após 2014**. Acompanhar virou parte do trabalho técnico do PLH e do escritório de engenharia.`,
 
 `## O que mudou recentemente {#o-que-mudou-recentemente}
 

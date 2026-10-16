@@ -3102,7 +3102,7 @@ Conheça o serviço de [adequação NR-12](/servicos/nr12) e os artigos [adequa�
       { id: "faq", label: "Perguntas frequentes" }
     ],
     faq: [
-      { question: "Qual a periodicidade da inspeção de caldeira?", answer: "A inspeção periódica é constituída por exames interno e externo, com prazo máximo de 12 meses para as categorias A e B e 15 meses para caldeiras de recuperação de álcalis de qualquer categoria. A categoria A pode chegar a 24 meses quando, aos 12 meses, são testadas as pressões de abertura das válvulas de segurança. Estabelecimentos com SPIE podem estender: 24 meses para categoria B e para recuperação de álcalis, e 30 meses para categoria A." },
+      { question: "Qual a periodicidade da inspeção de caldeira?", answer: "A inspeção periódica é constituída por exames interno e externo, com prazo máximo de 12 meses para as categorias A e B e 18 meses para caldeiras de recuperação de álcalis de qualquer categoria. A categoria A pode chegar a 24 meses quando, aos 12 meses, são testadas as pressões de abertura das válvulas de segurança, e a categoria B pode chegar a 30 meses quando dotada de sistema de gerenciamento de combustão (SGC) conforme o Anexo IV. Estabelecimentos com SPIE podem estender: 24 meses para categoria B e para recuperação de álcalis, 30 meses para categoria A e 48 meses para categoria A com sistema instrumentado de segurança (SIS) conforme o Anexo IV." },
       { question: "Qual a periodicidade da inspeção de vaso de pressão?", answer: "Depende da categoria, de I a V. Sem SPIE, o exame externo vai de 1 ano (categoria I) a 5 anos (categoria V), e o exame interno de 3 anos (categoria I) a 10 anos (categoria V). Estabelecimentos com SPIE têm prazos ampliados dentro dos limites da norma. A categoria decorre da combinação entre classe do fluido e o produto pressão × volume, e precisa estar definida no prontuário." },
       { question: "O laudo NR-13 tem prazo de validade?", answer: "O que tem prazo é a inspeção, não o laudo como documento. O laudo registra uma inspeção realizada em uma data e define, tecnicamente, quando a próxima deve ocorrer. Na prática, a empresa fica irregular quando o prazo da próxima inspeção é ultrapassado sem que ela aconteça — e não quando o papel completa um ano. Por isso o controle correto é por data-limite da próxima inspeção, não por data de emissão." },
       { question: "Posso adiar uma inspeção NR-13?", answer: "Os prazos da norma são máximos e não admitem prorrogação administrativa por conveniência. O que existe é a possibilidade de o profissional habilitado, com base em análise técnica documentada — histórico, taxa de corrosão medida, condições operacionais — estabelecer um plano que justifique tecnicamente as decisões sobre o equipamento. Ultrapassar prazo sem essa fundamentação registrada em prontuário expõe a empresa a autuação e enfraquece qualquer defesa em caso de acidente." }
@@ -3135,8 +3135,9 @@ A inspeção periódica de caldeiras é constituída por **exames interno e exte
 | Situação | Prazo máximo |
 | --- | --- |
 | Caldeiras das categorias A e B | **12 meses** |
-| Caldeiras de recuperação de álcalis, qualquer categoria | **15 meses** |
+| Caldeiras de recuperação de álcalis, qualquer categoria | **18 meses** |
 | Categoria A, com teste das pressões de abertura das válvulas de segurança aos 12 meses | **24 meses** |
+| Categoria B, com sistema de gerenciamento de combustão (SGC) conforme Anexo IV | **30 meses** |
 
 Com **SPIE** formalizado conforme o anexo específico da norma:
 
@@ -3145,10 +3146,11 @@ Com **SPIE** formalizado conforme o anexo específico da norma:
 | Caldeiras de recuperação de álcalis | **24 meses** |
 | Caldeiras da categoria B | **24 meses** |
 | Caldeiras da categoria A | **30 meses** |
+| Caldeiras da categoria A com sistema instrumentado de segurança (SIS) conforme Anexo IV | **48 meses** |
 
 Observação importante sobre caldeira: diferentemente do que ocorre com vasos, o exame interno e o externo **não têm prazos separados** — a inspeção periódica compreende os dois, no mesmo prazo. Isso significa que toda inspeção periódica de caldeira exige parada programada.
 
-A classificação por categoria está em [categorias de caldeira A, B e C](/blog/categorias-caldeira-a-b-c-nr13), e o escopo por tipo construtivo em [inspeção NR-13 em caldeiras](/blog/caldeiras-flamotubulares-aquatubulares).`,
+A classificação por categoria está em [categorias de caldeira A e B](/blog/categorias-caldeira-a-b-c-nr13), e o escopo por tipo construtivo em [inspeção NR-13 em caldeiras](/blog/caldeiras-flamotubulares-aquatubulares).`,
 
 `## Prazos para vasos de pressão {#vasos}
 
@@ -4029,7 +4031,7 @@ Conheça o serviço de [adequação NR-12](/servicos/nr12) e os artigos [aprecia
     ],
     faq: [
       { question: "Qual a diferença prática entre caldeira flamotubular e aquatubular na inspeção?", answer: "Muda onde a falha aparece e, portanto, onde a inspeção concentra esforço. Na flamotubular, os pontos críticos são o espelho (principalmente na região das mandrilagens), os tubos de fogo, a fornalha e as costuras do corpo — a inspeção interna exige entrada no casco e verificação tubo a tubo. Na aquatubular, o foco vai para os tubos de parede d'água, tubulões, superaquecedores e regiões sujeitas a superaquecimento e incrustação, com maior peso na medição de espessura de tubos e na análise de depósitos." },
-      { question: "Com que frequência a caldeira precisa ser inspecionada?", answer: "A inspeção periódica de caldeiras é constituída por exames interno e externo, com prazo máximo de 12 meses para as categorias A e B e 15 meses para caldeiras de recuperação de álcalis. A categoria A pode ir a 24 meses quando, aos 12 meses, são testadas as pressões de abertura das válvulas de segurança. Estabelecimentos com SPIE podem estender: 24 meses para categoria B e recuperação de álcalis, e 30 meses para categoria A. Além disso, há a inspeção inicial antes da entrada em operação e a extraordinária, disparada por evento." },
+      { question: "Com que frequência a caldeira precisa ser inspecionada?", answer: "A inspeção periódica de caldeiras é constituída por exames interno e externo, com prazo máximo de 12 meses para as categorias A e B e 18 meses para caldeiras de recuperação de álcalis. A categoria A pode ir a 24 meses quando, aos 12 meses, são testadas as pressões de abertura das válvulas de segurança, e a categoria B a 30 meses quando dotada de sistema de gerenciamento de combustão (SGC) conforme o Anexo IV. Estabelecimentos com SPIE podem estender: 24 meses para categoria B e recuperação de álcalis, 30 meses para categoria A e 48 meses para categoria A com sistema instrumentado de segurança (SIS). Além disso, há a inspeção inicial antes da entrada em operação e a extraordinária, disparada por evento." },
       { question: "O que acontece com a caldeira após uma falta de água?", answer: "Falta de água provoca superaquecimento localizado: sem água para retirar o calor, o metal do tubo ou do espelho ultrapassa a temperatura de projeto e sofre alteração metalúrgica, com perda de resistência mecânica, empolamento e possível colapso. O ponto crítico é que a caldeira pode voltar a operar aparentemente normal, sem sinal externo do dano. Por isso a reativação após esse evento exige inspeção extraordinária, com avaliação dirigida às regiões afetadas." },
       { question: "Preciso parar a caldeira para inspecionar?", answer: "O exame externo pode ser conduzido com a caldeira em operação ou em parada curta. O exame interno exige parada completa: despressurização, drenagem, resfriamento, ventilação, remoção de depósitos e abertura das bocas de visita, com entrada em espaço confinado. É evento programado, tipicamente de 2 a 5 dias conforme o porte, e precisa ser previsto no planejamento de produção." }
     ],
@@ -4201,8 +4203,9 @@ A inspeção periódica de caldeiras é constituída por exames interno e extern
 | Situação | Prazo máximo |
 | --- | --- |
 | Caldeiras das categorias A e B | 12 meses |
-| Caldeiras de recuperação de álcalis, qualquer categoria | 15 meses |
+| Caldeiras de recuperação de álcalis, qualquer categoria | 18 meses |
 | Categoria A, com teste das pressões de abertura das válvulas de segurança aos 12 meses | 24 meses |
+| Categoria B, com sistema de gerenciamento de combustão (SGC) conforme Anexo IV | 30 meses |
 
 Estabelecimentos que possuam **SPIE** — Serviço Próprio de Inspeção de Equipamentos, formalizado conforme anexo específico da norma — podem estender:
 
@@ -4211,8 +4214,9 @@ Estabelecimentos que possuam **SPIE** — Serviço Próprio de Inspeção de Equ
 | Caldeiras de recuperação de álcalis | 24 meses |
 | Caldeiras da categoria B | 24 meses |
 | Caldeiras da categoria A | 30 meses |
+| Caldeiras da categoria A com sistema instrumentado de segurança (SIS) conforme Anexo IV | 48 meses |
 
-A extensão depende do cumprimento integral dos requisitos do SPIE — não basta ter equipe interna de manutenção. A classificação por categoria está detalhada em [categorias de caldeira A, B e C](/blog/categorias-caldeira-a-b-c-nr13).`,
+A extensão depende do cumprimento integral dos requisitos do SPIE — não basta ter equipe interna de manutenção. A classificação por categoria está detalhada em [categorias de caldeira A e B](/blog/categorias-caldeira-a-b-c-nr13).`,
 
 `## Documentação e operador {#documentacao}
 
@@ -7004,7 +7008,7 @@ A norma não é estática — recebe atualizações periódicas via portarias da
 
 `## Objetivo da norma {#objetivo-da-norma}
 
-O objetivo formal está no item 12.1: garantir a saúde e a integridade física dos trabalhadores que interagem com máquinas. Na prática, isso se traduz em três pilares:
+O objetivo formal está no subitem 12.1.1: garantir a saúde e a integridade física dos trabalhadores que interagem com máquinas. Na prática, isso se traduz em três pilares:
 
 1. **Eliminar o risco na fonte** — projeto que torna o acidente impossível
 2. **Reduzir o risco com proteções** — quando o risco não pode ser eliminado
@@ -7028,16 +7032,20 @@ Não há isenção por porte: oficina mecânica de bairro com um único esmeril 
 
 `## Estrutura e itens principais {#estrutura-da-nr12}
 
-A NR-12 está organizada em 50+ subitens principais. Os blocos centrais:
+Desde a Portaria SEPRT nº 916/2019, a NR-12 está organizada em 18 itens, mais os anexos. Os blocos centrais:
 
-- **12.1 a 12.3** — princípios gerais e responsabilidades
-- **12.4 a 12.13** — arranjo físico, instalações elétricas, dispositivos de partida e parada
-- **12.14 a 12.37** — sistemas de segurança (proteções, intertravamentos)
-- **12.38 a 12.46** — dispositivos de parada de emergência
-- **12.47 a 12.63** — manutenção, inspeção, treinamento
-- **12.64+** — disposições gerais, transitórias e definições
+- **12.1** — princípios gerais
+- **12.2 e 12.3** — arranjo físico e instalações e dispositivos elétricos
+- **12.4** — dispositivos de partida, acionamento e parada
+- **12.5** — sistemas de segurança (proteções, intertravamentos)
+- **12.6** — dispositivos de parada de emergência
+- **12.7 a 12.10** — componentes pressurizados, transportadores, aspectos ergonômicos e riscos adicionais
+- **12.11** — manutenção, inspeção, preparação, ajuste, reparo e limpeza
+- **12.12 a 12.14** — sinalização, manuais e procedimentos de trabalho
+- **12.15 a 12.18** — projeto e fabricação, capacitação, outros requisitos e disposições finais
+- **Anexos I a XII** — distâncias de segurança, conteúdo programático da capacitação, meios de acesso e requisitos por tipo de máquina
 
-O item mais cobrado em fiscalização é o **12.38** (parada de emergência) e os subitens 12.24 a 12.27 (proteções fixas e móveis).`,
+Os itens mais cobrados em fiscalização são o **12.6** (parada de emergência) e os subitens **12.5.4 a 12.5.8** (proteções fixas e móveis e intertravamento).`,
 
 `## Os 12 anexos da NR-12 {#anexos-da-nr12}
 
@@ -7511,7 +7519,7 @@ A apreciação é **viva**: precisa ser revisada a cada mudança de processo, mo
 
 `## Base normativa: ISO 12100 e ISO 13849-1 {#base-normativa}
 
-A NR-12 (item 12.39 e seguintes) **aceita** metodologias internacionalmente reconhecidas. As duas normas centrais:
+A NR-12 (subitens 12.1.9 a 12.1.9.1.1) **aceita** como alternativas técnicas as previstas nas normas técnicas oficiais e nas normas internacionais aplicáveis. As duas normas centrais:
 
 | Norma | Função |
 | --- | --- |
@@ -7841,7 +7849,7 @@ Veja [NR-12: o que é](/blog/nr12-o-que-e-norma-maquinas-equipamentos) e o servi
       { id: "faq", label: "Perguntas frequentes" }
     ],
     faq: [
-      { question: "Qual a altura mínima do guarda-corpo NR-12?", answer: "1,10 m (cento e dez centímetros) medido a partir do piso, conforme item 12.71 da NR-12 e Anexo III. Para áreas com risco aumentado (quedas em equipamentos perigosos, materiais que projetam), a altura pode ser elevada conforme apreciação de risco específica. Em hipótese alguma a altura pode ser inferior a 1,10 m em ambiente industrial." },
+      { question: "Qual a altura mínima do guarda-corpo NR-12?", answer: "1,10 m (cento e dez centímetros) medido a partir do piso, conforme o item 7 do Anexo III da NR-12 (travessão superior entre 1,10 m e 1,20 m). Para áreas com risco aumentado (quedas em equipamentos perigosos, materiais que projetam), a altura pode ser elevada conforme apreciação de risco específica. Em hipótese alguma a altura pode ser inferior a 1,10 m em ambiente industrial." },
       { question: "Posso usar corrente ou fita no lugar do guarda-corpo?", answer: "Não como guarda-corpo permanente. Corrente, fita zebrada e dispositivos similares são sinalização temporária, não proteção. Guarda-corpo NR-12 é estrutura rígida e contínua. Em situações temporárias (manutenção, obra), corrente pode ser usada como bloqueio de acesso, mas substituir guarda-corpo permanente por corrente é autuação direta." },
       { question: "Vidro pode ser usado em guarda-corpo NR-12?", answer: "Sim, mas com restrições. Deve ser vidro laminado de segurança conforme ABNT NBR 14488, com espessura compatível com o esforço estrutural e instalação que mantenha integridade mesmo em quebra parcial. Em ambiente industrial pesado, vidro raramente é a primeira escolha — aço carbono ou inox dominam por durabilidade." },
       { question: "Guarda-corpo precisa de ART?", answer: "Sim. Como elemento estrutural integrante de proteção NR-12, exige projeto com ART de engenheiro mecânico ou civil. Em adequações de planta, a ART do projeto de adequação NR-12 cobre o guarda-corpo. Em obras avulsas, ART específica é necessária. Sem ART, o guarda-corpo é tecnicamente irregular." }
@@ -7855,8 +7863,8 @@ Atender ao padrão técnico não é detalhe estético: é o que diferencia prote
 
 A NR-12 aborda guarda-corpo em dois blocos principais:
 
-- **Item 12.71 a 12.78** — proteção contra quedas em diferentes níveis e bordas de plataformas
-- **Anexo III** — meios de acesso permanentes a equipamentos e estruturas (escadas, plataformas, passarelas)
+- **Anexo III, item 7** — sistema de proteção contra quedas dos meios de acesso (guarda-corpo com travessão superior, intermediário e rodapé)
+- **Anexo III** — meios de acesso a máquinas e equipamentos (escadas, rampas, plataformas, passarelas)
 
 Os requisitos são complementados por:
 
@@ -8014,7 +8022,7 @@ Especificação correta envolve **vão de malha**, **altura**, **fixação estru
 - **Fixo** — instalado com fixação rígida, sem abertura prevista durante operação normal
 - **Móvel** — com portas, portinholas ou setores deslizantes para acesso de manutenção, geralmente com intertravamento de segurança
 
-O gradil enquadra-se como **proteção fixa ou móvel** conforme classificação da NR-12 (item 12.38 e seguintes), abordada também em [proteção fixa e móvel NR-12](/blog/protecao-fixa-movel-nr12).`,
+O gradil enquadra-se como **proteção fixa ou móvel** conforme classificação da NR-12 (subitens 12.5.4 a 12.5.8), abordada também em [proteção fixa e móvel NR-12](/blog/protecao-fixa-movel-nr12).`,
 
 `## Especificações técnicas {#especificacoes-tecnicas}
 
@@ -8170,7 +8178,7 @@ Este artigo explica cada categoria, o critério de escolha entre elas, as exigê
 
 `## Proteções no contexto NR-12 {#protecoes-no-contexto-nr12}
 
-A NR-12 (itens 12.38 a 12.50) classifica as proteções em:
+A NR-12 (subitens 12.5.4 a 12.5.8) classifica as proteções em:
 
 | Categoria | Característica |
 | --- | --- |
@@ -8350,10 +8358,11 @@ Este artigo apresenta as exigências da norma, a relação com ISO 13849-1, os c
 
 A NR-12 trata do painel em diversos itens, com foco em:
 
-- **12.41 e 12.42** — circuito de comando seguro
-- **12.45** — parada de emergência (botoeira cogumelo, cordoalha)
-- **12.51 a 12.65** — dispositivos de partida e parada
-- **12.85** — manutenção e inspeção do painel
+- **12.3** — instalações e dispositivos elétricos
+- **12.4** — dispositivos de partida, acionamento e parada
+- **12.5.2 e 12.5.3** — seleção dos sistemas de segurança e categoria do circuito de comando, conforme apreciação de riscos
+- **12.6** — parada de emergência (botoeira cogumelo, acionador por cabo)
+- **12.11** — manutenção e inspeção do painel
 
 Os requisitos centrais:
 
@@ -8516,7 +8525,7 @@ Adequar um esmeril à NR-12 custa entre R$ 400 e R$ 1.200, prazo de execução d
 
 A NR-12 trata o esmeril em itens diversos (proteções, distâncias, comando) e o equipamento aparece também em listagens de máquinas críticas para verificação. Embora não tenha anexo específico, é abrangido pelos:
 
-- Itens **12.38 a 12.50** (proteções e dispositivos)
+- Item **12.5** (sistemas de segurança: proteções e dispositivos)
 - Anexo **I** (distâncias de segurança)
 - Anexo **II** (treinamento)
 
@@ -8854,8 +8863,8 @@ A prática técnica e a interpretação atual do MTE deixam claro: laudo NR-12 �
 
 Resposta direta: **não há prazo único** definido na norma. A NR-12 cita:
 
-- **Item 12.85** — manutenção periódica conforme indicação do fabricante e do projeto de adequação
-- **Item 12.86** — treinamento periódico (não diretamente laudo, mas relacionado)
+- **Subitem 12.11.1** — manutenções na forma e periodicidade determinadas pelo fabricante, por profissional legalmente habilitado ou por profissional qualificado
+- **Subitem 12.16.8** — capacitação para reciclagem sempre que houver modificações significativas na máquina, na operação ou nos métodos de trabalho (não diretamente laudo, mas relacionado)
 - **Itens diversos** — necessidade de atualização documental quando há mudança técnica
 
 A interpretação técnica e a prática de auditores convergem em: **revisão a cada 2 anos** para máquinas críticas, ou imediata em caso de gatilho específico.`,
@@ -9015,7 +9024,7 @@ Este artigo identifica todos os papéis sujeitos à norma, suas obrigações esp
 
 `## NR-12 é para quem {#nr12-e-para-quem}
 
-A NR-12 (item 12.2) estabelece responsabilidades para:
+A NR-12 alcança as fases de projeto e utilização das máquinas e também a fabricação, importação, comercialização e cessão (subitem 12.1.1), com obrigações para:
 
 | Papel | Vínculo principal |
 | --- | --- |
@@ -9199,9 +9208,9 @@ A NR-12 (Anexo II) define conteúdo programático mínimo, carga horária e os t
 
 A NR-12 trata treinamento em vários itens:
 
-- **Item 12.86** — capacitação obrigatória antes da operação
-- **Anexo II** — conteúdo programático e carga horária mínima
-- **Itens 12.87 a 12.91** — periodicidade, reciclagem, supervisão
+- **Subitens 12.16.1 a 12.16.3** — capacitação obrigatória antes que o trabalhador assuma a função, com carga horária mínima definida pelo empregador
+- **Anexo II** — conteúdo programático mínimo
+- **Subitens 12.16.8 e 12.16.8.1** — reciclagem quando houver modificações que impliquem novos riscos
 
 A norma exige treinamento **prévio à operação**: operador novo ou transferido para máquina diferente não pode operar antes da capacitação. Operação sem treinamento é causa de autuação direta.`,
 
@@ -9534,7 +9543,7 @@ Veja também [inspeção em ponte rolante](/blog/inspecao-ponte-rolante-nr11-pro
     keyTakeaways: [
       "NR-13 estabelece os requisitos mínimos de segurança para caldeiras, vasos de pressão e tubulações",
       "Aplica-se a equipamentos em operação, fabricação, montagem e reparo",
-      "Define categorias de equipamentos (A/B/C para caldeiras; I a V para vasos)",
+      "Define categorias de equipamentos (A e B para caldeiras; I a V para vasos)",
       "Inspeção e laudo são privativos de Profissional Legalmente Habilitado (PLH)"
     ],
     toc: [
@@ -9549,18 +9558,18 @@ Veja também [inspeção em ponte rolante](/blog/inspecao-ponte-rolante-nr11-pro
     ],
     faq: [
       { question: "Quais equipamentos estão sujeitos à NR-13?", answer: "Caldeiras a vapor de qualquer pressão e capacidade; vasos de pressão com PV maior que 8 (produto de pressão em MPa pelo volume em m³); tubulações industriais que transportam fluidos perigosos ou em condições críticas; trocadores de calor, autoclaves, vasos cilíndricos e esféricos sob pressão. A norma cobre operação, manutenção, inspeção e reparo desses equipamentos." },
-      { question: "Quem é o Profissional Legalmente Habilitado (PLH) na NR-13?", answer: "É o engenheiro mecânico, naval ou de áreas afins com registro ativo no CREA e qualificação reconhecida pelo SNQC (Sistema Nacional de Qualificação e Certificação) para caldeiras categoria A e vasos categoria I. Para equipamentos de menor categoria, basta CREA ativo com atribuição compatível. PLH assina laudos, prontuário e ART." },
-      { question: "Caldeira pequena precisa cumprir NR-13?", answer: "Sim. A NR-13 aplica-se a toda caldeira a vapor independente do porte. Mesmo geradores de vapor de pequena capacidade (caldeira de panificação, vapor para autoclave hospitalar) estão sujeitos à norma. Categorias diferenciam exigências e periodicidade, mas a obrigação principal é uniforme." },
+      { question: "Quem é o Profissional Legalmente Habilitado (PLH) na NR-13?", answer: "É o profissional com competência legal para o exercício da engenharia nas atividades de projeto de construção, acompanhamento da operação e da manutenção, inspeção e supervisão de inspeção de caldeiras, vasos de pressão, tubulações e tanques metálicos, conforme a regulamentação profissional vigente (subitem 13.3.2). A certificação de competências do PLH existe, mas é voluntária, por organismo acreditado pelo Inmetro (subitem 13.3.2.1 e Anexo III). O PLH assina laudos, prontuário e ART." },
+      { question: "Caldeira pequena precisa cumprir NR-13?", answer: "Sim, se a pressão de operação for superior a 60 kPa (subitem 13.2.1, alínea a): a NR-13 não distingue porte nem setor, e caldeiras pequenas, como as de panificação e lavanderia, entram na categoria B. A exceção são as caldeiras com volume inferior a cem litros, que estão fora do campo de aplicação da norma (subitem 13.2.2, alínea k)." },
       { question: "Vaso de ar comprimido está em NR-13?", answer: "Depende. Vaso de ar comprimido com PV maior que 8 (ex: pressão de 10 bar × volume de 0,1 m³ = PV de 1 — não está; pressão de 8 bar × volume de 1 m³ = PV de 8 — está). O cálculo do PV é o critério primário. Em dúvida, consultar engenheiro responsável antes de assumir isenção." }
     ],
     content: [
 `A **NR-13** é a Norma Regulamentadora nº 13, do Ministério do Trabalho, que define os requisitos mínimos de segurança para projeto, operação, manutenção, inspeção e reparo de **caldeiras, vasos de pressão e tubulações** em instalações industriais. Vincula empregadores, fabricantes, importadores, montadores e Profissionais Legalmente Habilitados (PLH).
 
-É uma das normas mais técnicas do conjunto regulamentador brasileiro, com terminologia rigorosa, categorização precisa de equipamentos e exigência de qualificação certificada para os profissionais em equipamentos críticos. Este artigo apresenta a estrutura, o objetivo, os equipamentos abrangidos e as categorias.`,
+É uma das normas mais técnicas do conjunto regulamentador brasileiro, com terminologia rigorosa, categorização precisa de equipamentos e exigências de capacitação para os operadores. Este artigo apresenta a estrutura, o objetivo, os equipamentos abrangidos e as categorias.`,
 
 `## O que é a NR-13 {#o-que-e-nr13}
 
-A NR-13 é norma regulamentadora vinculada à **CLT (art. 200)** e atualizada pela **Portaria SEPRT nº 1.082/2018**, com revisões posteriores. Foi instituída originalmente em 1978 e reformulada com profundidade em 1995, 2014 e 2018. A versão atual é tecnicamente alinhada com normas internacionais (ASME, EN 13445, ISO).
+A NR-13 é norma regulamentadora vinculada à **CLT (art. 200)** e tem hoje a redação dada pela **Portaria MTP nº 1.846/2022**, alterada pela Portaria MTP nº 4.219/2022. Foi instituída em 1978 e passou por alterações totais em 1984, 1994 e 2014, além de revisões parciais em 2008, 2017, 2018 e 2019. A versão atual é tecnicamente alinhada com normas internacionais (ASME, EN 13445, ISO).
 
 Define requisitos para:
 
@@ -9596,7 +9605,7 @@ A norma vincula:
 | Importador | Equivalência ao código de projeto, documentação |
 | Empresa montadora | Qualificação WPS/PQR, soldadores qualificados |
 | PLH | Inspeção, laudo, prontuário, ART |
-| Operador | Curso obrigatório (caldeira categoria A) |
+| Operador de caldeira | Treinamento de segurança (mínimo 40 h) e prática supervisionada (80 h na categoria A, 60 h na B) — Anexo I |
 
 Não há isenção por porte ou setor — caldeira de panificação familiar está tão obrigada quanto refinaria de petróleo.`,
 
@@ -9604,13 +9613,14 @@ Não há isenção por porte ou setor — caldeira de panificação familiar est
 
 A NR-13 está organizada em blocos:
 
-- **13.1 a 13.3** — disposições gerais e definições
+- **13.1 a 13.3** — objetivo, campo de aplicação e disposições gerais
 - **13.4** — caldeiras (categoria, instalação, operação, inspeção)
 - **13.5** — vasos de pressão (categoria, classificação, inspeção)
 - **13.6** — tubulações
-- **Anexos I a IV** — definições e tabelas complementares
+- **13.7** — tanques metálicos de armazenamento
+- **Anexos I a IV e Glossário** — capacitação, SPIE, certificação do PLH, ampliação de prazos e terminologia
 
-O item **13.4.4** (inspeção de caldeiras) e o item **13.5.4** (inspeção de vasos) são os mais cobrados em auditoria. O item **13.4.1.6** trata da operação por pessoal qualificado em caldeira categoria A.`,
+O item **13.4.4** (inspeção de caldeiras) e o item **13.5.4** (inspeção de vasos) são os mais cobrados em auditoria. O subitem **13.4.3.3** exige que toda caldeira esteja sob operação e controle de operador de caldeira.`,
 
 `## Anexos da NR-13 {#anexos-da-nr13}
 
@@ -9618,12 +9628,12 @@ A NR-13 tem anexos com função técnica específica:
 
 | Anexo | Conteúdo |
 | --- | --- |
-| **I** | Glossário (terminologia técnica) |
-| **II** | Capacitação de Operadores de Caldeira |
-| **III** | Requisitos para Certificação de SPIE-NR-13 |
-| **IV** | Notificações e Investigações de Acidentes e Ocorrências |
+| **I** | Capacitação e treinamento (operadores de caldeira e de unidades de processo) |
+| **II** | Requisitos para certificação de Serviço Próprio de Inspeção de Equipamentos (SPIE) |
+| **III** | Certificação voluntária de competências do PLH |
+| **IV** | Ampliação de prazo de inspeção de caldeiras categoria A com SIS e categoria B com SGC |
 
-O Anexo II é o documento de referência para o **curso obrigatório de operador de caldeira categoria A** — assunto tratado em [treinamento NR-13](/blog/treinamento-nr13-operador-caldeira-prazo).`,
+A terminologia técnica fica no Glossário, ao final da norma. O Anexo I é o documento de referência para o **treinamento de operador de caldeira de qualquer categoria** — assunto tratado em [treinamento NR-13](/blog/treinamento-nr13-operador-caldeira-prazo).`,
 
 `## Categorias de equipamentos {#categorias-de-equipamentos}
 
@@ -9633,11 +9643,10 @@ A categorização é a base de toda a estrutura NR-13.
 
 | Categoria | Critério | Operador exigido |
 | --- | --- | --- |
-| **A** | PMTA maior que 1,96 MPa (~20 kgf/cm²) | Operador qualificado pelo Anexo II |
-| **B** | PMTA entre 0,588 MPa e 1,96 MPa | Operador treinado |
-| **C** | PMTA menor que 0,588 MPa e volume maior que 100 L | Operador treinado |
+| **A** | Pressão de operação igual ou superior a 1.960 kPa (19,98 kgf/cm²) | Treinamento de 40 h + prática supervisionada de 80 h (Anexo I) |
+| **B** | Pressão de operação superior a 60 kPa e inferior a 1.960 kPa | Treinamento de 40 h + prática supervisionada de 60 h (Anexo I) |
 
-PMTA = Pressão Máxima de Trabalho Admissível. Detalhamento em [categorias de caldeira A, B e C](/blog/categorias-caldeira-a-b-c-nr13).
+O critério é a pressão de operação (subitem 13.4.1.1). A categoria C, que aparece em laudos e materiais antigos, existiu nas redações de 1994 e 2014 e não consta da norma vigente. Detalhamento em [categorias de caldeira A e B](/blog/categorias-caldeira-a-b-c-nr13).
 
 ### Vasos de pressão
 
@@ -10024,10 +10033,12 @@ Em caldeiras, a inspeção periódica compreende exame interno e externo no mesm
 | Situação | Prazo máximo |
 | --- | --- |
 | Categorias A e B | 12 meses |
-| Recuperação de álcalis, qualquer categoria | 15 meses |
+| Recuperação de álcalis, qualquer categoria | 18 meses |
 | Categoria A, com teste das válvulas de segurança aos 12 meses | 24 meses |
+| Categoria B, com SGC conforme Anexo IV | 30 meses |
 | Com SPIE — categoria B e recuperação de álcalis | 24 meses |
 | Com SPIE — categoria A | 30 meses |
+| Com SPIE — categoria A com SIS conforme Anexo IV | 48 meses |
 
 ### Vasos de pressão
 
@@ -10190,7 +10201,7 @@ Faixas observadas em SP 2026:
 | Vaso categoria V (externa + interna + ART) | R$ 1.800 – R$ 3.500 |
 | Vaso categoria III/IV (com ensaios básicos) | R$ 3.500 – R$ 6.500 |
 | Vaso categoria I/II (com ensaios completos) | R$ 6.500 – R$ 12.000 |
-| Caldeira flamotubular C (externa + interna) | R$ 3.500 – R$ 6.000 |
+| Caldeira flamotubular B de pequeno porte (exames interno e externo) | R$ 3.500 – R$ 6.000 |
 | Caldeira flamotubular B (com ensaios) | R$ 6.000 – R$ 10.000 |
 | Caldeira aquatubular A | R$ 10.000 – R$ 25.000+ |
 | Tubulação por metro linear | R$ 80 – R$ 200/m |
@@ -10440,7 +10451,7 @@ Conheça o serviço de [inspeção NR-13](/servicos/nr13) e o artigo [NR-13: o q
     keywords: ["nr13 pdf", "nr13 pdf atualizada", "nr13 atualizada", "download nr13", "nr13 vigente"],
     keyTakeaways: [
       "Versão oficial da NR-13 está sempre no portal gov.br/trabalho-e-emprego",
-      "Última grande atualização foi pela Portaria SEPRT 1.082/2018, com revisões posteriores",
+      "Redação vigente dada pela Portaria MTP 1.846/2022, alterada pela Portaria MTP 4.219/2022",
       "Portarias menores continuam saindo — acompanhar é parte da conformidade",
       "Cuidado com PDFs antigos circulando em sites genéricos — frequentemente desatualizados"
     ],
@@ -10456,7 +10467,7 @@ Conheça o serviço de [inspeção NR-13](/servicos/nr13) e o artigo [NR-13: o q
     ],
     faq: [
       { question: "Onde baixar a NR-13 atualizada gratuitamente?", answer: "No portal oficial do Ministério do Trabalho e Emprego: gov.br/trabalho-e-emprego, seção de Normas Regulamentadoras. Ali está sempre a versão consolidada vigente, com todas as portarias incorporadas. É a única fonte 100% confiável. PDFs circulando em outros sites podem estar desatualizados." },
-      { question: "Quando foi a última atualização grande da NR-13?", answer: "A última reformulação ampla foi pela Portaria SEPRT 1.082/2018, que reorganizou o texto e atualizou várias exigências técnicas. Após isso, vieram portarias menores ajustando itens específicos e anexos. A norma continua viva — novas portarias podem ser publicadas a qualquer momento." },
+      { question: "Quando foi a última atualização grande da NR-13?", answer: "A redação vigente foi dada pela Portaria MTP nº 1.846/2022 e alterada pela Portaria MTP nº 4.219/2022. Antes dela, a última alteração total foi a da Portaria MTE nº 594/2014, seguida das revisões parciais das Portarias MTb nº 1.084/2017 e nº 1.082/2018 — esta incluiu os tanques metálicos de armazenamento e deu à norma o título atual — e da Portaria SEPRT nº 915/2019. Novas portarias podem ser publicadas a qualquer momento; a referência é sempre o PDF vigente no gov.br." },
       { question: "Laudos NR-13 emitidos antes de 2018 ainda valem?", answer: "Tecnicamente continuam válidos como evidência de inspeção na data de emissão, mas a conformidade aos critérios revisados precisa ser verificada. Recomendação: revisar todos os laudos pré-2018 quando houver fiscalização programada, mudança de processo, sinistro ou na próxima inspeção periódica." },
       { question: "Posso usar versão impressa antiga da NR-13?", answer: "Para consulta histórica, sim. Para conformidade técnica e cumprimento legal, não — sempre usar versão vigente. Em fiscalização, auditor verifica conformidade contra o texto atual, e não contra versões anteriores. Manter cópia impressa antiga é útil para histórico, mas operação técnica segue o texto vigente." }
     ],
@@ -10479,7 +10490,7 @@ Fontes alternativas (porém oficiais):
 - **Portal da SIT (Secretaria de Inspeção do Trabalho)**
 - **Portal CONFEA/CREA** — referências técnicas vinculadas
 
-Evite sites genéricos de download, blogs e fóruns — PDFs ali podem ser de versões pré-2018.`,
+Evite sites genéricos de download, blogs e fóruns — PDFs ali podem ser de versões anteriores a 2022.`,
 
 `## Últimas atualizações relevantes {#ultimas-atualizacoes}
 
@@ -10487,12 +10498,14 @@ Histórico de portarias relevantes:
 
 | Ano | Portaria | O que mudou |
 | --- | --- | --- |
-| 2014 | Portaria MTE 594/2014 | Atualização técnica e Anexo II revisado |
-| 2018 | Portaria SEPRT 1.082/2018 | Reformulação completa, texto base atual |
-| 2019 a 2024 | Portarias SIT diversas | Ajustes pontuais |
-| 2025 a 2026 | Notas técnicas | Esclarecimentos de interpretação |
+| 2014 | Portaria MTE 594/2014 | Alteração total; a norma passa a se chamar "Caldeiras, Vasos de Pressão e Tubulações" |
+| 2017 | Portaria MTb 1.084/2017 | Alteração parcial |
+| 2018 | Portaria MTb 1.082/2018 | Alteração parcial: inclui tanques metálicos de armazenamento (título atual), ampliação de prazos de caldeiras com SIS e certificação voluntária de competências do PH |
+| 2019 | Portaria SEPRT 915/2019 | Alteração parcial: harmonização com a nova NR-01 |
+| 2022 | Portaria MTP 1.846/2022 | Redação vigente |
+| 2022 | Portaria MTP 4.219/2022 | Alteração da redação vigente |
 
-A frequência de atualizações **aumentou após 2018**. Acompanhar virou parte do trabalho técnico do PLH e do escritório de engenharia.`,
+A frequência de atualizações **aumentou após 2014**. Acompanhar virou parte do trabalho técnico do PLH e do escritório de engenharia.`,
 
 `## O que mudou recentemente {#o-que-mudou-recentemente}
 
@@ -10765,182 +10778,134 @@ O equipamento que mais aparece sem prontuário é o reservatório de ar comprimi
   },
   {
     slug: "categorias-caldeira-a-b-c-nr13",
-    title: "Categorias de caldeira A, B e C na NR-13: diferenças e exigências",
+    title: "Categorias de caldeira na NR-13: A e B hoje, e o que era a categoria C",
     category: "NR13",
-    excerpt: "Caldeiras NR-13 são classificadas em A, B ou C conforme PMTA. Veja diferenças, exigências de operador, periodicidade e investimento.",
-    metaDescription: "Categorias de caldeira NR-13 (A, B, C): critério PMTA, exigências de operador e inspeção. Comparativo prático. VSM Engenharia.",
+    excerpt: "A NR-13 vigente classifica caldeiras em A e B pela pressão de operação. Veja os critérios, o que muda entre as categorias e o que era a antiga categoria C.",
+    metaDescription: "Categorias de caldeira na NR-13 vigente: A e B pela pressão de operação. Critérios, prazos, operador e a antiga categoria C. VSM Engenharia.",
     coverImage: cover_caldeiras_flamotubulares_aquatubulares,
     readTime: "6 min",
     date: "23 Out 2025",
-    dateModified: "23 Out 2025",
+    dateModified: "14 Out 2026",
     views: 105,
     featured: false,
     relatedService: { label: "Inspeção NR-13", href: "/servicos/nr13" },
     keywords: ["categoria caldeira nr13", "categorias caldeira a b c", "caldeira a nr13", "caldeira b nr13", "caldeira c nr13"],
     keyTakeaways: [
-      "Categorias A, B e C são definidas pela PMTA (Pressão Máxima de Trabalho Admissível)",
-      "Categoria A (PMTA > 1,96 MPa) exige operador qualificado pelo Anexo II e PLH SNQC",
-      "Categoria B e C têm exigências reduzidas mas a inspeção continua obrigatória",
-      "Categoria define todo o programa NR-13 — periodicidade, profissional e investimento"
+      "A NR-13 vigente (Portaria MTP 1.846/2022) classifica caldeiras em apenas duas categorias, A e B (subitem 13.4.1.1)",
+      "O critério é a pressão de operação: categoria A a partir de 1.960 kPa; categoria B acima de 60 kPa e abaixo de 1.960 kPa",
+      "A categoria C existiu nas redações de 1994 e 2014 e já não constava da redação dada pela Portaria MTb 1.082/2018",
+      "A categoria define prazos de inspeção, exigências de instalação e a duração da prática supervisionada do operador"
     ],
     toc: [
-      { id: "criterio-da-pmta", label: "Critério da PMTA" },
-      { id: "categoria-a", label: "Categoria A — alta pressão" },
-      { id: "categoria-b", label: "Categoria B — média pressão" },
-      { id: "categoria-c", label: "Categoria C — baixa pressão" },
+      { id: "criterio-de-classificacao", label: "Critério de classificação" },
+      { id: "categoria-a", label: "Categoria A" },
+      { id: "categoria-b", label: "Categoria B" },
+      { id: "categoria-c", label: "E a categoria C?" },
       { id: "comparativo-resumido", label: "Comparativo resumido" },
       { id: "exigencias-de-operador", label: "Exigências de operador" },
-      { id: "investimento-por-categoria", label: "Investimento típico por categoria" },
       { id: "faq", label: "Perguntas frequentes" }
     ],
     faq: [
-      { question: "PMTA é a pressão de operação ou a pressão máxima?", answer: "PMTA é a Pressão Máxima de Trabalho Admissível — definida no projeto pelo fabricante, considerando margens de segurança. É a pressão máxima que o equipamento pode operar com segurança, e geralmente está acima da pressão real de operação. A categorização NR-13 sempre usa PMTA, não pressão de operação." },
-      { question: "Caldeira categoria C precisa de PLH com SNQC?", answer: "Não. Caldeira C exige PLH com CREA ativo e atribuição compatível, sem certificação SNQC obrigatória. Categoria B segue a mesma regra. Apenas categoria A exige certificação SNQC para o PLH. Essa diferença reflete a criticidade técnica de cada categoria." },
-      { question: "Posso operar caldeira A com operador treinado para B?", answer: "Não. Operador treinado para B não cobre operação de categoria A — exige 80 horas adicionais do curso A. Operar categoria A com profissional certificado apenas para B é causa de autuação direta e lacração do equipamento. Tabela de exigência é rígida na norma." },
-      { question: "Caldeira C antiga sem prontuário pode continuar operando?", answer: "Não regularmente. Equipamento sem prontuário está em situação irregular independentemente da categoria. Caminho é reconstruir prontuário com PLH responsável, ensaios complementares e nova categorização documentada. Custo é significativo mas é exigência legal para operação continuada." }
+      { question: "A NR-13 ainda tem caldeira categoria C?", answer: "Não. A redação vigente da NR-13, dada pela Portaria MTP nº 1.846/2022, classifica as caldeiras apenas nas categorias A e B (subitem 13.4.1.1). A categoria C existiu nas redações da Portaria SSST nº 23/1994 e da Portaria MTE nº 594/2014 e já não constava da redação dada pela Portaria MTb nº 1.082/2018. Laudos, placas e prontuários que ainda indicam categoria C precisam ser revistos pelo PLH." },
+      { question: "A categoria da caldeira é definida pela PMTA ou pela pressão de operação?", answer: "Pela pressão de operação. O subitem 13.4.1.1 da NR-13 classifica como categoria A as caldeiras com pressão de operação igual ou superior a 1.960 kPa (19,98 kgf/cm²) e como categoria B as caldeiras com pressão de operação superior a 60 kPa (0,61 kgf/cm²) e inferior a 1.960 kPa. A PMTA continua obrigatória na placa de identificação e no prontuário, mas não é o critério de categoria." },
+      { question: "O que acontece com uma caldeira que era categoria C?", answer: "Ela precisa ser reenquadrada pela regra vigente. Se a pressão de operação for superior a 60 kPa, passa a ser categoria B, com os prazos e exigências dessa categoria. Se tiver volume inferior a cem litros, está fora do campo de aplicação da NR-13 (subitem 13.2.2, alínea k), e a inspeção segue o código de fabricação ou a recomendação do fabricante. O reenquadramento deve ser documentado pelo PLH no prontuário e na placa de categoria." },
+      { question: "O operador da caldeira categoria B precisa de quantas horas de treinamento?", answer: "O treinamento de segurança na operação de caldeiras tem carga horária mínima de 40 horas para qualquer categoria (Anexo I, item 1.3). Além dele, o operador cumpre prática profissional supervisionada na própria caldeira que irá operar, com duração mínima de 60 horas para a categoria B e de 80 horas para a categoria A (Anexo I, item 1.5)." }
     ],
     content: [
-`A **categorização de caldeiras** na NR-13 é baseada na **PMTA (Pressão Máxima de Trabalho Admissível)** e divide os equipamentos em três níveis: A, B e C. A categoria define todo o programa de inspeção — periodicidade, profissional habilitado, exigências de operador e investimento.
+`A **categorização de caldeiras** na NR-13 é o ponto de partida de todo o programa de inspeção: dela dependem os prazos máximos das inspeções de segurança, exigências de instalação e a duração da prática supervisionada do operador.
 
-Saber em qual categoria está cada caldeira da sua planta é o ponto técnico que orienta o planejamento de manutenção, contratação de PLH, programação de inspeções e dimensionamento do investimento anual em NR-13.`,
+Na redação vigente da norma, dada pela **Portaria MTP nº 1.846/2022** e alterada pela Portaria MTP nº 4.219/2022, existem **apenas duas categorias de caldeira: A e B** (subitem 13.4.1.1). A categoria C, ainda citada em muitos laudos, placas e materiais de treinamento, pertence a redações anteriores da norma — o que ela era e como reenquadrar esses equipamentos está explicado adiante.`,
 
-`## Critério da PMTA {#criterio-da-pmta}
+`## Critério de classificação {#criterio-de-classificacao}
 
-A PMTA (Pressão Máxima de Trabalho Admissível) é a pressão definida no projeto pelo fabricante, considerando margens de segurança técnica. Está sempre acima da pressão de operação real.
+O critério da NR-13 é a **pressão de operação** da caldeira — não a PMTA (Pressão Máxima de Trabalho Admissível), que continua obrigatória na placa de identificação e no prontuário, mas não define a categoria.
 
-A NR-13 usa exclusivamente a PMTA para categorizar — não a pressão de operação.
-
-Tabela de categorias:
-
-| Categoria | Critério |
+| Categoria | Critério (subitem 13.4.1.1) |
 | --- | --- |
-| **A** | PMTA > 1,96 MPa (~20 kgf/cm²) |
-| **B** | 0,588 MPa < PMTA ≤ 1,96 MPa (~6 a 20 kgf/cm²) |
-| **C** | PMTA ≤ 0,588 MPa (~6 kgf/cm²) e volume > 100 L |
+| **A** | Pressão de operação igual ou superior a 1.960 kPa (19,98 kgf/cm²) |
+| **B** | Pressão de operação superior a 60 kPa (0,61 kgf/cm²) e inferior a 1.960 kPa (19,98 kgf/cm²) |
 
-Caldeiras com volume ≤ 100 L e PMTA ≤ 0,588 MPa estão fora da NR-13 (regra geral, com exceções específicas).`,
+O campo de aplicação acompanha esse limite inferior: a NR-13 se aplica a caldeiras com pressão de operação superior a 60 kPa (subitem 13.2.1, alínea a) e **não se aplica a caldeiras com volume inferior a cem litros** (subitem 13.2.2, alínea k).`,
 
-`## Categoria A — alta pressão {#categoria-a}
+`## Categoria A {#categoria-a}
 
-Caldeiras categoria A são as **mais críticas** — alta pressão, alto risco potencial, exigências técnicas mais rigorosas.
+São as caldeiras de maior pressão de operação, típicas de cogeração, setor sucroenergético, papel e celulose e grandes unidades de processo.
 
-### Características
+Exigências que a norma diferencia para a categoria A:
 
-- PMTA acima de 1,96 MPa (20 kgf/cm²)
-- Vapor superaquecido frequente
-- Aplicação industrial pesada (cogeração, processo químico, sucroalcooleiro)
-- Energia armazenada elevada
+- **Painel de instrumentos em sala de controle**, construída conforme as normas regulamentadoras aplicáveis (subitem 13.4.2.6)
+- **Inspeção de segurança periódica em até 12 meses**, ampliável para 24 meses quando, aos 12 meses, são testadas as pressões de abertura das válvulas de segurança (subitem 13.4.4.4)
+- **Com SPIE**, prazo máximo de 30 meses, ou de 48 meses com Sistema Instrumentado de Segurança (SIS) que atenda ao Anexo IV (subitem 13.4.4.5)
+- **Prática profissional supervisionada do operador de no mínimo 80 horas** na própria caldeira (Anexo I, item 1.5)`,
 
-### Exigências NR-13
+`## Categoria B {#categoria-b}
 
-- **PLH com qualificação SNQC** obrigatória para inspeção
-- **Operador qualificado pelo Anexo II** (80 horas + estágio)
-- **Inspeção externa anual**
-- **Inspeção interna a cada 3 anos**
-- **Ensaios não destrutivos** complementares periódicos
-- **Prontuário rigoroso** com registro contínuo automatizado
-- **Sistema de combustão** monitorado em tempo real
+Abrange as caldeiras de uso industrial geral — alimentos, têxtil, química, lavanderias industriais, hospitais e geração de vapor de processo — e passou a incluir as pequenas caldeiras que, nas redações anteriores, eram enquadradas como categoria C.
 
-Caldeiras categoria A demandam equipe técnica especializada e investimento anual significativo em manutenção e inspeção.`,
+Exigências específicas da categoria B:
 
-`## Categoria B — média pressão {#categoria-b}
+- **Inspeção de segurança periódica em até 12 meses**, ampliável para 30 meses em caldeiras com Sistema de Gerenciamento de Combustão (SGC) que atenda ao Anexo IV (subitem 13.4.4.4)
+- **Com SPIE**, prazo máximo de 24 meses (subitem 13.4.4.5)
+- **Prática profissional supervisionada do operador de no mínimo 60 horas** na própria caldeira (Anexo I, item 1.5)
 
-Categoria B cobre caldeiras de uso industrial geral, em faixa intermediária de pressão.
+Os demais requisitos — prontuário, registro de segurança, projeto de instalação, dispositivos obrigatórios do subitem 13.4.1.2, operação sob controle de operador de caldeira (subitem 13.4.3.3) — valem para as duas categorias.`,
 
-### Características
+`## E a categoria C? {#categoria-c}
 
-- PMTA entre 0,588 MPa e 1,96 MPa (6 a 20 kgf/cm²)
-- Vapor saturado frequente
-- Aplicação em alimentos, têxtil, química leve, geração de vapor de processo
-- Risco intermediário
+A categoria C **não existe na NR-13 vigente**. Ela constava de redações anteriores da norma:
 
-### Exigências NR-13
+| Redação | Categorias de caldeira |
+| --- | --- |
+| Portaria SSST nº 23/1994 (subitem 13.1.9) | A, B e C — categoria C: pressão de operação igual ou inferior a 588 kPa (5,99 kgf/cm²) e volume interno igual ou inferior a 100 litros |
+| Portaria MTE nº 594/2014 (subitem 13.4.1.2) | A, B e C, com o mesmo critério para a categoria C |
+| Portaria MTb nº 1.082/2018 | Apenas A e B |
+| Portaria MTP nº 1.846/2022 (vigente) | Apenas A e B (subitem 13.4.1.1) |
 
-- **PLH com CREA ativo** e atribuição compatível (sem SNQC obrigatório)
-- **Operador treinado** conforme Anexo II reduzido (40 horas + estágio)
-- **Inspeção externa a cada 2 anos**
-- **Inspeção interna a cada 4 anos**
-- **Ensaios complementares** conforme análise técnica
-- **Prontuário completo**
+Nas redações antigas, a categoria B era residual: abrangia toda caldeira que não se enquadrasse em A nem em C. A extinção da categoria C significa, na prática, que:
 
-Equilíbrio entre exigências técnicas e custo operacional. É a faixa mais comum em indústrias do Sudeste do Brasil.`,
+- caldeira que era categoria C e opera **acima de 60 kPa** deve ser **reenquadrada como categoria B**, com os prazos e a prática supervisionada de 60 horas dessa categoria;
+- caldeira com **volume inferior a cem litros** está **fora do campo de aplicação** da NR-13 — o que não dispensa a inspeção conforme código de fabricação e manual do fabricante.
 
-`## Categoria C — baixa pressão {#categoria-c}
-
-Categoria C cobre caldeiras de menor pressão e aplicações específicas.
-
-### Características
-
-- PMTA até 0,588 MPa (6 kgf/cm²) e volume superior a 100 L
-- Aplicação em panificação, lavanderia, pequenas operações industriais
-- Risco menor mas não desprezível
-
-### Exigências NR-13
-
-- **PLH com CREA ativo**
-- **Operador treinado** conforme Anexo II ainda mais reduzido (20 horas + estágio)
-- **Inspeção externa a cada 2 anos**
-- **Inspeção interna a cada 6 anos**
-- **Ensaios complementares** conforme análise técnica
-- **Prontuário simplificado**
-
-Cuidado: "categoria C" não significa "sem obrigação NR-13". Pequenas caldeiras de panificação frequentemente operam sem qualquer adequação — situação irregular que gera autuação direta em fiscalização.`,
+Placas de categoria, prontuários, laudos e certificados de operador que ainda citam "categoria C" estão desatualizados e devem ser revistos pelo PLH. Esse é um achado frequente em auditorias de plantas com caldeiras pequenas, como panificação e lavanderia.`,
 
 `## Comparativo resumido {#comparativo-resumido}
 
-| Aspecto | Categoria A | Categoria B | Categoria C |
-| --- | --- | --- | --- |
-| Critério (PMTA) | > 1,96 MPa | 0,588 a 1,96 MPa | ≤ 0,588 MPa (V > 100 L) |
-| PLH | CREA + SNQC | CREA + atribuição | CREA + atribuição |
-| Operador | Anexo II 80h + estágio | Anexo II 40h + estágio | Anexo II 20h + estágio |
-| Inspeção externa | Anual | 2 anos | 2 anos |
-| Inspeção interna | 3 anos | 4 anos | 6 anos |
-| Ensaios | Frequentes | Conforme análise | Conforme análise |
-| Custo anual típico | Alto | Médio | Baixo |
+| Aspecto | Categoria A | Categoria B |
+| --- | --- | --- |
+| Critério (pressão de operação) | ≥ 1.960 kPa | > 60 kPa e < 1.960 kPa |
+| Inspeção periódica — prazo máximo | 12 meses (24 com teste das válvulas aos 12) | 12 meses (30 com SGC conforme Anexo IV) |
+| Prazo máximo com SPIE | 30 meses (48 com SIS conforme Anexo IV) | 24 meses |
+| Painel em sala de controle | Obrigatório (13.4.2.6) | Não exigido pela norma |
+| Prática supervisionada do operador | Mínimo 80 horas | Mínimo 60 horas |
 
-Periodicidades podem ser ajustadas pelo PLH com base em análise técnica e histórico — detalhamento em [periodicidade NR-13](/blog/nr13-periodicidade-inspecoes).`,
+Caldeiras de recuperação de álcalis, de qualquer categoria, têm prazo próprio: 18 meses, ou 24 meses com SPIE. Os prazos são **máximos** — o PLH pode reduzi-los com base no histórico e nas condições do equipamento. Detalhamento em [periodicidade NR-13](/blog/nr13-periodicidade-inspecoes).`,
 
 `## Exigências de operador {#exigencias-de-operador}
 
-Diferença crítica entre categorias:
+Toda caldeira deve estar sob operação e controle de operador de caldeira (subitem 13.4.3.3). Pelo Anexo I da NR-13, o operador precisa de:
 
-| Categoria | Curso |
-| --- | --- |
-| A | 80 horas teoria + 1 mês estágio supervisionado em caldeira A |
-| B | 40 horas teoria + 1 mês estágio supervisionado em caldeira B |
-| C | 20 horas teoria + estágio reduzido em caldeira C |
+| Requisito | Categoria A | Categoria B |
+| --- | --- | --- |
+| Treinamento de segurança na operação de caldeiras (item 1.3) | Mínimo 40 horas, com currículo do item 1.9 | Mínimo 40 horas, com currículo do item 1.9 |
+| Prática profissional supervisionada na própria caldeira (item 1.5) | Mínimo 80 horas | Mínimo 60 horas |
 
-Operador certificado para uma categoria **não cobre** automaticamente categoria superior. Operador A cobre A, B e C; operador B cobre B e C; operador C cobre apenas C.
+A prática supervisionada é feita **na caldeira que o trabalhador irá operar** e só começa depois de concluído todo o conteúdo programático (item 1.8). A atualização de conhecimentos é obrigatória quando houver modificação na caldeira, acidente ou incidente de alto potencial, ou recorrência de incidentes (item 1.7).
 
 Detalhamento em [treinamento NR-13 para operador de caldeira](/blog/treinamento-nr13-operador-caldeira-prazo).
 
-> **Suas caldeiras estão corretamente categorizadas?** A VSM Engenharia faz inventário, classificação e prontuário NR-13 em todo o Sudeste. [Solicite pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento).`,
-
-`## Investimento típico por categoria {#investimento-por-categoria}
-
-Custos anuais aproximados em SP para uma caldeira de cada categoria:
-
-| Categoria | Inspeção externa | Inspeção interna | Treinamento (anual) | Total típico |
-| --- | --- | --- | --- | --- |
-| **A** | R$ 8.000 – R$ 15.000 | R$ 25.000 – R$ 50.000 (a cada 3 anos) | R$ 5.000 – R$ 12.000 | Alto |
-| **B** | R$ 5.000 – R$ 10.000 (a cada 2 anos) | R$ 15.000 – R$ 25.000 (a cada 4 anos) | R$ 3.000 – R$ 6.000 | Médio |
-| **C** | R$ 2.500 – R$ 5.000 (a cada 2 anos) | R$ 6.000 – R$ 12.000 (a cada 6 anos) | R$ 1.500 – R$ 3.000 | Baixo |
-
-Esses custos são parte do orçamento operacional da empresa que opera caldeira a vapor. Custo de não conformidade (multa + interdição + indenização pós-acidente) é múltiplas ordens de grandeza maior.
+> **Suas caldeiras estão corretamente categorizadas?** A VSM Engenharia faz inventário, reenquadramento e prontuário NR-13 em todo o Sudeste. [Solicite pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento).
 
 ## Próximo passo {#proximo-passo}
 
-Categorização correta de caldeira é o ponto técnico que orienta todo o programa NR-13 da planta. Erro nessa fase compromete cronograma de inspeção, contratação de PLH e investimento anual.
+Categorização correta é o ponto técnico que orienta todo o programa NR-13 da planta. Caldeira enquadrada em categoria que a norma já não prevê compromete o cronograma de inspeção, a capacitação do operador e a defesa técnica da empresa em fiscalização.
 
-A VSM Engenharia faz inventário, categorização e programa NR-13 completo em todo o Sudeste.
+A VSM Engenharia faz inventário, categorização e programa NR-13 completo em todo o Sudeste. Valores de referência estão em [quanto custa o laudo NR-13 em São Paulo](/blog/quanto-custa-laudo-nr13-sao-paulo).
 
 📞 **(11) 95453-4057**
 📩 **[Solicitar orçamento pelo WhatsApp](https://wa.me/5511954534057?text=Ol%C3%A1%2C%20venho%20do%20site%20e%20gostaria%20solicitar%20um%20or%C3%A7amento)**
 📧 **contato@vsmengenharia.com**
 
-Conheça o serviço de [inspeção NR-13](/servicos/nr13) e o artigo [caldeiras flamotubulares vs aquatubulares](/blog/caldeiras-flamotubulares-aquatubulares).
-
-Veja também [inspeção NR-13 em caldeiras: flamotubulares e aquatubulares](/blog/caldeiras-flamotubulares-aquatubulares).`
+Conheça o serviço de [inspeção NR-13](/servicos/nr13) e o artigo [inspeção NR-13 em caldeiras: flamotubulares e aquatubulares](/blog/caldeiras-flamotubulares-aquatubulares).`
     ],
   },
   {
@@ -14266,7 +14231,7 @@ A NR-13 estabelece que caldeiras, vasos de pressão, tubulações e tanques met�
 
 Quando o prontuário original é inexistente ou incompleto, a própria norma prevê a **reconstituição** por profissional habilitado, com base em dados existentes, ensaios e determinação da PMTA. Ou seja: a norma não trata o problema como insolúvel — trata como pendência técnica a ser resolvida antes da operação regular.
 
-O ponto que costuma passar despercebido é que o prontuário sustenta todo o resto. Sem PMTA e sem categoria definidas, não há como estabelecer periodicidade de inspeção, dimensionar dispositivos de segurança ou justificar tecnicamente qualquer decisão sobre o equipamento. As categorias e sua consequência prática estão em [vasos de pressão NR-13: classificação por categoria](/blog/vasos-de-pressao-nr13-classificacao-categoria) e [categorias de caldeira A, B e C](/blog/categorias-caldeira-a-b-c-nr13).`,
+O ponto que costuma passar despercebido é que o prontuário sustenta todo o resto. Sem PMTA e sem categoria definidas, não há como estabelecer periodicidade de inspeção, dimensionar dispositivos de segurança ou justificar tecnicamente qualquer decisão sobre o equipamento. As categorias e sua consequência prática estão em [vasos de pressão NR-13: classificação por categoria](/blog/vasos-de-pressao-nr13-classificacao-categoria) e [categorias de caldeira A e B](/blog/categorias-caldeira-a-b-c-nr13).`,
 
 `## Primeira consequência: interdição do equipamento {#primeira-consequencia}
 
@@ -14555,8 +14520,9 @@ A inspeção periódica de caldeiras é constituída por exames interno e extern
 | Situação | Prazo máximo |
 | --- | --- |
 | Caldeiras das categorias A e B | 12 meses |
-| Caldeiras de recuperação de álcalis, qualquer categoria | 15 meses |
+| Caldeiras de recuperação de álcalis, qualquer categoria | 18 meses |
 | Caldeiras da categoria A, com teste das pressões de abertura das válvulas de segurança aos 12 meses | 24 meses |
+| Caldeiras da categoria B, com sistema de gerenciamento de combustão (SGC) conforme Anexo IV | 30 meses |
 
 Estabelecimentos que possuam **SPIE** podem estender os períodos entre inspeções, respeitados os limites:
 
@@ -14565,8 +14531,9 @@ Estabelecimentos que possuam **SPIE** podem estender os períodos entre inspeç�
 | Caldeiras de recuperação de álcalis | 24 meses |
 | Caldeiras da categoria B | 24 meses |
 | Caldeiras da categoria A | 30 meses |
+| Caldeiras da categoria A com sistema instrumentado de segurança (SIS) conforme Anexo IV | 48 meses |
 
-A extensão está condicionada ao cumprimento integral dos requisitos do anexo de SPIE — não basta ter equipe interna de manutenção. A classificação das caldeiras por categoria está detalhada em [categorias de caldeira A, B e C](/blog/categorias-caldeira-a-b-c-nr13).`,
+A extensão está condicionada ao cumprimento integral dos requisitos do anexo de SPIE — não basta ter equipe interna de manutenção. A classificação das caldeiras por categoria está detalhada em [categorias de caldeira A e B](/blog/categorias-caldeira-a-b-c-nr13).`,
 
 `## Prazos para vasos de pressão {#prazos-vasos}
 

@@ -48,7 +48,7 @@ const stats = [
 ];
 
 const equipmentTypes = [
-  { icon: Flame, title: "Caldeiras a Vapor", desc: "Flamotubulares e aquatubulares — Cat. A, B e C", count: "200+ inspecionadas" },
+  { icon: Flame, title: "Caldeiras a Vapor", desc: "Flamotubulares e aquatubulares — Cat. A e B", count: "200+ inspecionadas" },
   { icon: Gauge, title: "Vasos de Pressão", desc: "Compressores, autoclaves, reatores e trocadores de calor", count: "180+ inspecionados" },
   { icon: Droplets, title: "Tubulações Industriais", desc: "Vapor, ar comprimido, gases e fluidos pressurizados", count: "100+ sistemas avaliados" },
   { icon: Wrench, title: "Acessórios de Segurança", desc: "Válvulas de segurança, manômetros e pressostatos", count: "500+ verificados" },
@@ -107,7 +107,7 @@ A NR13 deixou de ser um simples formulário de "atestado de boas condições" h�
 
 Este guia foi escrito por engenheiros mecânicos da **VSM Engenharia**, com mais de uma década de campo entre indústrias do Sudeste, e tem um objetivo simples: dar à pessoa responsável pela operação — gestor industrial, gerente de manutenção, técnico de segurança, dono da empresa — o entendimento real do que a norma cobra, como ela é fiscalizada e o que separa um laudo técnico íntegro de um pedaço de papel sem valor.
 
-> NOTA: A NR13 vigente foi consolidada pela **Portaria MTP nº 1.846/2022**, que substituiu a Portaria 672/2021. Toda inspeção realizada hoje deve seguir essa redação atualizada. Se o seu prestador atual ainda cita "NR-13/2014" no laudo, há um problema sério de defasagem técnica.
+> NOTA: A NR13 vigente foi consolidada pela **Portaria MTP nº 1.846/2022**, alterada pela Portaria MTP nº 4.219/2022. Toda inspeção realizada hoje deve seguir essa redação atualizada. Se o seu prestador atual ainda cita "NR-13/2014" no laudo, há um problema sério de defasagem técnica.
 
 ### O que é a NR13 e por que ela existe
 
@@ -133,11 +133,11 @@ A regra prática é direta: se o equipamento gera, armazena ou movimenta fluido 
 
 ### Categorização: a base de todo o cronograma de inspeção
 
-A NR13 categoriza **caldeiras** (A, B ou C, pela PMTA) e **vasos de pressão** (I a V, pelo cruzamento entre a classe de fluido e o grupo de risco P × V). Essa categoria define periodicidade de inspeção, profissional habilitado, exigências documentais e nível de ensaios não destrutivos. Errar a categorização é o erro número um que vemos em laudos de baixa qualidade, e compromete todo o resto.
+A NR13 categoriza **caldeiras** (A ou B, pela pressão de operação — subitem 13.4.1.1) e **vasos de pressão** (I a V, pelo cruzamento entre a classe de fluido e o grupo de risco P × V). Essa categoria define periodicidade de inspeção, profissional habilitado, exigências documentais e nível de ensaios não destrutivos. Errar a categorização é o erro número um que vemos em laudos de baixa qualidade, e compromete todo o resto.
 
 > ALERTA: A categoria isolada não basta. Fora do regime de SPIE ou dos critérios de PH dispensável, os prazos podem ser **reduzidos** pelo profissional habilitado. Confie em quem justifica tecnicamente o cronograma, não em quem apenas copia o prazo máximo da norma.
 
-As tabelas completas de PMTA, classe de fluido e enquadramento estão no guia [Categorias de caldeira A, B e C na NR13](/blog/categorias-caldeira-a-b-c-nr13); os prazos detalhados, em [Periodicidade das inspeções NR13](/blog/nr13-periodicidade-inspecoes).
+As tabelas de enquadramento por pressão, classe de fluido e P × V estão no guia [Categorias de caldeira na NR13](/blog/categorias-caldeira-a-b-c-nr13); os prazos detalhados, em [Periodicidade das inspeções NR13](/blog/nr13-periodicidade-inspecoes).
 
 ### Tipos de inspeção previstos na NR13
 
@@ -157,7 +157,7 @@ Sem esses documentos atualizados e fisicamente disponíveis, a empresa é consid
 - **Laudo técnico de inspeção** — relatório técnico com fotos datadas, ensaios realizados, defeitos encontrados, medidas corretivas, validade e recomendações.
 - **Certificado de inspeção** — documento sintético, geralmente afixado próximo ao equipamento.
 - **ART** — Anotação de Responsabilidade Técnica do engenheiro mecânico responsável pela inspeção, paga e baixada no CREA.
-- **Certificado de capacitação dos operadores** — exigido para caldeiras (curso obrigatório de 40 horas mínimas, conforme NR13 Anexo I).
+- **Certificado de capacitação dos operadores** — exigido para caldeiras: treinamento de segurança na operação com carga horária mínima de 40 horas, integrado à prática profissional supervisionada e documentada na própria caldeira, de no mínimo 80 horas (categoria A) ou 60 horas (categoria B), conforme Anexo I da NR13, itens 1.3 e 1.5.
 
 ### Ensaios Não Destrutivos (END) na inspeção NR13
 
@@ -232,18 +232,20 @@ A entrega de um "papel timbrado com carimbo de engenheiro" é o que mais existe.
 
 ### Periodicidades práticas — referência rápida
 
-Para gestores que precisam montar cronograma anual, esta tabela traz os prazos máximos consolidados. Lembre-se: o profissional habilitado pode sempre **encurtar** os prazos, nunca estendê-los além do limite legal.
+Para gestores que precisam montar cronograma anual, esta tabela traz os prazos máximos consolidados da NR13 vigente (subitens 13.4.4.4 e 13.4.4.5 para caldeiras; Tabela 2 do subitem 13.5.4.5 para vasos). Lembre-se: o profissional habilitado pode sempre **encurtar** os prazos, nunca estendê-los além do limite legal.
 
-| Equipamento | Categoria | Inspeção externa | Inspeção interna | Teste hidrostático |
-| --- | --- | --- | --- | --- |
-| Caldeira | A | 12 meses | 12 meses | A cada 20 anos |
-| Caldeira | B | 24 meses | 24 meses | A critério do PH |
-| Caldeira | C | 40 meses | 40 meses | A critério do PH |
-| Vaso de pressão | I | 1 ano | 3 anos | A cada 12 anos |
-| Vaso de pressão | II | 2 anos | 4 anos | A cada 16 anos |
-| Vaso de pressão | III | 3 anos | 6 anos | A cada 20 anos |
-| Vaso de pressão | IV | 4 anos | 8 anos | A cada 20 anos |
-| Vaso de pressão | V | 5 anos | 10 anos | Dispensável conforme avaliação |
+| Equipamento | Categoria | Prazo máximo | Prazo máximo com SPIE |
+| --- | --- | --- | --- |
+| Caldeira | A | 12 meses (24 meses se as pressões de abertura das válvulas de segurança forem testadas aos 12 meses) | 30 meses (48 meses com SIS conforme Anexo IV) |
+| Caldeira | B | 12 meses (30 meses com SGC conforme Anexo IV) | 24 meses |
+| Caldeira de recuperação de álcalis | Qualquer | 18 meses | 24 meses |
+| Vaso de pressão | I | Externo 1 ano / interno 3 anos | Externo 3 anos / interno 6 anos |
+| Vaso de pressão | II | Externo 2 anos / interno 4 anos | Externo 4 anos / interno 8 anos |
+| Vaso de pressão | III | Externo 3 anos / interno 6 anos | Externo 5 anos / interno 10 anos |
+| Vaso de pressão | IV | Externo 4 anos / interno 8 anos | Externo 6 anos / interno 12 anos |
+| Vaso de pressão | V | Externo 5 anos / interno 10 anos | Externo 7 anos / interno a critério |
+
+Em caldeiras, a inspeção periódica compreende exames interno e externo no mesmo prazo. O teste hidrostático não tem periodicidade fixa na norma: é obrigatório na fabricação (subitens 13.4.4.3 e 13.5.4.3) e, depois disso, executado quando o PLH o indicar tecnicamente — por exemplo, após reparo ou alteração.
 
 ### Inspeção NR13 em São Paulo (SP)
 

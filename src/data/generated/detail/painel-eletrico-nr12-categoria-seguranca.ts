@@ -38,10 +38,11 @@ Este artigo apresenta as exigências da norma, a relação com ISO 13849-1, os c
 
 A NR-12 trata do painel em diversos itens, com foco em:
 
-- **12.41 e 12.42** — circuito de comando seguro
-- **12.45** — parada de emergência (botoeira cogumelo, cordoalha)
-- **12.51 a 12.65** — dispositivos de partida e parada
-- **12.85** — manutenção e inspeção do painel
+- **12.3** — instalações e dispositivos elétricos
+- **12.4** — dispositivos de partida, acionamento e parada
+- **12.5.2 e 12.5.3** — seleção dos sistemas de segurança e categoria do circuito de comando, conforme apreciação de riscos
+- **12.6** — parada de emergência (botoeira cogumelo, acionador por cabo)
+- **12.11** — manutenção e inspeção do painel
 
 Os requisitos centrais:
 

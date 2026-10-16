@@ -26,7 +26,7 @@ export const detail: BlogPostDetail = {
       { id: "faq", label: "Perguntas frequentes" }
     ],
   faq: [
-      { question: "Qual a periodicidade da inspeção de caldeira?", answer: "A inspeção periódica é constituída por exames interno e externo, com prazo máximo de 12 meses para as categorias A e B e 15 meses para caldeiras de recuperação de álcalis de qualquer categoria. A categoria A pode chegar a 24 meses quando, aos 12 meses, são testadas as pressões de abertura das válvulas de segurança. Estabelecimentos com SPIE podem estender: 24 meses para categoria B e para recuperação de álcalis, e 30 meses para categoria A." },
+      { question: "Qual a periodicidade da inspeção de caldeira?", answer: "A inspeção periódica é constituída por exames interno e externo, com prazo máximo de 12 meses para as categorias A e B e 18 meses para caldeiras de recuperação de álcalis de qualquer categoria. A categoria A pode chegar a 24 meses quando, aos 12 meses, são testadas as pressões de abertura das válvulas de segurança, e a categoria B pode chegar a 30 meses quando dotada de sistema de gerenciamento de combustão (SGC) conforme o Anexo IV. Estabelecimentos com SPIE podem estender: 24 meses para categoria B e para recuperação de álcalis, 30 meses para categoria A e 48 meses para categoria A com sistema instrumentado de segurança (SIS) conforme o Anexo IV." },
       { question: "Qual a periodicidade da inspeção de vaso de pressão?", answer: "Depende da categoria, de I a V. Sem SPIE, o exame externo vai de 1 ano (categoria I) a 5 anos (categoria V), e o exame interno de 3 anos (categoria I) a 10 anos (categoria V). Estabelecimentos com SPIE têm prazos ampliados dentro dos limites da norma. A categoria decorre da combinação entre classe do fluido e o produto pressão × volume, e precisa estar definida no prontuário." },
       { question: "O laudo NR-13 tem prazo de validade?", answer: "O que tem prazo é a inspeção, não o laudo como documento. O laudo registra uma inspeção realizada em uma data e define, tecnicamente, quando a próxima deve ocorrer. Na prática, a empresa fica irregular quando o prazo da próxima inspeção é ultrapassado sem que ela aconteça — e não quando o papel completa um ano. Por isso o controle correto é por data-limite da próxima inspeção, não por data de emissão." },
       { question: "Posso adiar uma inspeção NR-13?", answer: "Os prazos da norma são máximos e não admitem prorrogação administrativa por conveniência. O que existe é a possibilidade de o profissional habilitado, com base em análise técnica documentada — histórico, taxa de corrosão medida, condições operacionais — estabelecer um plano que justifique tecnicamente as decisões sobre o equipamento. Ultrapassar prazo sem essa fundamentação registrada em prontuário expõe a empresa a autuação e enfraquece qualquer defesa em caso de acidente." }
@@ -59,8 +59,9 @@ A inspeção periódica de caldeiras é constituída por **exames interno e exte
 | Situação | Prazo máximo |
 | --- | --- |
 | Caldeiras das categorias A e B | **12 meses** |
-| Caldeiras de recuperação de álcalis, qualquer categoria | **15 meses** |
+| Caldeiras de recuperação de álcalis, qualquer categoria | **18 meses** |
 | Categoria A, com teste das pressões de abertura das válvulas de segurança aos 12 meses | **24 meses** |
+| Categoria B, com sistema de gerenciamento de combustão (SGC) conforme Anexo IV | **30 meses** |
 
 Com **SPIE** formalizado conforme o anexo específico da norma:
 
@@ -69,10 +70,11 @@ Com **SPIE** formalizado conforme o anexo específico da norma:
 | Caldeiras de recuperação de álcalis | **24 meses** |
 | Caldeiras da categoria B | **24 meses** |
 | Caldeiras da categoria A | **30 meses** |
+| Caldeiras da categoria A com sistema instrumentado de segurança (SIS) conforme Anexo IV | **48 meses** |
 
 Observação importante sobre caldeira: diferentemente do que ocorre com vasos, o exame interno e o externo **não têm prazos separados** — a inspeção periódica compreende os dois, no mesmo prazo. Isso significa que toda inspeção periódica de caldeira exige parada programada.
 
-A classificação por categoria está em [categorias de caldeira A, B e C](/blog/categorias-caldeira-a-b-c-nr13), e o escopo por tipo construtivo em [inspeção NR-13 em caldeiras](/blog/caldeiras-flamotubulares-aquatubulares).`,
+A classificação por categoria está em [categorias de caldeira A e B](/blog/categorias-caldeira-a-b-c-nr13), e o escopo por tipo construtivo em [inspeção NR-13 em caldeiras](/blog/caldeiras-flamotubulares-aquatubulares).`,
 
 `## Prazos para vasos de pressão {#vasos}
 

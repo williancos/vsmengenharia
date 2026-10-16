@@ -49,7 +49,7 @@ A norma não é estática — recebe atualizações periódicas via portarias da
 
 `## Objetivo da norma {#objetivo-da-norma}
 
-O objetivo formal está no item 12.1: garantir a saúde e a integridade física dos trabalhadores que interagem com máquinas. Na prática, isso se traduz em três pilares:
+O objetivo formal está no subitem 12.1.1: garantir a saúde e a integridade física dos trabalhadores que interagem com máquinas. Na prática, isso se traduz em três pilares:
 
 1. **Eliminar o risco na fonte** — projeto que torna o acidente impossível
 2. **Reduzir o risco com proteções** — quando o risco não pode ser eliminado
@@ -73,16 +73,20 @@ Não há isenção por porte: oficina mecânica de bairro com um único esmeril 
 
 `## Estrutura e itens principais {#estrutura-da-nr12}
 
-A NR-12 está organizada em 50+ subitens principais. Os blocos centrais:
+Desde a Portaria SEPRT nº 916/2019, a NR-12 está organizada em 18 itens, mais os anexos. Os blocos centrais:
 
-- **12.1 a 12.3** — princípios gerais e responsabilidades
-- **12.4 a 12.13** — arranjo físico, instalações elétricas, dispositivos de partida e parada
-- **12.14 a 12.37** — sistemas de segurança (proteções, intertravamentos)
-- **12.38 a 12.46** — dispositivos de parada de emergência
-- **12.47 a 12.63** — manutenção, inspeção, treinamento
-- **12.64+** — disposições gerais, transitórias e definições
+- **12.1** — princípios gerais
+- **12.2 e 12.3** — arranjo físico e instalações e dispositivos elétricos
+- **12.4** — dispositivos de partida, acionamento e parada
+- **12.5** — sistemas de segurança (proteções, intertravamentos)
+- **12.6** — dispositivos de parada de emergência
+- **12.7 a 12.10** — componentes pressurizados, transportadores, aspectos ergonômicos e riscos adicionais
+- **12.11** — manutenção, inspeção, preparação, ajuste, reparo e limpeza
+- **12.12 a 12.14** — sinalização, manuais e procedimentos de trabalho
+- **12.15 a 12.18** — projeto e fabricação, capacitação, outros requisitos e disposições finais
+- **Anexos I a XII** — distâncias de segurança, conteúdo programático da capacitação, meios de acesso e requisitos por tipo de máquina
 
-O item mais cobrado em fiscalização é o **12.38** (parada de emergência) e os subitens 12.24 a 12.27 (proteções fixas e móveis).`,
+Os itens mais cobrados em fiscalização são o **12.6** (parada de emergência) e os subitens **12.5.4 a 12.5.8** (proteções fixas e móveis e intertravamento).`,
 
 `## Os 12 anexos da NR-12 {#anexos-da-nr12}
 

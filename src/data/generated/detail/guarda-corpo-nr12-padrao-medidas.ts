@@ -24,7 +24,7 @@ export const detail: BlogPostDetail = {
       { id: "faq", label: "Perguntas frequentes" }
     ],
   faq: [
-      { question: "Qual a altura mínima do guarda-corpo NR-12?", answer: "1,10 m (cento e dez centímetros) medido a partir do piso, conforme item 12.71 da NR-12 e Anexo III. Para áreas com risco aumentado (quedas em equipamentos perigosos, materiais que projetam), a altura pode ser elevada conforme apreciação de risco específica. Em hipótese alguma a altura pode ser inferior a 1,10 m em ambiente industrial." },
+      { question: "Qual a altura mínima do guarda-corpo NR-12?", answer: "1,10 m (cento e dez centímetros) medido a partir do piso, conforme o item 7 do Anexo III da NR-12 (travessão superior entre 1,10 m e 1,20 m). Para áreas com risco aumentado (quedas em equipamentos perigosos, materiais que projetam), a altura pode ser elevada conforme apreciação de risco específica. Em hipótese alguma a altura pode ser inferior a 1,10 m em ambiente industrial." },
       { question: "Posso usar corrente ou fita no lugar do guarda-corpo?", answer: "Não como guarda-corpo permanente. Corrente, fita zebrada e dispositivos similares são sinalização temporária, não proteção. Guarda-corpo NR-12 é estrutura rígida e contínua. Em situações temporárias (manutenção, obra), corrente pode ser usada como bloqueio de acesso, mas substituir guarda-corpo permanente por corrente é autuação direta." },
       { question: "Vidro pode ser usado em guarda-corpo NR-12?", answer: "Sim, mas com restrições. Deve ser vidro laminado de segurança conforme ABNT NBR 14488, com espessura compatível com o esforço estrutural e instalação que mantenha integridade mesmo em quebra parcial. Em ambiente industrial pesado, vidro raramente é a primeira escolha — aço carbono ou inox dominam por durabilidade." },
       { question: "Guarda-corpo precisa de ART?", answer: "Sim. Como elemento estrutural integrante de proteção NR-12, exige projeto com ART de engenheiro mecânico ou civil. Em adequações de planta, a ART do projeto de adequação NR-12 cobre o guarda-corpo. Em obras avulsas, ART específica é necessária. Sem ART, o guarda-corpo é tecnicamente irregular." }
@@ -38,8 +38,8 @@ Atender ao padrão técnico não é detalhe estético: é o que diferencia prote
 
 A NR-12 aborda guarda-corpo em dois blocos principais:
 
-- **Item 12.71 a 12.78** — proteção contra quedas em diferentes níveis e bordas de plataformas
-- **Anexo III** — meios de acesso permanentes a equipamentos e estruturas (escadas, plataformas, passarelas)
+- **Anexo III, item 7** — sistema de proteção contra quedas dos meios de acesso (guarda-corpo com travessão superior, intermediário e rodapé)
+- **Anexo III** — meios de acesso a máquinas e equipamentos (escadas, rampas, plataformas, passarelas)
 
 Os requisitos são complementados por:
 

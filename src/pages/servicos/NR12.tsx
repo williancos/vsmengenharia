@@ -348,7 +348,7 @@ Toda máquina adequada precisa ter o **dossiê técnico** disponível para fisca
 - **Projeto técnico das proteções** (mecânico e elétrico) com ART do engenheiro responsável
 - **Esquema elétrico do circuito de segurança** atualizado e disponível na máquina
 - **Procedimentos operacionais (POP)**, de manutenção e de emergência
-- **Registro de capacitação dos operadores** conforme item 12.135 da NR12
+- **Registro de capacitação dos operadores** conforme item 12.16 da NR12
 - **Registro de inspeção e manutenção preventiva** dos dispositivos de segurança
 
 ### Erros mais comuns na adequação NR12 — e como evitá-los

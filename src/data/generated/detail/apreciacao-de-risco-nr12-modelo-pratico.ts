@@ -50,7 +50,7 @@ A apreciação é **viva**: precisa ser revisada a cada mudança de processo, mo
 
 `## Base normativa: ISO 12100 e ISO 13849-1 {#base-normativa}
 
-A NR-12 (item 12.39 e seguintes) **aceita** metodologias internacionalmente reconhecidas. As duas normas centrais:
+A NR-12 (subitens 12.1.9 a 12.1.9.1.1) **aceita** como alternativas técnicas as previstas nas normas técnicas oficiais e nas normas internacionais aplicáveis. As duas normas centrais:
 
 | Norma | Função |
 | --- | --- |

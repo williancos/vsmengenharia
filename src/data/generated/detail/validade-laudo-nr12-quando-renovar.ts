@@ -38,8 +38,8 @@ A prática técnica e a interpretação atual do MTE deixam claro: laudo NR-12 �
 
 Resposta direta: **não há prazo único** definido na norma. A NR-12 cita:
 
-- **Item 12.85** — manutenção periódica conforme indicação do fabricante e do projeto de adequação
-- **Item 12.86** — treinamento periódico (não diretamente laudo, mas relacionado)
+- **Subitem 12.11.1** — manutenções na forma e periodicidade determinadas pelo fabricante, por profissional legalmente habilitado ou por profissional qualificado
+- **Subitem 12.16.8** — capacitação para reciclagem sempre que houver modificações significativas na máquina, na operação ou nos métodos de trabalho (não diretamente laudo, mas relacionado)
 - **Itens diversos** — necessidade de atualização documental quando há mudança técnica
 
 A interpretação técnica e a prática de auditores convergem em: **revisão a cada 2 anos** para máquinas críticas, ou imediata em caso de gatilho específico.`,

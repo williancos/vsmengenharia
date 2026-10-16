@@ -38,7 +38,7 @@ Adequar um esmeril à NR-12 custa entre R$ 400 e R$ 1.200, prazo de execução d
 
 A NR-12 trata o esmeril em itens diversos (proteções, distâncias, comando) e o equipamento aparece também em listagens de máquinas críticas para verificação. Embora não tenha anexo específico, é abrangido pelos:
 
-- Itens **12.38 a 12.50** (proteções e dispositivos)
+- Item **12.5** (sistemas de segurança: proteções e dispositivos)
 - Anexo **I** (distâncias de segurança)
 - Anexo **II** (treinamento)
 

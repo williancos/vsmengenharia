@@ -54,7 +54,7 @@ A NR-13 estabelece que caldeiras, vasos de pressão, tubulações e tanques met�
 
 Quando o prontuário original é inexistente ou incompleto, a própria norma prevê a **reconstituição** por profissional habilitado, com base em dados existentes, ensaios e determinação da PMTA. Ou seja: a norma não trata o problema como insolúvel — trata como pendência técnica a ser resolvida antes da operação regular.
 
-O ponto que costuma passar despercebido é que o prontuário sustenta todo o resto. Sem PMTA e sem categoria definidas, não há como estabelecer periodicidade de inspeção, dimensionar dispositivos de segurança ou justificar tecnicamente qualquer decisão sobre o equipamento. As categorias e sua consequência prática estão em [vasos de pressão NR-13: classificação por categoria](/blog/vasos-de-pressao-nr13-classificacao-categoria) e [categorias de caldeira A, B e C](/blog/categorias-caldeira-a-b-c-nr13).`,
+O ponto que costuma passar despercebido é que o prontuário sustenta todo o resto. Sem PMTA e sem categoria definidas, não há como estabelecer periodicidade de inspeção, dimensionar dispositivos de segurança ou justificar tecnicamente qualquer decisão sobre o equipamento. As categorias e sua consequência prática estão em [vasos de pressão NR-13: classificação por categoria](/blog/vasos-de-pressao-nr13-classificacao-categoria) e [categorias de caldeira A e B](/blog/categorias-caldeira-a-b-c-nr13).`,
 
 `## Primeira consequência: interdição do equipamento {#primeira-consequencia}
 

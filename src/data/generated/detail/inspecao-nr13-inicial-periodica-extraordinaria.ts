@@ -100,8 +100,9 @@ A inspeção periódica de caldeiras é constituída por exames interno e extern
 | Situação | Prazo máximo |
 | --- | --- |
 | Caldeiras das categorias A e B | 12 meses |
-| Caldeiras de recuperação de álcalis, qualquer categoria | 15 meses |
+| Caldeiras de recuperação de álcalis, qualquer categoria | 18 meses |
 | Caldeiras da categoria A, com teste das pressões de abertura das válvulas de segurança aos 12 meses | 24 meses |
+| Caldeiras da categoria B, com sistema de gerenciamento de combustão (SGC) conforme Anexo IV | 30 meses |
 
 Estabelecimentos que possuam **SPIE** podem estender os períodos entre inspeções, respeitados os limites:
 
@@ -110,8 +111,9 @@ Estabelecimentos que possuam **SPIE** podem estender os períodos entre inspeç�
 | Caldeiras de recuperação de álcalis | 24 meses |
 | Caldeiras da categoria B | 24 meses |
 | Caldeiras da categoria A | 30 meses |
+| Caldeiras da categoria A com sistema instrumentado de segurança (SIS) conforme Anexo IV | 48 meses |
 
-A extensão está condicionada ao cumprimento integral dos requisitos do anexo de SPIE — não basta ter equipe interna de manutenção. A classificação das caldeiras por categoria está detalhada em [categorias de caldeira A, B e C](/blog/categorias-caldeira-a-b-c-nr13).`,
+A extensão está condicionada ao cumprimento integral dos requisitos do anexo de SPIE — não basta ter equipe interna de manutenção. A classificação das caldeiras por categoria está detalhada em [categorias de caldeira A e B](/blog/categorias-caldeira-a-b-c-nr13).`,
 
 `## Prazos para vasos de pressão {#prazos-vasos}
 

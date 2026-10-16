@@ -141,10 +141,12 @@ Em caldeiras, a inspeção periódica compreende exame interno e externo no mesm
 | Situação | Prazo máximo |
 | --- | --- |
 | Categorias A e B | 12 meses |
-| Recuperação de álcalis, qualquer categoria | 15 meses |
+| Recuperação de álcalis, qualquer categoria | 18 meses |
 | Categoria A, com teste das válvulas de segurança aos 12 meses | 24 meses |
+| Categoria B, com SGC conforme Anexo IV | 30 meses |
 | Com SPIE — categoria B e recuperação de álcalis | 24 meses |
 | Com SPIE — categoria A | 30 meses |
+| Com SPIE — categoria A com SIS conforme Anexo IV | 48 meses |
 
 ### Vasos de pressão
 

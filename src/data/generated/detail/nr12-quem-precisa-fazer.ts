@@ -36,7 +36,7 @@ Este artigo identifica todos os papéis sujeitos à norma, suas obrigações esp
 
 `## NR-12 é para quem {#nr12-e-para-quem}
 
-A NR-12 (item 12.2) estabelece responsabilidades para:
+A NR-12 alcança as fases de projeto e utilização das máquinas e também a fabricação, importação, comercialização e cessão (subitem 12.1.1), com obrigações para:
 
 | Papel | Vínculo principal |
 | --- | --- |

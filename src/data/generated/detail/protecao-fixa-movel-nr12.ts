@@ -36,7 +36,7 @@ Este artigo explica cada categoria, o critério de escolha entre elas, as exigê
 
 `## Proteções no contexto NR-12 {#protecoes-no-contexto-nr12}
 
-A NR-12 (itens 12.38 a 12.50) classifica as proteções em:
+A NR-12 (subitens 12.5.4 a 12.5.8) classifica as proteções em:
 
 | Categoria | Característica |
 | --- | --- |
